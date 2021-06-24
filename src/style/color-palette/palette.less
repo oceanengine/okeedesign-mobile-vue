@@ -1,0 +1,32 @@
+@import './tinyColor.less';
+
+.colorPaletteMixin() {
+    @functions: ~`(function(){
+      this.colorPalette = function(color, index) {
+    
+  const darkestL = 16;
+  const lightestL = 96;
+  const hsl = tinycolor(color).toHsl();
+  const curLight = hsl.l * 100;
+
+  let light = void 0;
+  const darkStep = (curLight - darkestL) / 5;
+  const lightStep = (lightestL - curLight) / 5;
+  if (index === 6) {
+    light = hsl.l;
+  } else if (index < 6) {
+    light = (curLight + (6 - index) * lightStep) / 100;
+  } else if (index > 6) {
+    light = (curLight - (index - 6) * darkStep) / 100;
+  }
+
+  return tinycolor({
+    h: Math.round(hsl.h),
+    s: hsl.s,
+    l: light
+  }).toHexString();
+
+    }})()`;
+    }
+    .colorPaletteMixin();
+    

@@ -1,0 +1,108 @@
+@import '../../style/common';
+
+.@{prefix}checker-item {
+  position: relative;
+  display: block;
+  color: @text-color-2;
+  text-align: center;
+  background: @gray-2;
+  border-radius: @border-radius-2; /* no */
+
+  &--active {
+    color: @primary-color;
+    font-weight: 500;
+    background-color: @primary-color-5;
+  }
+
+  &--disabled {
+    color: @text-color-5;
+
+    &.@{prefix}checker-item--active {
+      color: @primary-color;
+      opacity: @checker-disabled-opacity;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+
+  &--small {
+    height: @checker-small-height;
+    font-size: @checker-small-font-size;
+    line-height: @checker-small-height;
+  }
+
+  &--normal {
+    height: @checker-normal-height;
+    font-size: @checker-normal-font-size;
+    line-height: @checker-normal-height;
+  }
+
+  &--round {
+    &.@{prefix}checker-item--small {
+      border-radius: @checker-small-height;
+    }
+
+    &.@{prefix}checker-item--normal {
+      border-radius: @checker-normal-height;
+    }
+
+    &.@{prefix}checker-item--primary {
+      &::after {
+        border-radius: @checker-normal-height * 2;
+      }
+
+      &.@{prefix}checker-item--small {
+        border-radius: @checker-small-height * 2;
+      }
+    }
+
+    .@{prefix}checker-item__badge {
+      right: 4px;
+    }
+  }
+
+  &--primary {
+    background-color: @white;
+
+    &::after {
+      border-color: #d1d1d1;
+      border-width: 1px; /* no */
+      border-radius: 8px;
+    }
+
+    &.@{prefix}checker-item--active {
+      color: @white;
+      background-color: @primary-color;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    font-size: 0;
+    fill: @primary-color;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  input {
+    display: none;
+  }
+}

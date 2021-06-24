@@ -1,0 +1,298 @@
+@import '../../style/common';
+
+.@{prefix}button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: @button-font-weight;
+  border-radius: @border-radius-2; /* no */
+
+  &__loading {
+    margin-right: @button-large-loading-margin;
+    line-height: 0;
+    .@{prefix}loading__icon {
+      width: @button-large-font-size;
+      height: @button-large-font-size;
+      fill: white;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border: inherit;
+    border-color: #000;
+    border-radius: inherit;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    content: ' ';
+  }
+
+  &:active::before {
+    opacity: @button-active-opacity;
+  }
+
+  &--disabled {
+    opacity: @button-disabled-opacity;
+
+    &::before {
+      display: none;
+    }
+
+    &.@{prefix}button--default {
+      color: @text-color-5;
+      opacity: 1;
+    }
+  }
+
+  &--default {
+    color: @text-color-1;
+    background: #fff;
+    .@{prefix}button__loading {
+      .@{prefix}loading__icon {
+        fill: @primary-color;
+      }
+    }
+  }
+
+  &--primary {
+    color: #fff;
+    background: @primary-color;
+  }
+
+  &--success {
+    color: #fff;
+    background: @success-color;
+  }
+
+  &--warning {
+    color: #fff;
+    background: @warning-color;
+  }
+
+  &--danger {
+    color: #fff;
+    background: @danger-color;
+  }
+
+  &--large {
+    width: 100%;
+    height: @button-large-height;
+    font-size: @button-large-font-size;
+    line-height: @button-large-height;
+  }
+
+  &--normal {
+    height: @button-normal-height;
+    padding: 0 18px;
+    font-size: @button-font-size;
+    line-height: @button-normal-height;
+  }
+
+  &--small {
+    height: @button-small-height;
+    padding: 0 16px;
+    font-size: @button-small-font-size;
+    line-height: @button-small-height;
+  }
+
+  &--midget {
+    height: @button-midget-height;
+    padding: 0 14px;
+    font-size: @button-midget-font-size;
+    line-height: @button-midget-height;
+  }
+
+  &--mini {
+    height: @button-mini-height;
+    padding: 0 12px;
+    font-size: @button-mini-font-size;
+    line-height: @button-mini-height;
+  }
+
+  &--tiny {
+    height: @button-tiny-height;
+    padding: 0 10px;
+    font-size: @button-tiny-font-size;
+    line-height: @button-tiny-height;
+  }
+
+  &--midget, &--mini, &--tiny {
+    .@{prefix}button__loading {
+      margin-right: @button-small-loading-margin;
+      .@{prefix}loading__icon {
+        width: @button-midget-font-size;
+        height: @button-midget-font-size;
+      }
+    }
+  }
+
+  &--round {
+    &.@{prefix}button--large {
+      border-radius: @button-large-height / 2;
+    }
+
+    &.@{prefix}button--normal {
+      padding: 0 22px;
+      border-radius: @button-normal-height / 2;
+    }
+
+    &.@{prefix}button--small {
+      padding: 0 20px;
+      border-radius: @button-small-height / 2;
+    }
+
+    &.@{prefix}button--midget {
+      padding: 0 18px;
+      border-radius: @button-midget-height / 2;
+    }
+
+    &.@{prefix}button--mini {
+      padding: 0 16px;
+      border-radius: @button-mini-height / 2;
+    }
+
+    &.@{prefix}button--tiny {
+      padding: 0 14px;
+      border-radius: @button-tiny-height / 2;
+    }
+  }
+
+  &--text {
+    padding: 0;
+    color: @primary-color;
+
+    .@{prefix}button__loading {
+      .@{prefix}loading__icon {
+        fill: @primary-color;
+      }
+    }
+
+    &:active {
+      color: @primary-color-1;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &.@{prefix}button--disabled {
+      color: @text-color-5;
+      opacity: 1;
+    }
+
+    &.@{prefix}button--large {
+      width: auto;
+    }
+
+    &.@{prefix}button--small {
+      font-size: @button-text-small-font-size;
+      line-height: @button-small-height;
+    }
+
+    &.@{prefix}button--mini {
+      font-size: @button-text-mini-font-size;
+      line-height: @button-mini-height;
+    }
+
+    &.@{prefix}button--tiny {
+      font-size: @button-text-tiny-font-size;
+      line-height: @button-tiny-height;
+    }
+  }
+
+  &--square {
+    border-radius: 0;
+  }
+
+  &--plain {
+    background-color: #fff;
+
+    .@{prefix}button__loading {
+      .@{prefix}loading__icon {
+        fill: @primary-color;
+      }
+    }
+
+    &::after {
+      border-width: 2px; /* no */
+      border-radius: @border-radius-3; /* no */
+    }
+
+    &.@{prefix}button--default {
+      &::after {
+        border-color: #fff;
+      }
+    }
+
+    &.@{prefix}button--primary {
+      color: @primary-color;
+
+      &::after {
+        border-color: @primary-color;
+      }
+    }
+
+    &.@{prefix}button--success {
+      color: @success-color;
+
+      &::after {
+        border-color: @success-color;
+      }
+    }
+
+    &.@{prefix}button--warning {
+      color: @warning-color;
+
+      &::after {
+        border-color: @warning-color;
+      }
+    }
+
+    &.@{prefix}button--danger {
+      color: @danger-color;
+
+      &::after {
+        border-color: @danger-color;
+      }
+    }
+
+    &.@{prefix}button--round::after {
+      border-radius: @button-normal-height;
+    }
+
+    &.@{prefix}button--square::after {
+      border-radius: 0;
+    }
+  }
+
+  &--fade {
+    &.@{prefix}button--primary {
+      background: @primary-color-5;
+    }
+
+    &.@{prefix}button--success {
+      background: @success-color-5;
+    }
+
+    &.@{prefix}button--warning {
+      background: @warning-color-5;
+    }
+
+    &.@{prefix}button--danger {
+      background: @danger-color-5;
+    }
+  }
+
+  &--hairline {
+    &::after {
+      border-width: 1px; /* no */
+    }
+  }
+}

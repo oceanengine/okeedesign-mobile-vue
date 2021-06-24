@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo upload">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-upload" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 9C7 7.89543 7.89543 7 9 7H23H41H55C56.1046 7 57 7.89543 57 9V21.2857V55C57 56.1046 56.1046 57 55 57H9C7.89543 57 7 56.1046 7 55V21.2857V9Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24 34L32 26L40 34" fill="transparent"></path><path d="M24 34L32 26M32 26L40 34M32 26V48" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 20H40" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+  <div>
+    <div class="byted-upload">
+      <div><input accept="image/png,image/jpeg,image/jpg" type="file" name="Filedata" class="_file-input">
+        <div class="byted-upload__upload-icon-box upload-box">
+          <div class="before-upload-section"><span class="byted-icon byted-icon-plus" style="font-size: 24px; line-height: 0;"><svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="4" fill="none" fill-rule="evenodd"><g><path d="M14.1558095,14.0875513 L33.928882,33.9124247" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(24.042346, 23.999988) rotate(45.000000) translate(-24.042346, -23.999988) "></path><path d="M33.8994949,14.1005051 L14.1005051,33.8994949" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(24.000000, 24.000000) rotate(-135.000000) translate(-24.000000, -24.000000) "></path></g></g></svg></span></div>
+          <!---->
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

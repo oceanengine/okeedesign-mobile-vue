@@ -1,0 +1,243 @@
+# Checker 选择项
+
+### 安装
+
+:::card
+
+```javascript
+import { Checker, CheckerItem } from '@okee-uikit/m-vue';
+
+Vue.use(Checker).use(CheckerItem);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```desc
+通过`v-model`绑定值当前选中项的value, 默认为多选。value值必须为Array类型
+```
+
+```html
+<byted-checker v-model="checker" input-type="radio">
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item value="Option2">Option3</byted-checker-item>
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checker: 0,
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+多选用法
+```
+
+```html
+<byted-checker v-model="checkerStyle">
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checkerStyle: [0, '2'],
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+单选异步
+```
+
+```desc
+inputType为radio，@input + value
+```
+
+```html
+<byted-checker
+  :value="checkerAsync"
+  input-type="radio"
+  @click="onClick"
+  @input="onInput"
+>
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checkerAsync: 0,
+  }
+},
+methods: {
+  onInput(value) {
+    this.$confirm(`是否确定选择${value}选项？`).then(() => {
+      this.checkerAsync = value;
+    }).catch(() => {
+      //
+    });
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+自定义形状
+```
+
+```html
+<byted-checker v-model="checkerRound" round>
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+:::
+
+:::card
+
+```topic
+展示徽标
+```
+
+```html
+<byted-checker v-model="checkerInfo" input-type="radio" round>
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="large" :value="0" info="ok" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="small" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="mini" value="2" :info="3" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checkerInfo: 0,
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+禁用状态
+```
+
+```html
+<byted-checker v-model="checkerDisabled" input-type="radio" type="primary">
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" disabled />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" disabled />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+:::
+
+
+### API
+
+##### Checker Props
+
+| 参数      | 说明                          | 类型                      | 默认值     |
+| --------- | ----------------------------- | ------------------------- | ---------- |
+| inputType | 可选值为：`radio` `checkbox`  | `string`                  | `checkbox` |
+| value     | 类型 Array String 或者 Number | `array` `string` `number` | `[]`       |
+| type      | 可选值为：`primary`           | `string`                  | `default`  |
+| size      | 可选值为：`small` `normal`    | `string`                  | `normal`   |
+
+##### CheckerItem Props
+
+| 参数  | 说明                          | 类型                      | 默认值 |
+| ----- | ----------------------------- | ------------------------- | ------ |
+| value | 类型 Array String 或者 Number | `array` `string` `number` | `[]`   |
+| label | 内容                          | `string`                  | `''`   |
+| name  | 标示                          | `string`                  | `''`   |
+| info  | 显示信息                      | `string`                  | `''`   |
+
+##### Events
+
+| 事件名     | 说明                     | 回调参数           |
+| ---------- | ------------------------ | ------------------ |
+| change     | 当绑定值变化时触发的事件 | 当前选中项的 value |
+| input      | 单选异步事件             | 要选中项的 value   |
+| click      | 点击时触发               | event              |
+| touchstart | 点击时触发               | event              |

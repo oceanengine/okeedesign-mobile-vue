@@ -1,0 +1,25 @@
+@import '../../style/common';
+
+.@{prefix}dropdown-item {
+  position: absolute;
+  top: @dropdown-height;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+
+  &--up {
+    top: 0;
+  }
+
+  &--down {
+    bottom: 0;
+  }
+
+  &__content {
+    position: absolute !important;
+  }
+
+  &__icon {
+    vertical-align: -3px;
+  }
+}

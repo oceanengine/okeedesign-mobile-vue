@@ -1,0 +1,113 @@
+# Badge 徽标
+
+### 安装
+
+:::card
+
+```javascript
+import { Badge } from '@okee-uikit/m-vue';
+
+Vue.use(Badge);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```html
+<byted-badge is-dot :value="100" :max="9">
+  <div class='square'></div>
+</byted-badge>
+
+<byted-badge is-dot :value="100" :max="9">
+  <div class='square'></div>
+</byted-badge>
+
+<byted-badge is-dot :value="100" :max="9">
+  <div class='square'></div>
+</byted-badge>
+```
+
+:::
+
+:::card
+
+```topic
+设置最大值
+```
+
+```desc
+设置`max`，`value`必须是`number`类型才能生效。
+```
+
+```html
+<byted-badge :value="99" :max="9"> 
+  <div class='square'></div>
+</byted-badge>
+  
+<byted-badge :value="99" :max="60"> 
+  <div class='square'></div>
+</byted-badge>
+
+<byted-badge :value="999" :max="99">
+  <div class='square'></div>
+</byted-badge>
+```
+
+:::
+
+:::card
+
+```topic
+与文字搭配
+```
+
+```html
+<byted-collapse v-model="activeNamesDot" :border="false">
+  <byted-collapse-item>
+    <div slot="title">
+      <byted-badge :value="8">
+        <span>与文字搭配</span>
+      </byted-badge>
+    </div>
+    <div slot="right-icon" class="right-slot">
+      <byted-icon name="right" size="18" fill="#999" />
+    </div>
+  </byted-collapse-item>
+
+  <byted-collapse-item>
+    <div slot="title">
+      <byted-badge :max="99" :value="100" >
+        <span>与文字搭配</span>
+      </byted-badge>
+    </div>
+    <div slot="right-icon" class="right-slot">
+      <byted-icon name="right" size="18" fill="#999" />
+    </div>
+  </byted-collapse-item>
+</byted-collapse>
+```
+
+:::
+
+### API
+
+###### Props
+
+| 参数   | 说明                             | 类型      | 默认值  |
+| ------ | -------------------------------- | --------- | ------- |
+| value  | `string` or `number`             | `string`  | `''`    |
+| max    | when `value` be type of `number` | `string`  | `0`     |
+| is-dot |                                  | `boolean` | `false` |
+
+##### Events
+
+| Event | Description                | Arguments    |
+| ----- | -------------------------- | ------------ |
+| click | Triggered when click Badge | event: Event |

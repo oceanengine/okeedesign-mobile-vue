@@ -1,0 +1,193 @@
+# Switch 开关
+
+### 安装
+
+:::card
+
+```javascript
+import { Switch } from '@okee-uikit/m-vue';
+
+Vue.use(Switch);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```desc
+通过`v-model`绑定valueBase
+```
+
+```html
+<byted-switch v-model="valueBase" @change="change" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueBase: false,
+    };
+  },
+  methods: {
+    change(value) {
+      alert(`new value ${value}`);
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+禁用状态
+```
+
+```html
+<byted-switch v-model="valueBase" disabled /> <byted-switch v-model="valueDiasbledTrue" disabled />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueBase: false,
+      valueDiasbledTrue: true,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+加载状态
+```
+
+```html
+<byted-switch v-model="valueLoading" :loading="true"/>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueLoading: true,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+自定义大小
+```
+
+```html
+<byted-switch v-model="valueScale"  size="large"/>
+<byted-switch v-model="valueScale"  size="small"/>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueScale: true,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+异步控制
+```
+
+```html
+<byted-switch :value="valueControlled" :loading="isLoading" @input="changeValue" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueControlled: true,
+      isLoading: false,
+    };
+  },
+  methods: {
+    changeValue(value) {
+      this.isLoading = true;
+        this.isLoading = false;
+        this.$confirm('Whether to switch', {
+          title: 'Title',
+          cancelButtonText: 'Cancel',
+          confirmButtonText: 'Confirm',
+        })
+        .then(() => {
+          this.valueControlled = !this.valueControlled;
+        })
+        .catch(() => {
+        });
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+搭配单元格使用
+```
+
+```html
+<byted-cell :title="标题">
+  <byted-switch v-model="valueCell"/>
+</byted-cell>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueCell: true,
+    };
+  },
+};
+```
+
+:::
+
+### API
+
+##### Props
+
+| 参数     | 说明                                       | 类型      | 默认值   |
+| -------- | ------------------------------------------ | --------- | -------- |
+| v-model  | 开关当前状态                               | `any`     | `false`  |
+| disabled | 是否为禁用状态                             | `boolean` | `false`  |
+| size     | 设置型号大小，可选值为： `large`、`normal` | `string`  | `normal` |
+
+##### Events
+
+| 事件名 | 说明                     | 回调参数          |
+| ------ | ------------------------ | ----------------- |
+| change | 当绑定值变化时触发的事件 | checked: 开关状态 |

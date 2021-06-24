@@ -1,0 +1,21 @@
+/**
+  * 五个层级的阴影设置
+  */
+.bui-box-shadow(@level:1) when (@level = 1) {
+  box-shadow: 0 2px 6px 0 rgba(#a6c6ec, 0.1);
+}
+.bui-box-shadow(@level) when (@level = 2) {
+  box-shadow: 0 4px 12px 0 rgba(#a6c6ec, 0.1);
+}
+.bui-box-shadow(@level) when (@level = 3) {
+  box-shadow: 0 6px 18px 0 rgba(#a6c6ec, 0.1);
+}
+.bui-box-shadow(@level) when (@level = 4) {
+  box-shadow: 0 8px 24px 0 rgba(#a6c6ec, 0.1);
+}
+.bui-box-shadow(@level) when (@level = 5) {
+  box-shadow: 0 10px 46px 0 rgba(#a6c6ec, 0.18);
+}
+.bui-box-shadow(@level) when (@level = 6) {
+  box-shadow: 0 10px 46px 0 rgba(#000, 0.1);
+}

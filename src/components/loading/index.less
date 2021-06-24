@@ -1,0 +1,30 @@
+@import '../../style/common';
+
+.@{prefix}loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  
+  &__icon {
+    display: inline-block;
+    width: @loading-icon-height;
+    height: @loading-icon-height;
+    fill: @primary-color;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-left: 8px;
+    color: @text-color-4;
+    font-size: @loading-font-size;
+  }
+
+  &--vertical {
+    flex-direction: column;
+
+    .@{prefix}loading__text {
+      margin: 8px 0 0;
+    }
+  }
+}

@@ -1,0 +1,221 @@
+@import '../../style/common';
+
+.@{prefix}table-wrapper {
+  position: relative;
+
+  &__indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: @table-indicator-height;
+    background-color: @table-indicator-bg-color;
+  }
+
+  &--empty {
+    display: flex;
+    flex-direction: column;
+    height: @table-empty-height;
+  }
+
+  .@{prefix}tbody--empty {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    background-color: @table-empty-content-bg-color;
+  }
+}
+
+.@{prefix}table-track {
+  flex: none;
+  overflow: auto;
+
+  &--ceiling {
+    overflow: visible;
+  }
+
+  &--swipeable {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &-touching {
+      overflow-y: hidden;
+    }
+  }
+
+  &--empty {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.@{prefix}table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  transition-property: transform;
+  will-change: transform;
+}
+
+.@{prefix}tr {
+  &--expanded {
+    transition-duration: @table-expand-duration;
+    transition-property: all;
+  }
+}
+
+.@{prefix}th,
+.@{prefix}td {
+  padding: @table-td-padding;
+  font-weight: @table-td-font-weight;
+  font-size: @table-td-font-size;
+  line-height: @table-td-line-height;
+  word-wrap: break-word;
+  border-bottom: 1px solid @table-border-color;
+  transition-property: transform;
+
+  .table-sticky-shadow();
+
+  &--fake {
+    padding: 0;
+    border: none;
+  }
+}
+
+.@{prefix}th {
+  padding: @table-thead-td-padding;
+  background-color: @table-thead-th-bg-color;
+
+  &--sticky {
+    position: sticky;
+    top: 0;
+    z-index: @table-th-sticky-z-index;
+  }
+
+  &--sticky-left,
+  &--sticky-right {
+    position: sticky;
+    z-index: @table-th-sticky-horizontal-z-index;
+  }
+
+  &__sort-icon {
+    display: inline-block;
+    width: @table-sort-icon-size;
+    height: @table-sort-icon-size;
+    padding: @table-sort-icon-padding;
+    line-height: 0;
+    vertical-align: bottom;
+  }
+
+  &__filter-icon {
+    display: inline-block;
+    width: @table-filter-icon-size;
+    height: @table-filter-icon-size;
+    padding: @table-filter-icon-padding;
+    line-height: 0;
+    vertical-align: bottom;
+  }
+}
+
+.@{prefix}td {
+  background-color: @table-td-bg-color;
+
+  &--sticky-left,
+  &--sticky-right {
+    position: sticky;
+    z-index: @table-td-sticky-z-index;
+  }
+
+  &--expanded {
+    border-bottom: 0;
+  }
+
+  &__expand-icon {
+    width: @table-expand-icon-size;
+    height: @table-expand-icon-size;
+    transition-duration: @table-expand-duration;
+    transition-property: transform;
+    will-change: transform;
+    fill: @table-expand-icon-color;
+
+    &--expanded {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__expand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+.table-sticky-shadow() {
+  &--sticky-left-shadow {
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: @table-shadow-z-index;
+      width: @table-shadow-width;
+      background: @table-shadow-left-bg;
+      transform: translateX(100%);
+      content: "";
+      pointer-events: none;
+    }
+  }
+
+  &--sticky-right-shadow {
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: @table-shadow-z-index;
+      width: @table-shadow-width;
+      background: @table-shadow-right-bg;
+      transform: translateX(-100%);
+      content: "";
+      pointer-events: none;
+    }
+  }
+}
+
+.@{prefix}sort-icon {
+  fill: @table-sort-icon-default-color;
+  stroke: @table-sort-icon-default-color;
+
+  &--active {
+    fill: @table-sort-icon-active-color;
+    stroke: @table-sort-icon-active-color;
+  }
+}
+
+.@{prefix}empty-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: @empty-content-color;
+}
+
+.@{prefix}table-indicator {
+  display: flex;
+  flex-direction: row;
+
+  &__item {
+    flex: none;
+    width: @table-indicator-item-size; /* no */
+    height: @table-indicator-item-size; /* no */
+    margin-right: @table-indicator-margin;
+    background-color: @table-indicator-color;
+    border-radius: @table-indicator-border-radius;
+
+    &--active {
+      background-color: @table-indicator-active-color;
+    }
+  }
+}

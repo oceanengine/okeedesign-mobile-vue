@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo badge">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div style="padding-left: 0.8rem;"><span class="byted-icon byted-icon-badge" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38 22V40H8V10H26" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="38" cy="10" r="4" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></circle></svg></span></div>
+  <div>
+    <div class="byted-collapse">
+      <div class="byted-collapse-item">
+        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
+          <div class="byted-cell__title">
+            <div>
+              <div class="byted-badge"><span>标题</span><sup class="byted-badge__info">8</sup></div>
+            </div>
+          </div>
+          <div class="right-slot">
+            <div class="byted-badge"><sup class="byted-badge__info byted-badge__info--is-dot"></sup></div> <i class="byted-icon byted-icon--right" style="fill: #999; width: 18px; height: 18px;">test-file-stub</i>
+          </div>
+        </div>
+      </div>
+      <div class="byted-collapse-item byted-hairline--top">
+        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
+          <div class="byted-cell__title">
+            <div>
+              <div class="byted-badge"><span>标题</span><sup class="byted-badge__info">8</sup></div>
+            </div>
+          </div>
+          <div class="right-slot">
+            <div class="byted-badge"><sup class="byted-badge__info">2</sup></div> <i class="byted-icon byted-icon--right" style="fill: #999; width: 18px; height: 18px;">test-file-stub</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

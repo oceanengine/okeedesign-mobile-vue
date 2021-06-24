@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwipeCell drag and show left part 1`] = `
+<div class="byted-swipe-cell">
+  <div class="byted-swipe-cell__wrapper" style="transform: translate3d(0px, 0, 0); transition: .6s cubic-bezier(0.18, 0.89, 0.32, 1);">
+    <div class="byted-swipe-cell__left">Left</div>
+    <div class="byted-swipe-cell__right">Right</div>
+  </div>
+</div>
+`;
+
+exports[`SwipeCell drag and show left part 2`] = `
+<div class="byted-swipe-cell">
+  <div class="byted-swipe-cell__wrapper" style="transform: translate3d(0px, 0, 0); transition: .6s cubic-bezier(0.18, 0.89, 0.32, 1);">
+    <div class="byted-swipe-cell__left">Left</div>
+    <div class="byted-swipe-cell__right">Right</div>
+  </div>
+</div>
+`;
+
+exports[`SwipeCell drag and show left part 3`] = `
+<div class="byted-swipe-cell">
+  <div class="byted-swipe-cell__wrapper" style="transform: translate3d(0px, 0, 0); transition: .6s cubic-bezier(0.18, 0.89, 0.32, 1);">
+    <div class="byted-swipe-cell__left">Left</div>
+    <div class="byted-swipe-cell__right">Right</div>
+  </div>
+</div>
+`;
+
+exports[`SwipeCell drag and show left part 4`] = `
+<div class="byted-swipe-cell">
+  <div class="byted-swipe-cell__wrapper" style="transform: translate3d(0px, 0, 0); transition: .6s cubic-bezier(0.18, 0.89, 0.32, 1);">
+    <div class="byted-swipe-cell__left">Left</div>
+    <div class="byted-swipe-cell__right">Right</div>
+  </div>
+</div>
+`;
+
+exports[`SwipeCell drag and show right part 1`] = `
+<div class="byted-swipe-cell">
+  <div class="byted-swipe-cell__wrapper" style="transform: translate3d(0px, 0, 0); transition: .6s cubic-bezier(0.18, 0.89, 0.32, 1);">
+    <div class="byted-swipe-cell__left">Left</div>
+    <div class="byted-swipe-cell__right">Right</div>
+  </div>
+</div>
+`;
+
+exports[`SwipeCell render one side 1`] = `
+<div class="byted-swipe-cell">
+  <div class="byted-swipe-cell__wrapper" style="transform: translate3d(0px, 0, 0); transition: .6s cubic-bezier(0.18, 0.89, 0.32, 1);">
+    <div class="byted-swipe-cell__left">Left</div>
+  </div>
+</div>
+`;

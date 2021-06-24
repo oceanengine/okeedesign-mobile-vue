@@ -1,0 +1,50 @@
+@import '../../style/common';
+
+.@{prefix}swipe {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+
+  &__track {
+    height: 100%;
+  }
+
+  &__indicators {
+    position: absolute;
+    bottom: @swipe-indicators-bottom;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+
+    &--primary {
+      i {
+        width: 18px;
+        margin: 0;
+        background: @swipe-indicator-primary-background-color;
+      }
+
+      .@{prefix}swipe__indicator--active {
+        width: 24px;
+        background: @primary-color;
+      }
+    }
+  }
+
+  &__indicator {
+    display: inline-block;
+    width: @swipe-indicator-width;
+    height: @swipe-indicator-height;
+    margin-right: @swipe-indicator-gap;
+    background: #fff;
+    border-radius: @swipe-indicator-border-radius;
+    opacity: 0.3969;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}

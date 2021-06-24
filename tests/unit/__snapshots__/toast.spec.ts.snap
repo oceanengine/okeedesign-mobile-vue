@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast create a forbidClick toast 1`] = `<div class="byted-toast byted-toast--middle byted-fade-enter byted-fade-enter-active" style="z-index: 2000;"><i class="byted-toast__icon" style="fill: #ffffff; width: 1.5rem; height: 1.5rem;">test-file-stub</i></div>`;
+
+exports[`Toast show loading toast 1`] = `
+<div class="byted-toast byted-toast--middle byted-fade-enter byted-fade-enter-active" style="z-index: 2002;"><i class="byted-toast__icon byted-loading-circle" style="fill: #0278FF; width: 1.5rem; height: 1.5rem;">test-file-stub</i>
+  <div class="byted-toast__text">loading...</div>
+</div>
+`;

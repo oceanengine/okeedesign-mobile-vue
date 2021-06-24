@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo field">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-text-area" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 50V14C60 12.1144 60 11.1716 59.4142 10.5858C58.8284 10 57.8856 10 56 10H8C6.11438 10 5.17157 10 4.58579 10.5858C4 11.1716 4 12.1144 4 14V50C4 51.8856 4 52.8284 4.58579 53.4142C5.17157 54 6.11438 54 8 54H56C57.8856 54 58.8284 54 59.4142 53.4142C60 52.8284 60 51.8856 60 50Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 18H52" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 26H52" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 34H52" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 43H28" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M36 40H38H40" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M38 46V40" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M36 46H38H40" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+  <div>
+    <div class="byted-field byted-field--normal byted-field--border byted-field--input">
+      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    </div>
+  </div>
+  <div>
+    <div class="demo-field-content">
+      <div class="byted-field byted-field--normal byted-field--border byted-field--textarea">
+        <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea></div>
+      </div>
+    </div>
+  </div>
+  <div style="margin: 0px -0.8rem;">
+    <div class="byted-field byted-field--normal byted-field--input">
+      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    </div>
+    <div class="byted-field byted-field--normal byted-field--input byted-field--label--block">
+      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    </div>
+    <div class="byted-field byted-field--normal byted-field--maxlength byted-field--textarea byted-field--no-border">
+      <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea>
+        <div class="byted-field__word-limit">0/60</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="demo-field-content">
+      <div class="byted-field byted-field--normal byted-field--input byted-field--label--block">
+        <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+      </div>
+      <div class="byted-field byted-field--normal byted-field--input">
+        <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+      </div>
+      <div class="byted-field byted-field--normal byted-field--border byted-field--maxlength byted-field--textarea">
+        <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea>
+          <div class="byted-field__word-limit">0/10</div>
+        </div>
+      </div>
+      <div class="byted-field byted-field--normal byted-field--border byted-field--input" style="margin-bottom: 10px;">
+        <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-field byted-field--normal byted-field--border byted-field--input" style="margin-bottom: 10px;">
+      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    </div>
+    <div class="byted-field byted-field--normal byted-field--border byted-field--textarea">
+      <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea></div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-field byted-field--normal byted-field--maxlength byted-field--input">
+      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item">
+        <div class="byted-field__word-limit byted-field__item">0/11</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-field byted-field--normal byted-field--disabled byted-field--border byted-field--input">
+      <div class="byted-field__body"><input type="text" placeholder="请输入内容" disabled="disabled" class="byted-field__input byted-field__item"></div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-field byted-field--normal byted-field--border byted-field--input">
+      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-field byted-field--normal byted-field--border byted-field--input" style="margin-bottom: 10px;">
+      <div class="byted-field__body">
+        <div class="byted-field__label byted-field__item"><span class="byted-tag byted-tag--warning byted-tag--plain byted-hairline--surround">警告</span></div><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item">
+      </div>
+    </div>
+  </div>
+  <div class="dome-size">
+    <div class="dome-size-content"><span class="dome-size-content_title">尺寸</span>
+      <div class="dome-size-content_slider">
+        <div class="dome-slider">
+          <div class="dome-slider-container">
+            <div class="popover" style="display: none;"><span class="content">normal</span>
+              <div class="popover-arrow"></div>
+            </div>
+            <div class="dome-slider-button" style="left: 0px;"></div>
+            <div class="dome-slider-active" style="width: 0px;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 0px;"></div>
+            <div class="slider-stop" style="left: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dome-size-icon"><img src="test-file-stub" alt="" class="svg-icon-close" style="display: none;"> <img src="test-file-stub" alt="" class="svg-icon-transfer"></div>
+  </div>
+</div>
+`;

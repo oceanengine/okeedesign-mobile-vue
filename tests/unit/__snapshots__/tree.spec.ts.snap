@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tree flat value 1`] = `
+<div class="byted-tree">
+  <div class="byted-tree__node">
+    <div class="byted-tree__container"><i class="byted-tree__triangular"><svg class="byted-tree__triangular-icon" width="14" height="14" viewBox="0 0 14 14">
+          <path d="M5.54297 3.5L9.04297 7L5.54297 10.5L5.54297 3.5Z" stroke-width="1.16667" stroke-linejoin="round"></path>
+        </svg>
+      </i><span class="byted-tree__label">Breakfast</span><i class="byted-tree__check byted-tree__check--status-partial"><svg class="byted-tree__check-partially-icon" width="12" height="12" viewBox="0 0 12 12">
+          <path d="M1.5 6H10.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </i></div>
+    <div class="byted-tree__children">
+      <div class="byted-tree__node">
+        <div class="byted-tree__container"><span class="byted-tree__label">Breads</span><i class="byted-tree__check byted-tree__check--status-all"><svg class="byted-tree__check-icon" width="12" height="12" viewBox="0 0 12 12">
+              <path d="M2.50195 5.99988L5.00195 8.49988L10.002 3.49988" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+          </i></div>
+        <div class="byted-tree__children"></div>
+      </div>
+      <div class="byted-tree__node">
+        <div class="byted-tree__container"><span class="byted-tree__label">Milk</span><i class="byted-tree__check byted-tree__check--status-none"></i></div>
+        <div class="byted-tree__children"></div>
+      </div>
+    </div>
+  </div>
+  <div class="byted-tree__node">
+    <div class="byted-tree__container"><i class="byted-tree__triangular"><svg class="byted-tree__triangular-icon" width="14" height="14" viewBox="0 0 14 14">
+          <path d="M5.54297 3.5L9.04297 7L5.54297 10.5L5.54297 3.5Z" stroke-width="1.16667" stroke-linejoin="round"></path>
+        </svg>
+      </i><span class="byted-tree__label">Lunch</span><i class="byted-tree__check byted-tree__check--status-none"></i></div>
+    <div class="byted-tree__children">
+      <div class="byted-tree__node">
+        <div class="byted-tree__container"><i class="byted-tree__triangular"></i><span class="byted-tree__label">Sandwich</span><i class="byted-tree__check byted-tree__check--status-none"></i></div>
+        <div class="byted-tree__children"></div>
+      </div>
+      <div class="byted-tree__node">
+        <div class="byted-tree__container"><i class="byted-tree__triangular"><svg class="byted-tree__triangular-icon" width="14" height="14" viewBox="0 0 14 14">
+              <path d="M5.54297 3.5L9.04297 7L5.54297 10.5L5.54297 3.5Z" stroke-width="1.16667" stroke-linejoin="round"></path>
+            </svg>
+          </i><span class="byted-tree__label">fruit</span><i class="byted-tree__check byted-tree__check--status-none"></i></div>
+        <div class="byted-tree__children">
+          <div class="byted-tree__node">
+            <div class="byted-tree__container"><span class="byted-tree__label">Apple</span><i class="byted-tree__check byted-tree__check--status-none"></i></div>
+            <div class="byted-tree__children"></div>
+          </div>
+          <div class="byted-tree__node">
+            <div class="byted-tree__container"><span class="byted-tree__label">Banana</span><i class="byted-tree__check byted-tree__check--status-none"></i></div>
+            <div class="byted-tree__children"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,119 @@
+@import '../../style/common';
+
+.@{prefix}action-sheet {
+  max-height: @action-sheet-max-height;
+  color: @action-sheet-item-text-color;
+  border-radius: @action-sheet-border-radius @action-sheet-border-radius 0 0;
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: @action-sheet-item-height;
+    padding: @action-sheet-item-padding;
+    font-size: 0;
+    line-height: 23px;
+    background-color: @action-sheet-item-background;
+
+    &:active {
+      background-color: @background-color-active;
+    }
+
+    &::after {
+      // .hairline-top(@action-sheet-item-border-color);
+      right: calc(-50% + 32px);
+      left: calc(-50% + 32px);
+      width: auto;
+    }
+
+    &--disabled {
+      color: @action-sheet-item-disabled-text-color;
+
+      &:active {
+        background-color: @action-sheet-item-background;
+      }
+    }
+  }
+
+  &__item:first-child {
+    &::after {
+      display: none;
+    }
+  }
+
+  &__option-content {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: @action-sheet-item-height;
+
+    &--subname {
+      display: flex;
+      min-height: @action-sheet-item-height-with-subname;
+    }
+
+    &--left {
+      align-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  &__name {
+    font-size: @action-sheet-item-font-size;
+    line-height: @action-sheet-item-line-height;
+  }
+
+  &__subname {
+    display: block;
+    margin-top: @action-sheet-subname-gap;
+    color: @action-sheet-subname-color;
+    font-size: @action-sheet-subname-font-size;
+    line-height: @action-sheet-subname-line-height;
+  }
+
+  &__cancel {
+    &::before {
+      display: block;
+      height: 12px;
+      background-color: @action-sheet-cancel-padding-color;
+      content: ' ';
+    }
+
+    &__text {
+      padding: 12px 0;
+      font-size: @action-sheet-item-font-size;
+      line-height: 23px;
+      text-align: center;
+    }
+  }
+
+  &__header {
+    padding: 16px 0;
+    font-weight: 500;
+    font-size: @action-sheet-header-font-size;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  &__close {
+    position: absolute;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    padding: 2.5px 16px 0;
+    line-height: inherit;
+    fill: @action-sheet-close-icon-color;
+  }
+
+  &--safe-area-inset-bottom {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

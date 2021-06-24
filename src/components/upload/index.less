@@ -1,0 +1,27 @@
+@import '../../style/common';
+
+.@{prefix}upload {
+  display: inline-block;
+
+  ._file-input {
+    display: none;
+  }
+
+  &__upload-icon {
+    width: 20px;
+    height: 20px;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background: @background-color-base;
+      border-color: #e6e6e6;
+      border-style: dashed;
+      border-width: 1px; /* no */
+      border-radius: @border-radius-2;
+    }
+  }
+}

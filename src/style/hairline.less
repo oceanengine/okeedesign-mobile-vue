@@ -1,0 +1,36 @@
+@import './common';
+@import './mixins/hairline';
+
+[class*='@{prefix}hairline'] {
+  position: relative;
+
+  &::after {
+    .hairline();
+  }
+}
+
+.@{prefix}hairline {
+  &--top::after {
+    border-top-width: 1px; /* no */
+  }
+
+  &--left::after {
+    border-left-width: 1px; /* no */
+  }
+
+  &--right::after {
+    border-right-width: 1px; /* no */
+  }
+
+  &--bottom::after {
+    border-bottom-width: 1px; /* no */
+  }
+
+  &--top-bottom::after {
+    border-width: 1px 0; /* no */
+  }
+
+  &--surround::after {
+    border-width: 1px; /* no */
+  }
+}

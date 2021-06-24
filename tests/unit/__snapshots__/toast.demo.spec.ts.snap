@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo toast">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-info" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12H42H60V28H42H4V12Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 20L14 22L18 18" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 36H42H60V52H42H4V36Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 42L14 44M14 44L16 42M14 44L12 46M14 44L16 46" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 44L52 44" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 20H52" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+    </div>
+  </div>
+</div>
+`;

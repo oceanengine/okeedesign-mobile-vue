@@ -1,0 +1,171 @@
+# Radio 单选框
+
+### 安装
+
+:::card
+
+```javascript
+import { Radio, RadioGroup } from '@okee-uikit/m-vue';
+
+Vue.use(Radio).use(RadioGroup);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```desc
+通过`v-model`绑定值当前选中项的 value
+```
+
+```html
+<byted-radio-group v-model="radio">
+  <byted-radio value="1">单选框 1</byted-radio>
+  <byted-radio value="2">单选框 2</byted-radio>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+禁用状态
+```
+
+```desc
+通过`disabled`属性禁止选项切换，在`byted-radio`上设置`disabled`可以禁用单个选项
+```
+
+```html
+<byted-radio-group v-model="radio" disabled>
+  <byted-radio value="1">单选框 1</byted-radio>
+  <byted-radio value="2">单选框 2</byted-radio>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+自定义大小
+```
+
+```desc
+通过`size`设置当前选中项的 尺寸大小, 也可以直接在`byted-radio-group`中设置 尺寸大小
+```
+
+```html
+<byted-radio-group v-model="radio" type="dot">
+  <byted-radio value="1" size="small">单选框 1</byted-radio>
+  <byted-radio value="2">单选框 2</byted-radio>
+  <byted-radio value="3" size="large">单选框 3</byted-radio>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+
+
+:::card
+
+```topic
+搭配单元格组件
+```
+
+```html
+<byted-radio-group :value="radio">
+  <byted-cell-group>
+    <byted-cell title="标题1" @click="radio = '1'">
+      <template #right-icon>
+        <byted-radio value="1" />
+      </template>
+    </byted-cell>
+    <byted-cell title="标题2" @click="radio = '2'">
+      <template #right-icon>
+        <byted-radio value="2" />
+      </template>
+    </byted-cell>
+  </byted-cell-group>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+### API
+
+##### Radio Props
+
+| 参数            | 说明                                    | 类型      | 默认值    |
+| --------------- | --------------------------------------- | --------- | --------- | -------- | ------- |
+| disabled        | 是否为禁用状态                          | `boolean` | `false`   |
+| label-position  | 文本位置，可选值为 `left`               | `string`  | `right`   |
+| size            | 设置型号大小，默认为`normal`            | `string`  | `small`   | `normal` | `large` |
+| type            | 类型，可选值为 `default`、`dot`、`hook` | `string`  | `default` |
+| stopPropagation | 阻止事件冒泡， 默认为`false`            | `boolean` | `false`   |
+
+##### RadioGroup Props
+
+| 参数     | 说明                                              | 类型                 | 默认值    |
+| -------- | ------------------------------------------------- | -------------------- | --------- | -------- | ------- |
+| value    | 当前选中项的值                                    | `string` or `number` | -         |
+| disabled | 是否禁用所有单选框                                | `boolean`            | `false`   |
+| size     | 设置型号大小，默认为`normal`                      | `string`             | `small`   | `normal` | `large` |
+| type     | 类型，可选值为 `default`、`dot`、`hook`、`circle` | `string`             | `default` |
+
+
+##### RadioGroup Events
+
+| 事件名     | 说明                     | 回调参数           |
+| ---------- | ------------------------ | ------------------ |
+| change     | 当绑定值变化时触发的事件 | 当前选中项的 value |
+| input      | 单选异步事件             | 要选中项的 value   |
+| click      | 点击时触发               | event              |
+| touchstart | 点击时触发               | event              |

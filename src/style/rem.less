@@ -1,0 +1,32 @@
+//
+// Rem
+// --------------------------------------------------
+// Vertical screen
+// 375屏幕为 20px，以此为基础计算出每一种宽度的字体大小
+
+@useDefaultFontSize: true;
+
+@baseWidth: 375px; /* no */
+@baseFont: 20px; /* no */
+@bps: 320px, 360px, 375px, 400px, 414px, 440px, 480px, 520px, 560px, 600px, 640px, 680px, 720px,
+  760px, 800px, 960px; /* no */
+
+.setFontSize () when (@useDefaultFontSize = true) {
+  html {
+    font-size: @baseFont; /* no */
+  }
+  .loop(@i: 1) when (@i <= length(@bps)) {
+    @bp: extract(@bps, @i);
+    @font: @bp / @baseWidth * @baseFont;
+
+    @media only screen and (min-width: @bp) {
+      html {
+        font-size: @font !important; /* no */
+      }
+    }
+    .loop((@i + 1));
+  }
+  .loop;
+}
+
+.setFontSize();

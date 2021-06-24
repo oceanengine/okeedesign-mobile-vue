@@ -1,0 +1,257 @@
+# ImagePreview 图片预览
+
+### 安装
+
+:::card
+
+```javascript
+import { ImagePreview } from '@okee-uikit/m-vue';
+
+Vue.use(ImagePreview);
+```
+
+:::
+
+### 代码演示
+
+##### 通过扩展方法调用
+
+:::card
+
+```topic
+静态方法
+```
+
+```desc
+Vue.$imagePreview(options)
+```
+
+```javascript
+const images = ['image-a.png', 'image-b.png', 'image-c.png'];
+const imagePreview = Vue.$imagePreview({ images });
+```
+
+:::
+
+:::card
+
+```topic
+组件实例方法
+```
+
+```desc
+Vue.prototype.$imagePreview(options)
+```
+
+```javascript
+const images = ['image-a.png', 'image-b.png', 'image-c.png'];
+const imagePreview = this.$imagePreview({ images });
+```
+
+:::
+
+:::card
+
+```topic
+关闭
+```
+
+```javascript
+imagePreview.close();
+```
+
+:::
+
+:::card
+
+```topic
+更多选项
+```
+
+```javascript
+const images = ['image-a.png', 'image-b.png', 'image-c.png'];
+const imagePreview = Vue.$imagePreview({
+  images,
+  startIndex: 3,
+  showCloseButton: true,
+  showIndicators: true,
+});
+```
+
+:::
+
+### 作用域插槽
+
+:::card
+
+```topic
+详细说明
+```
+
+```desc
+`close`: 自定义关闭按钮，参数：
+
+- `onClose`: `Function`, 调用此函数关闭 ImagePreview
+- `position`: `ImagePreviewCloseButtonPosition`, 关闭按钮的位置，值来自属性 `closeButtonPosition`
+
+`indicators`: 自定义图片滑动指示器，参数：
+
+- `active`: `number`，激活的图片的索引数字。
+```
+
+```javascript
+const images = ['image-a.png', 'image-b.png', 'image-c.png'];
+const instance = Vue.$imagePreview({
+  images,
+  close: ({ onClose, position }) => (
+    <button staticClass="my-close-button" class={`my-close-button--${position}`} onClick={onClose}>
+      <i class="my-close-icon" />
+    </button>
+  ),
+  indicators: ({ active }) => (
+    <div staticClass="my-indicators">
+      {images.map((image, index) => (
+        <i staticClass="my-indicator-item" class={index === active ? 'is-active' : undefined} />
+      ))}
+    </div>
+  ),
+});
+```
+
+:::
+
+:::card
+
+```topic
+组件调用
+```
+
+```html
+<template>
+  <div>
+    <byted-button @click="show = !show"> show </byted-button>
+    <byted-image-preview v-model="show" :images="images" />
+  </div>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+        show: false,
+        images: ['image-a.png', 'image-b.png', 'image-c.png'],
+      };
+    },
+  };
+</script>
+```
+
+:::
+
+### API
+
+:::card
+
+```topic
+Props
+```
+
+```javascript
+export type ImagePreviewCloseButtonPosition =
+  | 'top-left'
+  | 'top-right'
+  | 'bottom-left'
+  | 'bottom-right';
+```
+
+:::
+
+| Name                | Type                            | Default Value | Description                        |
+| :------------------ | :------------------------------ | :------------ | :--------------------------------- |
+| images              | `string[]`                      |               | 图片 URL 的字符串数组。            |
+| startIndex          | `number`                        | `0`           | 第一次显示时图片的索引数字。       |
+| swipeDuration       | `number`                        | `200`         | 切换动效持续时间（毫秒）。         |
+| loop                | `boolean`                       | `true`        | 是否对开启切换循环。               |
+| maxZoom             | `number`                        | `3`           | 最大缩放比例。                     |
+| minZoom             | `number`                        | `1`           | 最小缩放比例                       |
+| closeOnPopstate     | `boolean`                       | `false`       | 在后退时关闭（history popstate）。 |
+| showCloseButton     | `boolean`                       | `false`       | 是否显示关闭按钮。                 |
+| closeButtonPosition | ImagePreviewCloseButtonPosition | `'top-right'` | 关闭按钮的位置。                   |
+| showIndicators      |                                 | `true`        | 是否显示图片指示器。               |
+
+:::card
+
+```topic
+Events
+```
+
+```javascript
+export interface ImagePreviewEvents {
+  onChange?(activeIndex: number): void;
+  onOpen?(event?: Event): void;
+  onOpened?(event?: Event): void;
+  onClose?(event?: Event): void;
+  onClosed?(event?: Event): void;
+}
+```
+
+:::
+
+| Name   | Callback Type             | Description                                 |
+| :----- | :------------------------ | :------------------------------------------ |
+| change | `(val: number) => void`   | 滑动图片时触发，`val`为激活的图片索引数字。 |
+| open   | `(event?: Event) => void` | 打开时触发                                  |
+| opened | `(event?: Event) => void` | 完整打开后触发                              |
+| close  | `(event?: Event) => void` | 关闭时触发                                  |
+| closed | `(event?: Event) => void` | 完全关闭后触发                              |
+
+
+:::card
+
+```topic
+Slots
+```
+
+```javascript
+export interface ImagePreviewScopedSlots {
+  close?: (props: {
+    onClose: Function,
+    position: ImagePreviewCloseButtonPosition,
+  }) => ScopedSlotReturnValue;
+  indicators?: (props: { active: number }) => ScopedSlotReturnValue;
+}
+```
+
+:::
+
+:::card
+
+```topic
+Vue extension
+```
+
+```javascript
+declare module 'vue/types/vue' {
+  interface Vue {
+    $imagePreview(options: InvokeImagePreviewOptions): ImagePreviewInstance | undefined;
+  }
+  interface VueConstructor<V extends Vue = Vue> {
+    $imagePreview(options: InvokeImagePreviewOptions): ImagePreviewInstance | undefined;
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+Options
+```
+
+```javascript
+export type InvokeImagePreviewOptions = ImagePreviewProps &
+  ImagePreviewEvents &
+  ImagePreviewScopedSlots;
+```
+
+:::

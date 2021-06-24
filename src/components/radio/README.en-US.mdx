@@ -1,0 +1,157 @@
+# Radio
+
+### Install
+
+:::card
+
+```javascript
+import { Radio, RadioGroup } from '@okee-uikit/m-vue';
+
+Vue.use(Radio).use(RadioGroup);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-radio-group v-model="radio">
+  <byted-radio value="1">radio 1</byted-radio>
+  <byted-radio value="2">radio 2</byted-radio>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Disabled
+```
+
+```html
+<byted-radio-group v-model="radio" disabled>
+  <byted-radio value="1">radio 1</byted-radio>
+  <byted-radio value="2">radio 2</byted-radio>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Customize Scale
+```
+
+```html
+<byted-radio-group v-model="radio" type="dot">
+  <byted-radio value="1" size="small">radio 1</byted-radio>
+  <byted-radio value="2">radio 2</byted-radio>
+  <byted-radio value="3" size="large">radio 3</byted-radio>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Pair With Cells
+```
+
+```html
+<byted-radio-group :value="radio">
+  <byted-cell-group>
+    <byted-cell title="title1" @click="radio = '1'">
+      <template #right-icon>
+        <byted-radio value="1" />
+      </template>
+    </byted-cell>
+    <byted-cell title="title2" @click="radio = '2'">
+      <template #right-icon>
+        <byted-radio value="2" />
+      </template>
+    </byted-cell>
+  </byted-cell-group>
+</byted-radio-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      radio: '1',
+    };
+  },
+};
+```
+
+:::
+
+### API
+
+##### Radio Props
+
+| Attribute       | Description                    | Type      | Default  |
+| --------------- | ------------------------------ | --------- | -------- | --------- | ------- |
+| disabled        | Disabled                       | `boolean` | `false`  |
+| label-position  | Can be set to `left`           | `string`  | `right`  |
+| size            | Size                           | `string`  | `small`  | `normal`  | `large` |
+| type            | Type: `default`、`dot`、`hook` |           | `string` | `default` |
+| stopPropagation | stopPropagation                | `boolean` | `false`  |
+
+##### RadioGroup Props
+
+| Attribute | Description                              | Type                 | Default  |
+| --------- | ---------------------------------------- | -------------------- | -------- | --------- | ------- |
+| value     | Name of checked radio                    | `string` or `number` | -        |
+| disabled  | Diable all radios                        | `boolean`            | `false`  |
+| size      | Size                                     | `string`             | `small`  | `normal`  | `large` |
+| type      | Type: `default`、`dot`、`hook`、`circle` |                      | `string` | `default` |
+
+
+##### RadioGroup Events
+
+| Event      | Description                  | Parameters    |
+| ---------- | ---------------------------- | ------------- |
+| change     | Triggered when value changed | current value |
+| input      | when you use async           | value         |
+| click      | click                        | event         |
+| touchstart | touchstart                   | event         |

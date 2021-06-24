@@ -1,0 +1,60 @@
+# Upload 文件上传
+
+### 安装
+
+:::card
+
+```javascript
+import { upload } from '@okee-uikit/m-vue';
+
+Vue.use(upload);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基本类型
+```
+
+```html
+<byted-upload
+  :action="URL"
+  :before-upload="beforeUpload"
+  :on-success="onSuccess"
+  :on-error="onError"
+  accept="image/png,image/jpeg,image/jpg"
+/>
+```
+
+:::
+
+### API
+
+##### Props
+
+| 属性              | 说明                           | 类型      | 默认值     |
+| ----------------- | ------------------------------ | --------- | ---------- |
+| action            | 上传文件接口链接               | `string`  | ''         |
+| name              | 上传的文件字段名               | `string`  | 'Filedata' |
+| data              | 额外参数                       | `object`  | {}         |
+| headers           | 上传 http 请求 header 字段     | `object`  | {}         |
+| accept            | 支持文件类型                   | `string`  | ''         |
+| disabled          | 禁止上传                       | `Boolean` | false      |
+| multiple          | 多选，在部分 android 机下失效  | `Boolean` | false      |
+| maxSize           | 文件上传大小限制，单位为 byte  | `Number`  | false      |
+| exceedMaxSizeText | 文件超大后的 toast 提醒文案    | `String`  | false      |
+| maxCount          | 多文件上传时，文件上传个数限制 | `Number`  | 10         |
+| withCredentials   | 是否携带 cookie 信息           | `Boolean` | false      |
+| capture           | 同input元素的capture           | `String` | null      |
+
+##### Events
+
+| 事件         | 说明                                             | 回调参数                     |
+| ------------ | ------------------------------------------------ | ---------------------------- |
+| beforeUpload | 选择文件后，上传之前（返回 false，终止上传操作） | file:文件信息                |
+| onSuccess    | 上传请求成功回调                                 | res:成功返回，file:文件信息  |
+| onError      | 上传请求失败回调                                 | err: 错误对象，file:文件信息 |

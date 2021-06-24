@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "target": "esnext",
+    "module": "esnext",
+    "allowJs": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "paths": {
+      "@src": ["src/"]
+    }
+  },
+  "include": ["docs/**/*", "src/**/*", "types/**/*", "tests/**/*"],
+  "exclude": ["node_modules"]
+}

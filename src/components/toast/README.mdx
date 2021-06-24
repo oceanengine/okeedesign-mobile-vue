@@ -1,0 +1,91 @@
+# Toast 轻提示
+
+### 代码演示
+
+:::card
+
+```topic
+提示文字
+```
+
+```javascript
+vue.$toast('Some messages');
+```
+
+:::
+
+:::card
+
+```topic
+成功/失败/警告/加载
+```
+
+```javascript
+vue.$toast({
+  message: 'success',
+  type: 'success',
+});
+```
+
+:::
+
+:::card
+
+```topic
+设置时间
+```
+
+```javascript
+Vue.$toast({
+  message: 'OKee Design',
+  duration: 1000,
+});
+```
+
+:::
+
+:::card
+
+```topic
+禁止背景点击
+```
+
+```javascript
+Vue.$toast({
+  message: '此时点击页面其他按钮无效',
+  forbidClick: true,
+});
+```
+
+:::
+
+:::card
+
+```topic
+按需引入设置内置函数名称
+```
+
+```javascript
+import { Toast } from '@okee-uikit/m-vue';
+
+Vue.use(Toast, {
+  funcName: 'tell',
+});
+
+Vue.$tell('some message');
+```
+
+:::
+
+### API
+
+##### Options
+
+| Attribute   | Description                                       | Type       | Default |
+| ----------- | ------------------------------------------------- | ---------- | ------- |
+| type        | Can be set to `success` `error` `warning`         | `string`   | `text`  |
+| message     | Message                                           | `string`   | `''`    |
+| forbidClick | Whether to forbid click background                | `boolean`  | `false` |
+| duration    | Toast duration(ms), won't disappear if value is 0 | `number`   | `3000`  |
+| onOpened    | Callback function after opened                    | `Function` | -       |
+| onClose     | Callback function after close                     | `Function` | -       |

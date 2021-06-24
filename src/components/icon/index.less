@@ -1,0 +1,31 @@
+@import '../../style/common';
+
+.@{prefix}icon {
+  display: inline-block;
+  font-size: 0;
+  &--square-uncheck {
+    box-sizing: border-box;
+    border: 1px solid @gray-3;
+    border-radius: @icon-border-radius;
+  }
+  &--square-check-one {
+    color: @white;
+    background-color: @icon-background-color;
+    border-radius: @icon-border-radius;
+    fill: currentColor;
+    stroke: currentColor;
+  }
+  &--radio-uncheck {
+    box-sizing: border-box;
+    border: 1px solid @gray-3;
+    border-radius: 50%;
+  }
+  &--check-one {
+    color: @white;
+    background-color: @icon-background-color;
+    border-radius: 50%;
+    fill: currentColor;
+    stroke: currentColor;
+  }
+  
+}

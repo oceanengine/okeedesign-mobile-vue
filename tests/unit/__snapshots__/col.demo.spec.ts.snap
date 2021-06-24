@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo col">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-layout" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 54V10C60 8.11438 60 7.17157 59.4142 6.58579C58.8284 6 57.8856 6 56 6H8C6.11438 6 5.17157 6 4.58579 6.58579C4 7.17157 4 8.11438 4 10V54C4 55.8856 4 56.8284 4.58579 57.4142C5.17157 58 6.11438 58 8 58H56C57.8856 58 58.8284 58 59.4142 57.4142C60 56.8284 60 55.8856 60 54Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 48V16" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><line x1="6" y1="16" x2="58" y2="16" stroke="#333" stroke-width="4" stroke-linecap="round"></line><line x1="6" y1="48" x2="58" y2="48" stroke="#333" stroke-width="4" stroke-linecap="round"></line></svg></span></div>
+  <div>
+    <div class="byted-row">
+      <div class="byted-col byted-col--8"> span:8 </div>
+      <div class="byted-col byted-col--8"> span:8 </div>
+      <div class="byted-col byted-col--8"> span:8 </div>
+    </div>
+    <div class="byted-row">
+      <div class="byted-col byted-col--4"> span:4 </div>
+      <div class="byted-col byted-col--16 byted-col--offset-4"> span:10 offset: 4 </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-row" style="margin-left: -6px; margin-right: -6px;">
+      <div class="byted-col byted-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
+      <div class="byted-col byted-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
+      <div class="byted-col byted-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-row byted-row--flex">
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+    </div>
+    <div class="byted-row byted-row--flex byted-row--justify-center">
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+    </div>
+    <div class="byted-row byted-row--flex byted-row--justify-end">
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+    </div>
+    <div class="byted-row byted-row--flex byted-row--justify-space-between">
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+    </div>
+    <div class="byted-row byted-row--flex byted-row--justify-space-around">
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+      <div class="byted-col byted-col--6"> span:6 </div>
+    </div>
+  </div>
+</div>
+`;

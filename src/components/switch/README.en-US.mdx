@@ -1,0 +1,190 @@
+# switch
+
+### Install
+
+:::card
+
+```javascript
+import { Switch } from '@okee-uikit/m-vue';
+
+Vue.use(Switch);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-switch v-model="valueBase" @change="change" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueBase: false,
+    };
+  },
+  methods: {
+    change(value) {
+      alert(`new value ${value}`);
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Disabled
+```
+
+```html
+<byted-switch v-model="valueBase" disabled /> <byted-switch v-model="valueDiasbledTrue" disabled />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueBase: false,
+      valueDiasbledTrue: true,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Loading
+```
+
+```html
+<byted-switch v-model="valueLoading" :loading="true"/>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueLoading: true,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Customize Size
+```
+
+```html
+<byted-switch v-model="valueScale"  size="large"/>
+<byted-switch v-model="valueScale"  size="small"/>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueScale: true,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Asynchronous
+```
+
+```html
+<byted-switch :value="valueControlled" :loading="isLoading" @input="changeValue" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueControlled: true,
+      isLoading: false,
+    };
+  },
+  methods: {
+    changeValue(value) {
+      this.isLoading = true;
+        this.isLoading = false;
+        this.$confirm('Whether to switch', {
+          title: 'Title',
+          cancelButtonText: 'Cancel',
+          confirmButtonText: 'Confirm',
+        })
+        .then(() => {
+          this.valueControlled = !this.valueControlled;
+        })
+        .catch(() => {
+        });
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Combined With Cell
+```
+
+```html
+<byted-cell :title="Title">
+  <byted-switch v-model="valueCell"/>
+</byted-cell>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      valueCell: true,
+    };
+  },
+};
+```
+
+:::
+
+
+### API
+
+##### Props
+
+| Attribute | Description               | Type      | Default  |
+| --------- | ------------------------- | --------- | -------- |
+| v-model   | Check status of Switch    | `any`     | `false`  |
+| disabled  | Whether to disable switch | `boolean` | `false`  |
+| size      | Can be set to `large`     | `string`  | `normal` |
+
+##### Events
+
+| Event  | Description                         | Parameters                 |
+| ------ | ----------------------------------- | -------------------------- |
+| change | Triggered when check status changed | checked: is switch checked |

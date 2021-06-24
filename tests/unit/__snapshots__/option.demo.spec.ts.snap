@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo checker">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <div class="byted-checker">
+      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="checkbox" name="" value="0">
+            <div class="byted-checker-item__label">0</div><i class="byted-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="checkbox" name="" value="1">
+            <div class="byted-checker-item__label">1</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="checkbox" name="" value="2"> 2 <i class="byted-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i></label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-checker">
+      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="radio" name="" value="0">
+            <div class="byted-checker-item__label">0</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="1">
+            <div class="byted-checker-item__label">1</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="2">
+            <div class="byted-checker-item__label">2</div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-checker">
+      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="radio" name="" value="0">
+            <div class="byted-checker-item__label">0</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="1">
+            <div class="byted-checker-item__label">1</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="2">
+            <div class="byted-checker-item__label">2</div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-checker">
+      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round byted-checker-item--active"><input type="checkbox" name="" value="0">
+            <div class="byted-checker-item__label">0</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round"><input type="checkbox" name="" value="1">
+            <div class="byted-checker-item__label">1</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round byted-checker-item--active"><input type="checkbox" name="" value="2">
+            <div class="byted-checker-item__label">2</div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-checker">
+      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--round byted-checker-item--active byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="0">
+            <div class="byted-checker-item__label">0</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--round byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="1">
+            <div class="byted-checker-item__label">1</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--round byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="2">
+            <div class="byted-checker-item__label">2</div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-checker">
+      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round byted-checker-item--active"><input type="radio" name="" value="0">
+            <div class="byted-checker-item__label">large</div>
+            <div class="byted-checker-item__badge byted-badge"><sup class="byted-badge__info">ok</sup></div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round"><input type="radio" name="" value="1">
+            <div class="byted-checker-item__label">small</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round"><input type="radio" name="" value="2">
+            <div class="byted-checker-item__label">mini</div>
+            <div class="byted-checker-item__badge byted-badge"><sup class="byted-badge__info">3</sup></div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-checker">
+      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--round byted-checker-item--active byted-checker-item--disabled byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="0">
+            <div class="byted-checker-item__label">0</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--round byted-checker-item--disabled byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="1">
+            <div class="byted-checker-item__label">1</div>
+          </label></div>
+        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--round byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="2">
+            <div class="byted-checker-item__label">2</div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div class="dome-size">
+    <div class="dome-size-content"><span class="dome-size-content_title">尺寸</span>
+      <div class="dome-size-content_slider">
+        <div class="dome-slider">
+          <div class="dome-slider-container">
+            <div class="popover" style="display: none;"><span class="content">normal</span>
+              <div class="popover-arrow"></div>
+            </div>
+            <div class="dome-slider-button" style="left: 100%;"></div>
+            <div class="dome-slider-active" style="width: 100%;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 0px;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dome-size-icon"><img src="test-file-stub" alt="" class="svg-icon-close" style="display: none;"> <img src="test-file-stub" alt="" class="svg-icon-transfer"></div>
+  </div>
+</div>
+`;

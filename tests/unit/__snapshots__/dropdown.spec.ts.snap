@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dropdown click option 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">B</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">B</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2011;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0.2s; display: none;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>A</span></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>B</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown close-on-click-outside 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(2, 120, 255);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <div class="byted-overlay byted-fade-enter byted-fade-enter-active" style="z-index: 2004; position: absolute; transition-duration: 0.2s;"></div>
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2005;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0.2s;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown destroy one item 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown didn\`t find matched option 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown direction up 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--up" style="z-index: 10; height: calc(100vh - 0px); transform: translate3d(0, -100%, 0); display: none;">
+    <!---->
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--up" style="z-index: 10; height: calc(100vh - 0px); transform: translate3d(0, -100%, 0); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown direction up 2`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(2, 120, 255);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--up" style="z-index: 10; height: calc(100vh - 768px); transform: translate3d(0, -100%, 0);">
+    <div class="byted-overlay byted-fade-enter-active byted-fade-enter-to" style="z-index: 2008; position: absolute; transition-duration: 0.2s;"></div>
+    <transition-stub name="byted-popup-slide-bottom" class="byted-dropdown-item__content" style="z-index: 2009;">
+      <div class="byted-popup byted-popup--bottom" style="transition-duration: 0.2s;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--up" style="z-index: 10; height: calc(100vh - 768px); transform: translate3d(0, -100%, 0); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown disable close-on-click-outside 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(2, 120, 255);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <div class="byted-overlay byted-fade-enter-active" style="z-index: 2006; position: absolute; transition-duration: 0.2s;"></div>
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2007;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0.2s;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown disable dropdown item 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item byted-dropdown__item--disabled"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown show dropdown item 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(2, 120, 255);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <div class="byted-overlay byted-fade-enter byted-fade-enter-active" style="z-index: 2000; position: absolute; transition-duration: 0.2s;"></div>
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2001;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0.2s;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown show dropdown item 2`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(2, 120, 255);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2001;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0s; display: none;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <div class="byted-overlay byted-fade-enter byted-fade-enter-active" style="z-index: 2002; position: absolute; transition-duration: 0.2s;"></div>
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2003;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0.2s;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+</div>
+`;
+
+exports[`dropdown show dropdown item 3`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">A</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2001;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0s; display: none;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px);">
+    <div class="byted-overlay byted-fade-leave byted-fade-leave-active" style="z-index: 2002; position: absolute; transition-duration: 0.2s;"></div>
+    <transition-stub name="byted-popup-slide-top" class="byted-dropdown-item__content" style="z-index: 2003;">
+      <div class="byted-popup byted-popup--top" style="transition-duration: 0.2s; display: none;">
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(2, 120, 255);">
+          <div class="byted-cell__title"><span>A</span></div>
+          <div class="byted-cell__value"><i class="byted-icon byted-icon--check byted-dropdown-item__icon" style="fill: #0278FF; width: 0.8rem; height: 0.8rem;">test-file-stub</i></div>
+        </div>
+        <div class="byted-cell byted-cell--clickable byted-cell--large" style="color: rgb(51, 51, 51);">
+          <div class="byted-cell__title"><span>B</span></div>
+        </div>
+      </div>
+    </transition-stub>
+  </div>
+</div>
+`;
+
+exports[`dropdown title prop 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">Title</div></span></div>
+  <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis">Title</div></span></div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+  <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`dropdown title slot 1`] = `
+<div class="byted-dropdown byted-hairline--top-bottom">
+  <van-dropdown-item></van-dropdown-item>
+</div>
+`;

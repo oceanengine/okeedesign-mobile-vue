@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo checker">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <div class="byted-header byted-header--default byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title">OKee Design</div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-header byted-header--default byted-hairline--bottom">
+      <div class="byted-header__title">OKee Design</div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-header byted-header--default byted-hairline--bottom">
+      <div class="byted-header__left">
+        <div class="byted-button byted-button--text byted-button--normal">取消</div>
+      </div>
+      <div class="byted-header__title">OKee Design</div>
+      <div class="byted-header__right">
+        <div class="byted-button byted-button--text byted-button--normal">确定</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-header byted-header--primary">
+      <div class="byted-header__left"><i class="byted-header__icon" style="fill: #ffffff; width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title">OKee Design</div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-header byted-header--default byted-hairline--bottom" style="margin-bottom: 20px;">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title">
+        <div class="byted-header-tabs byted-header-tabs--default">
+          <div class="byted-header-tabs__box">
+            <div class="byted-header-tab byted-header-tab--default byted-header-tab--active">
+              <div class="byted-header-tab__box">字节跳动</div>
+            </div>
+            <div class="byted-header-tab byted-header-tab--default">
+              <div class="byted-header-tab__box"> 巨量引擎 </div>
+            </div>
+          </div>
+          <div class="byted-header-tabs__line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="byted-header byted-header--primary">
+      <div class="byted-header__left"><i class="byted-header__icon" style="fill: #ffffff; width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title">
+        <div class="byted-header-tabs byted-header-tabs--primary">
+          <div class="byted-header-tabs__box">
+            <div class="byted-header-tab byted-header-tab--primary byted-header-tab--active">
+              <div class="byted-header-tab__box">字节跳动</div>
+            </div>
+            <div class="byted-header-tab byted-header-tab--primary">
+              <div class="byted-header-tab__box"> 巨量引擎 </div>
+            </div>
+          </div>
+          <div class="byted-header-tabs__line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo-cell"></div>
+</div>
+`;

@@ -1,0 +1,293 @@
+# Calendar
+
+### Install
+
+:::card
+
+```javascript
+import { Calendar } from '@okee-uikit/m-vue';
+
+Vue.use(Calendar);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```desc
+Binds selected values via `v-model`, the type is array of `Date`.
+```
+
+```html
+<byted-button @click="showBasic = true">
+</byted-button>
+<byted-popup v-model="showBasic" position="bottom">
+  <byted-calendar v-model="valueRange" mode="range" @select="showBasic = false" />
+</byted-popup>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      showBasic: false,
+      valueRange: [],
+
+      min: new Date(today.getFullYear(), today.getMonth(), today.getDate()),
+      max: new Date(today.getFullYear(), today.getMonth(), today.getDate() + 6),
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Require to click confirm
+```
+
+```desc
+Add property `require-confirm`, the event `change` will emit after clicks the "confirm" button.
+```
+
+```html
+<byted-button @click="showRange = true">
+</byted-button>
+<byted-popup v-model="showRange" position="bottom">
+  <byted-calendar
+    v-model="valueRange"
+    mode="range"
+    require-confirm
+    @cancel="showRange = false"
+    @confirm="showRange = false"
+  />
+</byted-popup>
+```
+
+:::
+
+:::card
+
+```topic
+Multiple Selection
+```
+
+```desc
+Set`mode` attribute to switch between single selection and multiple selections.
+```
+
+```html
+<byted-button @click="showMulti = true">
+</byted-button>
+<byted-popup v-model="showMulti" position="bottom">
+  <byted-calendar
+    v-model="valueRange"
+    mode="multi"
+    @cancel="showMulti = false"
+    @confirm="showMulti = false"
+  />
+</byted-popup>
+```
+
+:::
+
+:::card
+
+```topic
+The start and end time in range mode
+```
+
+```desc
+In range mode, add property `range-use-start-end`, the start time will be `00h00m00s000ms`, the end time will be `23h59m59s999ms`
+```
+
+```html
+<template>
+  <byted-button @click="showRange = true">
+    {{ valueRange.map(v => v.toLocaleDateString()).join(' - ') || t('noSelected') }}
+  </byted-button>
+  <byted-popup v-model="showRange" position="bottom">
+    <byted-calendar
+      v-model="valueRange"
+      mode="range"
+      range-use-start-end
+      @select="showRange = false"
+    />
+  </byted-popup>
+</template>
+```
+
+:::
+
+:::card
+
+```topic
+Scoped Slots
+```
+
+```desc
+The calendar component provides 3 scoped slots: `headerLeft`, `headerRight`, `bottomFloat`.
+```
+
+Use in Vue template:
+
+```html
+<byted-button @click="showScopedSlots = true">
+  {{ valueRange.map(v => v.toLocaleDateString()).join(' - ') || t('noSelected') }}
+</byted-button>
+<byted-popup v-model="showScopedSlots" position="bottom">
+  <byted-calendar
+    v-model="valueRange"
+    mode="range"
+    :min="min"
+    :max="max"
+    require-confirm
+    @cancel="showScopedSlots = false"
+    @confirm="showScopedSlots = false"
+  >
+    <template v-slot:headerRight="slotProps">
+      <button class="demo-calendar-slot-button" @click="slotProps.setSelected([])">Clear</button>
+    </template>
+    <template v-slot:bottomFloat="slotProps">
+      <div class="demo-calendar-slot-bottom">
+        <byted-row>
+          <byted-col span="16">
+            <div>
+              Start: {{ slotProps.selected[0] && slotProps.selected[0].toLocaleDateString() }}
+            </div>
+            <div>
+              End: {{ slotProps.selected[1] && slotProps.selected[1].toLocaleDateString() }}
+            </div>
+          </byted-col>
+          <byted-col span="8">
+            <div class="demo-calendar-slot-bottom-button-wrap">
+              <byted-button type="primary" size="mini" @click="slotProps.confirm">
+                Confirm
+              </byted-button>
+            </div>
+          </byted-col>
+        </byted-row>
+      </div>
+    </template>
+  </byted-calendar>
+</byted-popup>
+```
+
+Use in JSX:
+
+```javascript
+export default {
+  // ...
+  render() {
+    const scopedSlots = {
+      headerRight: props => (
+        <button class="demo-calendar-slot-button" onClick={() => props.setSelected([])}>
+          Clear
+        </button>
+      ),
+      bottomFloat: props => (
+        <div class="demo-calendar-slot-bottom">
+          <byted-row>
+            <byted-col span="16">
+              <div>Start: {props.selected[0] && props.selected[0].toLocaleDateString()}</div>
+              <div>End: {props.selected[1] && props.selected[1].toLocaleDateString()}</div>
+            </byted-col>
+            <byted-col span="8">
+              <div class="demo-calendar-slot-bottom-button-wrap">
+                <byted-button type="primary" size="mini" onClick={() => props.confirm}>
+                  Confirm
+                </byted-button>
+              </div>
+            </byted-col>
+          </byted-row>
+        </div>
+      ),
+    };
+    return (
+      <MyComponent>
+        <byted-calendar vModel={this.rangeValue} scopedSlots={scopedSlots} />
+      </MyComponent>
+    );
+  },
+};
+```
+
+:::
+
+## API
+
+:::card
+
+```topic
+Types
+```
+
+```typescript
+type CalendarSelectMode = 'single' | 'multi' | 'range';
+
+type DayOfWeek = 'sunday' | 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday';
+
+interface CalendarScopedSlotsProps {
+  selected: Date[];
+  setSelected(value: Date[]): void;
+  cancel(): void;
+  confirm(): void;
+}
+```
+
+:::
+
+##### Props
+
+| Name            | Type                 | Default Value | Description                                                                                                                                                                        |
+| --------------- | -------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| value           | `Date[]`             |               | The `Date` array to bind, with the event `change` for v-model                                                                                                                      |
+| mode            | `CalendarSelectMode` | `'range'`     | Selection mode                                                                                                                                                                     |
+| rangUseStartEnd | boolean              | false         | Set the start time to `00:00:00` and the end time to `23:59:59` while in `range` mode.                                                                                             |
+| min             | `Date`               |               | The earliest acceptable date.                                                                                                                                                      |
+| max             | `Date`               |               | The latest acceptable date.                                                                                                                                                        |
+| firstDayOfWeek  | `DayOfWeek`          | `'sunday'`    | Set the first day of week, such as Monday.                                                                                                                                         |
+| title           | string               |               | The header title text.                                                                                                                                                             |
+| showTitleBar    | boolean              | true          | Show title bar or not.                                                                                                                                                             |
+| showCancel      | boolean              | false         | Show cancel button or not.                                                                                                                                                         |
+| showConfirm     | boolean              | false         | Show confirm button or not.                                                                                                                                                        |
+| requireConfirm  | boolean              | false         | Config the v-model event `change` behavior. If `true`, the `change` event will only be emitted after click the confirm button, and the cancel and confirm button will always show. |
+
+:::card
+
+```topic
+Model (v-model)
+```
+
+```json
+{
+  "prop": "value",
+  "event": "change"
+}
+```
+
+:::
+
+##### Events
+
+| Name    | Callback Type           | Description                                                               |
+| ------- | ----------------------- | ------------------------------------------------------------------------- |
+| change  | `(val: Date[]) => void` | The event for selected dates changing, with the prop `value` for v-model. |
+| cancel  | `() => void`            | The event for cancel button clicking.                                     |
+| confirm | `(val: Date[]) => void` | The event for confirm button clicking.                                    |
+
+##### Scoped Slots
+
+| Name        | Type                                                         | Description                                                         |
+| ----------- | ------------------------------------------------------------ | ------------------------------------------------------------------- |
+| headerLeft  | `(props: CalendarScopedSlotsProps) => ScopedSlotReturnValue` | Position the left of title bar, will overwrite the cancel button.   |
+| headerRight | `(props: CalendarScopedSlotsProps) => ScopedSlotReturnValue` | Position the right of title bar, will overwrite the confirm button. |
+| bottomFloat | `(props: CalendarScopedSlotsProps) => ScopedSlotReturnValue` | The float layer at the bottom.                                      |

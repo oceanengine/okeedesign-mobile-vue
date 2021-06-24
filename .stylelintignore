@@ -1,0 +1,8 @@
+# npm
+node_modules
+
+# src/style
+src/style/color-palette
+
+src/index.less
+src/style/root.less

@@ -1,0 +1,195 @@
+# Field 输入框
+
+### 安装
+
+:::card
+
+```javascript
+import { Field } from '@okee-uikit/m-vue';
+
+Vue.use(Field);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```desc
+通过 `v-model` 绑定输入框的值
+```
+
+```html
+<byted-field v-model="value" />
+```
+
+```javascript
+data() {
+  return {
+    value: ''
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+自定义类型
+```
+
+```html
+<byted-field v-model="value2" :size="normal" :border="false" :label="text" />
+<byted-field v-model="value3" :size="normal" :border="false" :label="phone" />
+<byted-field v-model="value4" :size="normal" :border="false" :label="int" />
+<byted-field v-model="value5" :size="normal" :border="false" :label="number" />
+<byted-field v-model="value6" :size="normal" :border="false" :label="password" />
+```
+
+```javascript
+data() {
+  return {
+    value2: '',
+    value3: '',
+    value4: '',
+    value5: '',
+    value6: '',
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+禁用输入框
+```
+
+```html
+<byted-field :value="'disabled'" :size="normal" disabled :label="标题" :border="false" />
+<byted-field :value="'disabled'" :size="normal" disabled :label="标题" :border="false" />
+```
+
+:::
+
+:::card
+
+```topic
+错误提示
+```
+
+```html
+<byted-field v-model="value" :error-text="手机号格式错误" :border="false" :size="normal" :label="phone" clearable/>
+<byted-field v-model="value" :error-text="用户名错误" :border="false" :size="normal" :label="userName'/>
+```
+
+:::
+
+:::card
+
+```topic
+插入按钮
+```
+
+```html
+<byted-field v-model="value"  :border="false" :size="normal" :label="短信验证码"/>
+```
+
+:::
+
+:::card
+
+```topic
+展示数字统计
+```
+
+```html
+<byted-field
+  v-model="value1"
+  type="textarea"
+  :label="text"
+  :size="normal"
+  :maxlength="120"
+  :border="false"
+/>
+```
+
+:::
+
+:::card
+
+```topic
+内容下对齐
+```
+
+```html
+<byted-field v-model="value" :border="false" :size="normal" :label="text" type="textarea"/>
+```
+
+:::
+
+:::card
+
+```topic
+线框类型
+```
+
+```html
+<byted-field v-model="value" :size="normal" :label="text" type="textarea"/>
+```
+
+:::
+
+
+### API
+
+##### Props
+
+| 参数        | 说明                                                                                                        | 类型      | 默认值       |
+| ----------- | ----------------------------------------------------------------------------------------------------------- | --------- | ------------ | --- |
+| value       | 当前输入的值                                                                                                | `string` &#124; `number` | -   |
+| type        | 可设置为原生类型, `text` `number` `textarea`                                                                | `string`  | `text`       |
+| label       | 输入框左侧文本, 在`type=textarea`下展示为单行标题                                                           | `string`  | ``           |
+| unit        | 输入框右侧侧文本, 在`type=text` `type=number`时有效                                                         | `string`  | ``           |
+| border      | 边框样式, , 为`false`时展示底部线样式                                                                       | `boolean` | `true`       |
+| clearable   | 是否启用清除控件                                                                                            | `boolean` | `false`      |
+| disabled    | 是否禁用输入框                                                                                              | `boolean` | `false`      |
+| readonly    | 是否只读                                                                                                    | `boolean` | `false`      |
+| rows        | 配合`type=textarea`使用，规定文本区内的可见行数                                                             | `Number`  | `2`          |
+| maxlength   | 规定输入字段中的字符的最大长度                                                                              | `Number`  | `0`          |
+| byte        | 配合`maxlength`使用，设定`byte=1`时表示一个字符占一个长度，设定`byte=2`时表示两个个字符即一个汉字占一个长度 | `Number`  | `0`          |
+| placeholder | 填写输入字段的提示                                                                                          | `String`  | `请输入内容` |
+| autofocus   | 在页面加载时是否获得焦点                                                                                    | `boolean` | `false`      |
+
+##### Events
+
+| 事件  | 说明                 | 回调参数            |
+| ----- | -------------------- | ------------------- |
+| input | 输入框内容变化时触发 | value: 输入框当前值 |
+| focus | 输入框获得焦点时触发 | event: Event        |
+| blur  | 输入框失去焦点时触发 | event: Event        |
+| clear | 点击清除按钮时触发   | event: Event        |
+| click | 点击时触发           | event: Event        |
+
+##### 方法
+
+通过 ref 可以获取到 field 实例并调用实例方法
+
+| 方法名 | 参数 | 返回值 | 介绍           |
+| ------ | ---- | ------ | -------------- |
+| focus  | -    | -      | 获取输入框焦点 |
+| blur   | -    | -      | 取消输入框焦点 |
+
+##### 作用域插槽
+
+| 名称   | 说明     | 插槽属性类型                                                 |
+| ------ | -------- | ------------------------------------------------------------ |
+| label  | 标题     |                                                              |
+| length | 输入字数 | `{ length: number; minlength?: number; maxlength?: number }` |

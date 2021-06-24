@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should render nothing when content is empty string 1`] = `<div class="byted-badge"><sup class="byted-badge__info"></sup></div>`;
+
+exports[`Badge should render nothing when content is zero 1`] = `<div class="byted-badge"><sup class="byted-badge__info">0</sup></div>`;

@@ -1,0 +1,319 @@
+@import '../../style/common';
+
+.@{prefix}field {
+  width: 100%;
+
+  &__body {
+    position: relative;
+    box-sizing: border-box;
+    background: @field-background-color;
+  }
+
+  &__input {
+    width: 100%;
+    color: @field-color;
+    word-break: break-all;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    caret-color: @field-caret-color;
+    
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled {
+      color: @field-disabled-color;
+      background: @field-disabled-background-color;
+      opacity: 1;
+      -webkit-text-fill-color: @field-disabled-color;
+    }
+
+    &::placeholder {
+      color: @field-disabled-color;
+      -webkit-text-fill-color: @field-disabled-color;
+    }
+
+    &::-webkit-input-placeholder {
+      color: @field-disabled-color;
+      -webkit-text-fill-color: @field-disabled-color;
+    }
+  }
+
+  &__item {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: @field-font-size;
+    line-height: @field-line-height;
+  }
+
+  &__item:first-child {
+    padding-left: 16px;
+  }
+
+  &__item:last-child {
+    padding-right: 16px;
+  }
+
+  &--label--block {
+    .@{prefix}field__body {
+      padding-top: @field-body-label-block-padding-top;
+    }
+
+    .@{prefix}field__item {
+      padding-top: @field-item-label-block-padding-top;
+      padding-bottom: @field-item-label-block-padding-bottom;
+      line-height: @field-item-label-block-line-height;
+    }
+
+    input {
+      &.@{prefix}field__input {
+        padding-left: 16px;
+      }
+    }
+  }
+
+  &--label--block&.@{prefix}field--large {
+    .@{prefix}field__label {
+      font-size: @field-large-label-block-font-size;
+    }
+
+    .@{prefix}field__item {
+      padding-top: @field-item-label-block-padding-top;
+      padding-bottom: @field-item-label-block-padding-bottom;
+      line-height: @field-large-item-label-block-line-height;
+    }
+  }
+
+  &__label {
+    color: @field-label-color;
+
+    &-right {
+      flex-shrink: 0;
+      padding-left: 8px;
+      color: @field-label-right-color;
+    }
+
+    &--block {
+      position: absolute;
+      top: 0;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 16px;
+      padding-top: @field-label-block-padding-top;
+      color: @field-label-block-color;
+      font-size: @field-label-block-font-size;
+      line-height: @field-label-block-line-height;
+    }
+  }
+
+  &--input {
+    .@{prefix}field__body {
+      display: flex;
+      align-items: center;
+
+      &::after {
+        .hairline-bottom();
+
+        right: 16px;
+        bottom: -1px;
+        left: 16px;
+        border: 1px solid @field-border-color;
+      }
+    }
+
+    .@{prefix}field__label {
+      flex-shrink: 0;
+      padding-right: 12px;
+    }
+  }
+
+  &--disabled {
+    .@{prefix}field__body {
+      background: @field-disabled-background-color;
+    }
+
+    .@{prefix}field__label {
+      background: @gray-1;
+    }
+
+    .@{prefix}field__label-right {
+      background: @gray-1;
+    }
+
+    .@{prefix}field__word-limit {
+      background: @gray-1;
+    }
+  }
+
+  &--border {
+    .@{prefix}field__body {
+      overflow: hidden;
+      border: 1px solid @field-border-color;
+      border-radius: @border-radius-2; /* no */
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .@{prefix}field__item {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &--textarea {
+    .@{prefix}field__body {
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 0 16px;
+      font-size: 0;
+    }
+
+    .@{prefix}field__item:first-child {
+      padding-left: 0;
+    }
+
+    .@{prefix}field__item:last-child {
+      padding-right: 0;
+    }
+
+    .@{prefix}field__input {
+      padding: 14px 0;
+      font-size: @field-font-size;
+      line-height: @field-line-height;
+    }
+
+    .@{prefix}field__label {
+      padding-top: 14px;
+      font-size: @field-font-size;
+      line-height: @field-line-height;
+
+      & + .@{prefix}field__input {
+        padding-top: 8px;
+      }
+    }
+
+    .@{prefix}field__clear {
+      align-self: baseline;
+      padding-top: 3px;
+    }
+
+    .@{prefix}field__word-limit {
+      padding: 0 0 4px 0;
+    }
+  }
+
+  &--textarea.@{prefix}field--large {
+    .@{prefix}field__input {
+      font-size: @field-large-font-size;
+      line-height: @field-large-line-height;
+    }
+
+    .@{prefix}field__label {
+      font-size: @field-large-font-size;
+      line-height: @field-large-line-height;
+    }
+  }
+
+  &--textarea.@{prefix}field--no-border {
+    .@{prefix}field__label {
+      color: @field-textarea-label-color;
+      font-size: @field-textarea-font-size;
+      line-height: @field-textarea-label-line-height;
+    }
+
+    .@{prefix}field__input {
+      width: calc(100% - @field-textarea-padding * 2);
+      margin-top: @field-textarea-margin-top;
+      padding: @field-textarea-padding;
+      background-color: @field-textarea-background-color;
+      border-radius: @field-textarea-border-radius;
+    }
+
+    .@{prefix}field__word-limit {
+      color: @field-textarea-word-limit-color;
+    }
+  }
+
+  &--error {
+    .@{prefix}field__body {
+      border-color: @danger-color;
+
+      &::after {
+        border-color: @danger-color;
+      }
+    }
+  }
+
+  &__clear {
+    display: inline-flex;
+    flex-shrink: 0;
+    width: @field-clear-width;
+    height: @field-clear-width;
+    margin-left: auto;
+    padding: 14px 0 14px 8px;
+    fill: @field-clear-fill;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__word-limit {
+    padding-left: 8px;
+    color: @text-color-5;
+    font-size: @field-limit-font-size;
+    line-height: @field-limit-line-height;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  &__error-text {
+    padding: 0 16px;
+    padding-top: @field-error-text-padding-top;
+    padding-bottom: @field-error-text-padding-bottom;
+    color: @danger-color;
+    font-size: @field-error-text-font-size;
+    line-height: 17px;
+    background: transparent;
+  }
+
+  &--maxlength {
+    padding-bottom: 0;
+
+    &__input {
+      padding-bottom: 0;
+    }
+  }
+
+  &--readonly {
+    color: @text-color-4;
+    background: @field-readonly-background-color;
+  }
+
+  &--large {
+    .@{prefix}field__clear {
+      position: relative;
+      width: @field-large-clear-width;
+      height: @field-large-clear-width;
+    }
+
+    .@{prefix}field__item {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: @field-large-font-size;
+      line-height: @field-large-line-height;
+    }
+
+    &.@{prefix}field--border {
+      .@{prefix}field__item {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: @field-large-font-size;
+      }
+    }
+  }
+}

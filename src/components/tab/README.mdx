@@ -1,0 +1,436 @@
+# Tab 标签页
+
+### 安装
+
+:::card
+
+```javascript
+import { Tab, Tabs } from '@okee-uikit/m-vue';
+
+Vue.use(Tab).use(Tabs);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```desc
+通过`v-model`绑定当前激活标签对应的索引值，默认情况下启用第一个标签
+```
+
+```html
+<byted-tabs v-model="active">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      active: 1,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+异步用法
+```
+
+```desc
+在标签指定`name`属性的情况下，绑定`active`的值为当前标签的`name`
+```
+
+```html
+<byted-tabs :active="activeName" @click="onControlledClick">
+  <byted-tab title="标签 1" name="a">内容 1</byted-tab>
+  <byted-tab title="标签 2" name="b">内容 2</byted-tab>
+  <byted-tab title="标签 3" name="c">内容 3</byted-tab>
+</byted-tabs>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      activeName: 'b',
+    };
+  },
+  methods: {
+    onControlledClick(name, title) {
+      this.$confirm('OKee Design', 'Do you love', {
+        cancelButtonText: 'Not',
+        confirmButtonText: 'Yes',
+      })
+        .then(() => {
+          this.activeName = name;
+          console.log('your answer is Yes');
+        })
+        .catch(() => null);
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+静态布局
+```
+
+```desc
+设置 `flex` 为 `false` 开启静态布局
+```
+
+```html
+<byted-tabs :flex="false">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+间距用法
+```
+
+```desc
+在静态布局下设置 `gutter` 改变tab间距
+```
+
+```html
+<byted-tabs :flex="false" :gutter="10">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+安全区域用法
+```
+
+```desc
+设置 `safe-area-inset` 改变标题栏的左右距离
+```
+
+```html
+<byted-tabs :safe-area-inset="16">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+<byted-tabs :flex="false" :safe-area-inset="16">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+下划线样式
+```
+
+```html
+<byted-tabs line-color="#11DEF2" line-width="26" line-height="3">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+文字样式
+```
+
+```html
+<byted-tabs line-color="#0278FF" title-active-color="#0278FF" title-inactive-color="#FF6767">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+无边框
+```
+
+```html
+<byted-tabs :border="false">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+样式风格 及 自定义颜色
+```
+
+```html
+<byted-tabs type="card">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+
+<byted-tabs type="card" color="green">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+尺寸大小
+```
+
+```html
+<byted-tabs>
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+<byted-tabs size="large">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2">内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+  <byted-tab title="标签 4">内容 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+标签栏滚动
+```
+
+```desc
+标签数量超过 4 个时，标签栏可以在水平方向上滚动，切换时会自动将当前标签居中
+```
+
+```html
+<byted-tabs>
+  <byted-tab v-for="index in 8" :title="'标签 ' + index"> 内容 {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+禁用标签
+```
+
+```desc
+设置`disabled`属性即可禁用标签。如果需要监听禁用标签的点击事件，可以在`byted-tabs`上监听`disabled`事件
+```
+
+```html
+<byted-tabs @disabled="onClickDisabled">
+  <byted-tab title="标签 1">内容 1</byted-tab>
+  <byted-tab title="标签 2" disabled>内容 2</byted-tab>
+  <byted-tab title="标签 3">内容 3</byted-tab>
+</byted-tabs>
+```
+
+```javascript
+export default {
+  methods: {
+    onClickDisabled(name, title) {
+      console.log(title + this.t('disabled'));
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+自定义标签
+```
+
+```desc
+通过 title 插槽可以自定义标签内容
+```
+
+```html
+<byted-tabs v-model="active">
+  <byted-tab v-for="index in 2">
+    <template slot="title"> T.T {{ t('title') }} </template>
+    内容 {{ index }}
+  </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+切换动画
+```
+
+```desc
+通过`animated`属性可以开启切换标签内容时的转场动画
+```
+
+```html
+<byted-tabs v-model="active" animated>
+  <byted-tab v-for="index in 4" :title="'选项 ' + index"> 内容 {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+滑动切换
+```
+
+```desc
+通过`swipeable`属性可以开启滑动切换标签页
+```
+
+```html
+<byted-tabs v-model="active" swipeable>
+  <byted-tab v-for="index in 4" :title="'选项 ' + index"> 内容 {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+滑动切换动画
+```
+
+```desc
+通过`touchable`属性可以开启滑动切换动画效果
+```
+
+```html
+<byted-tabs v-model="active" touchable>
+  <byted-tab v-for="index in 4" :title="'选项 ' + index"> 内容 {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+### API
+
+##### Tabs Props
+
+| 参数                 | 说明                                                        | 类型      | 默认值          |
+| -------------------- | ----------------------------------------------------------- | --------- | --------------- | ------- |
+| v-model              | 绑定当前选中标签的标识符                                    | `string` &#124; `number` | `0`     |
+| type                 | 样式类型                                                    | `string`  | `card`          | `line`  |
+| size                 | 尺寸大小                                                    | `string`  | `normal`        | `large` |
+| flex                 | 风格类型，是否是等分布局                                    | `boolean` | `true`          |
+| gutter               | 间距大小, 仅在`flex=false`时有效                            | `string` &#124; `number` | `0`     |
+| safe-area-inset      | 标签标题整体 左右两边的安全距离                             | `string` &#124; `number` | `0`     |
+| color                | 标签主题色, 仅在`type=card`时有效                           | `string`  | `主色调#0278FF` |
+| duration             | 动画时间，单位秒                                            | `number`  | `0.3`           |
+| background           | 标签栏背景色                                                | `string`  | `white`         |
+| line-width           | 底部条宽度，默认单位 px                                     | `string` &#124; `number` | `auto`  |
+| line-height          | 底部条高度，默认单位 px                                     | `string` &#124; `number` | `3px`   |
+| line-color           | 底部条主题色                                                | `string`  | `#000`          |
+| title-active-color   | 标题选中态颜色                                              | `string`  |
+| title-inactive-color | 标题默认态颜色                                              | `string`  |
+| swipe-threshold      | 滚动阈值，标签数量超过多少个可滚动, 仅在`flex=true"`时有效  | `number`  | `4`             |
+| animated             | 是否开启切换标签内容时的转场动画                            | `boolean` | `false`         |
+| border               | 是否显示标签栏外边框，仅在`type="line"`时有效               | `boolean` | `true`          |
+| ellipsis             | 是否省略过长的标题文字, 仅在`type=line, 且flex=true"`时有效 | `boolean` | `true`          |
+| swipeable            | 是否开启手势滑动切换, 与`touchable`相斥                     | `boolean` | `false`         |
+| touchable            | 是否开启手势滑动切换动画, 与 swipeable 相斥                 | `boolean` | `false`         |
+
+##### Tab Props
+
+| 参数     | 说明                                                | 类型      | 默认值  |
+| -------- | --------------------------------------------------- | --------- | ------- | ------------ |
+| name     | 标签名称，作为匹配的标识符, 受控用法时必须指定 name | `string` &#124; `number` | 标签的索引值 |
+| title    | 标题                                                | `string`  | -       |
+| disabled | 是否禁用标签                                        | `boolean` | `false` |
+
+##### Tabs Slots
+
+| 名称      | 说明         |
+| --------- | ------------ |
+| nav-left  | 标题左侧内容 |
+| nav-right | 标题右侧内容 |
+
+##### Tab Slots
+
+| 名称    | 说明       |
+| ------- | ---------- |
+| default | 标签页内容 |
+| title   | 自定义标签 |
+
+##### Tabs Events
+
+| 事件名   | 说明                     | 回调参数                                     |
+| -------- | ------------------------ | -------------------------------------------- |
+| click    | 点击标签时触发           | name：标签标识符或标签 index 值，title：标题 |
+| change   | 当前激活的标签改变时触发 | name：标签标识符或标签 index 值，title：标题 |
+| disabled | 点击被禁用的标签时触发   | name：标签标识符或标签 index 值，title：标题 |

@@ -1,0 +1,27 @@
+@import '../../style/common';
+
+.@{prefix}header-tabs {
+  position: relative;
+  width: 100%;
+  height: @header-height;
+  background-color: transparent;
+
+  &--primary {
+    .@{prefix}header-tabs__line {
+      background-color: @white;
+    }
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: @header-line-bottom;
+    height: @header-line-height;
+    background-color: @header-line-color;
+    border-radius: @border-radius-1; /* no */
+    transition-duration: @animation-duration-fast;
+  }
+}

@@ -1,0 +1,137 @@
+# Navbar 导航栏
+
+### 安装
+
+:::card
+
+```javascript
+import { Header } from '@okee-uikit/m-vue';
+
+Vue.use(Header);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基本用法
+```
+
+```html
+<byted-header :title="标题" :left-arrow="false"/>
+```
+
+:::
+
+:::card
+
+```topic
+展示关闭
+```
+
+```html
+<byted-header :title="标题" :left-arrow="true" />
+```
+
+:::
+
+
+:::card
+
+```topic
+展示文字按钮
+```
+
+```html
+<byted-header :left-arrow="true"  :title="标题">
+  <byted-button slot="left" text="Return" type="text" />
+</byted-header>
+```
+
+:::
+
+:::card
+
+```topic
+自定义按钮
+```
+
+```html
+<byted-header title="OKee Design">
+  <byted-button slot="right">
+    <img src="dots.svg" alt="dots" width="20px" height="20px">
+  </byted-button>
+</byted-header>
+<byted-header title="OKee Design">
+  <byted-button slot="right">
+    <img src="magnifier.svg" alt="magnifier" width="20px" height="20px">
+  </byted-button>
+</byted-header>
+<byted-header title="OKee Design">
+  <byted-button slot="right" type="text">
+    Button
+  </byted-button>
+</byted-header>
+```
+
+:::
+
+:::card
+
+```topic
+自定义背景色
+```
+
+```html
+<byted-header :title="标题" type="primary" />
+```
+
+:::
+
+:::card
+
+```topic
+展示切换组件
+```
+
+```html
+<byted-header title="OKee Design" style="margin-bottom: 20px">
+  <byted-header-tabs v-model="type">
+    <byted-header-tab title="Tab1" :name="0" />
+    <byted-header-tab name="1">Tab2</byted-header-tab>
+  </byted-header-tabs>
+</byted-header>
+```
+
+:::
+
+
+### API
+
+##### Props
+
+| Attribute  | Description                                      | Type      | Default   |
+| ---------- | ------------------------------------------------ | --------- | --------- |
+| type       | Can be set to `primary`                          | `string`  | `default` |
+| title      | Title                                            | `string`  | `''`      |
+| left-arrow | Whether to show left arrow                       | `boolean` | `false`   |
+| border     | when `type` === `default` Whether to show border | `boolean` | `true`    |
+| fixed      | Whether to fixed top                             | `boolean` | `false`   |
+
+##### Slots
+
+| Name  | Description               |
+| ----- | ------------------------- |
+| title | Custom title              |
+| left  | Custom left side content  |
+| right | Custom right side content |
+
+##### Events
+
+| Event       | Description                       | Arguments |
+| ----------- | --------------------------------- | --------- |
+| click-left  | Triggered when click left button  | -         |
+| click-right | Triggered when click right button | -         |

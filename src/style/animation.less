@@ -1,0 +1,63 @@
+@import './var';
+
+@keyframes byted-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes byted-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.@{prefix}fade {
+  &-enter-active {
+    animation: @animation-duration-base byted-fade-in;
+  }
+
+  &-leave-active {
+    animation: @animation-duration-base byted-fade-out;
+  }
+}
+
+// @keyframes byted-loading {
+//   0% {
+//     transform: rotate(0);
+//     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+//   }
+
+//   50% {
+//     transform: rotate(180deg);
+//     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+//   }
+
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+@keyframes byted-loading-circle {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.@{prefix}loading-circle {
+  display: inline-block;
+  transform-origin: center;
+  animation: byted-loading-circle 1s linear infinite;
+}

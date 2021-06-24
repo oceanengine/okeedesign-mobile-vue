@@ -1,0 +1,243 @@
+# Checker
+
+### Install
+
+:::card
+
+```javascript
+import { Checker, CheckerItem } from '@okee-uikit/m-vue';
+
+Vue.use(Checker).use(CheckerItem);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```desc
+inputType defalutValue is 'checkbox'. value must be Array
+```
+
+```html
+<byted-checker v-model="checker" input-type="radio">
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item value="Option2">Option3</byted-checker-item>
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checker: 0,
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+Multiple Selection
+```
+
+```html
+<byted-checker v-model="checkerStyle">
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {   
+    checkerStyle: [0, '2'],
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+Radio Async
+```
+
+```desc
+inputType is radio，@input + value
+```
+
+```html
+<byted-checker
+  :value="checkerAsync"
+  input-type="radio"
+  @click="onClick"
+  @input="onInput"
+>
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checkerAsync: 0,
+  }
+},
+methods: {
+  onInput(value) {
+    this.$confirm(`Do you want to chose ${value}？`).then(() => {
+      this.checkerAsync = value;
+    }).catch(() => {
+      //
+    });
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+Customize Scale
+```
+
+```html
+<byted-checker v-model="checkerRound" round>
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+:::
+
+:::card
+
+```topic
+Display Badge
+```
+
+```html
+<byted-checker v-model="checkerInfo" input-type="radio" round>
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="large" :value="0" info="ok" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="small" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="mini" value="2" :info="3" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checkerInfo: 0
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+Disabled
+```
+
+```html
+<byted-checker v-model="checkerDisabled" input-type="radio" type="primary">
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="Option0" :value="0" disabled />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option1" value="1" disabled />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="Option2" value="2" />
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+:::
+
+
+### API
+
+##### Checker Props
+
+| Attribute | Description                             | Type     | Default    |
+| --------- | --------------------------------------- | -------- | ---------- |
+| inputType | Can be set to `radio`                   | `string` | `checkbox` |
+| value     | Can be set to `Array` `String` `Number` | `array`  | `[]`       |
+| type      | Can be set to `primary`                 | `string` | `default`  |
+| size      | Can be set to `small` `normal`          | `string` | `normal`   |
+
+##### CheckerItem Props
+
+| Attribute | Description                 | Type                      | Default |
+| --------- | --------------------------- | ------------------------- | ------- |
+| value     | Type Array String or Number | `array` `string` `number` | `[]`    |
+| label     | label as content            | `string`                  | `''`    |
+| name      | name                        | `string`                  | `''`    |
+| info      | show info                   | `string`                  | `''`    |
+
+##### Events
+
+| Event      | Description        | Arguments |
+| ---------- | ------------------ | --------- |
+| change     | when value changed | value     |
+| input      | when you use async | value     |
+| click      | click              | event     |
+| touchstart | touchstart         | event     |

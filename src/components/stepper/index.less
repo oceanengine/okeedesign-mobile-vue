@@ -1,0 +1,99 @@
+@import '../../style/common';
+
+.@{prefix}stepper {
+  display: flex;
+
+  &__crease {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: @stepper-background-color;
+    cursor: pointer;
+    fill: @stepper-icon-active-color;
+
+    &--normal {
+      width: @stepper-crease-size-md;
+      height: @stepper-crease-size-md;
+    }
+
+    &--small {
+      width: @stepper-crease-size-sm;
+      height: @stepper-crease-size-sm;
+    }
+
+    &--large {
+      width: @stepper-crease-size-lg;
+      height: @stepper-crease-size-lg;
+    }
+  }
+
+  &__increase {
+    border-radius: @stepper-increase-border-radius;
+  }
+
+  &__decrease {
+    border-radius: @stepper-decrease-border-radius;
+  }
+
+  &__crease--disabled {
+    background-color: @stepper-crease-disable-bg-color;
+  }
+
+  &__disable {
+    fill: @stepper-disabled-color;
+  }
+
+  &__number {
+    margin: @stepper-crease-margin;
+    color: @text-color-2;
+    text-align: center;
+    background-color: @stepper-background-color;
+
+    &--normal {
+      width: @sepper-number-width-md;
+      height: @sepper-number-height-md;
+      font-size: @sepper-number-fontsize-md;
+      line-height: @sepper-number-height-md;
+    }
+
+    &--small {
+      width: @sepper-number-width-sm;
+      height: @sepper-number-height-sm;
+      font-size: @sepper-number-fontsize-sm;
+      line-height: @sepper-number-height-sm;
+    }
+
+    &--large {
+      width: @sepper-number-width-lg;
+      height: @sepper-number-height-lg;
+      font-size: @sepper-number-fontsize-lg;
+      line-height: @sepper-number-height-lg;
+    }
+
+    &--disabled {
+      color: @stepper-disabled-color;
+    }
+  }
+
+  &__insvg,
+  &__desvg {
+    &--normal {
+      width: @sepper-crease-icon-size-md;
+      height: @sepper-crease-icon-size-md;
+    }
+
+    &--large {
+      width: @sepper-crease-icon-size-lg;
+      height: @sepper-crease-icon-size-lg;
+    }
+
+    &--small {
+      width: @sepper-crease-icon-size-sm;
+      height: @sepper-crease-icon-size-sm;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+}

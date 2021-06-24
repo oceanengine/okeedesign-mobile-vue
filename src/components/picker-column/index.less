@@ -1,0 +1,20 @@
+@import '../../style/common';
+
+.@{prefix} {
+  &picker-column {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+
+    &__option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: @picker-column-option-height;
+      color: @text-color-1;
+      font-size: @picker-title-font-size;
+      line-height: normal;
+    }
+  }
+}

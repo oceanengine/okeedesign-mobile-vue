@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div style="padding-left: 16px;"></div>
+  <div>
+    <div class="byted-tabs byted-tabs--line byted-tabs--large">
+      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
+        <div class="byted-tabs__nav byted-tabs__nav--line">
+          <div class="byted-tab"><span class="byted-ellipsis">1</span></div>
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">2</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">4</span></div>
+          <div class="byted-tabs__line"></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content">
+        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="byted-tab__pane" style="">
+          <div class="content"> 2</div>
+        </div>
+        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="byted-tab__pane" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-tabs byted-tabs--line byted-tabs--large">
+      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
+        <div class="byted-tabs__nav byted-tabs__nav--line">
+          <div class="byted-tab"><span class="byted-ellipsis">1</span></div>
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">2</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
+          <div class="byted-tabs__line"></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content">
+        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="byted-tab__pane" style="">
+          <div class="content"> 2</div>
+        </div>
+        <div class="byted-tab__pane" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-tabs byted-tabs--line byted-tabs--normal">
+      <div class="byted-tabs__wrap byted-tabs byted-tabs--static byted-hairline--top-bottom">
+        <div class="byted-tabs__nav byted-tabs__nav--line">
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">2</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">4</span></div>
+          <div class="byted-tabs__line"></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content">
+        <div class="byted-tab__pane" style="" size="large">
+          <div class="content"> 1</div>
+        </div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-tabs byted-tabs--card byted-tabs--large">
+      <div class="byted-tabs__wrap byted-tabs">
+        <div class="byted-tabs__nav byted-tabs__nav--card">
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">2</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
+          <div class="byted-tab byted-tab--disabled"><span class="byted-ellipsis">4</span></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content">
+        <div class="byted-tab__pane" style="">
+          <div class="content"> 1</div>
+        </div>
+        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="byted-tab__pane" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-tabs byted-tabs--line byted-tabs--normal">
+      <div class="byted-tabs__wrap byted-tabs__wrap--scrollable byted-tabs byted-hairline--top-bottom">
+        <div class="byted-tabs__nav byted-tabs__nav--line">
+          <div class="byted-tab byted-tab--active" style="flex-basis: 22%;"><span class="byted-ellipsis">1</span></div>
+          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">2</span></div>
+          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">3</span></div>
+          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">4</span></div>
+          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">5</span></div>
+          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">6</span></div>
+          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">7</span></div>
+          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">8</span></div>
+          <div class="byted-tabs__line"></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content">
+        <div class="byted-tab__pane" style="" size="large">
+          <div class="content"> 1</div>
+        </div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-tabs byted-tabs--line byted-tabs--normal">
+      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
+        <div class="byted-tabs__nav byted-tabs__nav--line">
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
+          <div class="byted-tab byted-tab--disabled"><span class="byted-ellipsis">2</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
+          <div class="byted-tabs__line"></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content">
+        <div class="byted-tab__pane" style="" size="large">
+          <div class="content"> 1</div>
+        </div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-tabs byted-tabs--line byted-tabs--large">
+      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
+        <div class="byted-tabs__nav byted-tabs__nav--line">
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis"><div>  T.T </div></span></div>
+          <div class="byted-tab"><span class="byted-ellipsis"><div>  T.T </div></span></div>
+          <div class="byted-tabs__line"></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content">
+        <div class="byted-tab__pane" style="">
+          <div class="content"> 1</div>
+        </div>
+        <div class="byted-tab__pane" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-tabs byted-tabs--line byted-tabs--large">
+      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
+        <div class="byted-tabs__nav byted-tabs__nav--line">
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">2</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
+          <div class="byted-tab"><span class="byted-ellipsis">4</span></div>
+          <div class="byted-tabs__line"></div>
+        </div>
+      </div>
+      <div class="byted-tabs__content byted-tabs__content--touchable">
+        <div class="byted-tabs__track" style="transform: translate3d(0px, 0, 0); transition-duration: 0.3s;">
+          <div class="byted-tab__pane">
+            <div class="content"> 1</div>
+          </div>
+          <div class="byted-tab__pane">
+            <div class="content"> 2</div>
+          </div>
+          <div class="byted-tab__pane">
+            <div class="content"> 3</div>
+          </div>
+          <div class="byted-tab__pane">
+            <div class="content"> 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dome-size">
+    <div class="dome-size-content"><span class="dome-size-content_title">尺寸</span>
+      <div class="dome-size-content_slider">
+        <div class="dome-slider">
+          <div class="dome-slider-container">
+            <div class="popover" style="display: none;"><span class="content">large</span>
+              <div class="popover-arrow"></div>
+            </div>
+            <div class="dome-slider-button" style="left: 100%;"></div>
+            <div class="dome-slider-active" style="width: 100%;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 0px;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dome-size-icon"><img src="test-file-stub" alt="" class="svg-icon-close" style="display: none;"> <img src="test-file-stub" alt="" class="svg-icon-transfer"></div>
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`collapse render collapse-item slot 1`] = `
+<div class="byted-collapse byted-hairline--top-bottom">
+  <div class="byted-collapse-item">
+    <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
+      <div class="byted-cell__title">this is title</div>
+      <div class="byted-cell__value">this is value</div>自定义右侧按钮，默认是arrow
+    </div>
+  </div>
+</div>
+`;

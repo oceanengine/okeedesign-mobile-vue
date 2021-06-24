@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps horizontal step 1`] = `
+<div class="byted-steps byted-steps--horizontal byted-steps--label-horizontal">
+  <div class="byted-step byted-step--horizontal byted-step--md byted-step--finished byted-step--active">
+    <div class="byted-step__head"><i class="byted-icon byted-icon--check-one byted-step__icon">test-file-stub</i><span class="byted-step__title">已完成</span></div>
+    <div class="byted-step__split-panel"></div>
+  </div>
+  <div class="byted-step byted-step--horizontal byted-step--md byted-step--inProgress">
+    <div class="byted-step__head"><span class="byted-step__icon-number">2</span><span class="byted-step__title">进行中</span></div>
+    <div class="byted-step__split-panel"></div>
+  </div>
+  <div class="byted-step byted-step--horizontal byted-step--md byted-step--waiting">
+    <div class="byted-step__head"><span class="byted-step__icon-number">3</span><span class="byted-step__title">待完成</span></div>
+    <div class="byted-step__split-panel"></div>
+  </div>
+  <div class="byted-step byted-step--horizontal byted-step--md byted-step--error">
+    <div class="byted-step__head"><span class="byted-step__icon-number">4</span><span class="byted-step__title">未完成</span></div>
+  </div>
+</div>
+`;

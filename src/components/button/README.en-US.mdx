@@ -1,0 +1,132 @@
+# Button
+
+### Install
+
+:::card
+
+```javascript
+import { Button } from '@okee-uikit/m-vue';
+
+Vue.use(Button);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Type
+```
+
+```html
+<byted-button type="primary">Primary</byted-button>
+<byted-button type="danger">Danger</byted-button>
+<byted-button type="warning">Warning</byted-button>
+<byted-button type="success">Success</byted-button>
+<byted-button type="default">Default</byted-button>
+```
+
+:::
+
+:::card
+
+```topic
+Plain
+```
+
+```html
+<byted-button text="Plain Button" type="primary" plain />
+<byted-button text="Plain Button" type="success" plain />
+```
+
+:::
+
+:::card
+
+```topic
+Fade
+```
+
+```html
+<byted-button fade text="Fade Button" type="primary" />
+<byted-button fade text="Fade Button" type="success" />
+```
+
+:::
+
+:::card
+
+```topic
+Shape
+```
+
+```html
+<byted-button square type="primary">Square</byted-button>
+<byted-button round type="success">Circle</byted-button>
+```
+
+:::
+
+:::card
+
+```topic
+Diabled
+```
+
+```html
+<byted-button disabled type="primary">Diabled</byted-button>
+<byted-button disabled type="success">Diabled</byted-button>
+```
+
+:::
+
+:::card
+
+```topic
+Loading
+```
+
+```html
+<byted-button text="loading" type="primary" loading />
+<byted-button text="loading" type="primary" plain loading />
+<byted-button text="loading" type="primary" fade loading />
+```
+
+:::
+
+:::card
+
+```topic
+Text Button
+```
+
+```html
+<byted-button text="text button" size="large" type="text" />
+```
+
+:::
+
+### API
+
+##### Props
+
+| Attribute | Description                                              | Type      | Default   |
+| --------- | -------------------------------------------------------- | --------- | --------- |
+| type      | Can be set to `primary`｜`info`｜`warning`｜`danger`｜`text` | `string`  | `default` |
+| size      | Can be set to `large` `small` `mini`                     | `string`  | `normal`  |
+| text      | Text                                                     | `string`  | -         |
+| icon      | Left Icon                                                | `string`  | -         |
+| plain     | Whether to be plain button                               | `boolean` | `false`   |
+| round     | Whether to be round button                               | `boolean` | `false`   |
+| square    | Whether to be square button                              | `boolean` | `false`   |
+| disabled  | Whether to disable button                                | `boolean` | `false`   |
+| loading   | Whether to loading button                                | `boolean` | `false`   |
+
+##### Events
+
+| Event      | Description                                             | Arguments         |
+| ---------- | ------------------------------------------------------- | ----------------- |
+| click      | Triggered when click button and not disabled or loading | event: Event      |
+| touchstart | Triggered when touch start                              | event: TouchEvent |

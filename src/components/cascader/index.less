@@ -1,0 +1,58 @@
+@import '../../style/common';
+
+.@{prefix}cascader {
+  ul li {
+    display: block;
+    // height: 100%;
+  }
+
+  &__menu-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--menu {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  &--collapse {
+    flex: 0 0 auto;
+    width: 80px;
+  }
+
+  &--menu-item {
+    position: relative;
+    height: 49px;
+    padding-right: 16px;
+    padding-left: 16px;
+    overflow: hidden;
+    color: #333;
+    font-size: 14px;
+    line-height: 49px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    .selected-icon {
+      position: absolute;
+      top: 14px;
+      right: 9px;
+      display: block;
+      width: 19px;
+      height: 19px;
+      line-height: 0;
+      fill: @radio-checked-icon-active-color;
+    }
+  }
+
+  &--selected-child&--active {
+    padding-right: 36px;
+  }
+
+  &--active {
+    color: #3187eb;
+    background-color: rgba(245, 245, 245, 1);
+  }
+}

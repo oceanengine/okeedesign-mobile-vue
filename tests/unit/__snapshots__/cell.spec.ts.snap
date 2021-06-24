@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell CellGroup title slot 1`] = `<div class="byted-cell-group byted-hairline--top-bottom"></div>`;
+
+exports[`Cell arrow direction 1`] = `<div class="byted-cell byted-cell--clickable"><i class="byted-cell__right-icon">test-file-stub</i></div>`;
+
+exports[`Cell render slot 1`] = `
+<div class="byted-cell">
+  <div class="byted-cell__title">Custom Title<div class="byted-cell__label">Custom Label</div>
+  </div>
+  <div class="byted-cell__value">Custom Icon</div>
+</div>
+`;
+
+exports[`Cell title prop 1`] = `
+<div class="byted-cell">
+  <div class="byted-cell__title"><span>title</span></div>
+</div>
+`;

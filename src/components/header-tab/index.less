@@ -1,0 +1,40 @@
+@import '../../style/common';
+
+.@{prefix}header-tab {
+  position: relative;
+  display: inline-flex;
+  flex: 1;
+  height: @header-height;
+  font-size: @header-tab-font-size;
+  text-align: center;
+
+  &__box {
+    position: relative;
+    margin: 0 auto;
+    color: @header-tab-color;
+    opacity: 0.8;
+  }
+
+  &--active {
+    font-size: @header-tab-active-font-size;
+
+    .@{prefix}header-tab__box {
+      color: @header-tab-active-color;
+      font-weight: 500;
+      opacity: 1;
+    }
+  }
+
+  &--primary {
+    .@{prefix}header-tab__box {
+      color: #fff;
+    }
+
+    &.@{prefix}header-tab--active {
+      .@{prefix}header-tab__box {
+        font-weight: 500;
+        opacity: 1;
+      }
+    }
+  }
+}

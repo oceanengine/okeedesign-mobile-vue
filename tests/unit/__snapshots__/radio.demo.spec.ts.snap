@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo radio">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div style="padding-left: 0.8rem;"><span class="byted-icon byted-icon-module-radio" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34 18H58" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M34 46H58" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="16" cy="18" r="10" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></circle><circle cx="16" cy="18" r="2" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></circle><circle cx="16" cy="46" r="10" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></circle></svg></span></div>
+  <div style="padding-left: 0.8rem;">
+    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal byted-radio--checked"><i class="byted-icon byted-icon--check-one byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><span class="byted-radio__label">  2 </span><input type="radio" class="byted-radio__input" value="2"></label> <label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><span class="byted-radio__label">  3 </span><input type="radio" class="byted-radio__input" value="3"></label></div>
+  </div>
+  <div style="padding-left: 0.8rem;">
+    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">  1 </span><input type="radio" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal byted-radio--checked"><i class="byted-icon byted-icon--radio byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  2 </span><input type="radio" class="byted-radio__input" value="2"></label> <label class="byted-radio byted-radio--normal"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">  3 </span><input type="radio" class="byted-radio__input" value="3"></label></div>
+  </div>
+  <div style="padding-left: 0.8rem;">
+    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal byted-radio--checked"><i class="byted-icon byted-icon--check byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><span class="byted-radio__label">  2 </span><input type="radio" class="byted-radio__input" value="2"></label> <label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><span class="byted-radio__label">  3 </span><input type="radio" class="byted-radio__input" value="3"></label></div>
+  </div>
+  <div style="padding-left: 0.8rem;">
+    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal byted-radio--checked"><i class="byted-icon byted-icon--check-one byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">  2 </span><input type="radio" class="byted-radio__input" value="2"></label> <label class="byted-radio byted-radio--normal"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">  3 </span><input type="radio" class="byted-radio__input" value="3"></label></div>
+  </div>
+  <div style="padding-left: 0.8rem;">
+    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal byted-radio--disabled byted-radio--checked"><i class="byted-icon byted-icon--radio byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" disabled="disabled" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal byted-radio--disabled"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">  2 </span><input type="radio" disabled="disabled" class="byted-radio__input" value="2"></label></div>
+  </div>
+  <div style="padding-left: 0.8rem;">
+    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal byted-radio--checked"><i class="byted-icon byted-icon--check-one byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><span class="byted-radio__label">  2 </span><input type="radio" class="byted-radio__input" value="2"></label> <label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><span class="byted-radio__label">  3 </span><input type="radio" class="byted-radio__input" value="3"></label></div>
+  </div>
+  <div>
+    <div class="byted-radio-group">
+      <div class="byted-cell-group byted-hairline--top-bottom">
+        <div class="byted-cell">
+          <div class="byted-cell__title"><span></span></div><label class="byted-radio byted-radio--normal byted-radio--checked"><i class="byted-icon byted-icon--check-one byted-radio__icon">test-file-stub</i><input type="radio" class="byted-radio__input" value="1"></label>
+        </div>
+        <div class="byted-cell">
+          <div class="byted-cell__title"><span></span></div><label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><input type="radio" class="byted-radio__input" value="2"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dome-size">
+    <div class="dome-size-content"><span class="dome-size-content_title">尺寸</span>
+      <div class="dome-size-content_slider">
+        <div class="dome-slider">
+          <div class="dome-slider-container">
+            <div class="popover" style="display: none;"><span class="content">normal</span>
+              <div class="popover-arrow"></div>
+            </div>
+            <div class="dome-slider-button" style="left: 50%;"></div>
+            <div class="dome-slider-active" style="width: 50%;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 0px;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 50%;"></div>
+            <div class="slider-stop" style="left: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dome-size-icon"><img src="test-file-stub" alt="" class="svg-icon-close" style="display: none;"> <img src="test-file-stub" alt="" class="svg-icon-transfer"></div>
+  </div>
+</div>
+`;

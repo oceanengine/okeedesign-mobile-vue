@@ -1,0 +1,50 @@
+@import '../../style/common';
+
+.@{prefix}toast {
+  position: fixed;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  padding: @toast-padding;
+  color: @toast-color;
+  font-size: @toast-font-size;
+  line-height: @toast-line-height;
+  white-space: pre-wrap;
+  text-align: center;
+  word-break: break-all;
+  background-color: @toast-background-color;
+  border-radius: @border-radius-3; /* no */
+  transform: translate3d(calc(50vw - 50%), -50%, 0);
+
+  // should not add pointer-events: none directly to body tag
+  // that will cause unexpected tap-highlight-color in mobile safari
+  &--unclickable {
+    * {
+      pointer-events: none;
+    }
+  }
+
+  &--text {
+    width: fit-content;
+    min-width: @toast-text-min-width;
+    min-height: unset;
+    padding: @toast-text-padding;
+
+    .@{prefix}toast__text {
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    min-width: @toast-text-min-width;
+    max-width: @toast-text-max-width;
+    word-break: break-word;
+  }
+
+  &__icon {
+    margin-bottom: 12px;
+  }
+}

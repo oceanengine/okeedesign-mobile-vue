@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo tag">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-tabs" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 53V17H4V53H60Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M40 9V17H52V9H40Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 9V17H34V9H22Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 9H4V17H16V9Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 25H52" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 33H52" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 41H28" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag">
+
+        </span></div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--success"></span></div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--warning"></span></div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--danger"></span></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--normal">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--plain byted-hairline--surround">
+
+          </span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--success byted-tag--plain byted-hairline--surround"></span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--warning byted-tag--plain byted-hairline--surround"></span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--danger byted-tag--plain byted-hairline--surround"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--plain byted-tag--round byted-hairline--surround">
+
+          </span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--success byted-tag--plain byted-tag--round byted-hairline--surround"></span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--warning byted-tag--plain byted-tag--round byted-hairline--surround"></span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--danger byted-tag--plain byted-tag--round byted-hairline--surround"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div><span class="byted-tag" style="color: rgb(255, 255, 255); background-color: red;"></span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone">
+          <div class="box"><span class="byted-tag byted-tag--plain byted-hairline--surround" style="color: red;"></span></div>
+        </div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--round" style="color: rgb(255, 255, 255); background-color: red;"></span></div>
+      </div>
+      <div class="byted-cell">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag" style="color: red;"></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="dome-size">
+    <div class="dome-size-content"><span class="dome-size-content_title">尺寸</span>
+      <div class="dome-size-content_slider">
+        <div class="dome-slider">
+          <div class="dome-slider-container">
+            <div class="popover" style="display: none;"><span class="content">normal</span>
+              <div class="popover-arrow"></div>
+            </div>
+            <div class="dome-slider-button" style="left: 0px;"></div>
+            <div class="dome-slider-active" style="width: 0px;"></div>
+            <div class="slider-stop slider-stop-active" style="left: 0px;"></div>
+            <div class="slider-stop" style="left: 50%;"></div>
+            <div class="slider-stop" style="left: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dome-size-icon"><img src="test-file-stub" alt="" class="svg-icon-close" style="display: none;"> <img src="test-file-stub" alt="" class="svg-icon-transfer"></div>
+  </div>
+</div>
+`;

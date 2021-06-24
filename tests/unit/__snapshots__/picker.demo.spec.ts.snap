@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo picker">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div style="padding-left: 16px;"></div>
+  <div>
+    <div class="byted-picker">
+      <div class="byted-picker__toolbar byted-hairline--bottom">
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
+        <div class="byted-picker__title"></div>
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+      </div>
+      <div class="byted-picker__columns">
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">选项一</div>
+            <div class="byted-picker-column__option">选项二</div>
+            <div class="byted-picker-column__option">选项三</div>
+            <div class="byted-picker-column__option">选项四</div>
+            <div class="byted-picker-column__option">选项五</div>
+            <div class="byted-picker-column__option">选项六</div>
+          </div>
+        </div>
+        <div class="byted-picker__mask"></div>
+        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-picker">
+      <div class="byted-picker__toolbar byted-hairline--bottom">
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
+        <div class="byted-picker__title"></div>
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+      </div>
+      <div class="byted-picker__columns">
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">选项一</div>
+            <div class="byted-picker-column__option">选项二</div>
+            <div class="byted-picker-column__option">选项三</div>
+            <div class="byted-picker-column__option">选项四</div>
+            <div class="byted-picker-column__option">选项五</div>
+            <div class="byted-picker-column__option">选项六</div>
+          </div>
+        </div>
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">选项一</div>
+            <div class="byted-picker-column__option">选项二</div>
+            <div class="byted-picker-column__option">选项三</div>
+            <div class="byted-picker-column__option">选项四</div>
+            <div class="byted-picker-column__option">选项五</div>
+            <div class="byted-picker-column__option">选项六</div>
+          </div>
+        </div>
+        <div class="byted-picker__mask"></div>
+        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-picker">
+      <div class="byted-picker__toolbar byted-hairline--bottom">
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
+        <div class="byted-picker__title"></div>
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+      </div>
+      <div class="byted-picker__columns">
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">北京</div>
+            <div class="byted-picker-column__option">上海</div>
+          </div>
+        </div>
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">海淀</div>
+            <div class="byted-picker-column__option">朝阳</div>
+          </div>
+        </div>
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">中关村</div>
+            <div class="byted-picker-column__option">双榆树</div>
+          </div>
+        </div>
+        <div class="byted-picker__mask"></div>
+        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-picker">
+      <div class="byted-picker__toolbar byted-hairline--bottom">
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
+        <div class="byted-picker__title"></div>
+        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+      </div>
+      <div class="byted-picker__columns">
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">选项一</div>
+            <div class="byted-picker-column__option">选项二</div>
+            <div class="byted-picker-column__option">选项三</div>
+            <div class="byted-picker-column__option">选项四</div>
+            <div class="byted-picker-column__option">选项五</div>
+            <div class="byted-picker-column__option">选项六</div>
+          </div>
+        </div>
+        <div class="byted-picker-column">
+          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="byted-picker-column__option">选项一</div>
+            <div class="byted-picker-column__option">选项二</div>
+            <div class="byted-picker-column__option">选项三</div>
+            <div class="byted-picker-column__option">选项四</div>
+            <div class="byted-picker-column__option">选项五</div>
+            <div class="byted-picker-column__option">选项六</div>
+          </div>
+        </div>
+        <div class="byted-picker__mask"></div>
+        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-cell byted-cell--borderless byted-cell--clickable">
+      <div class="byted-cell__title"><span></span></div>
+      <div class="byted-cell__value byted-cell__value--alone"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+    </div>
+    <!---->
+  </div>
+</div>
+`;

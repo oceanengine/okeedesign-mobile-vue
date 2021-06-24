@@ -1,0 +1,19 @@
+@import '../../style/common';
+
+.@{prefix}col {
+  float: left;
+  box-sizing: border-box;
+}
+
+.generate-col(@n, @i: 1) when (@i =< @n) {
+  .@{prefix}col--@{i} {
+    width: @i * 100% / 24;
+  }
+
+  .@{prefix}col--offset-@{i} {
+    margin-left: @i * 100% / 24;
+  }
+  .generate-col(@n, (@i + 1));
+}
+
+.generate-col(24);

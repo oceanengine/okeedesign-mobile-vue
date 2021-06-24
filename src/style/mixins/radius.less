@@ -1,0 +1,21 @@
+/**
+  * 六个层级的圆角设置
+  */
+.bui-border-radius(@level:1) when (@level = 1) {
+  border-radius: 2px; /* no */
+}
+.bui-border-radius(@level) when (@level = 2) {
+  border-radius: 4px; /* no */
+}
+.bui-border-radius(@level) when (@level = 3) {
+  border-radius: 8px; /* no */
+}
+.bui-border-radius(@level) when (@level = 4) {
+  border-radius: 12px; /* no */
+}
+.bui-border-radius(@level) when (@level = 5) {
+  border-radius: 16px; /* no */
+}
+.bui-border-radius(@level) when (@level = 6) {
+  border-radius: 18px; /* no */
+}

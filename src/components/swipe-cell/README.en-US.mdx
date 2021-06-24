@@ -1,0 +1,126 @@
+# SwipeCell
+
+### Install
+
+:::card
+
+```javascript
+import { SwipeCell } from '@okee-uikit/m-vue';
+
+Vue.use(SwipeCell);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-swipe-cell>
+  <template slot="left">
+    <byted-button text="turn left" type="primary" />
+  </template>
+
+  <byted-cell title="title" value="content" />
+
+  <template slot="right">
+    <byted-button text="turn right" type="danger" />
+  </template>
+</byted-swipe-cell>
+```
+
+:::
+
+:::card
+
+```topic
+Async Close
+```
+
+```html
+<byted-swipe-cell async @close="onClose">
+  <byted-cell title="title" value="content" />
+
+  <template #right>
+    <byted-button text="turn right" type="danger" />
+  </template>
+</byted-swipe-cell>
+```
+
+```javascript
+export default {
+  methods: {
+    // clickPosition: Indicates the location of the click when closed
+    onClose(clickPosition, instance) {
+      switch (clickPosition) {
+        case 'left':
+          break;
+        case 'cell':
+          break;
+        case 'outside':
+          break;
+        case 'right':
+          this.$confirm('Content', 'Title')
+            .then(() => {
+              instance.close();
+            })
+            .catch(() => {
+              instance.close();
+            });
+          break;
+      }
+    },
+  },
+};
+```
+
+:::
+
+### API
+
+##### Props
+
+| Attribute   | Description                    | Type      | Default |
+| ----------- | ------------------------------ | --------- | ------- |
+| name        | Identifier of SwipeCell        | `string` &#124; `number` |
+| async       | Callback function before close | `boolean` | `false` |
+| disabled    | Whether to disabled swipe      | `boolean` | `false` |
+| left-width  | Width of the left swipe area   | `number`  | `auto`  |
+| right-width | Width of the right swipe area  | `number`  | `auto`  |
+
+##### Slots
+
+| Name    | Description                     |
+| ------- | ------------------------------- |
+| default | custom content                  |
+| left    | content of left scrollable area |
+| right   | content of right scrollabe area |
+
+##### Events
+
+| Event | Description                                         | Arguments                                         |
+| ----- | --------------------------------------------------- | ------------------------------------------------- |
+| click | Triggered when clicked                              | -                                                 |
+| close | Trigger when setting asynchronous condition `async` | async close (`clickPosition`, `instance`, `name`) |
+
+##### Close Params
+
+| Attribute     | Description                                     | Type     |
+| ------------- | ----------------------------------------------- | -------- |
+| clickPosition | Click positon (`left` `right` `cell` `outside`) | `string` |
+| instance      | SwipeCell instance                              | `object` |
+| detail        | Detail info                                     | `object` |
+
+##### Methods
+
+Use ref to get SwipeCell instance and call instance methods
+
+| Name  | Attribute       | Return value | Description     |
+| ----- | --------------- | ------------ | --------------- | -------------- |
+| open  | position: `left` `right`       | -               | open SwipeCell |
+| close | -               | -            | close SwipeCell |

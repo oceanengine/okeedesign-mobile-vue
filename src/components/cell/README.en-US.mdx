@@ -1,0 +1,171 @@
+# Cell
+
+### Install
+
+:::card
+
+```javascript
+import { Cell, CellGroup } from '@okee-uikit/m-vue';
+
+Vue.use(Cell).use(CellGroup);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-cell-group>
+  <byted-cell title="Title" value="content" size="normal" clickable />
+  <byted-cell title="Title" value="content" label="description" :ize="normal" clickable middle/>
+</byted-cell-group>
+```
+
+:::
+
+:::card
+
+```topic
+Show Icon
+```
+
+```html
+<byted-cell-group>
+  <byted-cell title="Title" value="content" size="normal" clickable>  
+    <template #title>
+      <img src="cell.svg" alt="" width="17px" height="17px">
+      <span>Title</span>
+    </template>
+  </byted-cell>
+  <byted-cell title="Title" value="content" label="description" :ize="normal" clickable middle>
+    <template #title>
+      <img src="cell.svg" alt="" width="17px" height="17px">
+      <span style="vertical-align: middle;">{{t('title')}}</span>
+    </template>
+  </byted-cell>
+</byted-cell-group>
+```
+
+:::
+
+:::card
+
+```topic
+Set value only
+```
+
+```html
+<byted-cell value="content" />
+```
+
+:::
+
+:::card
+
+```topic
+Show Arrow
+```
+
+```html
+<byted-cell-group>
+  <byted-cell title="Title" size="normal" is-link />
+  <byted-cell title="Title" value="content" size="normal" is-link />
+  <byted-cell title="Title" value="content" size="normal" is-link arrow-direction="down"/>
+</byted-cell-group>
+```
+
+:::
+
+:::card
+
+```topic
+Group Title
+```
+
+```html
+<byted-cell-group title="Group1">
+  <byted-cell title="Title" value="content" />
+</byted-cell-group>
+<byted-cell-group title="Group2">
+  <byted-cell title="Title" value="content" size="large" />
+</byted-cell-group>
+```
+
+:::
+
+:::card
+
+```topic
+Advanced Usage
+```
+
+```html
+<byted-cell value="content" size="normal" is-link>
+  <template #title>
+    <img src="tag.svg" alt="tag" width="25px" height="25px">
+    <span>Title</span>
+  </template>
+</byted-cell>
+<byted-cell value="content" size="normal">
+    <template #title>
+      <img src="correct.svg" alt="correct" width="17px" height="17px">
+      <span>Title</span>
+    </template>
+</byted-cell>
+<byted-cell title="Title" size="normal">
+  <template #right-icon>
+    <byted-switch v-model="valueBase" />
+  </template>
+</byted-cell>
+<byted-cell title="Title" size="normal">
+  <template #right-icon>
+    <img src="button.svg" alt="" width="24px" height="24px">
+  </template>
+</byted-cell>
+```
+
+:::
+
+### API
+
+##### CellGroup Props
+
+| Attribute | Description                         | Type      | Default |
+| --------- | ----------------------------------- | --------- | ------- |
+| title     | Group title                         | `string`  | `-`     |
+| border    | Whether to display the outer border | `boolean` | `true`  |
+
+##### Cell Props
+
+| Attribute       | Description                                 | Type      | Default  |
+| --------------- | ------------------------------------------- | --------- | -------- | --- |
+| title           | Title                                       | `string` &#124; `number` | -   |
+| value           | Right text                                  | `string` &#124; `number` | -   |
+| label           | Description below the title                 | `string`  | -        |
+| size            | Size，can be set to `large` `small`         | `string`  | `normal` |
+| border          | Whether to show inner border                | `boolean` | `true`   |
+| clickable       | Whether to show click feedback when clicked | `boolean` | `false`  |
+| is-link         | Whether to show link icon                   | `boolean` | `false`  |
+| middle          | Whether to center content vertically        | `boolean` | `false`  |
+| arrow-direction | Can be set to `left` `up` `down`            | `string`  | -        |
+
+##### Cell Events
+
+| Event | Description          | Arguments    |
+| ----- | -------------------- | ------------ |
+| click | Triggered when click | event: Event |
+
+##### Cell Slots
+
+| name       | Description       |
+| ---------- | ----------------- |
+| default    | Default slot      |
+| title      | Custom title      |
+| label      | Custom label      |
+| right-icon | Custom right icon |

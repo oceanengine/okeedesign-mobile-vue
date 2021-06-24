@@ -1,0 +1,83 @@
+@import '../../style/common';
+
+.@{prefix}pull-refresh {
+  overflow: hidden;
+  user-select: none;
+
+  &__track {
+    position: relative;
+  }
+
+  &__head {
+    position: absolute;
+    top: calc(-@pull-refresh-head-height);
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__foot {
+    position: absolute;
+    padding-top: @pull-refresh-head-height;
+  }
+
+  &__icon {
+    width: @pull-refresh-head-height;
+    height: @pull-refresh-head-height;
+    fill: @primary-color;
+  }
+
+  &__wrp {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: @pull-refresh-head-height;
+    color: @pull-refresh-head-text-color;
+    font-size: @pull-refresh-head-font-size;
+    line-height: @pull-refresh-head-height;
+
+    &__text {
+      margin-left: 10px;
+    }
+
+    &--large {
+      height: @pull-refresh-head-large-height;
+      font-size: @pull-refresh-head-large-font-size;
+      line-height: @pull-refresh-head-large-height;
+
+      .@{prefix}pull-refresh__icon {
+        width: @pull-refresh-head-large-height;
+        height: @pull-refresh-head-large-height;
+      }
+    }
+
+    &--default&__text {
+      margin-left: 0;
+    }
+
+    &--loading .@{prefix}pull-refresh__icon,
+    &--footLoading .@{prefix}pull-refresh__icon {
+      transform-origin: 50% 50%;
+      animation: spin 870ms infinite;
+      animation-play-state: running;
+    }
+
+    &--success .@{prefix}pull-refresh__icon,
+    &--fail .@{prefix}pull-refresh__icon,
+    &--footLoadSuccess .@{prefix}pull-refresh__icon,
+    &--footLoadFail .@{prefix}pull-refresh__icon,
+    &--footLoadEnd .@{prefix}pull-refresh__icon {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

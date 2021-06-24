@@ -1,0 +1,257 @@
+# Checkbox
+
+### Install
+
+:::card
+
+```javascript
+import { Checkbox, CheckboxGroup } from '@okee-uikit/m-vue';
+
+Vue.use(Checkbox).use(CheckboxGroup);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-checkbox-group v-model="checked">
+  <byted-checkbox v-for="index in 2" :key="index" :value="index">
+    checkbox{{ index }}
+  </byted-checkbox>
+</byted-checkbox-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      checked: [1, 3],
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Disabled
+```
+
+```html
+<byted-checkbox-group v-model="checked">
+  <byted-checkbox v-for="index in 2" :key="index" :value="index" disabled>
+    checkbox{{ index }}
+  </byted-checkbox>
+</byted-checkbox-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      checked: [2],
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Customize Scale
+```
+
+```html
+<byted-checkbox-group v-model="checked">
+  <byted-checkbox size="small">checkbox</byted-checkbox>
+  <byted-checkbox>checkbox</byted-checkbox>
+  <byted-checkbox size="large">checkbox</byted-checkbox>
+</byted-checkbox-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      checked: [1,2,3],
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Maximum Selection
+```
+
+```html
+<byted-checkbox-group size="normal" max='3'>
+  <byted-checkbox v-for="index in 6" :key="index" :value="index">
+    <div>checkbox {{ index }}</div>
+  </byted-checkbox>
+</byted-checkbox-group>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      checked: [2,4],
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Pair With Cells
+```
+
+```html
+<byted-checkbox-group size="normal">
+  <byted-cell border="false" size="normal" >
+      <byted-checkbox :key="1" :value="1">
+        <div>checkbox {{ index }}</div>
+      </byted-checkbox>
+  </byted-cell>
+  <byted-cell  size="normal" >
+    <byted-checkbox :key="2" :value="2">
+          <div>checkbox {{ index }}</div>
+        </byted-checkbox>
+  </byted-cell>
+</byted-checkbox-group>  
+```
+
+:::
+
+### API
+
+##### Checkbox Props
+
+| Attribute       | Description          | Type      | Default |
+| --------------- | -------------------- | --------- | ------- | -------- | ------- | --- |
+| v-model         | Check status         | `boolean` | `false` | -        |
+| disabled        | Diable checkbox      | `boolean` | `false` | -        |
+| label-position  | Can be set to `left` | `string`  | `right` | -        |
+| size            | Size status          | `string`  | `small` | `normal` | `large` | -   |
+| stopPropagation | stopPropagation      | `boolean` | `false` | -        |
+
+##### CheckboxGroup Props
+
+| Attribute | Description                       | Type      | Default   |
+| --------- | --------------------------------- | --------- | --------- | -------- | ------- | --- |
+| v-model   | Names of all checked checkboxes   | `any[]`   | -         | -        |
+| disabled  | Disable all checkboxes            | `boolean` | `false`   | -        |
+| max       | Maximum amount of checked options | `number`  | `0`       | -        |
+| size      | Size status                       | `string`  | `small`   | `normal` | `large` | -   |
+| type      | Type                              | `string`  | `default` | `number` |
+
+### Events
+
+##### Checkbox Events
+
+| Event  | Description                  | Arguments     |
+| ------ | ---------------------------- | ------------- |
+| change | Triggered when value changed | current value |
+
+##### CheckboxGroup Events
+
+| Event  | Description                  | Arguments     |
+| ------ | ---------------------------- | ------------- |
+| change | Triggered when value changed | current value |
+
+##
+
+# Checkbox Group
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-checker v-model="checker">
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item value="2">2</byted-checker-item>
+    </byted-col>
+  </byted-row>
+</byted-checker>
+
+<byted-checker v-model="checker" round>
+  <byted-row gutter="10">
+    <byted-col span="8">
+      <byted-checker-item label="0" :value="0" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item label="1" value="1" />
+    </byted-col>
+    <byted-col span="8">
+      <byted-checker-item value="2">2</byted-checker-item>
+    </byted-col>
+  </byted-row>
+</byted-checker>
+```
+
+```javascript
+data() {
+  return {
+    checker: [0, '2']
+  }
+}
+```
+
+:::
+
+## API
+
+### Checker Props
+
+| Attribute | Description                   | Type                      | Default     |
+| --------- | ----------------------------- | ------------------------- | ---------- |
+| inputType | `radio` `checkbox`  | `string`                  | `checkbox` |
+| value     |  Array String Number | `array` `string` `number` | `[]`       |
+| type      | `primary`           | `string`                  | `default`  |
+| size      | `small` `normal`    | `string`                  | `normal`   |
+
+### CheckerItem Props
+
+| Attribute  | Description               | Type                      | Default |
+| ----- | ----------------------------- | ------------------------- | ------ |
+| value |  Array String  Number | `array` `string` `number` | `[]`   |
+| label | Content                          | `string`                  | `''`   |
+| name  | indicator                          | `string`                  | `''`   |
+| info  | Description                      | `string`                  | `''`   |
+
+### Events
+
+| Name     | Description                   | Callback           |
+| ---------- | ------------------------ | ------------------ |
+| change     | Event triggered |           value |
+| input      | Async               |     value   |
+| click      | Triggered when clicked           | event              |
+| touchstart | Triggered when touched           | event              |

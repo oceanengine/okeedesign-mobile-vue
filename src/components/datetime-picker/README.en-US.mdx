@@ -1,0 +1,142 @@
+# DatetimePicker
+
+### Install
+
+:::card
+
+```javascript
+import { DatetimePicker } from '@okee-uikit/m-vue';
+
+Vue.use(DatetimePicker);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Choose Date(Year-Month-Day)
+```
+
+```html
+<byted-datetime-picker v-model="value" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: new Date(),
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Choose Datetime
+```
+
+```html
+<byted-datetime-picker v-model="value" type="datetime" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: new Date(),
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Choose Time
+```
+
+```html
+<byted-datetime-picker v-model="value" type="time" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: '19:00',
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+With Popup
+```
+
+```html
+<byted-cell title="Choose Time" :border="false" is-link @click="show=!show" />
+<byted-popup v-model="show" position="bottom">
+  <byted-datetime-picker
+    v-model="value"
+    @change="onChange"
+    @cancel="show=!show"
+    @confirm="show=!show"
+  />
+</byted-popup>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: new Date(),
+    };
+  },
+  methods: {
+    onChange(val) {
+      console.log(val);
+    },
+  },
+};
+```
+
+:::
+
+### API
+
+##### Props
+
+| Attribute           | Description                            | Type             | Default              |
+| ------------------- | -------------------------------------- | ---------------- | -------------------- |
+| value               | Key of option value                    | _Date \| string_ | -                    |
+| type                | Can be set to `date` `time` `datetime` | _string_         | `date`               |
+| min-date            | Min date                               | _Date_           | `Twenty years ago`   |
+| max-date            | Max date                               | _Date_           | `Twenty years later` |
+| title               | title                                  | _string_         | -                    |
+| show-toolbar        | Whether to show toolbar                | _boolean_        | `true`               |
+| confirm-button-text | Text of confirm button                 | _string_         | `Cancel`             |
+| cancel-button-text  | Text of cancel button                  | _string_         | `Confirm`            |
+
+### Events
+
+##### DatetimePicker Events
+
+| Event   | Description                           | Arguments |
+| ------- | ------------------------------------- | --------- |
+| change  | Triggered when current option changed | `value`   |
+| input   | Triggered when current option changed | `value`   |
+| confirm | Triggered when click confirm button   | Event     |
+| cancel  | Triggered when click cancel button    | Event     |

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider drag button 1`] = `
+<div class="byted-slider byted-slider--disabled">
+  <div class="byted-slider__bar" style="width: 50%;">
+    <div class="byted-slider__bar__wrapper">
+      <div class="byted-slider__button"></div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Slider drag button 2`] = `
+<div class="byted-slider">
+  <div class="byted-slider__bar" style="width: 100%;">
+    <div class="byted-slider__bar__wrapper">
+      <div class="byted-slider__button"></div>
+    </div>
+  </div>
+</div>
+`;

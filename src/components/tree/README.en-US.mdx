@@ -1,0 +1,244 @@
+# Tree
+
+### Install
+
+:::card
+
+```javascript
+import { Tree } from '@okee-uikit/m-vue';
+
+Vue.use(Tree);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```desc
+Provide the options array and bind selected values via `v-model`.
+```
+
+```html
+<byted-button @click="showTree = true"> Select foods </byted-button>
+<byted-popup v-model="showTree" position="bottom">
+  <div class="demo-tree">
+    <byted-tree ref="tree1" v-model="selectedValues" :options="options" />
+  </div>
+</byted-popup>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      showTree: false,
+      selectedValues: [
+        {
+          value: 'lunch',
+          children: [
+            {
+              value: 'lunch_fruit',
+              children: [
+                {
+                  value: 'lunch_fruit_apple',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      options: [
+        {
+          label: 'Breakfast',
+          value: 'breakfast',
+          children: [
+            {
+              label: 'Breads',
+              value: 'breakfast_breads',
+            },
+            {
+              label: 'Milk',
+              value: 'breakfast_milk',
+            },
+          ],
+        },
+        {
+          label: 'Lunch',
+          value: 'lunch',
+          children: [
+            {
+              label: 'Sandwich',
+              value: 'lunch_sandwich',
+            },
+            {
+              label: 'fruit',
+              value: 'lunch_fruit',
+              children: [
+                {
+                  label: 'Apple',
+                  value: 'lunch_fruit_apple',
+                },
+                {
+                  label: 'Banana',
+                  value: 'lunch_fruit_banana',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Dinner',
+          value: 'dinner',
+          children: [
+            {
+              label: 'Steak',
+              value: 'dinner_steak',
+            },
+            {
+              label: 'Salad',
+              value: 'dinner_salad',
+            },
+            {
+              label: 'Cakes',
+              value: 'dinner_cakes',
+            },
+          ],
+        },
+      ],
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Incomplete Values
+```
+
+```desc
+Binding supports incomplete values. It's allowed to provide some middle nodes as start nodes, or some nodes with status `all` and omit child nodes in the mean time.
+```
+
+```html
+<byted-tree v-model="selectedValuesIncomplete" :options="options" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      //...
+      selectedValuesIncomplete: [
+        {
+          value: 'lunch_fruit',
+          status: 'all',
+        },
+      ],
+      //...
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Interaction behavior of partially selected options
+```
+
+```desc
+The default interaction behavior of partially selected options is 'select all' while click. Can be change to 'unselect all'.
+Specify via the property `partial-to-unselect-all`.
+```
+
+```html
+<byted-tree v-model="selectedValues" :options="options" partial-to-unselect-all />
+```
+
+:::
+
+:::card
+
+```topic
+Flat Mode
+```
+
+```desc
+The bound value can use one-dimensional array, specify via property `flat`.
+Note that the value of none-end nodes in options will be ignore.
+```
+
+```html
+<byted-tree v-model="selectedValuesFlat" :options="options" flat />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      //...
+      selectedValuesFlat: ['lunch_fruit_apple', 'lunch_fruit_banana'],
+      //...
+    };
+  },
+};
+```
+
+:::
+
+### API
+
+
+:::card
+
+```topic
+Types
+```
+
+```javascript
+export interface TreeValue {
+  value: string | number;
+  status: 'all' | 'partial';
+  children?: TreeValue[];
+}
+
+export interface TreeOption {
+  id?: string;
+  label: string;
+  value?: string | number;
+  children?: TreeOption[];
+}
+```
+
+:::
+
+##### Model
+
+- prop: value
+- event: change
+
+##### Props
+
+| Name                    | Description                                                                                                           | Type           | Default value             |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- | --- |
+| value                   | Selected values, use for v-model two-way binding with event `change`                                                  | `string[]`       &#124; `number[]` &#124; `TreeValue[]` |     |
+| options                 | The options array for selecting                                                                                       | `TreeOption[]` |                           |
+| partial-to-unselect-all | Change the behavior of partially selected options to 'unselect all'.                                                  | `boolean`      | `false`                   |
+| flat                    | Flat mode, use on-dimensional array for bound value. Note that the value of none-end nodes in options will be ignore. | `boolean`      | `false`                   |
+
+##### Events
+
+| Name   | Description                    | Parameters of callback |
+| ------ | ------------------------------ | ---------------------- | --------- | ------------ |
+| change | Emit while bound value changes | `string[]`       &#124; `number[]` &#124; `TreeValue[]` |

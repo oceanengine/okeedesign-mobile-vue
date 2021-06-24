@@ -1,0 +1,101 @@
+@import '../../style/common';
+
+.@{prefix}checkbox {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    flex: 1;
+    margin-left: @checkbox-normal-label-margin;
+    color: @checkbox-checked-label-color;
+    font-size: @checkbox-normal-font-size;
+    line-height: @checkbox-normal-size;
+  }
+
+  &__icon {
+    display: block;
+    flex-shrink: 0;
+    width: @checkbox-normal-size;
+    height: @checkbox-normal-size;
+    fill: @checkbox-checked-icon-color;
+
+    &__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: @checkbox-normal-size;
+      height: @checkbox-normal-size;
+      color: @white;
+      background: @checkbox-checked-icon-active-color;
+      border-radius: 50%;
+    }
+  }
+
+  &--checked &__icon {
+    fill: @checkbox-checked-icon-active-color;
+  }
+
+  &--checked &__label {
+    color: @checkbox-checked-label-active-color;
+  }
+
+  &--disabled &__icon {
+    fill: @checkbox-disabled-icon-color;
+  }
+
+  &--disabled &__label {
+    color: @checkbox-disabled-label-color;
+  }
+
+  &--disabled&--checked &__icon {
+    background-color: @checkbox-disabled-icon-active-color;
+  }
+
+  &--small &__icon {
+    width: @checkbox-small-size;
+    height: @checkbox-small-size;
+  }
+
+  &--small &__label {
+    margin-left: @checkbox-small-label-margin;
+    font-size: @checkbox-small-font-size;
+    line-height: @checkbox-small-size;
+  }
+
+  &--large &__icon {
+    width: @checkbox-large-size;
+    height: @checkbox-large-size;
+  }
+
+  &--large &__icon__number {
+    width: @checkbox-large-size;
+    height: @checkbox-large-size;
+  }
+
+  &--large &__label {
+    margin-left: @checkbox-large-label-margin;
+    font-size: @checkbox-large-font-size;
+    line-height: @checkbox-large-size;
+  }
+
+  &--left &__label {
+    margin-right: @checkbox-normal-label-margin;
+    margin-left: 0;
+  }
+
+  &--small&--left &__label {
+    margin-right: @checkbox-small-label-margin;
+    margin-left: 0;
+  }
+
+  &--large&--left &__label {
+    margin-right: @checkbox-large-label-margin;
+    margin-left: 0;
+  }
+}

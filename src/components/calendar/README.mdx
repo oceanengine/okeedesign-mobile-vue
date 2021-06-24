@@ -1,0 +1,290 @@
+# Calendar 日历
+
+### 安装
+
+:::card
+
+```javascript
+import { Calendar } from '@okee-uikit/m-vue';
+
+Vue.use(Calendar);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```desc
+通过`v-model`绑定已选值，类型为`Date`的数组。
+```
+
+```html
+<byted-button @click="showBasic = true">
+</byted-button>
+<byted-popup v-model="showBasic" position="bottom">
+  <byted-calendar v-model="valueRange" mode="range" @select="showBasic = false" />
+</byted-popup>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      showBasic: false,
+      valueRange: [],
+
+      min: new Date(today.getFullYear(), today.getMonth(), today.getDate()),
+      max: new Date(today.getFullYear(), today.getMonth(), today.getDate() + 6),
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+要求点击确认
+```
+
+```desc
+通过指定`require-confirm`属性，只有点击“确认”按钮后才触发`change`事件
+```
+
+```html
+<byted-button @click="showRange = true">
+</byted-button>
+<byted-popup v-model="showRange" position="bottom">
+  <byted-calendar
+    v-model="valueRange"
+    mode="range"
+    require-confirm
+    @cancel="showRange = false"
+    @confirm="showRange = false"
+  />
+</byted-popup>
+```
+
+:::
+
+:::card
+
+```topic
+多个日期
+```
+
+```desc
+通过指定`mode`属性，实现单选多选的转换
+```
+
+```html
+<byted-button @click="showMulti = true">
+</byted-button>
+<byted-popup v-model="showMulti" position="bottom">
+  <byted-calendar
+    v-model="valueRange"
+    mode="multi"
+    @cancel="showMulti = false"
+    @confirm="showMulti = false"
+  />
+</byted-popup>
+```
+
+:::
+
+:::card
+
+```topic
+范围模式下的起止时间
+```
+
+```desc
+范围模式下，通过指定`range-use-start-end`属性，起始日期的时间为`00h00m00s000ms`，结束日期的时间为`23h59m59s999ms`。
+```
+
+```html
+<template>
+  <byted-button @click="showRange = true">
+    {{ valueRange.map(v => v.toLocaleDateString()).join(' - ') || t('noSelected') }}
+  </byted-button>
+  <byted-popup v-model="showRange" position="bottom">
+    <byted-calendar
+      v-model="valueRange"
+      mode="range"
+      range-use-start-end
+      @select="showRange = false"
+    />
+  </byted-popup>
+</template>
+```
+
+:::
+
+:::card
+
+```topic
+作用域插槽
+```
+
+```desc
+日历组件提供三个作用域插槽：`headerLeft`, `headerRight`, `bottomFloat`。
+```
+
+Vue 模板中使用：
+
+```html
+<byted-button @click="showScopedSlots = true">
+  {{ valueRange.map(v => v.toLocaleDateString()).join(' - ') || t('noSelected') }}
+</byted-button>
+<byted-popup v-model="showScopedSlots" position="bottom">
+  <byted-calendar
+    v-model="valueRange"
+    mode="range"
+    :min="min"
+    :max="max"
+    require-confirm
+    @cancel="showScopedSlots = false"
+    @confirm="showScopedSlots = false"
+  >
+    <template v-slot:headerRight="slotProps">
+      <button class="demo-calendar-slot-button" @click="slotProps.setSelected([])">清除</button>
+    </template>
+    <template v-slot:bottomFloat="slotProps">
+      <div class="demo-calendar-slot-bottom">
+        <byted-row>
+          <byted-col span="16">
+            <div>起：{{ slotProps.selected[0] && slotProps.selected[0].toLocaleDateString() }}</div>
+            <div>止：{{ slotProps.selected[1] && slotProps.selected[1].toLocaleDateString() }}</div>
+          </byted-col>
+          <byted-col span="8">
+            <div class="demo-calendar-slot-bottom-button-wrap">
+              <byted-button type="primary" size="mini" @click="slotProps.confirm">
+                确定
+              </byted-button>
+            </div>
+          </byted-col>
+        </byted-row>
+      </div>
+    </template>
+  </byted-calendar>
+</byted-popup>
+```
+
+JSX 中使用
+
+```javascript
+export default {
+  // ...
+  render() {
+    const scopedSlots = {
+      headerRight: props => (
+        <button class="demo-calendar-slot-button" onClick={() => props.setSelected([])}>
+          清除
+        </button>
+      ),
+      bottomFloat: props => (
+        <div class="demo-calendar-slot-bottom">
+          <byted-row>
+            <byted-col span="16">
+              <div>起：{props.selected[0] && props.selected[0].toLocaleDateString()}</div>
+              <div>止：{props.selected[1] && props.selected[1].toLocaleDateString()}</div>
+            </byted-col>
+            <byted-col span="8">
+              <div class="demo-calendar-slot-bottom-button-wrap">
+                <byted-button type="primary" size="mini" onClick={() => props.confirm}>
+                  确定
+                </byted-button>
+              </div>
+            </byted-col>
+          </byted-row>
+        </div>
+      ),
+    };
+    return (
+      <MyComponent>
+        <byted-calendar vModel={this.rangeValue} scopedSlots={scopedSlots} />
+      </MyComponent>
+    );
+  },
+};
+```
+
+:::
+
+### API
+
+:::card
+
+```topic
+Types
+```
+
+```typescript
+type CalendarSelectMode = 'single' | 'multi' | 'range';
+
+type DayOfWeek = 'sunday' | 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday';
+
+interface CalendarScopedSlotsProps {
+  selected: Date[];
+  setSelected(value: Date[]): void;
+  cancel(): void;
+  confirm(): void;
+}
+```
+
+:::
+
+##### 属性
+
+| 名称            | 类型                 | 默认值     | 描述                                                                                                                     |
+| --------------- | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------ |
+| value           | `Date[]`             |            | 用于绑定的`Date`数组, 用于 v-model （`change`事件）。                                                                    |
+| mode            | `CalendarSelectMode` | `'range'`  | 选择模式。                                                                                                               |
+| rangUseStartEnd | boolean              | false      | 当模式为`range`时，将开始时间设为`00:00:00`，结束时间设为`23:59:59`。                                                    |
+| min             | `Date`               |            | 允许的最早日期。                                                                                                         |
+| max             | `Date`               |            | 允许的最晚日期                                                                                                           |
+| firstDayOfWeek  | `DayOfWeek`          | `'sunday'` | 设置一周的第一天，比如周一。                                                                                             |
+| title           | string               |            | 头部标题文本。                                                                                                           |
+| showTitleBar    | boolean              | true       | 显示标题拦与否。                                                                                                         |
+| showCancel      | boolean              | false      | 显示取消按钮与否。                                                                                                       |
+| showConfirm     | boolean              | false      | 显示确定按钮与否                                                                                                         |
+| requireConfirm  | boolean              | false      | 设置 v-model 事件 `change` 的行为。 若为 `true`，`change` 事件仅会在点击确定按钮之后触发，并且取消和确定按钮会一直显示。 |
+
+
+:::card
+
+```topic
+Model (v-model)
+```
+
+```json
+{
+  "prop": "value",
+  "event": "change"
+}
+```
+
+:::
+
+##### 事件
+
+| Name    | Callback Type           | Description                                      |
+| ------- | ----------------------- | ------------------------------------------------ |
+| change  | `(val: Date[]) => void` | 所选日期变动事件，用于 v-model （属性`value`）。 |
+| cancel  | `() => void`            | 取消按钮点击事件。                               |
+| confirm | `(val: Date[]) => void` | 确定按钮点击事件。                               |
+
+##### 作用域插槽
+
+| 名称        | 类型                                                         | 描述                             |
+| ----------- | ------------------------------------------------------------ | -------------------------------- |
+| headerLeft  | `(props: CalendarScopedSlotsProps) => ScopedSlotReturnValue` | 标题栏左侧位置，会覆盖取消按钮。 |
+| headerRight | `(props: CalendarScopedSlotsProps) => ScopedSlotReturnValue` | 标题栏右侧位置，会覆盖确认按钮。 |
+| bottomFloat | `(props: CalendarScopedSlotsProps) => ScopedSlotReturnValue` | 底部浮层区域。                   |

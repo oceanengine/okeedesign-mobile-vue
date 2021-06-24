@@ -1,0 +1,92 @@
+@import '../../style/common';
+
+.@{prefix}search {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: @search-padding-top 16px;
+  background: @search-background-color;
+
+  &__content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background: @search-content-background-color;
+    border-radius: @border-radius-2;
+
+    .@{prefix}field {
+      border-radius: inherit;
+
+      &__clear {
+        display: inline-block;
+        width: @search-clear-width;
+        height: @search-clear-width;
+        padding: 0 12px 0 8px;
+      }
+
+      input {
+        padding: @search-input-padding-top 0;
+
+        &::placeholder {
+          color: @text-color-4;
+        }
+      }
+
+      &__body {
+        background: transparent;
+        border-radius: inherit;
+
+        &::after {
+          content: none;
+        }
+      }
+
+      &__item {
+        font-size: @search-font-size;
+      }
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    padding: 0 @search-icon-padding-right 0 @search-icon-padding-left;
+    fill: @text-color-4;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__icon-slot-box {
+    display: inline-block;
+    height: 16px;
+    padding-right: @search-icon-padding-right;
+    padding-left: @search-icon-padding-left;
+    line-height: 16px;
+    fill: @text-color-4;
+  }
+
+  &__action {
+    padding-left: @search-action-padding-left;
+    color: @search-action-color;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__left {
+    padding-right: @search-action-padding-left;
+  }
+
+  &__right {
+    padding-left: @search-action-padding-left;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+}

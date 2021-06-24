@@ -1,0 +1,91 @@
+# On-Loading 加载显示
+
+### 安装
+
+:::card
+
+```javascript
+import { Loading } from '@okee-uikit/m-vue';
+
+Vue.use(Loading);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+基础用法
+```
+
+```html
+<byted-loading />
+```
+
+:::
+
+:::card
+
+```topic
+样式类型
+```
+
+```html
+<byted-loading type="circle" />
+```
+
+:::
+
+:::card
+
+```topic
+显示文字
+```
+
+```html
+<byted-loading text="加载中..." />
+```
+
+:::
+
+:::card
+
+```topic
+垂直排列
+```
+
+```html
+<byted-loading vertical>加载中...</byted-loading>
+```
+
+:::
+
+:::card
+
+```topic
+加载图标大小
+```
+
+```html
+<byted-loading size="1.2rem" />
+```
+
+:::
+
+### API
+
+##### Props
+
+| 参数     | 说明                        | 类型                 | 默认值    |
+| -------- | --------------------------- | -------------------- | --------- |
+| type     | 可设置为 `default` `circle` | `string`             | `default` |
+| vertical | 文字排列方式                | `boolean`            | `false`   |
+| size     | 加载图标大小                | `string` or `number` | `''`      |
+
+##### Events
+
+| 事件名 | 说明       | 回调参数 |
+| ------ | ---------- | -------- |
+| click  | 点击时触发 | event    |

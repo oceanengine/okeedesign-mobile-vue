@@ -1,0 +1,97 @@
+@import '../../style/common';
+
+.@{prefix}tree {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0 @tree-padding;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: @tree-font-size;
+  background-color: @tree-background-color;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: @tree-container-height;
+  }
+
+  &__node:focus > &__container {
+    background-color: @tree-container-background-color-focus;
+  }
+
+  &__label {
+    position: relative;
+    flex: 1;
+    padding: 0 @tree-label-padding;
+  }
+
+  &__triangular,
+  &__check {
+    position: relative;
+    display: inline-flex;
+    flex: none;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__triangular-icon {
+    fill: currentColor;
+    stroke: currentColor;
+  }
+
+  &__check-icon,
+  &__check-partially-icon {
+    fill: transparent;
+    stroke: currentColor;
+  }
+
+  &__triangular {
+    width: @tree-triangular-size;
+    height: @tree-triangular-size;
+    color: inherit;
+    background-color: transparent;
+    transition: @tree-triangular-transition;
+    transition-property: transform;
+
+    &&--expanded {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__check {
+    width: @tree-check-size;
+    height: @tree-check-size;
+    color: @white;
+    background-color: transparent;
+    border-radius: @tree-check-round;
+
+    &&--status-all,
+    &&--status-partial {
+      background-color: @tree-check-checked-background-color;
+      border-color: @tree-check-checked-background-color;
+    }
+
+    &&--status-none {
+      border: 1px solid @tree-check-unchecked-border-color;
+    }
+  }
+
+  &__children {
+    display: none;
+    box-sizing: border-box;
+    padding-left: @tree-children-indent;
+
+    &&--expanded {
+      display: block;
+    }
+  }
+}

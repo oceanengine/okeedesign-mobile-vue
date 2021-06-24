@@ -1,0 +1,277 @@
+@import '../../style/common';
+
+.@{prefix}calendar {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  // height: calc(
+  //   @calendar-bar-height * 2 + @calendar-bar-height +
+  //   (@calendar-date-height + @calendar-date-gap-vertical) * @calendar-rows -
+  //   @calendar-date-gap-vertical + @calendar-bar-height + @calendar-date-height
+  // );
+  // prettier-ignore
+  height: @calendar-bar-height * 2 + @calendar-bar-height + (@calendar-date-height + @calendar-date-gap-vertical) * @calendar-rows - @calendar-date-gap-vertical + @calendar-bar-height + @calendar-date-height;
+  overflow: hidden;
+  color: @calendar-text-color;
+  background: @white;
+
+  button {
+    outline: none;
+  }
+
+  &__header {
+    position: relative;
+    z-index: 2;
+    flex: none;
+    background: @white;
+  }
+
+  &__title-bar {
+    position: relative;
+    height: @calendar-bar-height;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 @calendar-bar-side-padding;
+    font-weight: @calendar-title-font-weight;
+  }
+
+  &__header-left,
+  &__header-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 @calendar-bar-side-padding;
+  }
+
+  &__header-left {
+    left: 0;
+    justify-content: flex-start;
+    color: @calendar-header-left-color;
+  }
+
+  &__header-right {
+    right: 0;
+    justify-content: flex-end;
+    color: @calendar-header-right-color;
+  }
+
+  // cancel and confirm button
+  &__button {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: @calendar-date-height;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    background: transparent;
+    border: none;
+  }
+
+  &__week {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: @calendar-bar-height;
+  }
+
+  &__day {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: @calendar-day-color;
+
+    &&--rest {
+      color: @calendar-day-color-rest;
+    }
+  }
+
+  &__body {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+  }
+
+  &__month-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__month {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex: none;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    background: @white;
+    // min-height: @month-block-height;
+
+    transform: translateY(-100%);
+    will-change: transform;
+  }
+
+  &__month-bar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: @calendar-bar-height;
+    padding: 0 @calendar-bar-side-padding;
+    font-weight: @calendar-month-font-weight;
+    font-size: @calendar-month-font-size;
+    background: @white;
+
+    &--pin {
+      box-shadow: @calendar-bar-shadow;
+    }
+  }
+
+  &__date-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+    // margin: calc(@calendar-date-gap-vertical / -2) calc(@calendar-date-gap-horizontal / -2);
+    margin: @calendar-date-gap-vertical / -2 @calendar-date-gap-horizontal / -2;
+  }
+
+  &__date-placeholder {
+    .loop-through (@start, @end) when (@start <= @end) {
+      &--@{start} {
+        flex: 1 0 (@start / @calendar-cols * 100%);
+        max-width: @start / @calendar-cols * 100%;
+      }
+      .loop-through(@start + 1, @end);
+    }
+    .loop-through(0, 6);
+  }
+
+  &__cell {
+    position: relative;
+    display: flex;
+    flex: 1 0 (1 / @calendar-cols * 100%);
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: (1 / @calendar-cols * 100%);
+    // padding: calc(@calendar-date-gap-vertical / 2) calc(@calendar-date-gap-horizontal / 2);
+    padding: @calendar-date-gap-vertical / 2 @calendar-date-gap-horizontal / 2;
+  }
+
+  &__date {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: @calendar-date-height;
+    margin: 0;
+    padding: 0;
+    color: @calendar-date-color;
+    background: transparent;
+    border: none;
+    border-bottom-right-radius: @border-radius-2;
+    border-bottom-left-radius: @border-radius-2;
+    transition: @calendar-transition;
+    transition-property: background-color;
+
+    &&--today {
+      // dot
+      &::after {
+        position: absolute;
+        right: 0;
+        bottom: @calendar-date-today-dot-bottom;
+        left: 0;
+        display: block;
+        width: 4px;
+        height: 4px;
+        margin: 0 auto;
+        background: @calendar-date-today-dot-color;
+        border-radius: 50%;
+        content: ' ';
+      }
+    }
+
+    &&--rest {
+      color: @calendar-date-color-rest;
+    }
+
+    &&--in-range {
+      color: @calendar-date-color-in-range;
+      background: @calendar-date-background-in-range;
+    }
+
+    &&--selected {
+      color: @calendar-date-color-selected;
+      background: @calendar-date-background-selected;
+    }
+
+    &&--today&--selected::after {
+      background-color: @calendar-date-today-dot-color-selected;
+    }
+
+    &&--disabled {
+      color: @calendar-date-color-disabled;
+    }
+  }
+
+  &__bottom-float {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+  }
+}

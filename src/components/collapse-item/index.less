@@ -1,0 +1,57 @@
+@import '../../style/common';
+
+.@{prefix}collapse-item {
+  &::after {
+    border-color: @collapse-border-color;
+  }
+
+  &__title {
+    .@{prefix}cell__right-icon {
+      transform: rotate(90deg);
+      transition: @collapse-item-transition-duration;
+    }
+
+    &::after {
+      visibility: hidden;
+    }
+
+    &--expanded {
+      .@{prefix}cell__right-icon {
+        transform: rotate(-90deg);
+      }
+
+      &::after {
+        visibility: visible;
+      }
+    }
+
+    &--disabled {
+      &,
+      & .@{prefix}cell__right-icon {
+        color: @collapse-item-title-disabled-color;
+      }
+
+      &:active {
+        background-color: @background-color-base;
+      }
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    transition: height @collapse-item-transition-duration ease-in-out;
+    will-change: height;
+  }
+
+  &__content {
+    background-color: @collapse-item-content-background-color;
+  }
+
+  &__message {
+    padding: @collapse-item-message-padding;
+    color: @collapse-item-content-text-color;
+    font-size: @collapse-item-content-font-size;
+    line-height: @collapse-item-content-line-height;
+    background-color: @collapse-item-content-background-color;
+  }
+}

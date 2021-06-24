@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field clearable prop 1`] = `
+<div class="byted-field byted-field--normal byted-field--border byted-field--input">
+  <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+</div>
+`;
+
+exports[`Field clearable prop 2`] = `
+<div class="byted-field byted-field--normal byted-field--border byted-field--input">
+  <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+</div>
+`;
+
+exports[`Field render label slot 1`] = `
+<div class="byted-field byted-field--normal byted-field--border byted-field--input">
+  <div class="byted-field__body">
+    <div class="byted-field__label byted-field__item">Custom Label</div><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item">
+  </div>
+</div>
+`;
+
+exports[`Field render textarea 1`] = `
+<div class="byted-field byted-field--normal byted-field--border byted-field--textarea">
+  <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea></div>
+</div>
+`;

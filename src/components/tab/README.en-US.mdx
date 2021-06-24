@@ -1,0 +1,392 @@
+# Tab
+
+### Install
+
+:::card
+
+```javascript
+import { Tab, Tabs } from '@okee-uikit/m-vue';
+
+Vue.use(Tab).use(Tabs);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-tabs v-model="active">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      active: 1,
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Ansyc Usage
+```
+
+```html
+<byted-tabs :active="activeName" @click="onControlledClick">
+  <byted-tab title="Tab 1" name="a">content 1</byted-tab>
+  <byted-tab title="Tab 2" name="b">content 2</byted-tab>
+  <byted-tab title="Tab 3" name="c">content 3</byted-tab>
+</byted-tabs>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      activeName: 'b',
+    };
+  },
+  methods: {
+    onControlledClick(name, title) {
+      this.$confirm('OKee Design', 'Do you love', {
+        cancelButtonText: 'Not',
+        confirmButtonText: 'Yes',
+      })
+        .then(() => {
+          this.activeName = name;
+          console.log('your answer is Yes');
+        })
+        .catch(() => null);
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Static Layout
+```
+
+```html
+<byted-tabs :flex="false">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+gutter Usage
+```
+
+```html
+<byted-tabs :flex="false" :gutter="10">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+safe-area-inset Usage
+```
+
+```html
+<byted-tabs :safe-area-inset="16">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+<byted-tabs :flex="false" :safe-area-inset="16">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Underline Style
+```
+
+```html
+<byted-tabs line-color="#11DEF2" line-width="26" line-height="3">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Text Style
+```
+
+```html
+<byted-tabs line-color="#0278FF" title-active-color="#0278FF" title-inactive-color="#FF6767">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+No Border
+```
+
+```html
+<byted-tabs :border="false">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Style And Custom Color
+```
+
+```html
+<byted-tabs type="card">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+
+<byted-tabs type="card" color="green">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Size Usage
+```
+
+```html
+<byted-tabs>
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+<byted-tabs size="large">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2">content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+  <byted-tab title="Tab 4">content 4</byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Tab Bar Scroll
+```
+
+```html
+<byted-tabs>
+  <byted-tab v-for="index in 8" :title="'Tab ' + index"> content {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Disabled Tab
+```
+
+```html
+<byted-tabs @disabled="onClickDisabled">
+  <byted-tab title="Tab 1">content 1</byted-tab>
+  <byted-tab title="Tab 2" disabled>content 2</byted-tab>
+  <byted-tab title="Tab 3">content 3</byted-tab>
+</byted-tabs>
+```
+
+```javascript
+export default {
+  methods: {
+    onClickDisabled(name, title) {
+      console.log(title + this.t('disabled'));
+    },
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+Custom Tab
+```
+
+```html
+<byted-tabs v-model="active">
+  <byted-tab v-for="index in 2">
+    <template slot="title"> T.T {{ t('title') }} </template>
+    content {{ index }}
+  </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Animated Usage
+```
+
+```html
+<byted-tabs v-model="active" animated>
+  <byted-tab v-for="index in 4" :title="'options ' + index"> content {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Swipeable Usage
+```
+
+```html
+<byted-tabs v-model="active" swipeable>
+  <byted-tab v-for="index in 4" :title="'options ' + index"> content {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+:::card
+
+```topic
+Touchable Usage
+```
+
+```html
+<byted-tabs v-model="active" touchable>
+  <byted-tab v-for="index in 4" :title="'options ' + index"> content {{ index }} </byted-tab>
+</byted-tabs>
+```
+
+:::
+
+### API
+
+##### Tabs Props
+
+| Attribute            | Description                                                            | Type      | Default   |
+| -------------------- | ---------------------------------------------------------------------- | --------- | --------- | ------- |
+| v-model              | Index of active tab                                                    | `string` &#124; `number` | `0`     |
+| type                 | Type                                                                   | `string`  | `card`    | `line`  |
+| size                 | Size                                                                   | `string`  | `normal`  | `large` |
+| flex                 | Style type, whether it is an equal layout                              | `boolean` | `true`    |
+| gutter               | Gutter when `flex=false`                                               | `string` &#124; `number` | `0`     |
+| safe-area-inset      | safe-area-inset of tabs title navigation                               | `string` &#124; `number` | `0`     |
+| color                | Label theme color when `type="card"`                                   | `string`  | `#0278FF` |
+| duration             | Transition duration, unit second                                       | `number`  | `0.3`     |
+| background           | Background color                                                       | `string`  | `white`   |
+| line-width           | Width of tab line                                                      | `string` &#124; `number` | `auto`  |
+| line-height          | Height of tab line                                                     | `string` &#124; `number` | `3px`   |
+| line-color           | Color of tab line                                                      | `string`  | `#000`    |
+| title-active-color   | Title active color                                                     | `string`  |
+| title-inactive-color | Title inactive color                                                   | `string`  |
+| swipe-threshold      | Set swipe tabs threshold when `flex="true"`                            | `number`  | `4`       |
+| animated             | Whether to change tabs with animation                                  | `boolean` | `false`   |
+| border               | Whether to show border when `type="line"`                              | `boolean` | `true`    |
+| ellipsis             | Whether to ellipsis too long title                                     | `boolean` | `true`    |
+| swipeable            | Whether to switch tabs with swipe gestrue in the content               | `boolean` | `false`   |
+| touchable            | Whether to switch tabs with swipe gestrue and animation in the content | `boolean` | `false`   |
+
+##### Tab Props
+
+| Attribute | Description            | Type      | Default |
+| --------- | ---------------------- | --------- | ------- | ------------ |
+| name      | Identifier             | `string` &#124; `number` | Index of tab |
+| title     | Title                  | `string`  | -       |
+| disabled  | Whether to disable tab | `boolean` | `false` |
+
+##### Tabs Slots
+
+| Name      | Description              |
+| --------- | ------------------------ |
+| nav-left  | Custom nav left content  |
+| nav-right | Custom nav right content |
+
+##### Tab Slots
+
+| Name    | Description      |
+| ------- | ---------------- |
+| default | Content of tab   |
+| title   | Custom tab title |
+
+##### Tabs Events
+
+| Event    | Description                       | Arguments                                                           |
+| -------- | --------------------------------- | ------------------------------------------------------------------- |
+| click    | Triggered when click tab          | name：name of current tab or index of current tab，title: tab title |
+| change   | Triggered when active tab changed | name：name of current tab or index of current tab，title: tab title |
+| disabled | Triggered when click disabled tab | name：name of current tab or index of current tab, title: tab title |

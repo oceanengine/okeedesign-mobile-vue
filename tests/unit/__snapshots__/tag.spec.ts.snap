@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag custom style 1`] = `<span class="byted-tag byted-tag--primary byted-tag--large byted-tag--plain byted-tag--round byted-hairline--surround" style="color: red;">标签</span>`;

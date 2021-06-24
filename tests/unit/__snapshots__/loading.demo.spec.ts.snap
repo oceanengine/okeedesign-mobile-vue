@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo loading">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-loading" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="48" height="48" rx="2" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M45 33C45 25.8203 39.1797 20 32 20C24.8203 20 19 25.8203 19 33C19 40.1797 24.8203 46 32 46" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M27 33C27 35.7614 29.2386 38 32 38C34.7614 38 37 35.7614 37 33C37 30.2386 34.7614 28 32 28" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+  <div>
+    <div class="byted-row">
+      <div class="byted-col byted-col--12">
+        <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-row byted-row--flex byted-row--align-center">
+      <div class="byted-col byted-col--12">
+        <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-loading byted-loading--vertical"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i>
+      <div class="byted-loading__text"> 加载中... </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-row">
+      <div class="byted-col byted-col--12">
+        <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+    <div class="byted-loading" style="margin-left: 16px;"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+  </div>
+</div>
+`;

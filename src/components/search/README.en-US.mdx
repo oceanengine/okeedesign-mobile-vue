@@ -1,0 +1,142 @@
+# Search
+
+### Install
+
+:::card
+
+```javascript
+import { Search } from '@okee-uikit/m-vue';
+
+Vue.use(Search);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```html
+<byted-search v-model="value" />
+```
+
+```javascript
+data() {
+  return {
+    value: ''
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+Listening Events
+```
+
+```html
+<byted-search v-model="value" cancelable @cancel="cancel" />
+```
+
+```javascript
+data() {
+  return {
+    value: ''
+  }
+}
+
+methods: {
+  cancel() {
+    this.$toast('cancel');
+  },
+},
+```
+
+:::
+
+:::card
+
+```topic
+border-radius Usage
+```
+
+```html
+<byted-field v-model="value" border-radius="22px" />
+```
+
+```javascript
+data() {
+  return {
+    value: ''
+  }
+}
+```
+
+:::
+
+:::card
+
+```topic
+Slots Usage
+```
+
+```html
+<byted-search v-model="value4">
+  <template slot="left">
+    <span>left</span>
+  </template>
+  <template slot="icon"> Icon </template>
+  <template slot="right">
+    <span>right</span>
+  </template>
+</byted-search>
+```
+
+```javascript
+data() {
+  return {
+    value: ''
+  }
+}
+```
+
+:::
+
+### API
+
+##### Props
+
+| Attribute    | Description                       | Type              | Default      |
+| ------------ | --------------------------------- | ----------------- | ------------ | --- |
+| value        | Can be set to `String` `Number`   | `string` &#124; `number` | -   |
+| clearable    | Whether to enable clear control   | `Boolean`         | `true`       |
+| cancelable   | Whether to enable cancel control  | `Boolean`         | `false`      |
+| borderRadius | border-radius                     | `Number` `String` | `0`          |
+| placeholder  | Tips for filling out input fields | `String`          | `请输入内容` |
+| autofocus    | autofocus                         | `boolean`         | `false`      |
+
+##### Events
+
+| Event  | Description                                             | Arguments            |
+| ------ | ------------------------------------------------------- | -------------------- |
+| input  | Triggered when input value changed                      | value: current value |
+| search | Triggered when the keyboard confirmation key is clicked | -                    |
+| cancel | Triggered when click cancel text                        | -                    |
+| focus  | Triggered when input gets focus                         | event: Event         |
+| blur   | Triggered when input loses focus                        | event: Event         |
+| clear  | Triggered when click clear icon                         | event: Event         |
+| click  | Triggered when click Field                              | event: Event         |
+
+##### Slots
+
+| Name  | Attribute    |
+| ----- | ------------ |
+| left  | Custom left  |
+| icon  | Custom icon  |
+| right | Custom right |

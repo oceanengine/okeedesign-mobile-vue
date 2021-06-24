@@ -1,0 +1,57 @@
+@import '../../style/common';
+
+.@{prefix}tag {
+  display: inline-block;
+  padding: @tag-padding;
+  color: @text-color-2;
+  font-size: @tag-font-size;
+  line-height: @tag-line-height;
+  background-color: @gray-4;
+  border-radius: @border-radius-1; /* no */
+
+  &::after {
+    border-color: currentColor;
+    border-radius: @border-radius-2; /* no */
+  }
+
+  &--primary {
+    color: @primary-color;
+    background-color: @primary-color-5;
+  }
+
+  &--success {
+    color: @success-color;
+    background-color: @success-color-5;
+  }
+
+  &--warning {
+    color: @warning-color;
+    background-color: @warning-color-5;
+  }
+
+  &--danger {
+    color: @danger-color;
+    background-color: @danger-color-5;
+  }
+
+  &--plain {
+    background-color: @white;
+  }
+
+  &--round {
+    border-radius: @tag-round-border-radius;
+
+    &::after {
+      border-radius: @tag-round-border-radius * 2;
+    }
+  }
+
+  &--medium {
+    font-size: @tag-medium-font-size;
+  }
+
+  &--large {
+    padding: @tag-large-padding;
+    font-size: @tag-large-font-size;
+  }
+}

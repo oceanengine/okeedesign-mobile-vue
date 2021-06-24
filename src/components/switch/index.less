@@ -1,0 +1,88 @@
+@import '../../style/common';
+
+.@{prefix}switch {
+  display: inline-block;
+
+  &__show {
+    position: relative;
+    box-sizing: border-box;
+    width: @switch-width;
+    height: @switch-height;
+    background-color: @switch-background-color;
+    border-radius: @switch-border-radius;
+    outline: 0;
+    transition: background-color 0.1s, border 0.1s;
+
+    &::after {
+      position: absolute;
+      top: 2px;
+      left: 1px;
+      box-sizing: border-box;
+      width: @switch-after-width;
+      height: @switch-after-width;
+      background-color: @switch-after-color;
+      border-radius: 50%;
+      box-shadow: @switch-after-shadow;
+      transform: translateX(1px);
+      transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+      content: '';
+    }
+  }
+
+  &__loading {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+  }
+
+  &--checked &__show {
+    background-color: @switch-background-color-checked;
+    border-color: @switch-background-color-checked;
+
+    &::after {
+      transform: translateX(@switch-translateX);
+    }
+
+    .@{prefix}switch__loading {
+      left: @switch-translateX + 4px;
+    }
+  }
+
+  &--disabled &__show {
+    background-color: @switch-background-disabled-color;
+    opacity: @switch-opacity-disabled;
+  }
+
+  &--disabled&--checked &__show {
+    background-color: @switch-background-color-checked-disabled;
+  }
+
+  &.large {
+    .@{prefix}switch__show {
+      width: @switch-large-width;
+      height: @switch-large-height;
+      border-radius: @switch-large-border-radius;
+
+      &::after {
+        width: @switch-large-after-width;
+        height: @switch-large-after-width;
+      }
+
+      .@{prefix}switch__loading {
+        top: 6px;
+        left: 6px;
+      }
+    }
+  }
+
+  &--checked.large &__show {
+    &::after {
+      transform: translateX(@switch-large-translateX);
+    }
+
+    .@{prefix}switch__loading {
+      left: @switch-large-translateX + 5px;
+    }
+  }
+}

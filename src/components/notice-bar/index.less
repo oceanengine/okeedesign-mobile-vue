@@ -1,0 +1,73 @@
+@import '../../style/common';
+
+.@{prefix}notice-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: @notice-bar-height;
+  padding: 0 @notice-bar-padding;
+  color: @notice-bar-color;
+  font-size: @notice-bar-font-size;
+  background: @warning-color-5;
+
+  &__content {
+    display: -webkit-box;
+    flex: 1;
+    margin-top: @notice-bar-content-margin;
+    margin-bottom: @notice-bar-content-margin;
+    overflow: hidden;
+    line-height: @notice-bar-height/2;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+  }
+
+  &__left {
+    display: flex;
+    flex: none;
+    align-items: center;
+    margin-right: 8px;
+    &--icon {
+      width: 16px;
+      height: 16px;
+      fill: @warning-color;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex: none;
+    align-items: center;
+    margin-left: 8px;
+    &--icon {
+      width: 16px;
+      height: 16px;
+      fill: @text-color-2;
+    }
+  }
+
+  &--primary {
+    background: @primary-color-5;
+
+    .@{prefix}notice-bar__left {
+      fill: @primary-color;
+    }
+  }
+
+  &--success {
+    background: @success-color-5;
+
+    .@{prefix}notice-bar__left {
+      fill: @success-color;
+    }
+  }
+
+  &--danger {
+    background: @danger-color-5;
+
+    .@{prefix}notice-bar__left {
+      fill: @danger-color;
+    }
+  }
+}

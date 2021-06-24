@@ -1,0 +1,40 @@
+/**
+  * 一像素线
+  */
+.hairline-common() {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+}
+
+.hairline(@gary-3: #ebedf0) {
+  .hairline-common();
+
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border: 0 solid @gary-3;
+  transform: scale(0.5);
+  will-change: transform;
+}
+
+.hairline-bottom(@gary-3: #ebedf0, @horizontal: 0) {
+  .hairline-common();
+
+  right: 0;
+  right: @horizontal;
+  bottom: 0;
+  left: @horizontal;
+  border-bottom: 1px solid @gary-3;
+  transform: scaleY(0.5);
+  will-change: transform;
+}
+
+.hairline-top(@gary-3: #ebedf0, @horizontal: 0) {
+  .hairline-bottom(@gary-3, @horizontal);
+
+  top: 0;
+  bottom: auto;
+}

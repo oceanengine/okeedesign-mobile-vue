@@ -1,0 +1,142 @@
+# DatetimePicker 时间选择器
+
+### 安装
+
+:::card
+
+```javascript
+import { DatetimePicker } from '@okee-uikit/m-vue';
+
+Vue.use(DatetimePicker);
+```
+
+:::
+
+### 代码演示
+
+:::card
+
+```topic
+选择日期（年月日）
+```
+
+```html
+<byted-datetime-picker v-model="value" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: new Date(),
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+选择完整时间
+```
+
+```html
+<byted-datetime-picker v-model="value" type="datetime" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: new Date(),
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+选择时间
+```
+
+```html
+<byted-datetime-picker v-model="value" type="time" />
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: '19:00',
+    };
+  },
+};
+```
+
+:::
+
+:::card
+
+```topic
+搭配弹层使用
+```
+
+```html
+<byted-cell title="选择时间" :border="false" is-link @click="show=!show" />
+<byted-popup v-model="show" position="bottom">
+  <byted-datetime-picker
+    v-model="value"
+    @change="onChange"
+    @cancel="show=!show"
+    @confirm="show=!show"
+  />
+</byted-popup>
+```
+
+```javascript
+export default {
+  data() {
+    return {
+      value: new Date(),
+    };
+  },
+  methods: {
+    onChange(val) {
+      console.log(val);
+    },
+  },
+};
+```
+
+:::
+
+### API
+
+##### Props
+
+| 参数                | 说明                                    | 类型             | 默认值     |
+| ------------------- | --------------------------------------- | ---------------- | ---------- | --- |
+| value               | 选项对象中的值                          | _Date \| string_ | -          |
+| type                | 类型，可选值为 `date` `time` `datetime` | _string_         | `date`     | -   |
+| min-date            | 可选的最小时间，精确到分钟              | _Date_           | `二十年前` | -   |
+| max-date            | 可选的最大时间，精确到分钟              | _Date_           | `二十年后` | -   |
+| title               | 顶部栏标题                              | _string_         | -          |
+| show-toolbar        | 是否显示顶部栏                          | _boolean_        | `true`     |
+| confirm-button-text | 确认按钮文字                            | _string_         | `确认`     |
+| cancel-button-text  | 取消按钮文字                            | _string_         | `取消`     |
+
+### Events
+
+##### DatetimePicker Events
+
+| 事件名  | 说明                 | 回调参数            |
+| ------- | -------------------- | ------------------- |
+| change  | 滚动结束时触发的事件 | 当前选中项的`value` |
+| input   | 滚动结束时触发的事件 | 要选中项的`value`   |
+| confirm | 点击完成按钮时触发   | Event               |
+| cancel  | 点击取消按钮时触发   | Event               |

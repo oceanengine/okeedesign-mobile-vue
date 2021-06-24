@@ -1,0 +1,99 @@
+@import '../../style/common';
+
+.@{prefix}cell {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: @cell-vertical-padding @cell-horizontal-padding;
+  overflow: hidden;
+  color: @cell-text-color;
+  font-size: @cell-font-size;
+  line-height: @cell-line-height;
+  background-color: @cell-background-color;
+
+  &:not(:last-child)::after {
+    .hairline-bottom(@cell-border-color, @cell-horizontal-padding);
+
+    border-color: @cell-border-color;
+  }
+
+  &--borderless::after {
+    display: none;
+  }
+
+  &__label {
+    margin-top: @cell-label-margin-top;
+    color: @cell-label-color;
+    font-size: @cell-label-font-size;
+    line-height: @cell-label-line-height;
+  }
+
+  &__title,
+  &__value {
+    flex: 1;
+
+    span {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__value {
+    position: relative;
+    overflow: hidden;
+    color: @cell-value-color;
+    text-align: right;
+    vertical-align: middle;
+
+    &--alone {
+      color: @cell-text-color;
+      text-align: left;
+    }
+  }
+
+  &__left-icon {
+    align-self: center;
+    width: 13px;
+    height: 13px;
+    margin-right: @cell-left-icon-margin-right;
+  }
+
+  &__right-icon {
+    align-self: center;
+    width: 18px;
+    height: 18px;
+    fill: @cell-right-icon-color;
+  }
+
+  &--clickable {
+    &:active {
+      background-color: @cell-active-background-color;
+    }
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--small {
+    padding-top: @cell-small-vertical-padding;
+    padding-bottom: @cell-small-vertical-padding;
+    font-size: @cell-small-font-size;
+
+    .@{prefix}cell__label {
+      font-size: @cell-small-label-font-size;
+      line-height: @cell-small-label-line-height;
+    }
+  }
+
+  &--large {
+    padding-top: @cell-large-vertical-padding;
+    padding-bottom: @cell-large-vertical-padding;
+    font-size: @cell-large-font-size;
+
+    .@{prefix}cell__label {
+      font-size: @cell-large-label-font-size;
+      line-height: @cell-label-line-height;
+    }
+  }
+}

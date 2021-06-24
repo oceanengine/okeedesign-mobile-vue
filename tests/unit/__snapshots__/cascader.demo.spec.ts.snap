@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo cascader">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-cascader" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 52V12H4V52H36Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 12V52" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><rect x="43" y="12" width="17" height="40" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M10 18H14" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 24H14" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 30H14" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 36H14" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 42H14" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 18H30" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M49 18H54" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 24H30" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M49 24H54" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 30H30" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 36H30" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M49 30H54" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+    </div>
+    <!---->
+  </div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+    </div>
+    <!---->
+  </div>
+  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--clickable">
+        <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      </div>
+    </div>
+    <!---->
+  </div>
+</div>
+`;

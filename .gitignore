@@ -1,0 +1,17 @@
+*.log*
+.cache
+.DS_Store
+.idea
+.vscode
+.history
+
+# npm
+node_modules
+package-lock.json
+
+# dist file
+es
+/lib
+/dist
+/docs/docs_build.sh
+/build/webpack.site.prd_dev.js

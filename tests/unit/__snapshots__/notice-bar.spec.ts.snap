@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoticeBar base NoticeBar 1`] = `
+<div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
+  <div class="byted-notice-bar__content">text</div>
+</div>
+`;
+
+exports[`NoticeBar icon slot 1`] = `
+<div class="byted-notice-bar byted-notice-bar--warning">
+  <div class="byted-notice-bar__left">Custom Left Icon</div>
+  <div class="byted-notice-bar__content">
+    Content
+  </div>
+  <div class="byted-notice-bar__right">Custom Right Icon</div>
+</div>
+`;

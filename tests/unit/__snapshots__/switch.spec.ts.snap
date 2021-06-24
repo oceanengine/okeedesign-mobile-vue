@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch renders switch when disabled 1`] = `
+<div class="byted-switch byted-switch--disabled normal">
+  <div class="byted-switch__show"></div>
+</div>
+`;
+
+exports[`Switch renders switch when passed 1`] = `
+<div class="byted-switch byted-switch--checked normal">
+  <div class="byted-switch__show"></div>
+</div>
+`;

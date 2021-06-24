@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo progress">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div><span class="byted-icon byted-icon-module-progress" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 40V24H36V40H60Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M36 24H4V40H36V24Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M28 40L36 32M20 40L36 24M12 40L28 24M4 40L20 24M4 32L12 24" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+  <div>
+    <div class="byted-progress">
+      <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
+        <div class="byted-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(2, 120, 255);"></div>
+      </div><span class="byted-progress__pivot">60%</span>
+    </div>
+  </div>
+  <div>
+    <div class="byted-progress byted-progress--text-in-middle">
+      <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
+        <div class="byted-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(2, 120, 255);">
+          <div class="byted-progress__pivot-middle" style="background-color: rgb(2, 120, 255);">60%</div>
+        </div>
+      </div>
+    </div>
+    <div class="byted-progress byted-progress--text-in-middle">
+      <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
+        <div class="byted-progress__portioncon" style="width: 100%; border-radius: 2px; background-color: rgb(106, 191, 64);">
+          <div class="byted-progress__pivot-middle" style="background-color: rgb(106, 191, 64);">100%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

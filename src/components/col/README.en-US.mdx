@@ -1,0 +1,138 @@
+# Layout
+
+### Intro
+
+- Quickly and easily create layouts with `byted-row` and `byted-col`
+
+### Install
+
+:::card
+
+```javascript
+import { Row, Col } from '@okee-uikit/m-vue';
+
+Vue.use(Row).use(Col);
+```
+
+:::
+
+### Usage
+
+:::card
+
+```topic
+Basic Usage
+```
+
+```desc
+Layout are based on 24-column. The attribute `span` in `Col` means the number of column the grid spans.
+Of course, You can use `offset` attribute to set number of spacing on the left side of the grid.
+```
+
+```html
+<byted-row>
+  <byted-col span="8">span: 8</byted-col>
+  <byted-col span="8">span: 8</byted-col>
+  <byted-col span="8">span: 8</byted-col>
+</byted-row>
+
+<byted-row>
+  <byted-col span="4">span: 4</byted-col>
+  <byted-col span="10" offset="4">offset: 4, span: 10</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+</byted-row>
+
+<byted-row>
+  <byted-col offset="12" span="12">offset: 12, span: 12</byted-col>
+</byted-row>
+```
+
+:::
+
+:::card
+
+```topic
+Column Spacing
+```
+
+```desc
+Set grid spacing using `gutter` attribute. The default value is 0.
+```
+
+```html
+<byted-row gutter="20">
+  <byted-col span="8">span: 8</byted-col>
+  <byted-col span="8">span: 8</byted-col>
+  <byted-col span="8">span: 8</byted-col>
+</byted-row>
+
+<byted-row gutter="1rem">
+  <byted-col span="8">span: 8</byted-col>
+  <byted-col span="8">span: 8</byted-col>
+  <byted-col span="8">span: 8</byted-col>
+</byted-row>
+```
+
+:::
+
+:::card
+
+```topic
+Flex Layout
+```
+
+```desc
+Setting `type` to `flex` to enable flex layout
+```
+
+```html
+<byted-row type="flex">
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+</byted-row>
+
+<byted-row type="flex" justify="center">
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+</byted-row>
+
+<byted-row type="flex" justify="end">
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+</byted-row>
+
+<byted-row type="flex" justify="space-between">
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+</byted-row>
+
+<byted-row type="flex" justify="space-around">
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+  <byted-col span="6">span: 6</byted-col>
+</byted-row>
+```
+
+:::
+
+### API
+
+##### Row Props
+
+| Attribute | Description                                                         | Type     | Default |
+| --------- | ------------------------------------------------------------------- | -------- | ------- | --- |
+| type      | Layout type, can be set to `flex`                                   | `string` | -       |
+| gutter    | Grid spacing（px）(`20` or `20px` or `1rem`)                        | `string` &#124; `number` | -   |
+| justify   | Flex main axis，can be set to end/center/space-around/space-between | `string` | `start` |
+| align     | Flex cross axis, be set to center/bottom                            | `string` | `top`   |
+
+##### Col Props
+
+| Attribute | Description                                    | Type    | Default |
+| --------- | ---------------------------------------------- | ------- | ------- | --- |
+| span      | number of column the grid spans                | `string` &#124; `number` | -   |
+| offset    | number of spacing on the left side of the grid | `string` &#124; `number` | -   |

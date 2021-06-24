@@ -1,0 +1,94 @@
+@import '../../style/common';
+
+.@{prefix}dialog {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  width: @dialog-normal-width;
+  overflow: hidden;
+  font-size: @dialog-font-size;
+  background-color: @white;
+  border-radius: @border-radius-3;
+  transform: translate3d(-50%, -50%, 0);
+  backface-visibility: hidden; // avoid blurry text after scale animation
+  transition: @dialog-transition;
+
+  &__header {
+    padding: @dialog-header-padding-top 38px 16px 38px;
+    color: @dialog-header-color;
+    font-size: @dialog-header-font-size;
+    line-height: @dialog-header-line-height;
+    text-align: center;
+
+    &--has-content {
+      padding-bottom: 0;
+    }
+  }
+
+  &__message {
+    padding: @dialog-header-padding-top @dialog-message-padding-left @dialog-message-padding-bottom
+      @dialog-message-padding-left;
+    overflow-y: auto;
+    color: @dialog-message-color;
+    font-size: @dialog-message-font-size;
+    line-height: 20 / 14;
+    text-align: center;
+
+    &--has-title {
+      padding-top: @dialog-message-padding-top;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+
+    .@{prefix}button {
+      flex: 1;
+      height: @dialog-button-height;
+      line-height: @dialog-button-height;
+    }
+  }
+
+  &__cancel {
+    color: @dialog-cancel-color;
+    font-weight: @dialog-cancel-font-weight;
+  }
+
+  &__confirm {
+    color: @dialog-confirm-color;
+  }
+
+  &__actions {
+    font-size: 0;
+  }
+
+  &__action {
+    width: 100%;
+    height: @dialog-button-height;
+    overflow: hidden;
+    color: @dialog-confirm-color;
+    line-height: @dialog-button-height;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &-bounce-enter {
+    transform: translate3d(-50%, -50%, 0) scale(0.7);
+    opacity: 0;
+  }
+
+  &-bounce-leave-active {
+    transform: translate3d(-50%, -50%, 0) scale(0.9);
+    opacity: 0;
+  }
+
+  &--small {
+    width: @dialog-small-width;
+  }
+
+  &--large {
+    width: @dialog-large-width;
+  }
+}

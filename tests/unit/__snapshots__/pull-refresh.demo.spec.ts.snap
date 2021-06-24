@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div class="demo">
+  <div class="byted-header--wrapper">
+    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
+      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+    </div>
+  </div>
+  <div style="padding-left: 0.8rem;"></div>
+  <div>
+    <div class="byted-pull-refresh" style="background: rgb(255, 255, 255);">
+      <div class="byted-pull-refresh__track" style="transition: 0ms;">
+        <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+        <div class="content" style="justify-content: flex-start;"><span></span></div>
+        <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-pull-refresh" style="background: rgb(255, 255, 255);">
+      <div class="byted-pull-refresh__track" style="transition: 0ms;">
+        <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+        <div class="content" style="justify-content: flex-end; padding: 32px 0px;"><span></span></div>
+        <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
