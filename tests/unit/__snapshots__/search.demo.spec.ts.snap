@@ -5,10 +5,12 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div style="padding-left: 0.8rem;"><span class="byted-icon byted-icon-module-search" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60 43V21H4V43H60Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M52 31C52 32.1046 51.5523 33.1046 50.8284 33.8284C50.1046 34.5523 49.1046 35 48 35C45.7909 35 44 33.2091 44 31C44 28.7909 45.7909 27 48 27C50.2091 27 52 28.7909 52 31Z" fill="transparent"></path><path d="M54 37L50.8284 33.8284M50.8284 33.8284C51.5523 33.1046 52 32.1046 52 31C52 28.7909 50.2091 27 48 27C45.7909 27 44 28.7909 44 31C44 33.2091 45.7909 35 48 35C49.1046 35 50.1046 34.5523 50.8284 33.8284Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
   <div>
     <div class="byted-search">
       <div class="byted-search__content"><i class="byted-search__icon">test-file-stub</i>
@@ -26,15 +28,14 @@ exports[`renders demo correctly 1`] = `
         </div>
       </div>
       <div class="byted-search__action">
-        <div>取消</div>
+        <div>Cancel</div>
       </div>
     </div>
   </div>
   <div>
     <div class="byted-search">
       <div class="byted-search__left"><span class="fz-16"></span></div>
-      <div class="byted-search__content">
-        <div class="byted-search__icon-slot-box"> Icon </div>
+      <div class="byted-search__content"><i class="byted-search__icon">test-file-stub</i>
         <div class="byted-field byted-field--normal byted-field--input">
           <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
         </div>

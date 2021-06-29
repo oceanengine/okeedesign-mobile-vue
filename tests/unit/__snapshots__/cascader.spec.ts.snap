@@ -14,8 +14,8 @@ exports[`Cascader default selected 1`] = `
     </ul>
     <ul class="byted-cascader byted-cascader--menu">
       <li class="byted-cascader byted-cascader--menu-item byted-cascader--active byted-cascader--selected-child">海曙区<i class="byted-icon byted-icon--check-one selected-icon">test-file-stub</i></li>
-      <li class="byted-cascader byted-cascader--menu-item byted-cascader--selected-child">江北区</li>
-      <li class="byted-cascader byted-cascader--menu-item byted-cascader--selected-child">北仑区</li>
+      <li class="byted-cascader byted-cascader--menu-item  byted-cascader--selected-child">江北区</li>
+      <li class="byted-cascader byted-cascader--menu-item  byted-cascader--selected-child">北仑区</li>
     </ul>
   </div>
 </div>

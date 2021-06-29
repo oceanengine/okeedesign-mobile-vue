@@ -11,5 +11,6 @@ exports[`Header should render left/right slot and match snapshot 1`] = `
 exports[`Header should render title slot and match snapshot 1`] = `
 <div class="byted-header byted-header--default byted-hairline--bottom">
   <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+  <div class="byted-header__right"></div>
 </div>
 `;

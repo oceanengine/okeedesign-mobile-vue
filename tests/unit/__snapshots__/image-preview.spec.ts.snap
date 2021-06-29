@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImagePreview components 1`] = `
+<transition-stub name="byted-fade" style="z-index: 2003;">
+  <div class="byted-image-preview">
+    <div class="byted-image-preview__swipe">
+      <div class="byted-image-preview__item"><img src="test-file-stub" class="byted-image-preview__image"></div>
+      <div class="byted-image-preview__item" style="top: 0px; left: 0px;"><img src="test-file-stub" class="byted-image-preview__image"></div>
+      <div class="byted-image-preview__item"><img src="test-file-stub" class="byted-image-preview__image"></div>
+      <div class="byted-image-preview__item"><img src="test-file-stub" class="byted-image-preview__image"></div>
+    </div>
+    <div class="byted-image-preview__indicators"><i class="byted-image-preview__indicator-item"></i><i class="byted-image-preview__indicator-item byted-image-preview__indicator-item--active"></i><i class="byted-image-preview__indicator-item"></i><i class="byted-image-preview__indicator-item"></i></div>
+  </div>
+</transition-stub>
+`;

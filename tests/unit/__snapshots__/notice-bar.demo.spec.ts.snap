@@ -5,10 +5,12 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div style="padding-left: 16px;"><span class="byted-icon byted-icon-module-message" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 35H42H60V59H42H4V35Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 5H42H60V29H42H4V5Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M54 11L52 13L50 15" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M50 11L52 13L54 15" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M54 41L52 43L50 45" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M50 41L52 43L54 45" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 43H24" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 13L42 13" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 51L42 51" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 21L32 21" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
   <div>
     <div class="byted-notice-bar byted-notice-bar--primary"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
       <div class="byted-notice-bar__content"></div>
@@ -24,65 +26,26 @@ exports[`renders demo correctly 1`] = `
     </div>
   </div>
   <div>
-    <div class="byted-notice-bar byted-notice-bar--primary"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--success"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--danger"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-  </div>
-  <div>
-    <div class="byted-notice-bar byted-notice-bar--primary"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--success"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--danger"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
-  </div>
-  <div>
-    <div class="byted-notice-bar byted-notice-bar--primary"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"><span></span> </div>
-      <div class="byted-notice-bar__right"><a class="right-slot"><img src="test-file-stub">
-          重新发送
-        </a></div>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--success"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"><span></span> </div>
-      <div class="byted-notice-bar__right"><a class="right-slot"><img src="test-file-stub">
-          重新发送
-        </a></div>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"><span></span> </div>
-      <div class="byted-notice-bar__right"><a class="right-slot"><img src="test-file-stub">
-          重新发送
-        </a></div>
-    </div>
-    <div class="byted-notice-bar byted-notice-bar--danger"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"><span></span> </div>
-      <div class="byted-notice-bar__right"><a class="right-slot"><img src="test-file-stub">
-          重新发送
-        </a></div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
-    </div>
     <div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
       <div class="byted-notice-bar__content"></div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-notice-bar byted-notice-bar--warning">
+      <div class="byted-notice-bar__left"><img src="../icon/horn.svg" width="16px" height="16px" alt=""></div>
+      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
+    </div>
+    <div class="byted-notice-bar byted-notice-bar--warning">
+      <div class="byted-notice-bar__left"><img src="../icon/horn.svg" width="16px" height="16px" alt=""></div>
+      <div class="byted-notice-bar__content"></div>
+      <div class="byted-notice-bar__right">
+        <div class="byted-button byted-button--text byted-button--normal">button</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="byted-notice-bar byted-notice-bar--primary"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
+      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
     </div>
   </div>
 </div>

@@ -5,10 +5,12 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div style="padding-left: 16px;"><span class="byted-icon byted-icon-module-time-picker" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 58V46H9.07143M11 58H14M11 58H8" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24.0714 58H26V52H20V58H24.0714Z" fill="transparent"></path><path d="M26 46H24.0714H20V52M20 52V58H24.0714H26V52H20Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M38 46H42.0714H44V58H42.0714H38V46Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M32 48V49" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M32 55V56" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M50 46H54.0714H56V58H54.0714H50V46Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="32" cy="22" r="16" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></circle><path d="M32 12V22L39 29" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
   <div>
     <div class="byted-picker byted-datetime-picker">
       <div class="byted-picker__toolbar byted-hairline--bottom">
@@ -110,7 +112,6 @@ exports[`renders demo correctly 1`] = `
             <div class="byted-picker-column__option">28日</div>
             <div class="byted-picker-column__option">29日</div>
             <div class="byted-picker-column__option">30日</div>
-            <div class="byted-picker-column__option">31日</div>
           </div>
         </div>
         <div class="byted-picker__mask"></div>
@@ -219,7 +220,6 @@ exports[`renders demo correctly 1`] = `
             <div class="byted-picker-column__option">28日</div>
             <div class="byted-picker-column__option">29日</div>
             <div class="byted-picker-column__option">30日</div>
-            <div class="byted-picker-column__option">31日</div>
           </div>
         </div>
         <div class="byted-picker-column">
@@ -459,9 +459,6 @@ exports[`renders demo correctly 1`] = `
         </div>
         <div class="byted-picker-column">
           <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">3月</div>
-            <div class="byted-picker-column__option">4月</div>
-            <div class="byted-picker-column__option">5月</div>
             <div class="byted-picker-column__option">6月</div>
             <div class="byted-picker-column__option">7月</div>
             <div class="byted-picker-column__option">8月</div>
@@ -473,34 +470,8 @@ exports[`renders demo correctly 1`] = `
         </div>
         <div class="byted-picker-column">
           <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">4日</div>
-            <div class="byted-picker-column__option">5日</div>
-            <div class="byted-picker-column__option">6日</div>
-            <div class="byted-picker-column__option">7日</div>
-            <div class="byted-picker-column__option">8日</div>
-            <div class="byted-picker-column__option">9日</div>
-            <div class="byted-picker-column__option">10日</div>
-            <div class="byted-picker-column__option">11日</div>
-            <div class="byted-picker-column__option">12日</div>
-            <div class="byted-picker-column__option">13日</div>
-            <div class="byted-picker-column__option">14日</div>
-            <div class="byted-picker-column__option">15日</div>
-            <div class="byted-picker-column__option">16日</div>
-            <div class="byted-picker-column__option">17日</div>
-            <div class="byted-picker-column__option">18日</div>
-            <div class="byted-picker-column__option">19日</div>
-            <div class="byted-picker-column__option">20日</div>
-            <div class="byted-picker-column__option">21日</div>
-            <div class="byted-picker-column__option">22日</div>
-            <div class="byted-picker-column__option">23日</div>
-            <div class="byted-picker-column__option">24日</div>
-            <div class="byted-picker-column__option">25日</div>
-            <div class="byted-picker-column__option">26日</div>
-            <div class="byted-picker-column__option">27日</div>
-            <div class="byted-picker-column__option">28日</div>
             <div class="byted-picker-column__option">29日</div>
             <div class="byted-picker-column__option">30日</div>
-            <div class="byted-picker-column__option">31日</div>
           </div>
         </div>
         <div class="byted-picker__mask"></div>

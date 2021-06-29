@@ -168,7 +168,6 @@ exports[`DatetimePicker date type change event 1`] = `
         <div class="byted-picker-column__option">28日</div>
         <div class="byted-picker-column__option">29日</div>
         <div class="byted-picker-column__option">30日</div>
-        <div class="byted-picker-column__option">31日</div>
       </div>
     </div>
     <div class="byted-picker__mask"></div>

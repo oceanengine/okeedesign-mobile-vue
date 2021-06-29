@@ -5,25 +5,19 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div><span class="byted-icon byted-icon-module-carousel" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 18C4 16.1144 4 15.1716 4.58579 14.5858C5.17157 14 6.11438 14 8 14H22H42H56C57.8856 14 58.8284 14 59.4142 14.5858C60 15.1716 60 16.1144 60 18V46C60 47.8856 60 48.8284 59.4142 49.4142C58.8284 50 57.8856 50 56 50H42H22H8C6.11438 50 5.17157 50 4.58579 49.4142C4 48.8284 4 47.8856 4 46V18Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M48 28L52 32L48 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 28L12 32L16 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M23 43H25" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M31 43H33" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M39 43H41" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
   <div>
     <div class="byted-swipe">
       <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">0</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">1</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">2</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">3</div>
-        </div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
       <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
     </div>
@@ -31,18 +25,10 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div class="byted-swipe">
       <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">0</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">1</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">2</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">3</div>
-        </div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
       <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
     </div>
@@ -50,18 +36,10 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div class="byted-swipe">
       <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">0</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">1</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">2</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">3</div>
-        </div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
       <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
     </div>
@@ -69,15 +47,9 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div class="byted-swipe">
       <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">0</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">1</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">2</div>
-        </div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
       </div>
       <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
     </div>
@@ -85,18 +57,10 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div class="byted-swipe">
       <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">0</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">1</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">2</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">3</div>
-        </div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
       <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active" style="background-color: rgb(2, 120, 255);"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
     </div>
@@ -104,18 +68,10 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div class="byted-swipe">
       <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">0</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">1</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">2</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">3</div>
-        </div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">4</span></div>
       </div>
       <div class="custom-indicator">1/4</div>
     </div>
@@ -123,18 +79,10 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div class="byted-swipe">
       <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">0</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">1</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">2</div>
-        </div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);">
-          <div class="show">3</div>
-        </div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
       <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
     </div>

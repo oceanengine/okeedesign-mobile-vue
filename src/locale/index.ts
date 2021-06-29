@@ -3,17 +3,13 @@ import { deepAssign } from '../utils/json/deep-assign';
 import defaultMessages from './lang/zh-CN';
 import { get } from '../utils';
 
-declare module 'vue/types/vue' {
-  interface VueConstructor {
-    util?: {
-      defineReactive(obj: object, key: string, value: any): void;
-    };
-  }
+interface VueUtils {
+  defineReactive(obj: object, key: string, value: any): void;
 }
 
 const proto = Vue.prototype;
 
-const { defineReactive } = Vue.util;
+const { defineReactive } = (Vue as any).util as VueUtils;
 
 defineReactive(proto, '$bytedLanguage', 'zh-CN');
 defineReactive(proto, '$bytedMessages', {

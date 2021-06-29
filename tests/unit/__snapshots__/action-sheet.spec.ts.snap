@@ -13,7 +13,7 @@ exports[`ActionSheet callback events 1`] = `
       <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle" style="width: 1rem; height: 1rem;">test-file-stub</i></div>
     </div>
     <div class="byted-action-sheet__item">
-      <div class="byted-action-sheet__option-content byted-action-sheet__option-content--subname"><span class="byted-action-sheet__name">Option</span><span class="byted-action-sheet__subname">Subname</span></div>
+      <div class="byted-action-sheet__option-content  byted-action-sheet__option-content--subname"><span class="byted-action-sheet__name">Option</span><span class="byted-action-sheet__subname">Subname</span></div>
     </div>
     <div class="byted-action-sheet__cancel">
       <div class="byted-action-sheet__cancel__text">Cancel</div>

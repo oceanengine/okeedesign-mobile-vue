@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders demo correctly 1`] = `
-<div class="demo popup">
-  <div class="popup-box">
+<div class="demo-box">
+  <div class="demo image-preview">
     <div class="byted-header--wrapper">
       <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
         <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
@@ -18,19 +18,9 @@ exports[`renders demo correctly 1`] = `
           <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
         </div>
       </div>
-      <!---->
     </div>
     <div>
       <div class="bui-doc-demo-block__card">
-        <div class="byted-cell byted-cell--clickable">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
-        </div>
-        <div class="byted-cell byted-cell--clickable">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
-        </div>
-        <div class="byted-cell byted-cell--clickable">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
-        </div>
         <div class="byted-cell byted-cell--clickable">
           <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
         </div>
@@ -38,6 +28,15 @@ exports[`renders demo correctly 1`] = `
     </div>
     <div>
       <div class="bui-doc-demo-block__card">
+        <div class="byted-cell byted-cell--clickable">
+          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+        </div>
+        <div class="byted-cell byted-cell--clickable">
+          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+        </div>
+        <div class="byted-cell byted-cell--clickable">
+          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+        </div>
         <div class="byted-cell byted-cell--clickable">
           <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
         </div>

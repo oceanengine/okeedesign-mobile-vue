@@ -21,44 +21,43 @@ exports[`Calendar calendar slot 1`] = `
   <div class="byted-calendar__body">
     <div class="byted-calendar__month-wrap">
       <div class="byted-calendar__month byted-calendar__month--0">
-        <div class="byted-calendar__month-bar">2021年3月</div>
+        <div class="byted-calendar__month-bar">2021年6月</div>
         <div class="byted-calendar__date-wrap">
-          <div class="byted-calendar__date-placeholder byted-calendar__date-placeholder--1"></div>
+          <div class="byted-calendar__date-placeholder byted-calendar__date-placeholder--2"></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">1</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">2</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">3</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--today">4</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">5</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date">4</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">5</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">6</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">7</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date">7</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">8</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">9</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">10</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">11</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">12</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">12</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">13</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">14</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date">14</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">15</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">16</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">17</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">18</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">19</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">19</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">20</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">21</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date">21</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">22</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">23</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">24</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">25</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">26</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">26</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">27</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">28</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">29</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date">28</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--today">29</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">30</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">31</button></div>
         </div>
       </div>
       <div class="byted-calendar__month byted-calendar__month--1">
-        <div class="byted-calendar__month-bar">2021年4月</div>
+        <div class="byted-calendar__month-bar">2021年7月</div>
         <div class="byted-calendar__date-wrap">
           <div class="byted-calendar__date-placeholder byted-calendar__date-placeholder--4"></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">1</button></div>
@@ -91,6 +90,7 @@ exports[`Calendar calendar slot 1`] = `
           <div class="byted-calendar__cell"><button class="byted-calendar__date">28</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">29</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">30</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">31</button></div>
         </div>
       </div>
     </div>

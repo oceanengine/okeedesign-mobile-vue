@@ -5,10 +5,12 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div><span class="byted-icon byted-icon-arrow-circle-right" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="4" fill="none" fill-rule="evenodd"><g><circle stroke="#333" stroke-width="4" fill="transparent" fill-rule="nonzero" stroke-linejoin="round" cx="24" cy="24" r="20"></circle><g transform="translate(14.491664, 15.000000)" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M0,9.5 L18,9.5"></path><polyline points="9 0.5 18 9.5 9 18.5"></polyline></g></g></g></svg></span></div>
   <div>
     <div class="bui-doc-demo-block__card">
       <div class="byted-cell byted-cell--normal">
@@ -24,8 +26,20 @@ exports[`renders demo correctly 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--normal">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-stepper">
+          <div class="byted-stepper__decrease byted-stepper__crease byted-stepper__crease--normal"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="byted-stepper__desvg byted-stepper__desvg--normal">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 24c0-1.1.9-2 2-2h28a2 2 0 110 4h-28a2 2 0 01-2-2z"></path>
+            </svg></div>
+          <div class="byted-stepper__number byted-stepper__number--normal"><input type="number" class="byted-stepper__input">1</div>
+          <div class="byted-stepper__increase byted-stepper__crease byted-stepper__crease--normal"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="byted-stepper__insvg byted-stepper__insvg--normal">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.06 10a2 2 0 00-4 0l-.01 12H10a2 2 0 100 4h12.04l-.02 12a2 2 0 004 0l.02-12H38a2 2 0 100-4H26.05l.01-12z"></path>
+            </svg></div>
+        </div>
+      </div>
+    </div>
     <div class="bui-doc-demo-block__card">
       <div class="byted-cell byted-cell--normal">
         <div class="byted-cell__title"><span></span></div>
@@ -40,8 +54,20 @@ exports[`renders demo correctly 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div>
+    <div class="bui-doc-demo-block__card">
+      <div class="byted-cell byted-cell--normal">
+        <div class="byted-cell__title"><span></span></div>
+        <div class="byted-stepper">
+          <div class="byted-stepper__decrease byted-stepper__crease byted-stepper__crease--large"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="byted-stepper__desvg byted-stepper__desvg--large">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 24c0-1.1.9-2 2-2h28a2 2 0 110 4h-28a2 2 0 01-2-2z"></path>
+            </svg></div>
+          <div class="byted-stepper__number byted-stepper__number--large"><input type="number" class="byted-stepper__input">1</div>
+          <div class="byted-stepper__increase byted-stepper__crease byted-stepper__crease--large"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="byted-stepper__insvg byted-stepper__insvg--large">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.06 10a2 2 0 00-4 0l-.01 12H10a2 2 0 100 4h12.04l-.02 12a2 2 0 004 0l.02-12H38a2 2 0 100-4H26.05l.01-12z"></path>
+            </svg></div>
+        </div>
+      </div>
+    </div>
     <div class="bui-doc-demo-block__card">
       <div class="byted-cell byted-cell--normal">
         <div class="byted-cell__title"><span></span></div>

@@ -5,10 +5,12 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div><span class="byted-icon byted-icon-module-slider" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H39.1429H48V23H39.1429H36L32 27L28 23H16V7Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M36 39L58 39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 39L28 39" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M25 53L40 53" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M48 53H58" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 53H17" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M48 53C48 55.2091 46.2091 57 44 57C41.7909 57 40 55.2091 40 53C40 50.7909 41.7909 49 44 49C46.2091 49 48 50.7909 48 53Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 15H38" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M25 53C25 55.2091 23.2091 57 21 57C18.7909 57 17 55.2091 17 53C17 50.7909 18.7909 49 21 49C23.2091 49 25 50.7909 25 53Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="32" cy="39" r="4" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></circle></svg></span></div>
   <div>
     <div class="byted-slider">
       <div class="byted-slider__bar" style="width: 50%;">

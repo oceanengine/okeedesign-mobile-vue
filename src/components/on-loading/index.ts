@@ -15,7 +15,7 @@ function Loading(message) {
 
 Loading.install = () => {};
 
-declare module 'vue' {
+declare module 'vue/types/vue' {
   interface VueConstructor {
     $loading?: any;
   }

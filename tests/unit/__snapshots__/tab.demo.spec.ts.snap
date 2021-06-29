@@ -5,10 +5,12 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div style="padding-left: 16px;"></div>
   <div>
     <div class="byted-tabs byted-tabs--line byted-tabs--large">
       <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
@@ -142,8 +144,8 @@ exports[`renders demo correctly 1`] = `
     <div class="byted-tabs byted-tabs--line byted-tabs--large">
       <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
         <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis"><div>  T.T </div></span></div>
-          <div class="byted-tab"><span class="byted-ellipsis"><div>  T.T </div></span></div>
+          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis"><div> T.T </div></span></div>
+          <div class="byted-tab"><span class="byted-ellipsis"><div> T.T </div></span></div>
           <div class="byted-tabs__line"></div>
         </div>
       </div>

@@ -5,41 +5,45 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div><span class="byted-icon byted-icon-module-checkbox" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26 8H6V28H26V8Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M26 36H6V56H26V36Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M34 18H58" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M34 46H58" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 18L15 21L20 16" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 46L15 49L20 44" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
   <div>
-    <div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
-         1
-      </span><input type="checkbox" class="byted-checkbox__input" value="1"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
-         2
-      </span><input type="checkbox" class="byted-checkbox__input" value="2"></label><label class="byted-checkbox byted-checkbox--normal byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
-         3
-      </span><input type="checkbox" class="byted-checkbox__input" value="3"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
-         4
-      </span><input type="checkbox" class="byted-checkbox__input" value="4"></label></div>
+    <div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">  1 </span><input type="checkbox" class="byted-checkbox__input" value="1"></label> <label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--square-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">  2 </span><input type="checkbox" class="byted-checkbox__input" value="2"></label></div>
+  </div>
+  <div>
+    <div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--disabled"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">  1 </span><input type="checkbox" disabled="disabled" class="byted-checkbox__input" value="1"></label> <label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--square-check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">  2 </span><input type="checkbox" class="byted-checkbox__input" value="2"></label></div>
+  </div>
+  <div>
+    <div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--small"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label"></span><input type="checkbox" class="byted-checkbox__input" value=""></label> <label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label"></span><input type="checkbox" class="byted-checkbox__input" value=""></label> <label class="byted-checkbox byted-checkbox--large"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label"></span><input type="checkbox" class="byted-checkbox__input" value=""></label></div>
   </div>
   <div>
     <div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
          1
-      </span><input type="checkbox" class="byted-checkbox__input" value="1"></label><label class="byted-checkbox byted-checkbox--normal byted-checkbox--checked"><span class="byted-checkbox__icon__number">1</span><span class="byted-checkbox__label">
+      </span><input type="checkbox" class="byted-checkbox__input" value="1"></label><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
          2
       </span><input type="checkbox" class="byted-checkbox__input" value="2"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
          3
-      </span><input type="checkbox" class="byted-checkbox__input" value="3"></label><label class="byted-checkbox byted-checkbox--normal byted-checkbox--checked"><span class="byted-checkbox__icon__number">2</span><span class="byted-checkbox__label">
+      </span><input type="checkbox" class="byted-checkbox__input" value="3"></label><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
          4
-      </span><input type="checkbox" class="byted-checkbox__input" value="4"></label></div>
+      </span><input type="checkbox" class="byted-checkbox__input" value="4"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
+         5
+      </span><input type="checkbox" class="byted-checkbox__input" value="5"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
+         6
+      </span><input type="checkbox" class="byted-checkbox__input" value="6"></label></div>
   </div>
   <div>
-    <div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal byted-checkbox--disabled"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
-         1
-      </span><input type="checkbox" disabled="disabled" class="byted-checkbox__input" value="1"></label><label class="byted-checkbox byted-checkbox--normal byted-checkbox--disabled byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
-         2
-      </span><input type="checkbox" disabled="disabled" class="byted-checkbox__input" value="2"></label></div>
-  </div>
-  <div>
-    <div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label"><div> 1</div></span><input type="checkbox" class="byted-checkbox__input" value="1"></label><label class="byted-checkbox byted-checkbox--normal byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label"><div> 2</div></span><input type="checkbox" class="byted-checkbox__input" value="2"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label"><div> 3</div></span><input type="checkbox" class="byted-checkbox__input" value="3"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label"><div> 4</div></span><input type="checkbox" class="byted-checkbox__input" value="4"></label></div>
+    <div class="byted-checkbox-group">
+      <div class="byted-cell byted-cell--clickable byted-cell--normal" style="padding: 2px 9px;">
+        <div class="byted-cell__value byted-cell__value--alone"><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">  1 </span><input type="checkbox" class="byted-checkbox__input" value="1"></label></div>
+      </div>
+      <div class="byted-cell byted-cell--clickable byted-cell--normal" style="padding: 2px 9px;">
+        <div class="byted-cell__value byted-cell__value--alone"><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">  2 </span><input type="checkbox" class="byted-checkbox__input" value="2"></label></div>
+      </div>
+    </div>
   </div>
   <div class="dome-size">
     <div class="dome-size-content"><span class="dome-size-content_title">尺寸</span>

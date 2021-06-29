@@ -3,66 +3,54 @@
 // 全局命名空间
 @prefix: byted-;
 
-@z-index-1: 1;
-@z-index-2: 3;
-@z-index-3: 5;
-@z-index-4: 7;
-@z-index-5: 10;
-
-// color
+// base color
 @blue: #0278ff;
 @cyan: #00d2d5;
-
 @red: #ff6767;
 @orange: #fec038;
 @yellow: #face15;
 @green: #13c15a;
-
 @white: #fff;
 @black: #000;
 
-// Animation
-@animation-duration-base: 0.3s;
-@animation-duration-fast: 0.2s;
-
-// base
+// type color
 @primary-color: @blue;
+@success-color: @cyan;
+@warning-color: @orange;
+@danger-color: @red;
 
 @primary-color-1: ~`colorPalette('@{primary-color}', 7) `; // 点击 active态
-@primary-color-2: ~`colorPalette('@{primary-color}', 6) `; // 主色 同@primary-color
+@primary-color-2: ~`colorPalette('@{primary-color}', 6) `; // 主色 同 @primary-color
 @primary-color-3: ~`colorPalette('@{primary-color}', 5) `; //
 @primary-color-4: ~`colorPalette('@{primary-color}', 3) `; // 禁用
 @primary-color-5: ~`colorPalette('@{primary-color}', 1) `; // 浅色
 
-@success-color: @cyan;
 @success-color-1: ~`colorPalette('@{success-color}', 7) `;
 @success-color-2: ~`colorPalette('@{success-color}', 6) `;
 @success-color-3: ~`colorPalette('@{success-color}', 5) `;
 @success-color-4: ~`colorPalette('@{success-color}', 3) `;
 @success-color-5: ~`colorPalette('@{success-color}', 1) `;
 
-@warning-color: @orange;
 @warning-color-1: ~`colorPalette('@{warning-color}', 7) `;
 @warning-color-2: ~`colorPalette('@{warning-color}', 6) `;
 @warning-color-3: ~`colorPalette('@{warning-color}', 5) `;
 @warning-color-4: ~`colorPalette('@{warning-color}', 3) `;
 @warning-color-5: ~`colorPalette('@{warning-color}', 1) `;
 
-@danger-color: @red;
 @danger-color-1: ~`colorPalette('@{danger-color}', 7) `;
 @danger-color-2: ~`colorPalette('@{danger-color}', 6) `;
 @danger-color-3: ~`colorPalette('@{danger-color}', 5) `;
 @danger-color-4: ~`colorPalette('@{danger-color}', 3) `;
 @danger-color-5: ~`colorPalette('@{danger-color}', 1) `;
 
-// gray
+// gray color, special color cannot be calculated by color palette
 @gray-1: #fafafa;
 @gray-2: #f5f5f5;
 @gray-3: #ececec;
 @gray-4: #e0e0e0;
 @gray-5: #c1c1c1;
 
-// text
+// text color
 @text-color-1: #000000; // 主要文字
 @text-color-2: #333333; // 常规文字
 @text-color-3: #666666; // 次要文字
@@ -70,9 +58,15 @@
 @text-color-5: #c1c1c1; // 禁用文字
 @text-color-link: @primary-color; // 文字链接
 
-// background
+// background color
 @background-color-base: @white;
 @background-color-active: rgba(153, 153, 153, 0.1);
+
+@z-index-1: 1;
+@z-index-2: 3;
+@z-index-3: 5;
+@z-index-4: 7;
+@z-index-5: 10;
 
 // border
 @border-radius-1: 2px; /* no */
@@ -80,6 +74,10 @@
 @border-radius-3: 8px; /* no */
 @border-radius-4: 12px; /* no */
 @border-radius-5: 16px; /* no */
+
+// Animation
+@animation-duration-base: 0.3s;
+@animation-duration-fast: 0.2s;
 
 // button
 @button-font-weight: 400;

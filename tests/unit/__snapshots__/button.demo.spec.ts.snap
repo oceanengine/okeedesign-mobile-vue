@@ -5,57 +5,50 @@ exports[`renders demo correctly 1`] = `
   <div class="byted-header--wrapper">
     <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
       <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title"><span class="demo-header-icon"><img src="https://s2.pstatp.com/cdn/expire-1-d/byted-creative-app/static/ByDesign-logo.svg" class="img-icon"></span></div>
+      <div class="byted-header__title">
+        <div></div>
+      </div>
+      <div class="byted-header__right"></div>
     </div>
   </div>
-  <div><span class="byted-icon byted-icon-module-button" style="font-size: 20px;"><svg width="20" height="20" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 8H38.4286H50V24H38.4286H14V8Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 16H42" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.9469 50C19.4279 42.8771 15.6873 38.7492 14.7251 37.6162C13.2817 35.9168 13.8878 33.996 17.4999 33.996C21.1121 33.996 23.1953 39.2814 25.9469 39.2814C25.9469 39.2814 25.9644 32.5257 25.9502 19.004C25.9485 17.3467 27.2906 16.0017 28.9479 16L28.9511 16C30.6102 16 31.9553 17.345 31.9553 19.0042V31.0136C39.928 32.2224 44.2626 32.8893 44.9589 33.0144C46.0034 33.2019 47.9469 34.199 47.9469 37.068C47.9469 38.9807 48 45.9581 48 56H25.9502L25.9469 50Z" fill="transparent" stroke="#333" stroke-width="4" stroke-linejoin="round"></path><line x1="27" y1="50" x2="47" y2="50" stroke="#333" stroke-width="4" stroke-linecap="round"></line></svg></span></div>
   <div>
-    <div class="byted-button byted-button--default byted-button--large"></div>
     <div class="byted-button byted-button--primary byted-button--large"></div>
-    <div class="byted-button byted-button--success byted-button--large"></div>
-    <div class="byted-button byted-button--warning byted-button--large"></div>
     <div class="byted-button byted-button--danger byted-button--large"></div>
+    <div class="byted-button byted-button--warning byted-button--large"></div>
+    <div class="byted-button byted-button--success byted-button--large"></div>
+    <div class="byted-button byted-button--default byted-button--large"></div>
   </div>
   <div>
     <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-hairline--surround"></div>
     <div class="byted-button byted-button--success byted-button--large byted-button--plain byted-hairline--surround"></div>
-    <div class="byted-button byted-button--warning byted-button--large byted-button--plain byted-hairline--surround"></div>
-    <div class="byted-button byted-button--danger byted-button--large byted-button--plain byted-hairline--surround"></div>
   </div>
   <div>
     <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"></div>
     <div class="byted-button byted-button--success byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"></div>
-    <div class="byted-button byted-button--warning byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"></div>
-    <div class="byted-button byted-button--danger byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"></div>
-  </div>
-  <div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--hairline byted-hairline--surround"></div>
-    <div class="byted-button byted-button--success byted-button--large byted-button--plain byted-button--hairline byted-hairline--surround"></div>
-    <div class="byted-button byted-button--warning byted-button--large byted-button--plain byted-button--fade byted-button--hairline byted-hairline--surround"></div>
-    <div class="byted-button byted-button--danger byted-button--large byted-button--plain byted-button--fade byted-button--hairline byted-hairline--surround"></div>
   </div>
   <div>
     <div class="byted-button byted-button--primary byted-button--large byted-button--square"></div>
     <div class="byted-button byted-button--primary byted-button--large byted-button--round"></div>
   </div>
   <div>
-    <div class="byted-button byted-button--default byted-button--large byted-button--plain byted-button--disabled byted-hairline--surround"></div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--disabled byted-hairline--surround"></div>
     <div class="byted-button byted-button--primary byted-button--large byted-button--disabled"></div>
+    <div class="byted-button byted-button--success byted-button--large byted-button--disabled"></div>
   </div>
   <div>
-    <div class="byted-button byted-button--default byted-button--large byted-button--plain byted-hairline--surround">
+    <div class="byted-button byted-button--primary byted-button--large">
       <div class="byted-loading byted-button__loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
     </div>
     <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-hairline--surround">
       <div class="byted-loading byted-button__loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
     </div>
-    <div class="byted-button byted-button--primary byted-button--large">
+    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround">
       <div class="byted-loading byted-button__loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
     </div>
-    <div class="byted-button byted-button--primary byted-button--midget">
-      <div class="byted-loading byted-button__loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
-    </div>
+  </div>
+  <div>
+    <div class="byted-button byted-button--primary byted-button--large"><img src="../../icon/icon/add.svg" alt="" height="16px" width="16px"> <span></span></div>
+    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"><img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px"> <span></span></div>
+    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"><img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px"> <span></span></div>
   </div>
   <div>
     <div class="byted-button byted-button--text byted-button--large"></div>
