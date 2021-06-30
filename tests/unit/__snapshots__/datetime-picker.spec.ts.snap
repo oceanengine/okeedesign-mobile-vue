@@ -239,6 +239,14 @@ exports[`DatetimePicker datetime type 1`] = `
     </div>
     <div class="byted-picker-column">
       <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+        <div class="byted-picker-column__option">00时</div>
+        <div class="byted-picker-column__option">01时</div>
+        <div class="byted-picker-column__option">02时</div>
+        <div class="byted-picker-column__option">03时</div>
+        <div class="byted-picker-column__option">04时</div>
+        <div class="byted-picker-column__option">05时</div>
+        <div class="byted-picker-column__option">06时</div>
+        <div class="byted-picker-column__option">07时</div>
         <div class="byted-picker-column__option">08时</div>
         <div class="byted-picker-column__option">09时</div>
         <div class="byted-picker-column__option">10时</div>

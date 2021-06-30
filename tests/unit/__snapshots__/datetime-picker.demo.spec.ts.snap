@@ -470,7 +470,6 @@ exports[`renders demo correctly 1`] = `
         </div>
         <div class="byted-picker-column">
           <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">29日</div>
             <div class="byted-picker-column__option">30日</div>
           </div>
         </div>

@@ -37,10 +37,10 @@ describe('DatetimePicker', () => {
   test('datetime type', () => {
     const wrapper = mount(DatetimePicker, {
       propsData: {
-        value: new Date('2020-02-02'),
+        value: new Date('2020-02-02 00:00:00'),
         type: 'datetime',
-        minDate: new Date('2020-02-02'),
-        maxDate: new Date('2021-02-02'),
+        minDate: new Date('2020-02-02 00:00:00'),
+        maxDate: new Date('2021-02-02 00:00:00'),
       },
     });
 
@@ -50,10 +50,10 @@ describe('DatetimePicker', () => {
   test('date type', () => {
     const wrapper = mount(DatetimePicker, {
       propsData: {
-        value: new Date('2020-02-02'),
+        value: new Date('2020-02-02 00:00:00'),
         type: 'date',
-        minDate: new Date('2020-02-02'),
-        maxDate: new Date('2021-02-02'),
+        minDate: new Date('2020-02-02 00:00:00'),
+        maxDate: new Date('2021-02-02 00:00:00'),
       },
     });
 

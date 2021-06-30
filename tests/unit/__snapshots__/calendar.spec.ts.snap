@@ -52,8 +52,8 @@ exports[`Calendar calendar slot 1`] = `
           <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">26</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">27</button></div>
           <div class="byted-calendar__cell"><button class="byted-calendar__date">28</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--today">29</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">30</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date">29</button></div>
+          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--today">30</button></div>
         </div>
       </div>
       <div class="byted-calendar__month byted-calendar__month--1">
