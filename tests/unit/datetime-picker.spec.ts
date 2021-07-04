@@ -18,10 +18,10 @@ describe('DatetimePicker', () => {
       },
     });
 
-    wrapper.find('.byted-picker__button--right').trigger('click');
+    wrapper.find('.o-picker__button--right').trigger('click');
     expect(onConfirm).toHaveBeenCalledTimes(1);
 
-    wrapper.find('.byted-picker__button--cancel').trigger('click');
+    wrapper.find('.o-picker__button--cancel').trigger('click');
     expect(onCancel).toHaveBeenCalledTimes(1);
   });
   test('time type', async () => {
@@ -71,7 +71,7 @@ describe('DatetimePicker', () => {
       },
     });
     await later();
-    const columns = wrapper.findAll('.byted-picker-column');
+    const columns = wrapper.findAll('.o-picker-column');
     const pickerColumn = wrapper.findComponent(PickerColumn) as any;
     Object.defineProperty(pickerColumn.vm.$refs[pickerColumn.vm.wrapperName], 'scrollHeight', {
       value: 200,
@@ -79,7 +79,7 @@ describe('DatetimePicker', () => {
     pickerColumn.vm.initWrapperHeight();
     await later();
     triggerDrag(columns.at(0), 0, -88);
-    wrapper.find('.byted-picker-column .byted-picker-column__wrapper').trigger('transitionend');
+    wrapper.find('.o-picker-column .o-picker-column__wrapper').trigger('transitionend');
     // console.log(wrapper.vm['value']);
     expect(onChange).toBeCalledTimes(1);
     await later();

@@ -2,73 +2,73 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo field">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
     </div>
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
     </div>
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
     </div>
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
     </div>
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
-    </div>
-  </div>
-  <div style="margin: 0px -0.8rem;">
-    <div class="byted-field byted-field--normal byted-field--disabled byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" disabled="disabled" class="byted-field__input byted-field__item"></div>
-    </div>
-    <div class="byted-field byted-field--normal byted-field--disabled byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" disabled="disabled" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--disabled o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" disabled="disabled" class="o-field__input o-field__item"></div>
     </div>
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
-    </div>
-  </div>
-  <div style="margin: 0px -0.8rem;">
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-field o-field--normal o-field--disabled o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" disabled="disabled" class="o-field__input o-field__item"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-field byted-field--normal byted-field--maxlength byted-field--textarea byted-field--no-border">
-      <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea>
-        <div class="byted-field__word-limit">0/120</div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
+    </div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
+    </div>
+  </div>
+  <div style="margin: 0px -0.8rem;">
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
+    </div>
+  </div>
+  <div style="margin: 0px -0.8rem;">
+    <div class="o-field o-field--normal o-field--maxlength o-field--textarea o-field--no-border">
+      <div class="o-field__body"><textarea placeholder="请输入内容" class="o-field__input"></textarea>
+        <div class="o-field__word-limit">0/120</div>
       </div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-field byted-field--normal byted-field--textarea byted-field--no-border">
-      <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea></div>
+    <div class="o-field o-field--normal o-field--textarea o-field--no-border">
+      <div class="o-field__body"><textarea placeholder="请输入内容" class="o-field__input"></textarea></div>
     </div>
   </div>
   <div>
-    <div class="byted-field byted-field--normal byted-field--border byted-field--textarea">
-      <div class="byted-field__body"><textarea placeholder="请输入内容" class="byted-field__input"></textarea></div>
+    <div class="o-field o-field--normal o-field--border o-field--textarea">
+      <div class="o-field__body"><textarea placeholder="请输入内容" class="o-field__input"></textarea></div>
     </div>
   </div>
   <div class="dome-size">

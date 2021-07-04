@@ -1,153 +1,153 @@
 <template>
   <div class="demo swipe">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')">
-      <byted-swipe>
-        <byted-swipe-item>
+      <o-swipe>
+        <o-swipe-item>
           <img src="../pics/pic.svg" width="100%" height="100%" alt="pic" />
           <span class="text">0</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic2.svg" width="100%" height="100%" alt="pic" />
           <span class="text">1</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic3.svg" width="100%" height="100%" alt="pic" />
           <span class="text">2</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic4.svg" width="100%" height="100%" alt="pic" />
           <span class="text">3</span>
-        </byted-swipe-item>
-      </byted-swipe>
+        </o-swipe-item>
+      </o-swipe>
     </demo-cell>
 
     <demo-cell :title="t('autoplay')">
-      <byted-swipe :autoplay="2000">
-        <byted-swipe-item>
+      <o-swipe :autoplay="2000">
+        <o-swipe-item>
           <img src="../pics/pic2.svg" width="100%" height="100%" alt="pic" />
           <span class="text">0</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic.svg" width="100%" height="100%" alt="pic" />
           <span class="text">1</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic3.svg" width="100%" height="100%" alt="pic" />
           <span class="text">2</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic4.svg" width="100%" height="100%" alt="pic" />
           <span class="text">3</span>
-        </byted-swipe-item>
-      </byted-swipe>
+        </o-swipe-item>
+      </o-swipe>
     </demo-cell>
 
     <demo-cell :title="t('forbiddenTouch')">
-      <byted-swipe :autoplay="2000" :touchable="false">
-        <byted-swipe-item>
+      <o-swipe :autoplay="2000" :touchable="false">
+        <o-swipe-item>
           <img src="../pics/pic3.svg" width="100%" height="100%" alt="pic" />
           <span class="text">0</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic2.svg" width="100%" height="100%" alt="pic" />
           <span class="text">1</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic.svg" width="100%" height="100%" alt="pic" />
           <span class="text">2</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic4.svg" width="100%" height="100%" alt="pic" />
           <span class="text">3</span>
-        </byted-swipe-item>
-      </byted-swipe>
+        </o-swipe-item>
+      </o-swipe>
     </demo-cell>
 
     <demo-cell :title="t('forbiddenLoop')">
-      <byted-swipe :loop="false" :initial-swipe="1">
-        <byted-swipe-item>
+      <o-swipe :loop="false" :initial-swipe="1">
+        <o-swipe-item>
           <img src="../pics/pic.svg" width="100%" height="100%" alt="pic" />
           <span class="text">0</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic2.svg" width="100%" height="100%" alt="pic" />
           <span class="text">1</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic3.svg" width="100%" height="100%" alt="pic" />
           <span class="text">2</span>
-        </byted-swipe-item>
-      </byted-swipe>
+        </o-swipe-item>
+      </o-swipe>
     </demo-cell>
 
     <demo-cell :title="t('indicatorColor')">
-      <byted-swipe indicator-color="#0278FF">
-        <byted-swipe-item>
+      <o-swipe indicator-color="#0278FF">
+        <o-swipe-item>
           <img src="../pics/pic4.svg" width="100%" height="100%" alt="pic" />
           <span class="text">0</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic2.svg" width="100%" height="100%" alt="pic" />
           <span class="text">1</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic3.svg" width="100%" height="100%" alt="pic" />
           <span class="text">2</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic.svg" width="100%" height="100%" alt="pic" />
           <span class="text">3</span>
-        </byted-swipe-item>
-      </byted-swipe>
+        </o-swipe-item>
+      </o-swipe>
     </demo-cell>
 
     <demo-cell :title="t('customIndicator')">
-      <byted-swipe @change="onChange">
-        <byted-swipe-item>
+      <o-swipe @change="onChange">
+        <o-swipe-item>
           <img src="../pics/pic.svg" width="100%" height="100%" alt="pic" />
           <span class="text">1</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic2.svg" width="100%" height="100%" alt="pic" />
           <span class="text">2</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic3.svg" width="100%" height="100%" alt="pic" />
           <span class="text">3</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic4.svg" width="100%" height="100%" alt="pic" />
           <span class="text">4</span>
-        </byted-swipe-item>
+        </o-swipe-item>
         <div slot="indicator" class="custom-indicator">{{ current + 1 }}/4</div>
-      </byted-swipe>
+      </o-swipe>
     </demo-cell>
 
     <demo-cell :title="t('dataBinding')">
-      <byted-swipe ref="boundSwipe" v-model="boundValue">
-        <byted-swipe-item>
+      <o-swipe ref="boundSwipe" v-model="boundValue">
+        <o-swipe-item>
           <img src="../pics/pic2.svg" width="100%" height="100%" alt="pic" />
           <span class="text">0</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic.svg" width="100%" height="100%" alt="pic" />
           <span class="text">1</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic3.svg" width="100%" height="100%" alt="pic" />
           <span class="text">2</span>
-        </byted-swipe-item>
-        <byted-swipe-item>
+        </o-swipe-item>
+        <o-swipe-item>
           <img src="../pics/pic4.svg" width="100%" height="100%" alt="pic" />
           <span class="text">3</span>
-        </byted-swipe-item>
-      </byted-swipe>
+        </o-swipe-item>
+      </o-swipe>
       <div class="button-wrap">
-        <byted-button
+        <o-button
           text="<"
           plain
           type="primary"
@@ -155,7 +155,7 @@
           size="mini"
           @click="() => this.$refs.boundSwipe.previous()"
         />
-        <byted-button
+        <o-button
           v-for="i of 4"
           :key="i - 1"
           :text="(i - 1).toString()"
@@ -166,7 +166,7 @@
           size="mini"
           @click="boundValue = i - 1"
         />
-        <byted-button
+        <o-button
           text=">"
           plain
           type="primary"
@@ -205,8 +205,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleCarousel,
   },
   data() {
     return {
@@ -229,7 +227,7 @@ export default {
       line-height: 80px;
       text-align: center;
     }
-    .byted-swipe-item {
+    .o-swipe-item {
       .show {
         color: #fff;
       }

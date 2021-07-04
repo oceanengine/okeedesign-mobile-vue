@@ -1,55 +1,55 @@
 <template>
   <div class="demo col">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basic')">
-      <byted-row>
-        <byted-col span="8"> span:8 </byted-col>
-        <byted-col span="8"> span:8 </byted-col>
-        <byted-col span="8"> span:8 </byted-col>
-      </byted-row>
-      <byted-row>
-        <byted-col span="4"> span:4 </byted-col>
-        <byted-col span="16" offset="4"> span:10 offset: 4 </byted-col>
-      </byted-row>
+      <o-row>
+        <o-col span="8"> span:8 </o-col>
+        <o-col span="8"> span:8 </o-col>
+        <o-col span="8"> span:8 </o-col>
+      </o-row>
+      <o-row>
+        <o-col span="4"> span:4 </o-col>
+        <o-col span="16" offset="4"> span:10 offset: 4 </o-col>
+      </o-row>
     </demo-cell>
 
     <demo-cell :title="t('setGutter')">
-      <byted-row gutter="12">
-        <byted-col span="8"> span:8 </byted-col>
-        <byted-col span="8"> span:8 </byted-col>
-        <byted-col span="8"> span:8 </byted-col>
-      </byted-row>
+      <o-row gutter="12">
+        <o-col span="8"> span:8 </o-col>
+        <o-col span="8"> span:8 </o-col>
+        <o-col span="8"> span:8 </o-col>
+      </o-row>
     </demo-cell>
 
     <demo-cell :title="t('flex')">
-      <byted-row type="flex">
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-      </byted-row>
-      <byted-row type="flex" justify="center">
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-      </byted-row>
-      <byted-row type="flex" justify="end">
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-      </byted-row>
-      <byted-row type="flex" justify="space-between">
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-      </byted-row>
-      <byted-row type="flex" justify="space-around">
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-        <byted-col span="6"> span:6 </byted-col>
-      </byted-row>
+      <o-row type="flex">
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+      </o-row>
+      <o-row type="flex" justify="center">
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+      </o-row>
+      <o-row type="flex" justify="end">
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+      </o-row>
+      <o-row type="flex" justify="space-between">
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+      </o-row>
+      <o-row type="flex" justify="space-around">
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+        <o-col span="6"> span:6 </o-col>
+      </o-row>
     </demo-cell>
   </div>
 </template>
@@ -74,8 +74,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleLayout,
   },
   data() {
     return {};
@@ -85,7 +83,7 @@ export default {
 </script>
 <style lang="less">
 .demo.col {
-  .byted-col {
+  .o-col {
     text-align: center;
     margin-bottom: 8px;
     background-clip: content-box;

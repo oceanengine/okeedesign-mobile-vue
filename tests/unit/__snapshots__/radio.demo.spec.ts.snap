@@ -2,33 +2,33 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo radio">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div style="padding-left: 0.8rem;">
-    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal  byted-radio--checked" style="margin-right: 1rem;"><i class="byted-icon byted-icon--check-one byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal"><i class="byted-radio__icon"></i><span class="byted-radio__label">  2 </span><input type="radio" class="byted-radio__input" value="2"></label></div>
+    <div class="o-radio-group"><label class="o-radio o-radio--normal  o-radio--checked" style="margin-right: 1rem;"><i class="o-icon o-icon--check-one o-radio__icon">test-file-stub</i><span class="o-radio__label">  1 </span><input type="radio" class="o-radio__input" value="1"></label> <label class="o-radio o-radio--normal"><i class="o-radio__icon"></i><span class="o-radio__label">  2 </span><input type="radio" class="o-radio__input" value="2"></label></div>
   </div>
   <div style="padding-left: 0.8rem;">
-    <div class="byted-radio-group"><label class="byted-radio byted-radio--normal  byted-radio--disabled byted-radio--checked" style="margin-right: 1rem;"><i class="byted-icon byted-icon--radio byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" disabled="disabled" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal  byted-radio--disabled"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">  2 </span><input type="radio" disabled="disabled" class="byted-radio__input" value="2"></label></div>
+    <div class="o-radio-group"><label class="o-radio o-radio--normal  o-radio--disabled o-radio--checked" style="margin-right: 1rem;"><i class="o-icon o-icon--radio o-radio__icon">test-file-stub</i><span class="o-radio__label">  1 </span><input type="radio" disabled="disabled" class="o-radio__input" value="1"></label> <label class="o-radio o-radio--normal  o-radio--disabled"><i class="o-icon o-icon--radio-uncheck o-radio__icon"></i><span class="o-radio__label">  2 </span><input type="radio" disabled="disabled" class="o-radio__input" value="2"></label></div>
   </div>
   <div style="padding-left: 0.8rem;">
-    <div class="byted-radio-group"><label class="byted-radio byted-radio--small  byted-radio--checked" style="display: flex;"><i class="byted-icon byted-icon--radio byted-radio__icon">test-file-stub</i><span class="byted-radio__label">  1 </span><input type="radio" class="byted-radio__input" value="1"></label> <label class="byted-radio byted-radio--normal" style="display: flex, margin-bottom: 20px;"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">
+    <div class="o-radio-group"><label class="o-radio o-radio--small  o-radio--checked" style="display: flex;"><i class="o-icon o-icon--radio o-radio__icon">test-file-stub</i><span class="o-radio__label">  1 </span><input type="radio" class="o-radio__input" value="1"></label> <label class="o-radio o-radio--normal" style="display: flex, margin-bottom: 20px;"><i class="o-icon o-icon--radio-uncheck o-radio__icon"></i><span class="o-radio__label">
          2
-      </span><input type="radio" class="byted-radio__input" value="2"></label> <label class="byted-radio byted-radio--large" style="display: flex;"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label">  3 </span><input type="radio" class="byted-radio__input" value="3"></label></div>
+      </span><input type="radio" class="o-radio__input" value="2"></label> <label class="o-radio o-radio--large" style="display: flex;"><i class="o-icon o-icon--radio-uncheck o-radio__icon"></i><span class="o-radio__label">  3 </span><input type="radio" class="o-radio__input" value="3"></label></div>
   </div>
   <div style="padding: 0px 0.8rem 0px 0.8rem;">
-    <div class="byted-radio-group">
-      <div class="byted-cell byted-cell--clickable byted-cell--normal" style="padding: 2px 9px;">
-        <div class="byted-cell__value byted-cell__value--alone"><label class="byted-radio byted-radio--normal" style="padding-right: 220px;"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label"> 1</span><input type="radio" class="byted-radio__input" value="1"></label></div>
+    <div class="o-radio-group">
+      <div class="o-cell o-cell--clickable o-cell--normal" style="padding: 2px 9px;">
+        <div class="o-cell__value o-cell__value--alone"><label class="o-radio o-radio--normal" style="padding-right: 220px;"><i class="o-icon o-icon--radio-uncheck o-radio__icon"></i><span class="o-radio__label"> 1</span><input type="radio" class="o-radio__input" value="1"></label></div>
       </div>
-      <div class="byted-cell byted-cell--clickable byted-cell--normal" style="padding: 2px 9px;">
-        <div class="byted-cell__value byted-cell__value--alone"><label class="byted-radio byted-radio--normal" style="padding-right: 220px;"><i class="byted-icon byted-icon--radio-uncheck byted-radio__icon"></i><span class="byted-radio__label"> 2</span><input type="radio" class="byted-radio__input" value="2"></label></div>
+      <div class="o-cell o-cell--clickable o-cell--normal" style="padding: 2px 9px;">
+        <div class="o-cell__value o-cell__value--alone"><label class="o-radio o-radio--normal" style="padding-right: 220px;"><i class="o-icon o-icon--radio-uncheck o-radio__icon"></i><span class="o-radio__label"> 2</span><input type="radio" class="o-radio__input" value="2"></label></div>
       </div>
     </div>
   </div>

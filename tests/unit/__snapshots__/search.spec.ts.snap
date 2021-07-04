@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search slot 1`] = `
-<div class="byted-search">
-  <div class="byted-search__left">left slot</div>
-  <div class="byted-search__content">
-    <div class="byted-search__icon-slot-box">icon slot</div>
-    <div class="byted-field byted-field--normal byted-field--input">
-      <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+<div class="o-search">
+  <div class="o-search__left">left slot</div>
+  <div class="o-search__content">
+    <div class="o-search__icon-slot-box">icon slot</div>
+    <div class="o-field o-field--normal o-field--input">
+      <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
     </div>
   </div>
-  <div class="byted-search__right">right slot</div>
+  <div class="o-search__right">right slot</div>
 </div>
 `;

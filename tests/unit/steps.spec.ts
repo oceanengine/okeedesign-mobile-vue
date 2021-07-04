@@ -7,13 +7,13 @@ describe('Steps', () => {
   test('horizontal step', async () => {
     const wrapper = mount({
       template: `
-        <byted-steps :current="current">
-        <byted-step v-for="item in steps" :key="item.title" v-bind="item"></byted-step>
-        </byted-steps>
+        <o-steps :current="current">
+        <o-step v-for="item in steps" :key="item.title" v-bind="item"></o-step>
+        </o-steps>
       `,
       components: {
-        'byted-steps': Steps,
-        'byted-step': Step,
+        'o-steps': Steps,
+        'o-step': Step,
       },
       methods: {},
       data() {
@@ -47,13 +47,13 @@ describe('Steps', () => {
     const onChange = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-steps :current="1" @change="onChange">
-          <byted-step v-for="item in steps" :key="item.title" v-bind="item"></byted-step>
-        </byted-steps>
+        <o-steps :current="1" @change="onChange">
+          <o-step v-for="item in steps" :key="item.title" v-bind="item"></o-step>
+        </o-steps>
       `,
       components: {
-        'byted-steps': Steps,
-        'byted-step': Step,
+        'o-steps': Steps,
+        'o-step': Step,
       },
       methods: {
         onChange,
@@ -83,7 +83,7 @@ describe('Steps', () => {
 
     await later();
 
-    const items = wrapper.findAll('.byted-step');
+    const items = wrapper.findAll('.o-step');
     items.at(1).trigger('click');
 
     expect(onChange).toBeCalledTimes(1);

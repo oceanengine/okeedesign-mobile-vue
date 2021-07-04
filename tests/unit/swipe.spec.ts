@@ -5,12 +5,12 @@ const SwipeItem = SwipeItemNative as any;
 
 const Component = {
   template: `
-  <byted-swipe ref="swipe">
-    <byted-swipe-item :style="style">0</byted-swipe-item>
-    <byted-swipe-item :style="style">1</byted-swipe-item>
-    <byted-swipe-item :style="style">2</byted-swipe-item>
-    <byted-swipe-item :style="style">3</byted-swipe-item>
-  </byted-swipe>
+  <o-swipe ref="swipe">
+    <o-swipe-item :style="style">0</o-swipe-item>
+    <o-swipe-item :style="style">1</o-swipe-item>
+    <o-swipe-item :style="style">2</o-swipe-item>
+    <o-swipe-item :style="style">3</o-swipe-item>
+  </o-swipe>
   `,
   props: {
     loop: {
@@ -35,8 +35,8 @@ const Component = {
     },
   },
   components: {
-    'byted-swipe': Swipe,
-    'byted-swipe-item': SwipeItem,
+    'o-swipe': Swipe,
+    'o-swipe-item': SwipeItem,
   },
   data() {
     return {
@@ -74,16 +74,16 @@ describe('swipe', () => {
   test('untouchable', async () => {
     const wrapper = mount({
       template: `
-        <byted-swipe :touchable="false" v-model="boundValue" ref="swipe"  @change="handleChange">
-          <byted-swipe-item :style="style">0</byted-swipe-item>
-          <byted-swipe-item :style="style">1</byted-swipe-item>
-          <byted-swipe-item :style="style">2</byted-swipe-item>
-          <byted-swipe-item :style="style">3</byted-swipe-item>
-        </byted-swipe>
+        <o-swipe :touchable="false" v-model="boundValue" ref="swipe"  @change="handleChange">
+          <o-swipe-item :style="style">0</o-swipe-item>
+          <o-swipe-item :style="style">1</o-swipe-item>
+          <o-swipe-item :style="style">2</o-swipe-item>
+          <o-swipe-item :style="style">3</o-swipe-item>
+        </o-swipe>
         `,
       components: {
-        'byted-swipe': Swipe,
-        'byted-swipe-item': SwipeItem,
+        'o-swipe': Swipe,
+        'o-swipe-item': SwipeItem,
       },
       data() {
         return {
@@ -101,7 +101,7 @@ describe('swipe', () => {
     await later();
 
     const { swipe } = wrapper.vm.$refs as any;
-    const track = wrapper.find('.byted-swipe__track');
+    const track = wrapper.find('.o-swipe__track');
     await triggerDrag(track, -100, 0);
 
     await later();
@@ -111,15 +111,15 @@ describe('swipe', () => {
   test('loop', async () => {
     const wrapper = mount({
       template: `
-        <byted-swipe v-model="boundValue" ref="swipe"  @change="handleChange">
-          <byted-swipe-item>0</byted-swipe-item>
-          <byted-swipe-item>1</byted-swipe-item>
-          <byted-swipe-item>2</byted-swipe-item>
-        </byted-swipe>
+        <o-swipe v-model="boundValue" ref="swipe"  @change="handleChange">
+          <o-swipe-item>0</o-swipe-item>
+          <o-swipe-item>1</o-swipe-item>
+          <o-swipe-item>2</o-swipe-item>
+        </o-swipe>
         `,
       components: {
-        'byted-swipe': Swipe,
-        'byted-swipe-item': SwipeItem,
+        'o-swipe': Swipe,
+        'o-swipe-item': SwipeItem,
       },
       data() {
         return {
@@ -133,7 +133,7 @@ describe('swipe', () => {
     await later();
 
     const { swipe } = wrapper.vm.$refs as any;
-    const track = wrapper.find('.byted-swipe__track');
+    const track = wrapper.find('.o-swipe__track');
 
     triggerDrag(track, -100, 0);
     expect(swipe.active).toEqual(1);

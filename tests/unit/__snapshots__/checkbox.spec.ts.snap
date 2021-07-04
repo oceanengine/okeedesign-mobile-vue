@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`checkbox render checkbox selection status 1`] = `
-<div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
+<div class="o-checkbox-group"><label class="o-checkbox o-checkbox--normal  o-checkbox--checked"><i class="o-icon o-icon--check-one o-checkbox__icon">test-file-stub</i><span class="o-checkbox__label">
             1
-          </span><input type="checkbox" class="byted-checkbox__input" value="1"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
+          </span><input type="checkbox" class="o-checkbox__input" value="1"></label><label class="o-checkbox o-checkbox--normal"><i class="o-icon o-icon--radio-uncheck o-checkbox__icon"></i><span class="o-checkbox__label">
             2
-          </span><input type="checkbox" class="byted-checkbox__input" value="2"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
+          </span><input type="checkbox" class="o-checkbox__input" value="2"></label><label class="o-checkbox o-checkbox--normal"><i class="o-icon o-icon--radio-uncheck o-checkbox__icon"></i><span class="o-checkbox__label">
             3
-          </span><input type="checkbox" class="byted-checkbox__input" value="3"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
+          </span><input type="checkbox" class="o-checkbox__input" value="3"></label><label class="o-checkbox o-checkbox--normal"><i class="o-icon o-icon--radio-uncheck o-checkbox__icon"></i><span class="o-checkbox__label">
             4
-          </span><input type="checkbox" class="byted-checkbox__input" value="4"></label></div>
+          </span><input type="checkbox" class="o-checkbox__input" value="4"></label></div>
 `;
 
 exports[`checkbox render checkbox selection status 2`] = `
-<div class="byted-checkbox-group"><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
+<div class="o-checkbox-group"><label class="o-checkbox o-checkbox--normal  o-checkbox--checked"><i class="o-icon o-icon--check-one o-checkbox__icon">test-file-stub</i><span class="o-checkbox__label">
             1
-          </span><input type="checkbox" class="byted-checkbox__input" value="1"></label><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
+          </span><input type="checkbox" class="o-checkbox__input" value="1"></label><label class="o-checkbox o-checkbox--normal  o-checkbox--checked"><i class="o-icon o-icon--check-one o-checkbox__icon">test-file-stub</i><span class="o-checkbox__label">
             2
-          </span><input type="checkbox" class="byted-checkbox__input" value="2"></label><label class="byted-checkbox byted-checkbox--normal"><i class="byted-icon byted-icon--radio-uncheck byted-checkbox__icon"></i><span class="byted-checkbox__label">
+          </span><input type="checkbox" class="o-checkbox__input" value="2"></label><label class="o-checkbox o-checkbox--normal"><i class="o-icon o-icon--radio-uncheck o-checkbox__icon"></i><span class="o-checkbox__label">
             3
-          </span><input type="checkbox" class="byted-checkbox__input" value="3"></label><label class="byted-checkbox byted-checkbox--normal  byted-checkbox--checked"><i class="byted-icon byted-icon--check-one byted-checkbox__icon">test-file-stub</i><span class="byted-checkbox__label">
+          </span><input type="checkbox" class="o-checkbox__input" value="3"></label><label class="o-checkbox o-checkbox--normal  o-checkbox--checked"><i class="o-icon o-icon--check-one o-checkbox__icon">test-file-stub</i><span class="o-checkbox__label">
             4
-          </span><input type="checkbox" class="byted-checkbox__input" value="4"></label></div>
+          </span><input type="checkbox" class="o-checkbox__input" value="4"></label></div>
 `;

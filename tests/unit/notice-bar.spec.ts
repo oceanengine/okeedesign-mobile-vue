@@ -23,7 +23,7 @@ describe('NoticeBar', () => {
         showClose: true,
       },
     });
-    const close = wrapper.find('.byted-notice-bar__right');
+    const close = wrapper.find('.o-notice-bar__right');
 
     close.trigger('click');
     expect(wrapper.emitted('close')[0][0]).toBeTruthy();

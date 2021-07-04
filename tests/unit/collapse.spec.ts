@@ -8,11 +8,11 @@ describe('collapse', () => {
   test('basic mode', async () => {
     const wrapper = mount({
       template: `
-      <byted-collapse v-model="activeNames">
-        <byted-collapse-item title="标题 1">我是内容</byted-collapse-item>
-        <byted-collapse-item title="标题 2">我是内容</byted-collapse-item>
-        <byted-collapse-item title="标题 3" disabled>我是内容</byted-collapse-item>
-      </byted-collapse>
+      <o-collapse v-model="activeNames">
+        <o-collapse-item title="标题 1">我是内容</o-collapse-item>
+        <o-collapse-item title="标题 2">我是内容</o-collapse-item>
+        <o-collapse-item title="标题 3" disabled>我是内容</o-collapse-item>
+      </o-collapse>
       `,
       data() {
         return {
@@ -20,12 +20,12 @@ describe('collapse', () => {
         };
       },
       components: {
-        'byted-collapse': Collapse,
-        'byted-collapse-item': CollapseItem,
+        'o-collapse': Collapse,
+        'o-collapse-item': CollapseItem,
       },
     });
 
-    const titles = wrapper.findAll('.byted-collapse-item__title');
+    const titles = wrapper.findAll('.o-collapse-item__title');
     titles.at(0).trigger('click');
     expect(wrapper.vm['activeNames']).toEqual([0]);
     await later();
@@ -47,11 +47,11 @@ describe('collapse', () => {
   test('accordion', async () => {
     const wrapper = mount({
       template: `
-      <byted-collapse v-model="activeNames" :accordion="true">
-        <byted-collapse-item title="标题 1">我是内容</byted-collapse-item>
-        <byted-collapse-item title="标题 2">我是内容</byted-collapse-item>
-        <byted-collapse-item title="标题 3">我是内容</byted-collapse-item>
-      </byted-collapse>
+      <o-collapse v-model="activeNames" :accordion="true">
+        <o-collapse-item title="标题 1">我是内容</o-collapse-item>
+        <o-collapse-item title="标题 2">我是内容</o-collapse-item>
+        <o-collapse-item title="标题 3">我是内容</o-collapse-item>
+      </o-collapse>
       `,
       data() {
         return {
@@ -59,12 +59,12 @@ describe('collapse', () => {
         };
       },
       components: {
-        'byted-collapse': Collapse,
-        'byted-collapse-item': CollapseItem,
+        'o-collapse': Collapse,
+        'o-collapse-item': CollapseItem,
       },
     });
 
-    const titles = wrapper.findAll('.byted-collapse-item__title');
+    const titles = wrapper.findAll('.o-collapse-item__title');
     titles.at(0).trigger('click');
     // console.log((wrapper.vm as any)['activeNames']);
 
@@ -85,13 +85,13 @@ describe('collapse', () => {
   test('render collapse-item slot', async () => {
     const wrapper = mount({
       template: `
-      <byted-collapse v-model="activeNames">
-        <byted-collapse-item>
+      <o-collapse v-model="activeNames">
+        <o-collapse-item>
           <template v-slot:title>this is title</template>
           <template v-slot:value>this is value</template>
           <template v-slot:right-icon>自定义右侧按钮，默认是arrow</template>
-        </byted-collapse-item>
-      </byted-collapse>
+        </o-collapse-item>
+      </o-collapse>
       `,
       data() {
         return {
@@ -99,8 +99,8 @@ describe('collapse', () => {
         };
       },
       components: {
-        'byted-collapse': Collapse,
-        'byted-collapse-item': CollapseItem,
+        'o-collapse': Collapse,
+        'o-collapse-item': CollapseItem,
       },
     });
     expect(wrapper).toMatchSnapshot();
@@ -110,11 +110,11 @@ describe('collapse', () => {
     const onChange = jest.fn();
     const wrapper = mount({
       template: `
-      <byted-collapse v-model="activeNames" @change="onChange">
-        <byted-collapse-item title="标题 1">我是内容</byted-collapse-item>
-        <byted-collapse-item title="标题 2">我是内容</byted-collapse-item>
-        <byted-collapse-item title="标题 3">我是内容</byted-collapse-item>
-      </byted-collapse>
+      <o-collapse v-model="activeNames" @change="onChange">
+        <o-collapse-item title="标题 1">我是内容</o-collapse-item>
+        <o-collapse-item title="标题 2">我是内容</o-collapse-item>
+        <o-collapse-item title="标题 3">我是内容</o-collapse-item>
+      </o-collapse>
       `,
       data() {
         return {
@@ -122,15 +122,15 @@ describe('collapse', () => {
         };
       },
       components: {
-        'byted-collapse': Collapse,
-        'byted-collapse-item': CollapseItem,
+        'o-collapse': Collapse,
+        'o-collapse-item': CollapseItem,
       },
       methods: {
         onChange,
       },
     });
 
-    const titles = wrapper.findAll('.byted-collapse-item__title');
+    const titles = wrapper.findAll('.o-collapse-item__title');
     titles.at(0).trigger('click');
     expect(onChange).toBeCalledTimes(1);
     await later();

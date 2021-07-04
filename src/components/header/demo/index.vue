@@ -1,15 +1,15 @@
 <template>
   <div class="demo checker">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basic')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-header :title="t('title')" :left-arrow="false"/>
+      <o-header :title="t('title')" :left-arrow="false"/>
     </demo-cell>
 
     <demo-cell :title="t('backOrClose')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-header :title="t('title')">
+      <o-header :title="t('title')">
         <template slot="left">
           <img
             src="../../icon/icon/arrow.svg"
@@ -21,11 +21,11 @@
           <img src="../../icon/icon/close.svg" alt="" />
         </template>
         <span>{{ t('title') }}</span>
-      </byted-header>
+      </o-header>
     </demo-cell>
 
     <demo-cell :title="t('textButton')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-header class="showText" :left-arrow="true" :title="t('title')">
+      <o-header class="showText" :left-arrow="true" :title="t('title')">
         <template slot="left">
           <img
             src="../../icon/icon/arrow.svg"
@@ -35,42 +35,41 @@
             style="margin-right: 20px"
           />
         </template>
-        <byted-button slot="left" text="Return" type="text" />
-      </byted-header>
+        <o-button slot="left" text="Return" type="text" />
+      </o-header>
     </demo-cell>
 
     <demo-cell :title="t('custom')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-header title="OKee Design">
-        <byted-button slot="right">
+      <o-header title="OKee Design">
+        <o-button slot="right">
           <img src="../icon/dots.svg" alt="" width="20px" height="20px">
-        </byted-button>
-      </byted-header>
-      <byted-header title="OKee Design">
-        <byted-button slot="right">
+        </o-button>
+      </o-header>
+      <o-header title="OKee Design">
+        <o-button slot="right">
           <img src="../icon/magnifier.svg" alt="" width="20px" height="20px">
-        </byted-button>
-      </byted-header>
-      <byted-header title="OKee Design">
-        <byted-button slot="right" type="text"> Button </byted-button>
-      </byted-header>
+        </o-button>
+      </o-header>
+      <o-header title="OKee Design">
+        <o-button slot="right" type="text"> Button </o-button>
+      </o-header>
     </demo-cell>
 
     <demo-cell :title="t('style')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-header :title="t('title')" type="primary" />
+      <o-header :title="t('title')" type="primary" />
     </demo-cell>
 
     <demo-cell :title="t('navtab')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-header title="OKee Design" style="margin-bottom: 20px">
-        <byted-header-tabs v-model="type">
-          <byted-header-tab title="Tab1" name="0" />
-          <byted-header-tab name="1">Tab2</byted-header-tab>
-        </byted-header-tabs>
-      </byted-header>
+      <o-header title="OKee Design" style="margin-bottom: 20px">
+        <o-header-tabs v-model="type">
+          <o-header-tab title="Tab1" name="0" />
+          <o-header-tab name="1">Tab2</o-header-tab>
+        </o-header-tabs>
+      </o-header>
     </demo-cell>
   </div>
 </template>
 <script>
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell.vue';
 export default {
   i18n: {
@@ -99,7 +98,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
   },
   data() {
     return {
@@ -121,7 +119,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .showText {
-  /deep/ .byted-header__title {
+  /deep/ .o-header__title {
     flex: none;
   }
 }

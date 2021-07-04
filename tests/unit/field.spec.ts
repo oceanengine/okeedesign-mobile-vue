@@ -121,7 +121,7 @@ describe('Field', () => {
     input.trigger('focus');
     expect(wrapper).toMatchSnapshot();
 
-    // wrapper.find('.byted-field__clear').trigger('touchstart');
+    // wrapper.find('.o-field__clear').trigger('touchstart');
     // expect(wrapper.emitted('input')[0][0]).toEqual('');
     // expect(wrapper.emitted('clear')[0][0]).toBeTruthy();
   });

@@ -1,27 +1,27 @@
 <template>
   <div class="demo toast">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('base')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('success')" is-link @click="clickType('success')" />
-        <byted-cell :title="t('error')" is-link @click="clickType('error')" />
-        <byted-cell :title="t('warning')" is-link @click="clickType('warning')" />
+        <o-cell :title="t('success')" is-link @click="clickType('success')" />
+        <o-cell :title="t('error')" is-link @click="clickType('error')" />
+        <o-cell :title="t('warning')" is-link @click="clickType('warning')" />
       </div>
     </demo-cell>
 
     <demo-cell :title="t('text')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('words')" is-link @click="click" />
+        <o-cell :title="t('words')" is-link @click="click" />
       </div>
     </demo-cell>
 
     <demo-cell :title="t('loading')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('loadingDefault')" is-link @click="clickType('loading')" />
-        <byted-cell :title="t('loadingCustom')" is-link @click="clickLoading('loadingCustom')" />
+        <o-cell :title="t('loadingDefault')" is-link @click="clickType('loading')" />
+        <o-cell :title="t('loadingCustom')" is-link @click="clickLoading('loadingCustom')" />
       </div>
     </demo-cell>
   </div>
@@ -71,8 +71,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleInfo,
   },
   methods: {
     click() {
@@ -121,14 +119,14 @@ export default {
 </script>
 <style lang="less">
 .demo.toast {
-  .byted-button {
+  .o-button {
     margin-right: 10px;
   }
   .demo-toast-cell {
-    .byted-button {
+    .o-button {
       margin-bottom: 16px;
     }
-    & .byted-button:last-child {
+    & .o-button:last-child {
       margin-bottom: 0;
     }
   }

@@ -2,44 +2,44 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo loading">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-row">
-      <div class="byted-col byted-col--12">
-        <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+    <div class="o-row">
+      <div class="o-col o-col--12">
+        <div class="o-loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-row byted-row--flex byted-row--align-center">
-      <div class="byted-col byted-col--12">
-        <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+    <div class="o-row o-row--flex o-row--align-center">
+      <div class="o-col o-col--12">
+        <div class="o-loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-loading byted-loading--vertical"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i>
-      <div class="byted-loading__text"> 加载中... </div>
+    <div class="o-loading o-loading--vertical"><i class="o-loading__icon o-loading-circle">test-file-stub</i>
+      <div class="o-loading__text"> 加载中... </div>
     </div>
   </div>
   <div>
-    <div class="byted-row">
-      <div class="byted-col byted-col--12">
-        <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+    <div class="o-row">
+      <div class="o-col o-col--12">
+        <div class="o-loading"><i class="o-loading__icon o-loading-circle" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
-    <div class="byted-loading" style="margin-left: 16px;"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+    <div class="o-loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i></div>
+    <div class="o-loading" style="margin-left: 16px;"><i class="o-loading__icon o-loading-circle">test-file-stub</i></div>
   </div>
 </div>
 `;

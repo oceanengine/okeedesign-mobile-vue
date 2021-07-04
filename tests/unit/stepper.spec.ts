@@ -19,8 +19,8 @@ describe('Stepper', () => {
       },
     }) as any;
 
-    const plus = wrapper.find('.byted-stepper__increase');
-    const minus = wrapper.find('.byted-stepper__decrease');
+    const plus = wrapper.find('.o-stepper__increase');
+    const minus = wrapper.find('.o-stepper__decrease');
     plus.trigger('click');
     plus.trigger('click');
     minus.trigger('click');
@@ -49,10 +49,10 @@ describe('Stepper', () => {
   test('step prop', async () => {
     const wrapper = mount({
       template: `
-        <byted-stepper v-model="value" :min="1" :max="100" :step="10" />
+        <o-stepper v-model="value" :min="1" :max="100" :step="10" />
       `,
       components: {
-        'byted-stepper': Stepper,
+        'o-stepper': Stepper,
       },
       data() {
         return {
@@ -61,7 +61,7 @@ describe('Stepper', () => {
       },
     }) as any;
     await later();
-    const plus = wrapper.find('.byted-stepper__increase');
+    const plus = wrapper.find('.o-stepper__increase');
     await plus.trigger('click');
     expect(wrapper.vm.value).toEqual(10);
   });
@@ -77,7 +77,7 @@ describe('Stepper', () => {
       },
     }) as any;
 
-    const plus = wrapper.find('.byted-stepper__increase');
+    const plus = wrapper.find('.o-stepper__increase');
     await plus.trigger('click');
     expect(onChange).toBeCalledTimes(1);
   });

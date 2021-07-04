@@ -1,61 +1,61 @@
 <template>
   <div class="demo badge">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" :title-style="{ 'padding-left': '0.8rem' }">
-      <byted-badge is-dot :value="100" :max="9" :style="{ 'padding-left': '1rem' }">
+      <o-badge is-dot :value="100" :max="9" :style="{ 'padding-left': '1rem' }">
         <div class="square"></div>
-      </byted-badge>
-      <byted-badge :value="2" :max="9" :style="{ 'padding-left': '1rem' }">
+      </o-badge>
+      <o-badge :value="2" :max="9" :style="{ 'padding-left': '1rem' }">
         <div class="square"></div>
-      </byted-badge>
-      <byted-badge :value="9999" :max="999" :style="{ 'padding-left': '1rem' }">
+      </o-badge>
+      <o-badge :value="9999" :max="999" :style="{ 'padding-left': '1rem' }">
         <div class="square"></div>
-      </byted-badge>
-      <byted-badge value="Hot" :style="{ 'padding-left': '1rem' }">
+      </o-badge>
+      <o-badge value="Hot" :style="{ 'padding-left': '1rem' }">
         <div class="square"></div>
-      </byted-badge>
+      </o-badge>
     </demo-cell>
 
     <demo-cell :title="t('maxValue')" :title-style="{ 'padding-left': '0.8rem' }">
-      <byted-badge :value="99" :max="9" :style="{ 'padding-left': '1rem' }">
+      <o-badge :value="99" :max="9" :style="{ 'padding-left': '1rem' }">
         <div class="square"></div>
-      </byted-badge>
+      </o-badge>
 
-      <byted-badge :value="99" :max="60" :style="{ 'padding-left': '1rem' }">
+      <o-badge :value="99" :max="60" :style="{ 'padding-left': '1rem' }">
         <div class="square"></div>
-      </byted-badge>
+      </o-badge>
 
-      <byted-badge :value="999" :max="99" :style="{ 'padding-left': '1rem' }">
+      <o-badge :value="999" :max="99" :style="{ 'padding-left': '1rem' }">
         <div class="square"></div>
-      </byted-badge>
+      </o-badge>
     </demo-cell>
 
     <demo-cell :title="t('text')" :title-style="{ 'padding-left': '0.8rem' }">
-      <byted-collapse v-model="activeNamesDot" :border="false">
-        <byted-collapse-item>
+      <o-collapse v-model="activeNamesDot" :border="false">
+        <o-collapse-item>
           <div slot="title">
-            <byted-badge :value="8">
+            <o-badge :value="8">
               <span>{{ t('text') }}</span>
-            </byted-badge>
+            </o-badge>
           </div>
           <div slot="right-icon" class="right-slot">
-            <byted-icon name="right" size="18" fill="#999" />
+            <o-icon name="right" size="18" fill="#999" />
           </div>
-        </byted-collapse-item>
-        <byted-collapse-item>
+        </o-collapse-item>
+        <o-collapse-item>
           <div slot="title">
-            <byted-badge :max="99" :value="100">
+            <o-badge :max="99" :value="100">
               <span>{{ t('text') }}</span>
-            </byted-badge>
+            </o-badge>
           </div>
           <div slot="right-icon" class="right-slot">
-            <byted-icon name="right" size="18" fill="#999" />
+            <o-icon name="right" size="18" fill="#999" />
           </div>
-        </byted-collapse-item>
-      </byted-collapse>
+        </o-collapse-item>
+      </o-collapse>
     </demo-cell>
   </div>
 </template>
@@ -83,9 +83,7 @@ export default {
     },
   },
   components: {
-    // demoTitle,
     demoCell,
-    // BytedIconBadge,
   },
   data() {
     return {
@@ -103,7 +101,7 @@ export default {
 <style lang="less">
 .demo.badge {
   padding: 0;
-  .byted-badge {
+  .o-badge {
     margin-right: 8px;
   }
   .right-slot {

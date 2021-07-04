@@ -11,27 +11,19 @@ describe('Cascader', () => {
     });
 
     await later();
-    wrapper.find('.byted-cascader--menu-item').trigger('click');
+    wrapper.find('.o-cascader--menu-item').trigger('click');
     await later();
     // console.log(wrapper.emitted('active-item-change')[0], '1');
     expect(wrapper.emitted('active-item-change')[0][0]).toEqual([options[0].value]);
 
-    wrapper
-      .findAll('.byted-cascader--menu')
-      .at(1)
-      .find('.byted-cascader--menu-item')
-      .trigger('click');
+    wrapper.findAll('.o-cascader--menu').at(1).find('.o-cascader--menu-item').trigger('click');
 
     await later();
     expect(wrapper.emitted('active-item-change')[1][0]).toEqual([
       options[0].value,
       options[0].children[0].value,
     ]);
-    wrapper
-      .findAll('.byted-cascader--menu')
-      .at(2)
-      .find('.byted-cascader--menu-item')
-      .trigger('click');
+    wrapper.findAll('.o-cascader--menu').at(2).find('.o-cascader--menu-item').trigger('click');
     // console.log(wrapper.emitted('change')[2], '3');
 
     expect(wrapper.emitted('change')[2][0]).toEqual([

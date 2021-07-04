@@ -2,118 +2,118 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo tag">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
     <div class="bui-doc-demo-block__card">
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag">
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone"><span class="o-tag">
 
         </span></div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--success"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone"><span class="o-tag o-tag--success"></span></div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--warning"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone"><span class="o-tag o-tag--warning"></span></div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--danger"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone"><span class="o-tag o-tag--danger"></span></div>
       </div>
     </div>
   </div>
   <div>
     <div class="bui-doc-demo-block__card">
-      <div class="byted-cell byted-cell--normal">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--plain byted-hairline--surround">
+      <div class="o-cell o-cell--normal">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--plain o-hairline--surround">
 
           </span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--success byted-tag--plain byted-hairline--surround"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--success o-tag--plain o-hairline--surround"></span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--warning byted-tag--plain byted-hairline--surround"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--warning o-tag--plain o-hairline--surround"></span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--danger byted-tag--plain byted-hairline--surround"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--danger o-tag--plain o-hairline--surround"></span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
     <div class="bui-doc-demo-block__card">
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--plain byted-tag--round byted-hairline--surround">
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--plain o-tag--round o-hairline--surround">
 
           </span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--success byted-tag--plain byted-tag--round byted-hairline--surround"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--success o-tag--plain o-tag--round o-hairline--surround"></span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--warning byted-tag--plain byted-tag--round byted-hairline--surround"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--warning o-tag--plain o-tag--round o-hairline--surround"></span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--danger byted-tag--plain byted-tag--round byted-hairline--surround"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--danger o-tag--plain o-tag--round o-hairline--surround"></span></div>
         </div>
       </div>
     </div>
   </div>
   <div>
     <div class="bui-doc-demo-block__card">
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div><span class="byted-tag" style="color: rgb(255, 255, 255); background-color: red;"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div><span class="o-tag" style="color: rgb(255, 255, 255); background-color: red;"></span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone">
-          <div class="box"><span class="byted-tag byted-tag--plain byted-hairline--surround" style="color: red;"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone">
+          <div class="box"><span class="o-tag o-tag--plain o-hairline--surround" style="color: red;"></span></div>
         </div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag byted-tag--round" style="color: rgb(255, 255, 255); background-color: red;"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone"><span class="o-tag o-tag--round" style="color: rgb(255, 255, 255); background-color: red;"></span></div>
       </div>
-      <div class="byted-cell">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-cell__value byted-cell__value--alone"><span class="byted-tag" style="color: red;"></span></div>
+      <div class="o-cell">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-cell__value o-cell__value--alone"><span class="o-tag" style="color: red;"></span></div>
       </div>
     </div>
   </div>

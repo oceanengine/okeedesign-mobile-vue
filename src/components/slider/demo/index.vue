@@ -1,24 +1,24 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')">
-      <byted-slider v-model="value1" @change="onChange" />
+      <o-slider v-model="value1" @change="onChange" />
     </demo-cell>
 
     <demo-cell :title="t('rangeUsage')">
-      <byted-slider v-model="value2" :min="-50" :max="50" @change="onChange" />
+      <o-slider v-model="value2" :min="-50" :max="50" @change="onChange" />
     </demo-cell>
     <demo-cell :title="t('stepUsage')">
-      <byted-slider v-model="value3" :step="10" @change="onChange" />
+      <o-slider v-model="value3" :step="10" @change="onChange" />
     </demo-cell>
     <demo-cell :title="t('setSteps')">
-      <byted-slider v-model="value4" :steps="[0, 50, 70, 77, 90, 120]" @change="onChange" />
+      <o-slider v-model="value4" :steps="[0, 50, 70, 77, 90, 120]" @change="onChange" />
     </demo-cell>
     <demo-cell :title="t('disabledUsage')">
-      <byted-slider v-model="value5" disabled />
+      <o-slider v-model="value5" disabled />
     </demo-cell>
   </div>
 </template>
@@ -48,9 +48,7 @@ export default {
     },
   },
   components: {
-    // BytedIconModuleSlider,
     demoCell,
-    // demoTitle,
   },
   data() {
     return {
@@ -71,7 +69,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.demo .byted-slider {
+.demo .o-slider {
   margin: 4px;
 }
 </style>

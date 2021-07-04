@@ -1,34 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MessageBox Dialog custom 1`] = `
-<transition-stub name="byted-dialog-bounce">
-  <div role="dialog" aria-labelledby="title" class="byted-dialog byted-dialog--normal">
-    <div class="byted-dialog__header">title</div>
-    <div class="byted-dialog__footer byted-hairline--top">
-      <div class="byted-button byted-button--default byted-button--normal byted-dialog__cancel">取消</div>
-      <div class="byted-button byted-button--default byted-button--normal byted-dialog__confirm byted-hairline--left">确定</div>
+<transition-stub name="o-dialog-bounce">
+  <div role="dialog" aria-labelledby="title" class="o-dialog o-dialog--normal">
+    <div class="o-dialog__header">title</div>
+    <div class="o-dialog__footer o-hairline--top">
+      <div class="o-button o-button--default o-button--normal o-dialog__cancel">取消</div>
+      <div class="o-button o-button--default o-button--normal o-dialog__confirm o-hairline--left">确定</div>
     </div>
   </div>
 </transition-stub>
 `;
 
 exports[`MessageBox default slot 1`] = `
-<transition-stub name="byted-dialog-bounce">
-  <div role="dialog" class="byted-dialog byted-dialog--normal">
-    <div class="byted-dialog__content">Custom Message</div>
-    <div class="byted-dialog__footer byted-hairline--top">
-      <div class="byted-button byted-button--default byted-button--normal byted-dialog__confirm">确定</div>
+<transition-stub name="o-dialog-bounce">
+  <div role="dialog" class="o-dialog o-dialog--normal">
+    <div class="o-dialog__content">Custom Message</div>
+    <div class="o-dialog__footer o-hairline--top">
+      <div class="o-button o-button--default o-button--normal o-dialog__confirm">确定</div>
     </div>
   </div>
 </transition-stub>
 `;
 
 exports[`MessageBox title slot 1`] = `
-<transition-stub name="byted-dialog-bounce">
-  <div role="dialog" class="byted-dialog byted-dialog--normal">
-    <div class="byted-dialog__header">Custom title</div>
-    <div class="byted-dialog__footer byted-hairline--top">
-      <div class="byted-button byted-button--default byted-button--normal byted-dialog__confirm">确定</div>
+<transition-stub name="o-dialog-bounce">
+  <div role="dialog" class="o-dialog o-dialog--normal">
+    <div class="o-dialog__header">Custom title</div>
+    <div class="o-dialog__footer o-hairline--top">
+      <div class="o-button o-button--default o-button--normal o-dialog__confirm">确定</div>
     </div>
   </div>
 </transition-stub>

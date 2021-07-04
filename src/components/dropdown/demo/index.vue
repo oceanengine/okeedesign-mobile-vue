@@ -1,63 +1,63 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" :title-style="titleStyle">
-      <byted-dropdown>
-        <byted-dropdown-item v-model="value1" :options="option1" @click="onClick" />
-        <byted-dropdown-item v-model="value2" :options="option2" @click="onClick" />
-      </byted-dropdown>
+      <o-dropdown>
+        <o-dropdown-item v-model="value1" :options="option1" @click="onClick" />
+        <o-dropdown-item v-model="value2" :options="option2" @click="onClick" />
+      </o-dropdown>
     </demo-cell>
 
     <demo-cell :title="t('upUsage')" :title-style="titleStyle">
-      <byted-dropdown direction="up">
-        <byted-dropdown-item v-model="value1" :options="option1" />
-        <byted-dropdown-item v-model="value2" :options="option2" />
-      </byted-dropdown>
+      <o-dropdown direction="up">
+        <o-dropdown-item v-model="value1" :options="option1" />
+        <o-dropdown-item v-model="value2" :options="option2" />
+      </o-dropdown>
     </demo-cell>
 
     <demo-cell :title="t('customUsage')" :title-style="titleStyle">
-      <byted-dropdown>
-        <byted-dropdown-item v-model="value1" :options="option1" />
-        <byted-dropdown-item ref="item" :title="t('title')">
-          <byted-cell :title="t('title') + 1">
+      <o-dropdown>
+        <o-dropdown-item v-model="value1" :options="option1" />
+        <o-dropdown-item ref="item" :title="t('title')">
+          <o-cell :title="t('title') + 1">
             <template #right-icon>
-              <byted-switch v-model="switch1" />
+              <o-switch v-model="switch1" />
             </template>
-          </byted-cell>
-          <byted-cell :title="t('title') + 2">
+          </o-cell>
+          <o-cell :title="t('title') + 2">
             <template #right-icon>
-              <byted-switch v-model="switch2" />
+              <o-switch v-model="switch2" />
             </template>
-          </byted-cell>
-          <byted-button
+          </o-cell>
+          <o-button
             size="large"
             type="primary"
             :text="t('customButtom')"
             square
             @click="onConfirm"
           />
-        </byted-dropdown-item>
-      </byted-dropdown>
+        </o-dropdown-item>
+      </o-dropdown>
     </demo-cell>
 
     <demo-cell :title="t('titleSlot')" :title-style="titleStyle">
-      <byted-dropdown>
-        <byted-dropdown-item v-model="value3" :options="option1">
+      <o-dropdown>
+        <o-dropdown-item v-model="value3" :options="option1">
           <template slot="title">
             <span class="title-slot">{{ t('titleSlot') }}</span>
           </template>
-        </byted-dropdown-item>
-      </byted-dropdown>
+        </o-dropdown-item>
+      </o-dropdown>
     </demo-cell>
 
     <demo-cell :title="t('disabled')" :title-style="titleStyle">
-      <byted-dropdown>
-        <byted-dropdown-item v-model="value1" :options="option1" disabled />
-        <byted-dropdown-item v-model="value2" :options="option2" disabled />
-      </byted-dropdown>
+      <o-dropdown>
+        <o-dropdown-item v-model="value1" :options="option1" disabled />
+        <o-dropdown-item v-model="value2" :options="option2" disabled />
+      </o-dropdown>
     </demo-cell>
   </div>
 </template>
@@ -102,8 +102,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleDropdown,
   },
   data() {
     return {

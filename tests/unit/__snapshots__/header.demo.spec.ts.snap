@@ -2,82 +2,82 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo checker">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-header byted-header--default byted-hairline--bottom">
-      <div class="byted-header__left"></div>
-      <div class="byted-header__right"></div>
+    <div class="o-header o-header--default o-hairline--bottom">
+      <div class="o-header__left"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-header byted-header--default byted-hairline--bottom">
-      <div class="byted-header__left"><img src="../../icon/icon/arrow.svg" alt="" width="16px" height="16px" style="margin-right: 20px;"> <img src="../../icon/icon/close.svg" alt=""></div>
-      <div class="byted-header__title"> <span></span></div>
-      <div class="byted-header__right"></div>
+    <div class="o-header o-header--default o-hairline--bottom">
+      <div class="o-header__left"><img src="../../icon/icon/arrow.svg" alt="" width="16px" height="16px" style="margin-right: 20px;"> <img src="../../icon/icon/close.svg" alt=""></div>
+      <div class="o-header__title"> <span></span></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="showText byted-header byted-header--default byted-hairline--bottom">
-      <div class="byted-header__left"><img src="../../icon/icon/arrow.svg" alt="" width="16px" height="16px" style="margin-right: 20px;">
-        <div class="byted-button byted-button--text byted-button--normal">Return</div>
+    <div class="showText o-header o-header--default o-hairline--bottom">
+      <div class="o-header__left"><img src="../../icon/icon/arrow.svg" alt="" width="16px" height="16px" style="margin-right: 20px;">
+        <div class="o-button o-button--text o-button--normal">Return</div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-header byted-header--default byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">OKee Design</div>
-      <div class="byted-header__right">
-        <div class="byted-button byted-button--default byted-button--normal"><img src="../icon/dots.svg" alt="" width="20px" height="20px"></div>
-      </div>
-    </div>
-    <div class="byted-header byted-header--default byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">OKee Design</div>
-      <div class="byted-header__right">
-        <div class="byted-button byted-button--default byted-button--normal"><img src="../icon/magnifier.svg" alt="" width="20px" height="20px"></div>
+    <div class="o-header o-header--default o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">OKee Design</div>
+      <div class="o-header__right">
+        <div class="o-button o-button--default o-button--normal"><img src="../icon/dots.svg" alt="" width="20px" height="20px"></div>
       </div>
     </div>
-    <div class="byted-header byted-header--default byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">OKee Design</div>
-      <div class="byted-header__right">
-        <div class="byted-button byted-button--text byted-button--normal"> Button </div>
+    <div class="o-header o-header--default o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">OKee Design</div>
+      <div class="o-header__right">
+        <div class="o-button o-button--default o-button--normal"><img src="../icon/magnifier.svg" alt="" width="20px" height="20px"></div>
+      </div>
+    </div>
+    <div class="o-header o-header--default o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">OKee Design</div>
+      <div class="o-header__right">
+        <div class="o-button o-button--text o-button--normal"> Button </div>
       </div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-header byted-header--primary">
-      <div class="byted-header__left"><i class="byted-header__icon" style="fill: #ffffff; width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__right"></div>
+    <div class="o-header o-header--primary">
+      <div class="o-header__left"><i class="o-header__icon" style="fill: #ffffff; width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div style="margin: 0px -0.8rem;">
-    <div class="byted-header byted-header--default byted-hairline--bottom" style="margin-bottom: 20px;">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
-        <div class="byted-header-tabs byted-header-tabs--default">
-          <div class="byted-header-tabs__box">
-            <div class="byted-header-tab byted-header-tab--default">
-              <div class="byted-header-tab__box">Tab1</div>
+    <div class="o-header o-header--default o-hairline--bottom" style="margin-bottom: 20px;">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
+        <div class="o-header-tabs o-header-tabs--default">
+          <div class="o-header-tabs__box">
+            <div class="o-header-tab o-header-tab--default">
+              <div class="o-header-tab__box">Tab1</div>
             </div>
-            <div class="byted-header-tab byted-header-tab--default">
-              <div class="byted-header-tab__box">Tab2</div>
+            <div class="o-header-tab o-header-tab--default">
+              <div class="o-header-tab__box">Tab2</div>
             </div>
           </div>
-          <div class="byted-header-tabs__line"></div>
+          <div class="o-header-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
 </div>

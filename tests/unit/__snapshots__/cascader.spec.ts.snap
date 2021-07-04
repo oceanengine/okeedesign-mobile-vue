@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Cascader default selected 1`] = `
-<div class="byted-cascader">
-  <div class="byted-cascader__menu-list">
-    <ul class="byted-cascader byted-cascader--menu">
-      <li class="byted-cascader byted-cascader--menu-item byted-cascader--active">浙江省</li>
-      <li class="byted-cascader byted-cascader--menu-item">江苏省</li>
+<div class="o-cascader">
+  <div class="o-cascader__menu-list">
+    <ul class="o-cascader o-cascader--menu">
+      <li class="o-cascader o-cascader--menu-item o-cascader--active">浙江省</li>
+      <li class="o-cascader o-cascader--menu-item">江苏省</li>
     </ul>
-    <ul class="byted-cascader byted-cascader--menu">
-      <li class="byted-cascader byted-cascader--menu-item">杭州市</li>
-      <li class="byted-cascader byted-cascader--menu-item byted-cascader--active">宁波市</li>
-      <li class="byted-cascader byted-cascader--menu-item">温州市</li>
+    <ul class="o-cascader o-cascader--menu">
+      <li class="o-cascader o-cascader--menu-item">杭州市</li>
+      <li class="o-cascader o-cascader--menu-item o-cascader--active">宁波市</li>
+      <li class="o-cascader o-cascader--menu-item">温州市</li>
     </ul>
-    <ul class="byted-cascader byted-cascader--menu">
-      <li class="byted-cascader byted-cascader--menu-item byted-cascader--active byted-cascader--selected-child">海曙区<i class="byted-icon byted-icon--check-one selected-icon">test-file-stub</i></li>
-      <li class="byted-cascader byted-cascader--menu-item  byted-cascader--selected-child">江北区</li>
-      <li class="byted-cascader byted-cascader--menu-item  byted-cascader--selected-child">北仑区</li>
+    <ul class="o-cascader o-cascader--menu">
+      <li class="o-cascader o-cascader--menu-item o-cascader--active o-cascader--selected-child">海曙区<i class="o-icon o-icon--check-one selected-icon">test-file-stub</i></li>
+      <li class="o-cascader o-cascader--menu-item  o-cascader--selected-child">江北区</li>
+      <li class="o-cascader o-cascader--menu-item  o-cascader--selected-child">北仑区</li>
     </ul>
   </div>
 </div>

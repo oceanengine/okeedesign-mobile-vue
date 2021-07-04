@@ -2,20 +2,20 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo upload">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-upload">
+    <div class="o-upload">
       <div><input accept="image/png,image/jpeg,image/jpg" type="file" name="Filedata" class="_file-input">
-        <div class="byted-upload__upload-icon-box upload-box">
-          <div class="before-upload-section"><span class="i-icon i-icon-plus" style="line-height: 0;"><svg width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M24.0607 10L24.024 38" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 24L38 24" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
+        <div class="o-upload__upload-icon-box upload-box">
+          <div class="before-upload-section"><span class="i-icon i-icon-file-addition" style="line-height: 0;"><svg width="24" height="24" viewBox="0 0 48 48" fill="none"><path d="M10 44H38C39.1046 44 40 43.1046 40 42V14L31 4H10C8.89543 4 8 4.89543 8 6V42C8 43.1046 8.89543 44 10 44Z" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 21V35" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 28H24L31 28" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M30 4V14H40" stroke="#999" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div>
           <!---->
           <!---->
         </div>

@@ -2,39 +2,39 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--normal">
-      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis"></span></div>
-          <div class="byted-tab"><span class="byted-ellipsis"></span></div>
-          <div class="byted-tab"><span class="byted-ellipsis"></span></div>
-          <div class="byted-tab"><span class="byted-ellipsis"></span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--normal">
+      <div class="o-tabs__wrap o-tabs o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab o-tab--active"><span class="o-ellipsis"></span></div>
+          <div class="o-tab"><span class="o-ellipsis"></span></div>
+          <div class="o-tab"><span class="o-ellipsis"></span></div>
+          <div class="o-tab"><span class="o-ellipsis"></span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="">
-          <div class="byted-pull-refresh" style="background: rgb(255, 255, 255);">
-            <div class="byted-pull-refresh__track" style="transition: 0ms;">
-              <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="">
+          <div class="o-pull-refresh" style="background: rgb(255, 255, 255);">
+            <div class="o-pull-refresh__track" style="transition: 0ms;">
+              <div class="o-pull-refresh__head" style="top: -34px;"></div>
               <div class="content" style="display: flex; justify-content: flex-start; align-items: stretch; margin-left: 15px;"><img src="../pics/pic1.svg" width="150px" height="68px" alt=""> <img src="../pics/pic2.svg" width="150px" height="68px" alt=""> <img src="../pics/pic3.svg" width="150px" height="68px" alt=""> <img src="../pics/pic4.svg" width="150px" height="68px" alt=""> <img src="../pics/pic5.svg" width="150px" height="68px" alt=""> <img src="../pics/pic6.svg" width="150px" height="68px" alt=""> <img src="../pics/pic7.svg" width="150px" height="68px" alt=""> <img src="../pics/pic8.svg" width="150px" height="68px" alt=""> <img src="../pics/pic1.svg" width="150px" height="68px" alt=""></div>
-              <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+              <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
             </div>
           </div>
         </div>
-        <div class="byted-tab__pane" style="display: none;"></div>
-        <div class="byted-tab__pane" style="display: none;"></div>
-        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
       </div>
     </div>
   </div>

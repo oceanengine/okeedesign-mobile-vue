@@ -2,56 +2,56 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo button">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-button byted-button--primary byted-button--large"></div>
-    <div class="byted-button byted-button--danger byted-button--large"></div>
-    <div class="byted-button byted-button--warning byted-button--large"></div>
-    <div class="byted-button byted-button--success byted-button--large"></div>
-    <div class="byted-button byted-button--default byted-button--large"></div>
+    <div class="o-button o-button--primary o-button--large"></div>
+    <div class="o-button o-button--danger o-button--large"></div>
+    <div class="o-button o-button--warning o-button--large"></div>
+    <div class="o-button o-button--success o-button--large"></div>
+    <div class="o-button o-button--default o-button--large"></div>
   </div>
   <div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-hairline--surround"></div>
-    <div class="byted-button byted-button--success byted-button--large byted-button--plain byted-hairline--surround"></div>
+    <div class="o-button o-button--primary o-button--large o-button--plain o-hairline--surround"></div>
+    <div class="o-button o-button--success o-button--large o-button--plain o-hairline--surround"></div>
   </div>
   <div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"></div>
-    <div class="byted-button byted-button--success byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"></div>
+    <div class="o-button o-button--primary o-button--large o-button--plain o-button--fade o-hairline--surround"></div>
+    <div class="o-button o-button--success o-button--large o-button--plain o-button--fade o-hairline--surround"></div>
   </div>
   <div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--square"></div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--round"></div>
+    <div class="o-button o-button--primary o-button--large o-button--square"></div>
+    <div class="o-button o-button--primary o-button--large o-button--round"></div>
   </div>
   <div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--disabled"></div>
-    <div class="byted-button byted-button--success byted-button--large byted-button--disabled"></div>
+    <div class="o-button o-button--primary o-button--large o-button--disabled"></div>
+    <div class="o-button o-button--success o-button--large o-button--disabled"></div>
   </div>
   <div>
-    <div class="byted-button byted-button--primary byted-button--large">
-      <div class="byted-loading byted-button__loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+    <div class="o-button o-button--primary o-button--large">
+      <div class="o-loading o-button__loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i></div>
     </div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-hairline--surround">
-      <div class="byted-loading byted-button__loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+    <div class="o-button o-button--primary o-button--large o-button--plain o-hairline--surround">
+      <div class="o-loading o-button__loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i></div>
     </div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround">
-      <div class="byted-loading byted-button__loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i></div>
+    <div class="o-button o-button--primary o-button--large o-button--plain o-button--fade o-hairline--surround">
+      <div class="o-loading o-button__loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i></div>
     </div>
   </div>
   <div>
-    <div class="byted-button byted-button--primary byted-button--large"><img src="../../icon/icon/add.svg" alt="" height="16px" width="16px"> <span></span></div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"><img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px"> <span></span></div>
-    <div class="byted-button byted-button--primary byted-button--large byted-button--plain byted-button--fade byted-hairline--surround"><img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px"> <span></span></div>
+    <div class="o-button o-button--primary o-button--large"><img src="../../icon/icon/add.svg" alt="" height="16px" width="16px"> <span></span></div>
+    <div class="o-button o-button--primary o-button--large o-button--plain o-button--fade o-hairline--surround"><img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px"> <span></span></div>
+    <div class="o-button o-button--primary o-button--large o-button--plain o-button--fade o-hairline--surround"><img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px"> <span></span></div>
   </div>
   <div>
-    <div class="byted-button byted-button--text byted-button--large"></div>
+    <div class="o-button o-button--text o-button--large"></div>
   </div>
   <div class="dome-size">
     <div class="dome-size-content"><span class="dome-size-content_title">尺寸</span>

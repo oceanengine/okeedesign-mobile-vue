@@ -1,43 +1,43 @@
 <template>
   <div class="demo checker">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')">
-      <byted-checker v-model="checker" :size="currentSize" input-type="radio">
-        <byted-row gutter="10">
-          <byted-col span="8">
-            <byted-checker-item label="Option0" :value="0" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option1" value="1" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item value="Option2">Option3</byted-checker-item>
-          </byted-col>
-        </byted-row>
-      </byted-checker>
+      <o-checker v-model="checker" :size="currentSize" input-type="radio">
+        <o-row gutter="10">
+          <o-col span="8">
+            <o-checker-item label="Option0" :value="0" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option1" value="1" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item value="Option2">Option3</o-checker-item>
+          </o-col>
+        </o-row>
+      </o-checker>
     </demo-cell>
 
     <demo-cell :title="t('multiSelect')" :size="currentSize">
-      <byted-checker v-model="checkerStyle" :size="currentSize">
-        <byted-row gutter="10">
-          <byted-col span="8">
-            <byted-checker-item label="Option0" :value="0" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option1" value="1" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option2" value="2" />
-          </byted-col>
-        </byted-row>
-      </byted-checker>
+      <o-checker v-model="checkerStyle" :size="currentSize">
+        <o-row gutter="10">
+          <o-col span="8">
+            <o-checker-item label="Option0" :value="0" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option1" value="1" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option2" value="2" />
+          </o-col>
+        </o-row>
+      </o-checker>
     </demo-cell>
 
     <demo-cell :title="t('radioAsync')" :size="currentSize">
-      <byted-checker
+      <o-checker
         :value="checkerAsync"
         input-type="radio"
         @click="onClick"
@@ -45,71 +45,71 @@
         @change="changeSay"
         :size="currentSize"
       >
-        <byted-row gutter="10">
-          <byted-col span="8">
-            <byted-checker-item label="Option0" :value="0" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option1" value="1" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option2" value="2" />
-          </byted-col>
-        </byted-row>
-      </byted-checker>
+        <o-row gutter="10">
+          <o-col span="8">
+            <o-checker-item label="Option0" :value="0" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option1" value="1" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option2" value="2" />
+          </o-col>
+        </o-row>
+      </o-checker>
     </demo-cell>
 
     <demo-cell :title="t('shapeType')" :size="currentSize">
-      <byted-checker v-model="checkerRound" :size="currentSize" round>
-        <byted-row gutter="10">
-          <byted-col span="8">
-            <byted-checker-item label="Option0" :value="0" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option1" value="1" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option2" value="2" />
-          </byted-col>
-        </byted-row>
-      </byted-checker>
+      <o-checker v-model="checkerRound" :size="currentSize" round>
+        <o-row gutter="10">
+          <o-col span="8">
+            <o-checker-item label="Option0" :value="0" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option1" value="1" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option2" value="2" />
+          </o-col>
+        </o-row>
+      </o-checker>
     </demo-cell>
 
     <demo-cell :title="t('showInfo')" :size="currentSize">
-      <byted-checker v-model="checkerInfo" :size="currentSize" input-type="radio" round>
-        <byted-row gutter="10">
-          <byted-col span="8">
-            <byted-checker-item label="large" :value="0" info="ok" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="small" value="1" />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="mini" value="2" :info="3" />
-          </byted-col>
-        </byted-row>
-      </byted-checker>
+      <o-checker v-model="checkerInfo" :size="currentSize" input-type="radio" round>
+        <o-row gutter="10">
+          <o-col span="8">
+            <o-checker-item label="large" :value="0" info="ok" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="small" value="1" />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="mini" value="2" :info="3" />
+          </o-col>
+        </o-row>
+      </o-checker>
     </demo-cell>
     
     <demo-cell :title="t('disabled')" :size="currentSize">
-      <byted-checker
+      <o-checker
         v-model="checkerDisabled"
         :size="currentSize"
         input-type="radio"
         type="primary"
       >
-        <byted-row gutter="10">
-          <byted-col span="8">
-            <byted-checker-item label="Option0" :value="0" disabled />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option1" value="1" disabled />
-          </byted-col>
-          <byted-col span="8">
-            <byted-checker-item label="Option2" value="2" />
-          </byted-col>
-        </byted-row>
-      </byted-checker>
+        <o-row gutter="10">
+          <o-col span="8">
+            <o-checker-item label="Option0" :value="0" disabled />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option1" value="1" disabled />
+          </o-col>
+          <o-col span="8">
+            <o-checker-item label="Option2" value="2" />
+          </o-col>
+        </o-row>
+      </o-checker>
     </demo-cell>
 
     <demo-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
@@ -117,7 +117,6 @@
 </template>
 <script>
 import DemoSize from '../../../../docs/site/components/DomSize.vue';
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell.vue';
 export default {
   i18n: {
@@ -148,7 +147,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
     DemoSize,
   },
   data() {

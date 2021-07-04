@@ -1,13 +1,13 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell>
-      <byted-tabs v-model="active">
-        <byted-tab :title="t('basicUsage')">
-          <byted-pull-refresh
+      <o-tabs v-model="active">
+        <o-tab :title="t('basicUsage')">
+          <o-pull-refresh
             v-model="isLoading"
             load-end-status=""
             type="primary"
@@ -35,11 +35,11 @@
               <img src="../pics/pic8.svg" width="150px" height="68px" alt="" />
               <img src="../pics/pic1.svg" width="150px" height="68px" alt="" />
             </div>
-          </byted-pull-refresh>
-        </byted-tab>
+          </o-pull-refresh>
+        </o-tab>
 
-        <byted-tab :title="t('successNotice')">
-          <byted-pull-refresh
+        <o-tab :title="t('successNotice')">
+          <o-pull-refresh
             v-model="isLoading"
             :load-end-status="loadEndStatus"
             type="primary"
@@ -63,11 +63,11 @@
               <img src="../pics/pic4.svg" width="150px" height="68px" alt="" />
               <img src="../pics/pic5.svg" width="150px" height="68px" alt="" />
             </div>
-          </byted-pull-refresh>
-        </byted-tab>
+          </o-pull-refresh>
+        </o-tab>
 
-        <byted-tab :title="t('customize')">
-          <byted-pull-refresh
+        <o-tab :title="t('customize')">
+          <o-pull-refresh
             v-model="isLoading"
             :load-end-status="loadEndStatus"
             type="primary"
@@ -101,10 +101,10 @@
               />
               Success!
             </div>
-          </byted-pull-refresh>
-        </byted-tab>
-        <byted-tab :title="t('pullUpTitle')">
-          <byted-pull-refresh
+          </o-pull-refresh>
+        </o-tab>
+        <o-tab :title="t('pullUpTitle')">
+          <o-pull-refresh
             v-model="isPullUpLoading"
             :load-end-status="loadEndStatus"
             headDisabled
@@ -133,30 +133,13 @@
               <img src="../pics/pic1.svg" width="150px" height="68px" alt="" />
               <img src="../pics/pic2.svg" width="150px" height="68px" alt="" />
             </div>
-          </byted-pull-refresh>
-        </byted-tab>
-      </byted-tabs>
+          </o-pull-refresh>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
-
-    <!-- <demo-cell :title="t('pullUpTitle')" :title-style="titleStyle">
-      <byted-pull-refresh
-        v-model="isPullUpLoading"
-        :load-end-status="loadEndStatus"
-        headDisabled
-        type="primary"
-        size="large"
-        style="background: #fff"
-        @pull-up="pullUp"
-      >
-        <div class="content" style="justify-content: flex-end; padding: 32px 0">
-          <span>{{ t('pullUpStatus') }}</span>
-        </div>
-      </byted-pull-refresh>
-    </demo-cell> -->
   </div>
 </template>
 <script>
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell.vue';
 export default {
   i18n: {
@@ -186,7 +169,6 @@ export default {
 
   components: {
     demoCell,
-    // demoTitle,
   },
   data() {
     return {

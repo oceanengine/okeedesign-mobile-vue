@@ -2,162 +2,162 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo picker">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title"></div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+    <div class="o-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title"></div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
       </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">Option1</div>
-            <div class="byted-picker-column__option">Option2</div>
-            <div class="byted-picker-column__option">Option3</div>
-            <div class="byted-picker-column__option">Option4</div>
-            <div class="byted-picker-column__option">Option5</div>
-            <div class="byted-picker-column__option">Option6</div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">Option1</div>
+            <div class="o-picker-column__option">Option2</div>
+            <div class="o-picker-column__option">Option3</div>
+            <div class="o-picker-column__option">Option4</div>
+            <div class="o-picker-column__option">Option5</div>
+            <div class="o-picker-column__option">Option6</div>
           </div>
         </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title"></div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
-      </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">Option1</div>
-            <div class="byted-picker-column__option">Option2</div>
-            <div class="byted-picker-column__option">Option3</div>
-            <div class="byted-picker-column__option">Option4</div>
-            <div class="byted-picker-column__option">Option5</div>
-            <div class="byted-picker-column__option">Option6</div>
-          </div>
-        </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title"></div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+    <div class="o-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title"></div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
       </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">Option1</div>
-            <div class="byted-picker-column__option">Option2</div>
-            <div class="byted-picker-column__option">Option3</div>
-            <div class="byted-picker-column__option">Option4</div>
-            <div class="byted-picker-column__option">Option5</div>
-            <div class="byted-picker-column__option">Option6</div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">Option1</div>
+            <div class="o-picker-column__option">Option2</div>
+            <div class="o-picker-column__option">Option3</div>
+            <div class="o-picker-column__option">Option4</div>
+            <div class="o-picker-column__option">Option5</div>
+            <div class="o-picker-column__option">Option6</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">Option1</div>
-            <div class="byted-picker-column__option">Option2</div>
-            <div class="byted-picker-column__option">Option3</div>
-            <div class="byted-picker-column__option">Option4</div>
-            <div class="byted-picker-column__option">Option5</div>
-            <div class="byted-picker-column__option">Option6</div>
-          </div>
-        </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title"></div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+    <div class="o-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title"></div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
       </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">北京</div>
-            <div class="byted-picker-column__option">上海</div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">Option1</div>
+            <div class="o-picker-column__option">Option2</div>
+            <div class="o-picker-column__option">Option3</div>
+            <div class="o-picker-column__option">Option4</div>
+            <div class="o-picker-column__option">Option5</div>
+            <div class="o-picker-column__option">Option6</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">海淀</div>
-            <div class="byted-picker-column__option">朝阳</div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">Option1</div>
+            <div class="o-picker-column__option">Option2</div>
+            <div class="o-picker-column__option">Option3</div>
+            <div class="o-picker-column__option">Option4</div>
+            <div class="o-picker-column__option">Option5</div>
+            <div class="o-picker-column__option">Option6</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">中关村</div>
-            <div class="byted-picker-column__option">双榆树</div>
-          </div>
-        </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title"></div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
-      </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">Option1</div>
-            <div class="byted-picker-column__option">Option2</div>
-            <div class="byted-picker-column__option">Option3</div>
-            <div class="byted-picker-column__option">Option4</div>
-            <div class="byted-picker-column__option">Option5</div>
-            <div class="byted-picker-column__option">Option6</div>
-          </div>
-        </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">Option1</div>
-            <div class="byted-picker-column__option">Option2</div>
-            <div class="byted-picker-column__option">Option3</div>
-            <div class="byted-picker-column__option">Option4</div>
-            <div class="byted-picker-column__option">Option5</div>
-            <div class="byted-picker-column__option">Option6</div>
-          </div>
-        </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-cell byted-cell--borderless byted-cell--clickable">
-      <div class="byted-cell__title"><span></span></div>
-      <div class="byted-cell__value byted-cell__value--alone"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+    <div class="o-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title"></div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
+      </div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">北京</div>
+            <div class="o-picker-column__option">上海</div>
+          </div>
+        </div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">海淀</div>
+            <div class="o-picker-column__option">朝阳</div>
+          </div>
+        </div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">中关村</div>
+            <div class="o-picker-column__option">双榆树</div>
+          </div>
+        </div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title"></div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
+      </div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">Option1</div>
+            <div class="o-picker-column__option">Option2</div>
+            <div class="o-picker-column__option">Option3</div>
+            <div class="o-picker-column__option">Option4</div>
+            <div class="o-picker-column__option">Option5</div>
+            <div class="o-picker-column__option">Option6</div>
+          </div>
+        </div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">Option1</div>
+            <div class="o-picker-column__option">Option2</div>
+            <div class="o-picker-column__option">Option3</div>
+            <div class="o-picker-column__option">Option4</div>
+            <div class="o-picker-column__option">Option5</div>
+            <div class="o-picker-column__option">Option6</div>
+          </div>
+        </div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-cell o-cell--borderless o-cell--clickable">
+      <div class="o-cell__title"><span></span></div>
+      <div class="o-cell__value o-cell__value--alone"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
     </div>
     <!---->
   </div>

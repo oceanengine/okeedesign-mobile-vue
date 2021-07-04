@@ -2,58 +2,58 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo col">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-row">
-      <div class="byted-col byted-col--8"> span:8 </div>
-      <div class="byted-col byted-col--8"> span:8 </div>
-      <div class="byted-col byted-col--8"> span:8 </div>
+    <div class="o-row">
+      <div class="o-col o-col--8"> span:8 </div>
+      <div class="o-col o-col--8"> span:8 </div>
+      <div class="o-col o-col--8"> span:8 </div>
     </div>
-    <div class="byted-row">
-      <div class="byted-col byted-col--4"> span:4 </div>
-      <div class="byted-col byted-col--16 byted-col--offset-4"> span:10 offset: 4 </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-row" style="margin-left: -6px; margin-right: -6px;">
-      <div class="byted-col byted-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
-      <div class="byted-col byted-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
-      <div class="byted-col byted-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
+    <div class="o-row">
+      <div class="o-col o-col--4"> span:4 </div>
+      <div class="o-col o-col--16 o-col--offset-4"> span:10 offset: 4 </div>
     </div>
   </div>
   <div>
-    <div class="byted-row byted-row--flex">
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
+    <div class="o-row" style="margin-left: -6px; margin-right: -6px;">
+      <div class="o-col o-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
+      <div class="o-col o-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
+      <div class="o-col o-col--8" style="padding-left: 6px; padding-right: 6px;"> span:8 </div>
     </div>
-    <div class="byted-row byted-row--flex byted-row--justify-center">
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
+  </div>
+  <div>
+    <div class="o-row o-row--flex">
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
     </div>
-    <div class="byted-row byted-row--flex byted-row--justify-end">
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
+    <div class="o-row o-row--flex o-row--justify-center">
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
     </div>
-    <div class="byted-row byted-row--flex byted-row--justify-space-between">
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
+    <div class="o-row o-row--flex o-row--justify-end">
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
     </div>
-    <div class="byted-row byted-row--flex byted-row--justify-space-around">
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
-      <div class="byted-col byted-col--6"> span:6 </div>
+    <div class="o-row o-row--flex o-row--justify-space-between">
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
+    </div>
+    <div class="o-row o-row--flex o-row--justify-space-around">
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
+      <div class="o-col o-col--6"> span:6 </div>
     </div>
   </div>
 </div>

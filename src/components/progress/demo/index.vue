@@ -1,21 +1,21 @@
 <template>
   <div class="demo progress">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')">
-      <byted-progress :percentage="val" :color="color" />
+      <o-progress :percentage="val" :color="color" />
     </demo-cell>
 
     <demo-cell :title="t('inactive')">
-      <byted-progress :percentage="val" :color="color" :inactive="false" />
+      <o-progress :percentage="val" :color="color" :inactive="false" />
     </demo-cell>
 
     <demo-cell :title="t('NumberUsage')">
-      <byted-progress :percentage="val" :color="color" :text-in-middle="true" />
-      <byted-progress :percentage="60" color="#F65656" :text-in-middle="true" />
-      <byted-progress :percentage="100" color="#6ABF40" :text-in-middle="true" />
+      <o-progress :percentage="val" :color="color" :text-in-middle="true" />
+      <o-progress :percentage="60" color="#F65656" :text-in-middle="true" />
+      <o-progress :percentage="100" color="#6ABF40" :text-in-middle="true" />
     </demo-cell>
   </div>
 </template>
@@ -42,9 +42,7 @@ export default {
     },
   },
   components: {
-    // demoTitle,
     demoCell,
-    // BytedIconModuleProgress,
   },
   data() {
     return {
@@ -77,7 +75,7 @@ export default {
   height: 100vh;
   margin-bottom: 0;
   padding-bottom: 20px;
-  .byted-progress {
+  .o-progress {
     margin-bottom: 16px;
   }
   .progress-btn {

@@ -1,59 +1,59 @@
 <template>
   <div class="demo button">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('type')">
-      <byted-button :text="t('primary')" type="primary" :size="currentSize" @click="onClick" />
-      <byted-button :text="t('danger')" type="danger" :size="currentSize" />
-      <byted-button :text="t('warning')" type="warning" :size="currentSize" />
-      <byted-button :text="t('success')" type="success" :size="currentSize" />
-      <byted-button :text="t('default')" :size="currentSize" />
+      <o-button :text="t('primary')" type="primary" :size="currentSize" @click="onClick" />
+      <o-button :text="t('danger')" type="danger" :size="currentSize" />
+      <o-button :text="t('warning')" type="warning" :size="currentSize" />
+      <o-button :text="t('success')" type="success" :size="currentSize" />
+      <o-button :text="t('default')" :size="currentSize" />
     </demo-cell>
     <!-- plain -->
     <demo-cell :title="t('plain')">
-      <byted-button :text="t('plainButton')" :size="currentSize" type="primary" plain />
-      <byted-button :text="t('plainButton')" type="success" :size="currentSize" plain />
+      <o-button :text="t('plainButton')" :size="currentSize" type="primary" plain />
+      <o-button :text="t('plainButton')" type="success" :size="currentSize" plain />
     </demo-cell>
     <!-- fade -->
     <demo-cell :title="t('fade')">
-      <byted-button :text="t('fade')" type="primary" :size="currentSize" fade />
-      <byted-button :text="t('fade')" type="success" :size="currentSize" fade />
+      <o-button :text="t('fade')" type="primary" :size="currentSize" fade />
+      <o-button :text="t('fade')" type="success" :size="currentSize" fade />
     </demo-cell>
     <!-- hairline -->
     <!-- shape -->
     <demo-cell :title="t('shape')">
-      <byted-button :text="t('square')" type="primary" :size="currentSize" square />
-      <byted-button :text="t('round')" type="primary" :size="currentSize" round />
+      <o-button :text="t('square')" type="primary" :size="currentSize" square />
+      <o-button :text="t('round')" type="primary" :size="currentSize" round />
     </demo-cell>
     <!-- disabled -->
     <demo-cell :title="t('disabled')">
-      <byted-button :text="t('disabled')" type="primary" :size="currentSize" disabled />
-      <byted-button :text="t('disabled')" type="success" :size="currentSize" disabled />
+      <o-button :text="t('disabled')" type="primary" :size="currentSize" disabled />
+      <o-button :text="t('disabled')" type="success" :size="currentSize" disabled />
     </demo-cell>
     <demo-cell :title="t('loading')">
-      <byted-button :text="t('loading')" type="primary" :size="currentSize" loading />
-      <byted-button :text="t('loading')" type="primary" plain :size="currentSize" loading />
-      <byted-button :text="t('loading')" type="primary" fade :size="currentSize" loading />
+      <o-button :text="t('loading')" type="primary" :size="currentSize" loading />
+      <o-button :text="t('loading')" type="primary" plain :size="currentSize" loading />
+      <o-button :text="t('loading')" type="primary" fade :size="currentSize" loading />
     </demo-cell>
     <demo-cell :title="t('iconButton')">
-      <byted-button :text="t('iconButton')" type="primary" :size="currentSize">
+      <o-button :text="t('iconButton')" type="primary" :size="currentSize">
         <img src="../../icon/icon/add.svg" alt="" height="16px" width="16px" />
         <span>{{ t('iconButton') }}</span>
-      </byted-button>
-      <byted-button :text="t('iconButton')" type="primary" fade :size="currentSize">
+      </o-button>
+      <o-button :text="t('iconButton')" type="primary" fade :size="currentSize">
         <img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px" />
         <span>{{ t('iconButton') }}</span>
-      </byted-button>
-      <byted-button :text="t('iconButton')" type="primary" fade :size="currentSize">
+      </o-button>
+      <o-button :text="t('iconButton')" type="primary" fade :size="currentSize">
         <img src="../../icon/icon/addColored.svg" alt="" height="16px" width="16px" />
         <span>{{ t('iconButton') }}</span>
-      </byted-button>
+      </o-button>
     </demo-cell>
     <!-- text -->
     <demo-cell :title="t('text')">
-      <byted-button :text="t('text')" :size="currentSize" type="text" />
+      <o-button :text="t('text')" :size="currentSize" type="text" />
     </demo-cell>
 
     <demo-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
@@ -109,10 +109,8 @@ export default {
     },
   },
   components: {
-    // BytedIconModuleButton,
     demoCell,
     demoSize,
-    // demoTitle,
   },
   data() {
     return {
@@ -133,7 +131,7 @@ export default {
 <style lang="less">
 .demo {
   &.button {
-    .byted-button {
+    .o-button {
       margin-right: 12px;
       margin-bottom: 12px;
     }

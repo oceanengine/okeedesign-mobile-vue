@@ -1,11 +1,11 @@
 <template>
   <div class="demo picker">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" :title-style="titleStyle">
-      <byted-picker
+      <o-picker
         :value="value0"
         :options="options0"
         :title="t('title')"
@@ -15,7 +15,7 @@
     </demo-cell>
 
     <demo-cell :title="t('default')" :title-style="titleStyle">
-      <byted-picker
+      <o-picker
         :value="value4"
         :options="options3"
         :title="t('title')"
@@ -25,7 +25,7 @@
     </demo-cell>
 
     <demo-cell :title="t('multipleColumns')" :title-style="titleStyle">
-      <byted-picker
+      <o-picker
         v-model="value1"
         :options="[options0, options1]"
         :title="t('title')"
@@ -33,35 +33,34 @@
       />
     </demo-cell>
     <demo-cell :title="t('cascade')" :title-style="titleStyle">
-      <byted-picker :value="value2" :options="options2" :title="t('title')" @change="onchange2" />
+      <o-picker :value="value2" :options="options2" :title="t('title')" @change="onchange2" />
     </demo-cell>
 
     <demo-cell :title="t('noTitle')" :title-style="titleStyle">
-      <byted-picker v-model="value1" :options="[options0, options1]" @change="onchange1" />
+      <o-picker v-model="value1" :options="[options0, options1]" @change="onchange1" />
     </demo-cell>
 
     <demo-cell :title="t('popup')" :title-style="titleStyle">
-      <byted-cell
+      <o-cell
         :title="t('area')"
         :value="t('choose')"
         :border="false"
         is-link
         @click="show = !show"
       />
-      <byted-popup v-model="show" position="bottom">
-        <byted-picker
+      <o-popup v-model="show" position="bottom">
+        <o-picker
           v-model="value3"
           :title="t('area')"
           :options="options2"
           @cancel="show = !show"
           @confirm="confirm"
         />
-      </byted-popup>
+      </o-popup>
     </demo-cell>
   </div>
 </template>
 <script>
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell.vue';
 export default {
   i18n: {
@@ -93,7 +92,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
   },
   data() {
     return {

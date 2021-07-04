@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popup duration prop when position is center 1`] = `
-<transition-stub name="byted-fade">
-  <div class="byted-popup byted-popup--center" style="transition-duration: 0.5s;"></div>
+<transition-stub name="o-fade">
+  <div class="o-popup o-popup--center" style="transition-duration: 0.5s;"></div>
 </transition-stub>
 `;
 
 exports[`Popup duration prop when position is top 1`] = `
-<transition-stub name="byted-popup-slide-top">
-  <div class="byted-popup byted-popup--top" style="transition-duration: 0.5s;"></div>
+<transition-stub name="o-popup-slide-top">
+  <div class="o-popup o-popup--top" style="transition-duration: 0.5s;"></div>
 </transition-stub>
 `;
 
 exports[`Popup reset z-index 1`] = `
-<transition-stub name="byted-fade" zindex="10">
-  <div class="byted-popup byted-popup--center"></div>
+<transition-stub name="o-fade" zindex="10">
+  <div class="o-popup o-popup--center"></div>
 </transition-stub>
 `;

@@ -32,7 +32,7 @@ describe('Header', () => {
       },
     });
 
-    wrapper.find('.byted-header__left').trigger('click');
+    wrapper.find('.o-header__left').trigger('click');
     expect(wrapper.emitted('click-left')).toBeTruthy();
   });
   test('should emit click-right event when clicking right text', () => {
@@ -43,8 +43,8 @@ describe('Header', () => {
       },
     });
 
-    wrapper.find('.byted-header__right').trigger('click');
-    wrapper.find('.byted-header__left').trigger('click');
+    wrapper.find('.o-header__right').trigger('click');
+    wrapper.find('.o-header__left').trigger('click');
     expect(wrapper.emitted('click-right')).toBeTruthy();
     expect(wrapper.emitted('click-left')).toBeTruthy();
   });

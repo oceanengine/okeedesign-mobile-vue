@@ -57,10 +57,10 @@ describe('SwipeCell', () => {
     wrapper.trigger('click');
     expect(position).toEqual(undefined);
     await wrapper.vm.open('left');
-    wrapper.find('.byted-swipe-cell__left').trigger('click');
+    wrapper.find('.o-swipe-cell__left').trigger('click');
     expect(position).toEqual('left');
 
-    wrapper.find('.byted-swipe-cell__right').trigger('click');
+    wrapper.find('.o-swipe-cell__right').trigger('click');
     expect(position).toEqual('right');
     instance.close();
     expect(instance.offset).toEqual(0);

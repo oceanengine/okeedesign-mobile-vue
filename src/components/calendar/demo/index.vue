@@ -1,18 +1,14 @@
 <template>
   <div class="demo calendar">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('modeSingle')" is-link @click="showSingle = true">
-          <!-- <span class="custom-value">{{
-            valueSingle.length ? valueSingle[0].toLocaleDateString() : null
-          }}</span> -->
-        </byted-cell>
-        <byted-cell :title="t('modeMulti')" @click="showMulti = true" is-link />
-        <byted-cell :title="t('modeRange')" is-link @click="showBasic = true">
+        <o-cell :title="t('modeSingle')" is-link @click="showSingle = true"> </o-cell>
+        <o-cell :title="t('modeMulti')" @click="showMulti = true" is-link />
+        <o-cell :title="t('modeRange')" is-link @click="showBasic = true">
           <span class="custom-value">
             {{
               valueRange.length
@@ -20,22 +16,22 @@
                 : null
             }}
           </span>
-        </byted-cell>
+        </o-cell>
       </div>
 
-      <byted-popup v-model="showSingle" position="bottom">
-        <byted-calendar
+      <o-popup v-model="showSingle" position="bottom">
+        <o-calendar
           v-model="valueSingle"
           mode="single"
           require-confirm
           @cancel="showSingle = false"
           @confirm="showSingle = false"
         />
-      </byted-popup>
+      </o-popup>
 
       <!-- 日期区间 -->
-      <byted-popup v-model="showBasic" position="bottom">
-        <byted-calendar
+      <o-popup v-model="showBasic" position="bottom">
+        <o-calendar
           v-model="valueRange"
           mode="range"
           @change="changeRange"
@@ -43,27 +39,27 @@
           @cancel="showBasic = false"
           @confirm="showBasic = false"
         />
-      </byted-popup>
+      </o-popup>
 
-      <byted-popup v-model="showMulti" position="bottom">
-        <byted-calendar
+      <o-popup v-model="showMulti" position="bottom">
+        <o-calendar
           v-model="valueMulti"
           mode="multi"
           require-confirm
           @cancel="showMulti = false"
           @confirm="showMulti = false"
         />
-      </byted-popup>
+      </o-popup>
     </demo-cell>
 
     <demo-cell :title="t('quickSelect')">
-      <byted-cell :title="t('fastSingle')" is-link @click="showSingleSlot = true"> </byted-cell>
-      <byted-popup v-model="showSingleSlot" position="bottom">
-        <byted-calendar v-model="valueScopedSlots" mode="range" @change="showSingleSlot = false">
-        </byted-calendar>
-      </byted-popup>
+      <o-cell :title="t('fastSingle')" is-link @click="showSingleSlot = true"> </o-cell>
+      <o-popup v-model="showSingleSlot" position="bottom">
+        <o-calendar v-model="valueScopedSlots" mode="range" @change="showSingleSlot = false">
+        </o-calendar>
+      </o-popup>
 
-      <byted-cell :title="t('modeCustom')" is-link @click="showScopedSlots = true">
+      <o-cell :title="t('modeCustom')" is-link @click="showScopedSlots = true">
         <span class="custom-value">
           {{
             valueScopedSlots.length
@@ -73,36 +69,36 @@
               : null
           }}
         </span>
-      </byted-cell>
-      <byted-popup v-model="showScopedSlots" position="bottom">
-        <byted-calendar v-model="valueScopedSlots" mode="range">
+      </o-cell>
+      <o-popup v-model="showScopedSlots" position="bottom">
+        <o-calendar v-model="valueScopedSlots" mode="range">
           <template v-slot:bottomFloat="slotProps">
             <div class="demo-calendar-slot-bottom">
-              <byted-row type="flex" justify="center">
-                <byted-col span="8">
-                  <byted-button type="default" @click="fastToday(slotProps)">
+              <o-row type="flex" justify="center">
+                <o-col span="8">
+                  <o-button type="default" @click="fastToday(slotProps)">
                     {{ t('today') }}
-                  </byted-button>
-                </byted-col>
-                <byted-col span="8">
-                  <byted-button type="default" @click="fastWeek">
+                  </o-button>
+                </o-col>
+                <o-col span="8">
+                  <o-button type="default" @click="fastWeek">
                     {{ t('week') }}
-                  </byted-button>
-                </byted-col>
-                <byted-col span="8">
-                  <byted-button type="default" @click="fastMouth">
+                  </o-button>
+                </o-col>
+                <o-col span="8">
+                  <o-button type="default" @click="fastMouth">
                     {{ t('money') }}
-                  </byted-button>
-                </byted-col>
-              </byted-row>
+                  </o-button>
+                </o-col>
+              </o-row>
             </div>
           </template>
-        </byted-calendar>
-      </byted-popup>
+        </o-calendar>
+      </o-popup>
     </demo-cell>
 
     <demo-cell :title="t('tiled')"></demo-cell>
-    <byted-calendar
+    <o-calendar
       v-model="valueSingle"
       mode="single"
       require-confirm
@@ -160,9 +156,7 @@ export default {
   },
 
   components: {
-    // BytedIconModuleDatepicker,
     demoCell,
-    // demoTitle,
   },
   data() {
     const today = new Date();
@@ -232,7 +226,7 @@ export default {
 .demo-calendar-slot-bottom {
   background-color: #fff;
   box-shadow: 0px -3px 9px rgba(0, 0, 0, 0.06);
-  .byted-col {
+  .o-col {
     text-align: center;
   }
 }

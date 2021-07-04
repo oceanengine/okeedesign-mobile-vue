@@ -5,11 +5,11 @@ describe('checkbox', () => {
     const onClick = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-checkbox-group v-model="checkbox" @click="onClick">
-          <byted-checkbox v-for="index in 4" :key="index" :value="index">
+        <o-checkbox-group v-model="checkbox" @click="onClick">
+          <o-checkbox v-for="index in 4" :key="index" :value="index">
             {{ index }}
-          </byted-checkbox>
-        </byted-checkbox-group>`,
+          </o-checkbox>
+        </o-checkbox-group>`,
       data() {
         return {
           checkbox: [1],
@@ -22,7 +22,7 @@ describe('checkbox', () => {
       },
     });
     expect(wrapper).toMatchSnapshot();
-    const checkboxs = wrapper.findAll('.byted-checkbox');
+    const checkboxs = wrapper.findAll('.o-checkbox');
     await checkboxs.at(1).trigger('click');
     await checkboxs.at(3).trigger('click');
     expect(wrapper).toMatchSnapshot();

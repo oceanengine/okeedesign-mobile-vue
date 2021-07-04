@@ -1,32 +1,32 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" :title-style="titleStyle">
-      <byted-notice-bar type="primary" :text="t('reminder')" />
-      <byted-notice-bar type="success" :text="t('success')" />
-      <byted-notice-bar type="warning" :text="t('warning')" />
-      <byted-notice-bar type="danger" :text="t('danger')" />
+      <o-notice-bar type="primary" :text="t('reminder')" />
+      <o-notice-bar type="success" :text="t('success')" />
+      <o-notice-bar type="warning" :text="t('warning')" />
+      <o-notice-bar type="danger" :text="t('danger')" />
     </demo-cell>
 
     <demo-cell :title="t('scrolling')" :title-style="titleStyle">
-      <byted-notice-bar type="warning" :text="t('reminder')" />
+      <o-notice-bar type="warning" :text="t('reminder')" />
     </demo-cell>
 
     <demo-cell :title="t('noticeMode')" :title-style="titleStyle">
-      <byted-notice-bar show-close type="warning" :text="t('warning')">
+      <o-notice-bar show-close type="warning" :text="t('warning')">
         <img src="../icon/horn.svg" slot="left" width="16px" height="16px" alt="" />
-      </byted-notice-bar>
-      <byted-notice-bar type="warning" :text="t('warning')">
-        <byted-button slot="right" type="text">button</byted-button>
+      </o-notice-bar>
+      <o-notice-bar type="warning" :text="t('warning')">
+        <o-button slot="right" type="text">button</o-button>
         <img src="../icon/horn.svg" slot="left" width="16px" height="16px" alt="" />
-      </byted-notice-bar>
+      </o-notice-bar>
     </demo-cell>
 
     <demo-cell :title="t('custom')" :title-style="titleStyle">
-      <byted-notice-bar show-close type="primary" :text="t('default')"></byted-notice-bar>
+      <o-notice-bar show-close type="primary" :text="t('default')"></o-notice-bar>
     </demo-cell>
   </div>
 </template>
@@ -76,8 +76,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleMessage,
   },
   data() {
     return {
@@ -103,7 +101,7 @@ export default {
   h4 {
     padding: 0 10px;
   }
-  .byted-notice-bar {
+  .o-notice-bar {
     margin-bottom: 16px;
   }
   .right-slot {

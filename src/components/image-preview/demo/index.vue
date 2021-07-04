@@ -1,50 +1,50 @@
 <template>
   <div class="demo-box">
     <div class="demo image-preview">
-      <byted-header fixed @click-left="$router.back()">
+      <o-header fixed @click-left="$router.back()">
         <div>{{ t('name') }}</div>
-      </byted-header>
+      </o-header>
 
       <demo-cell :title="t('basic')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('simple')" is-link @click="showPreviewImage" />
+          <o-cell :title="t('simple')" is-link @click="showPreviewImage" />
         </div>
       </demo-cell>
 
       <demo-cell :title="t('numberIndicator')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('numberIndicator')" is-link @click="showPreviewImageNum" />
+          <o-cell :title="t('numberIndicator')" is-link @click="showPreviewImageNum" />
         </div>
       </demo-cell>
 
       <demo-cell :title="t('moreOptions')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('closeLoop')" is-link @click="showPreviewImage({ loop: false })" />
-          <byted-cell
+          <o-cell :title="t('closeLoop')" is-link @click="showPreviewImage({ loop: false })" />
+          <o-cell
             :title="t('showClose')"
             is-link
             @click="showPreviewImage({ showCloseButton: true })"
           />
-          <byted-cell
+          <o-cell
             :title="t('hiddleIndicator')"
             is-link
             @click="showPreviewImage({ showIndicators: false })"
           />
-          <byted-cell :title="t('listenOnClose')" is-link @click="close()" />
+          <o-cell :title="t('listenOnClose')" is-link @click="close()" />
         </div>
       </demo-cell>
 
       <demo-cell :title="t('componentCall')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('componentCall')" is-link @click="show = !show" />
+          <o-cell :title="t('componentCall')" is-link @click="show = !show" />
         </div>
-        <byted-image-preview v-model="show" :images="images" :change="change" @change="change" />
+        <o-image-preview v-model="show" :images="images" :change="change" @change="change" />
       </demo-cell>
     </div>
   </div>
 </template>
 <script>
-import ImagePreview from '..';
+// import ImagePreview from '..';
 import pic from '../pics/pic.svg';
 import pic2 from '../pics/pic2.svg';
 import pic3 from '../pics/pic3.svg';
@@ -52,7 +52,6 @@ import pic4 from '../pics/pic4.svg';
 
 const images = [pic, pic2, pic3, pic4];
 
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell';
 export default {
   i18n: {
@@ -83,7 +82,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
   },
   data() {
     return {
@@ -111,7 +109,7 @@ export default {
           activeIndex = val + 1;
         },
         indicators: ({ active }) => (
-          <div staticClass="byted-image-preview__indicators">
+          <div staticClass="o-image-preview__indicators">
             {activeIndex}/{images.length}
           </div>
         ),
@@ -131,12 +129,12 @@ export default {
 </script>
 <style lang="less">
 .demo.image-preview {
-  .byted-button {
+  .o-button {
     margin-right: 12px;
     margin-bottom: 12px;
   }
 }
-.byted-image-preview__indicators {
+.o-image-preview__indicators {
   color: #ffffff;
 }
 </style>

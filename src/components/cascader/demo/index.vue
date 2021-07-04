@@ -1,43 +1,43 @@
 <template>
   <div class="demo cascader">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basic')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('basic')" is-link @click="showBasic = true" />
+        <o-cell :title="t('basic')" is-link @click="showBasic = true" />
       </div>
-      <byted-popup v-model="showBasic" position="bottom">
-        <byted-cascader v-model="selected" :options="options" @change="handleChange" />
-      </byted-popup>
+      <o-popup v-model="showBasic" position="bottom">
+        <o-cascader v-model="selected" :options="options" @change="handleChange" />
+      </o-popup>
     </demo-cell>
     <demo-cell :title="t('defaultValue')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('defaultValue')" is-link @click="showDefault = true" />
+        <o-cell :title="t('defaultValue')" is-link @click="showDefault = true" />
       </div>
-      <byted-popup v-model="showDefault" position="bottom">
-        <byted-cascader
+      <o-popup v-model="showDefault" position="bottom">
+        <o-cascader
           v-model="selected"
           :options="options"
           :selected-item="selectedItem"
           @change="handleChange"
         />
-      </byted-popup>
+      </o-popup>
     </demo-cell>
 
     <demo-cell :title="t('asyncLoad')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('asyncLoad')" is-link @click="showAsync = true" />
+        <o-cell :title="t('asyncLoad')" is-link @click="showAsync = true" />
       </div>
-      <byted-popup v-model="showAsync" position="bottom">
-        <byted-cascader
+      <o-popup v-model="showAsync" position="bottom">
+        <o-cascader
           v-model="selected"
           :options="options3"
           @active-item-change="handleActiveItemChange"
           @change="handleChange"
         />
-      </byted-popup>
+      </o-popup>
     </demo-cell>
   </div>
 </template>
@@ -335,9 +335,7 @@ export default {
     },
   },
   components: {
-    // BytedIconModuleCascader,
     demoCell,
-    // demoTitle,
   },
   data() {
     return {

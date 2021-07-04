@@ -3,12 +3,12 @@ import { mount, later } from '../index';
 function renderWrapper(options = {} as any) {
   return mount({
     template: `
-      <byted-dropdown
+      <o-dropdown
         :direction="direction"
         :close-on-click-outside="closeOnClickOutside">
-        <byted-dropdown-item v-model="value" :title="title" :options="options" />
-        <byted-dropdown-item v-model="value" :title="title" :options="options" />
-      </byted-dropdown>
+        <o-dropdown-item v-model="value" :title="title" :options="options" />
+        <o-dropdown-item v-model="value" :title="title" :options="options" />
+      </o-dropdown>
     `,
     data() {
       return {
@@ -31,7 +31,7 @@ describe('dropdown', () => {
 
     await later();
 
-    const titles = wrapper.findAll('.byted-dropdown__item');
+    const titles = wrapper.findAll('.o-dropdown__item');
 
     await titles.at(0).trigger('click');
     expect(wrapper).toMatchSnapshot();
@@ -49,7 +49,7 @@ describe('dropdown', () => {
 
     await later();
 
-    const titles = wrapper.findAll('.byted-dropdown__item');
+    const titles = wrapper.findAll('.o-dropdown__item');
 
     await titles.at(0).trigger('click');
     await document.body.click();
@@ -63,7 +63,7 @@ describe('dropdown', () => {
 
     await later();
 
-    const titles = wrapper.findAll('.byted-dropdown__item');
+    const titles = wrapper.findAll('.o-dropdown__item');
 
     await titles.at(0).trigger('click');
     await document.body.click();
@@ -78,7 +78,7 @@ describe('dropdown', () => {
     await later();
     expect(wrapper).toMatchSnapshot();
 
-    const titles = wrapper.findAll('.byted-dropdown__item');
+    const titles = wrapper.findAll('.o-dropdown__item');
     await titles.at(0).trigger('click');
     expect(wrapper).toMatchSnapshot();
   });
@@ -88,10 +88,10 @@ describe('dropdown', () => {
 
     await later();
 
-    const titles = wrapper.findAll('.byted-dropdown__item');
+    const titles = wrapper.findAll('.o-dropdown__item');
     await titles.at(0).trigger('click');
 
-    const options = wrapper.findAll('.byted-dropdown-item .byted-cell');
+    const options = wrapper.findAll('.o-dropdown-item .o-cell');
     await options.at(1).trigger('click');
 
     expect(wrapper).toMatchSnapshot();
@@ -110,10 +110,10 @@ describe('dropdown', () => {
   test('destroy one item', async () => {
     const wrapper = mount({
       template: `
-      <byted-dropdown>
-        <byted-dropdown-item v-if="render" v-model="value" :options="options" />
-        <byted-dropdown-item v-model="value" :options="options" />
-      </byted-dropdown>
+      <o-dropdown>
+        <o-dropdown-item v-if="render" v-model="value" :options="options" />
+        <o-dropdown-item v-model="value" :options="options" />
+      </o-dropdown>
     `,
       data() {
         return {
@@ -135,9 +135,9 @@ describe('dropdown', () => {
   test('disable dropdown item', async () => {
     const wrapper = mount({
       template: `
-      <byted-dropdown>
-        <byted-dropdown-item disabled v-model="value" :options="options" />
-      </byted-dropdown>
+      <o-dropdown>
+        <o-dropdown-item disabled v-model="value" :options="options" />
+      </o-dropdown>
     `,
       data() {
         return {
@@ -150,7 +150,7 @@ describe('dropdown', () => {
       },
     });
     await later();
-    const titles = wrapper.findAll('.byted-dropdown__item');
+    const titles = wrapper.findAll('.o-dropdown__item');
     await titles.at(0).trigger('click');
     expect(wrapper).toMatchSnapshot();
   });
@@ -159,10 +159,10 @@ describe('dropdown', () => {
 
     const wrapper = mount({
       template: `
-      <byted-dropdown>
-        <byted-dropdown-item  v-model="value" :options="options"  @change="onChange" />
-        <byted-dropdown-item  v-model="value" :options="options" />
-      </byted-dropdown>
+      <o-dropdown>
+        <o-dropdown-item  v-model="value" :options="options"  @change="onChange" />
+        <o-dropdown-item  v-model="value" :options="options" />
+      </o-dropdown>
     `,
       data() {
         return {
@@ -180,10 +180,10 @@ describe('dropdown', () => {
 
     await later();
 
-    const titles = wrapper.findAll('.byted-dropdown__item');
+    const titles = wrapper.findAll('.o-dropdown__item');
     await titles.at(0).trigger('click');
     await later();
-    const options = wrapper.findAll('.byted-dropdown-item .byted-cell');
+    const options = wrapper.findAll('.o-dropdown-item .o-cell');
     await options.at(0).trigger('click');
 
     expect(onChange).toHaveBeenCalledTimes(0);
@@ -195,13 +195,13 @@ describe('dropdown', () => {
   test('title slot', () => {
     const wrapper = mount({
       template: `
-      <byted-dropdown>
+      <o-dropdown>
         <van-dropdown-item>
           <template #title>
             Custom Title
           </template>
         </van-dropdown-item>
-      </byted-dropdown>
+      </o-dropdown>
     `,
     });
 

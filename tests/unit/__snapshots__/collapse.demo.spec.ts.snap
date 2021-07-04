@@ -2,92 +2,92 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-collapse byted-hairline--top-bottom">
-      <div class="byted-collapse-item">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title byted-collapse-item__title--expanded">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+    <div class="o-collapse o-hairline--top-bottom">
+      <div class="o-collapse-item">
+        <div class="o-cell o-cell--clickable o-collapse-item__title o-collapse-item__title--expanded">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
-        <div class="byted-collapse-item__wrapper">
-          <div class="byted-collapse-item__content"></div>
-        </div>
-      </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+        <div class="o-collapse-item__wrapper">
+          <div class="o-collapse-item__content"></div>
         </div>
       </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
       </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-collapse byted-hairline--top-bottom">
-      <div class="byted-collapse-item">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title byted-collapse-item__title--expanded">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
-        </div>
-        <div class="byted-collapse-item__wrapper">
-          <div class="byted-collapse-item__content"></div>
-        </div>
-      </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
-        </div>
-      </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-collapse byted-hairline--top-bottom">
-      <div class="byted-collapse-item">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title byted-collapse-item__title--expanded">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+    <div class="o-collapse o-hairline--top-bottom">
+      <div class="o-collapse-item">
+        <div class="o-cell o-cell--clickable o-collapse-item__title o-collapse-item__title--expanded">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
-        <div class="byted-collapse-item__wrapper">
-          <div class="byted-collapse-item__content"></div>
-        </div>
-      </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title byted-collapse-item__title--disabled">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+        <div class="o-collapse-item__wrapper">
+          <div class="o-collapse-item__content"></div>
         </div>
       </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title byted-collapse-item__title--disabled">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
+        </div>
+      </div>
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-collapse byted-hairline--top-bottom">
-      <div class="byted-collapse-item">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title"><img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+    <div class="o-collapse o-hairline--top-bottom">
+      <div class="o-collapse-item">
+        <div class="o-cell o-cell--clickable o-collapse-item__title o-collapse-item__title--expanded">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
+        </div>
+        <div class="o-collapse-item__wrapper">
+          <div class="o-collapse-item__content"></div>
         </div>
       </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title"><span></span></div>
-          <div class="byted-cell__value byted-cell__value--alone"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title o-collapse-item__title--disabled">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
+        </div>
+      </div>
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title o-collapse-item__title--disabled">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-collapse o-hairline--top-bottom">
+      <div class="o-collapse-item">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title"><img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span></div><i class="o-cell__right-icon">test-file-stub</i>
+        </div>
+      </div>
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title"><span></span></div>
+          <div class="o-cell__value o-cell__value--alone"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
       </div>
     </div>

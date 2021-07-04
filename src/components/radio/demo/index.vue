@@ -1,42 +1,42 @@
 <template>
   <div class="demo radio">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" style="padding-left: 0.8rem">
-      <byted-radio-group v-model="radio1" :size="currentSize">
-        <byted-radio style="margin-right: 1rem" value="1"> {{ t('name') }} 1 </byted-radio>
-        <byted-radio value="2"> {{ t('name') }} 2 </byted-radio>
-      </byted-radio-group>
+      <o-radio-group v-model="radio1" :size="currentSize">
+        <o-radio style="margin-right: 1rem" value="1"> {{ t('name') }} 1 </o-radio>
+        <o-radio value="2"> {{ t('name') }} 2 </o-radio>
+      </o-radio-group>
     </demo-cell>
 
     <demo-cell :title="t('disabled')" style="padding-left: 0.8rem">
-      <byted-radio-group v-model="radio6" disabled type="dot" :size="currentSize">
-        <byted-radio style="margin-right: 1rem" value="1"> {{ t('name') }} 1 </byted-radio>
-        <byted-radio value="2"> {{ t('name') }} 2 </byted-radio>
-      </byted-radio-group>
+      <o-radio-group v-model="radio6" disabled type="dot" :size="currentSize">
+        <o-radio style="margin-right: 1rem" value="1"> {{ t('name') }} 1 </o-radio>
+        <o-radio value="2"> {{ t('name') }} 2 </o-radio>
+      </o-radio-group>
     </demo-cell>
 
     <demo-cell :title="t('customSize')" style="padding-left: 0.8rem">
-      <byted-radio-group v-model="radio9" type="dot" :size="currentSize">
-        <byted-radio value="1" size="small" style="display: flex"> {{ t('name') }} 1 </byted-radio>
-        <byted-radio value="2" size="normal" style="display:flex, margin-bottom: 20px">
+      <o-radio-group v-model="radio9" type="dot" :size="currentSize">
+        <o-radio value="1" size="small" style="display: flex"> {{ t('name') }} 1 </o-radio>
+        <o-radio value="2" size="normal" style="display:flex, margin-bottom: 20px">
           {{ t('name') }} 2
-        </byted-radio>
-        <byted-radio value="3" size="large" style="display: flex"> {{ t('name') }} 3 </byted-radio>
-      </byted-radio-group>
+        </o-radio>
+        <o-radio value="3" size="large" style="display: flex"> {{ t('name') }} 3 </o-radio>
+      </o-radio-group>
     </demo-cell>
 
     <demo-cell :title="t('withCell')" style="padding: 0 0.8rem 0 0.8rem">
-      <byted-radio-group v-model="radio10" type="dot" :size="currentSize">
-        <byted-cell :size="currentSize" style="padding: 2px 9px" clickable>
-          <byted-radio value="1" style="padding-right: 220px">{{ t('name') }} 1</byted-radio>
-        </byted-cell>
-        <byted-cell :size="currentSize" style="padding: 2px 9px" clickable>
-          <byted-radio value="2" style="padding-right: 220px">{{ t('name') }} 2</byted-radio>
-        </byted-cell>
-      </byted-radio-group>
+      <o-radio-group v-model="radio10" type="dot" :size="currentSize">
+        <o-cell :size="currentSize" style="padding: 2px 9px" clickable>
+          <o-radio value="1" style="padding-right: 220px">{{ t('name') }} 1</o-radio>
+        </o-cell>
+        <o-cell :size="currentSize" style="padding: 2px 9px" clickable>
+          <o-radio value="2" style="padding-right: 220px">{{ t('name') }} 2</o-radio>
+        </o-cell>
+      </o-radio-group>
     </demo-cell>
 
     <dom-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
@@ -82,8 +82,6 @@ export default {
   components: {
     demoCell,
     DomSize,
-    // demoTitle,
-    // BytedIconModuleRadio,
   },
   data() {
     return {
@@ -132,7 +130,7 @@ export default {
 <style lang="less" scoped>
 .demo.radio {
   padding: 0 0 80px 0;
-  .byted-radio {
+  .o-radio {
     margin: 8px 0;
   }
 }

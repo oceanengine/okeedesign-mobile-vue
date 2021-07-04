@@ -1,24 +1,19 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
     <demo-cell :title="t('basicUsage')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('basicUsage')" is-link @click="show1 = true" />
-        <byted-cell :title="t('cancelUsage')" is-link @click="show3 = true" />
-        <byted-cell :title="t('titleStyle.closeIcon')" is-link @click="showClose = true" />
-        <byted-cell :title="t('more.describe')" is-link @click="showDescribe = true" />
-        <byted-cell :title="t('titleStyle.basicUsage')" is-link @click="show4 = true" />
-        <byted-cell :title="t('selected')" is-link @click="show5 = true" />
+        <o-cell :title="t('basicUsage')" is-link @click="show1 = true" />
+        <o-cell :title="t('cancelUsage')" is-link @click="show3 = true" />
+        <o-cell :title="t('titleStyle.closeIcon')" is-link @click="showClose = true" />
+        <o-cell :title="t('more.describe')" is-link @click="showDescribe = true" />
+        <o-cell :title="t('titleStyle.basicUsage')" is-link @click="show4 = true" />
+        <o-cell :title="t('selected')" is-link @click="show5 = true" />
       </div>
-      <byted-action-sheet
-        v-model="show1"
-        :actions="simpleActions"
-        @select="onSelect"
-        :divider="true"
-      />
-      <byted-action-sheet
+      <o-action-sheet v-model="show1" :actions="simpleActions" @select="onSelect" :divider="true" />
+      <o-action-sheet
         v-model="show3"
         :actions="simpleActions"
         :cancel-text="t('cancel')"
@@ -26,14 +21,14 @@
         @cancel="onCancel"
         @select="onSelect"
       />
-      <byted-action-sheet
+      <o-action-sheet
         v-model="showClose"
         :show-close="true"
         :divider="true"
         :title="t('title')"
         :actions="titleActions"
       />
-      <byted-action-sheet
+      <o-action-sheet
         v-model="showDescribe"
         align="left"
         :divider="true"
@@ -41,20 +36,20 @@
         :title="t('title')"
         :show-close="true"
       />
-      <byted-action-sheet
+      <o-action-sheet
         v-model="show4"
         :title="t('title')"
         :divider="true"
         :show-close="false"
         :actions="titleActions"
       >
-      </byted-action-sheet>
+      </o-action-sheet>
     </demo-cell>
 
     <demo-cell :title="t('optionStatus')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('optionUsage')" is-link @click="show2 = true" />
-        <byted-action-sheet
+        <o-cell :title="t('optionUsage')" is-link @click="show2 = true" />
+        <o-action-sheet
           v-model="show2"
           :actions="statusActions"
           :cancel-text="t('cancel')"
@@ -64,7 +59,7 @@
     </demo-cell>
 
     <demo-cell :title="t('customizePanel')">
-      <byted-action-sheet
+      <o-action-sheet
         v-model="show5"
         align="left"
         :divider="true"
@@ -74,10 +69,10 @@
         <template v-slot:extra="">
           <img src="../icon/correct.svg" alt="" />
         </template>
-      </byted-action-sheet>
+      </o-action-sheet>
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('customizePanel')" is-link @click="show6 = true" />
-        <byted-action-sheet
+        <o-cell :title="t('customizePanel')" is-link @click="show6 = true" />
+        <o-action-sheet
           v-model="show6"
           :actions="customActions"
           :title="t('title')"
@@ -144,8 +139,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleDropdown,
   },
   data() {
     return {
@@ -230,10 +223,10 @@ export default {
   text-align: center;
 }
 .sheet-cell-content {
-  .byted-button {
+  .o-button {
     margin-bottom: 16px;
   }
-  & .byted-button:last-child {
+  & .o-button:last-child {
     margin-bottom: 0;
   }
 }

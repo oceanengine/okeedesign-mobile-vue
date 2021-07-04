@@ -1,26 +1,27 @@
 <template>
   <div class="demo upload">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('default')">
-      <byted-upload
+      <o-upload
         :action="URL"
         :before-upload="beforeUpload"
         :on-success="onSuccess"
         :on-error="onError"
         accept="image/png,image/jpeg,image/jpg"
       >
-        <div class="byted-upload__upload-icon-box upload-box">
+        <div class="o-upload__upload-icon-box upload-box">
           <div v-if="showUpload && !isUploading" class="before-upload-section">
             <slot name="before-upload">
-              <byted-icon-plus theme="outline" size="24" fill="#999" style="line-height: 0" />
+              <!-- <byted-icon-plus theme="outline" size="24" fill="#999" style="line-height: 0" /> -->
+              <file-addition theme="outline" size="24" fill="#999" style="line-height: 0" />
             </slot>
           </div>
           <div v-if="isUploading" class="uploading-section">
             <slot name="uploading">
-              <byted-loading />
+              <o-loading />
             </slot>
           </div>
           <div
@@ -33,13 +34,12 @@
             </slot>
           </div>
         </div>
-      </byted-upload>
+      </o-upload>
     </demo-cell>
   </div>
 </template>
 <script>
-import { Plus } from '@icon-park/vue';
-
+import { FileAddition } from '@icon-park/vue';
 import demoCell from '../../../../docs/site/components/DomeCell.vue';
 export default {
   i18n: {
@@ -55,10 +55,9 @@ export default {
     },
   },
   components: {
-    // BytedIconModuleUpload,
-    BytedIconPlus: Plus,
-    // demoTitle,
+    // BytedIconPlus,
     demoCell,
+    FileAddition,
   },
   data() {
     return {

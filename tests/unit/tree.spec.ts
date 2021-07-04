@@ -50,7 +50,7 @@ describe('Tree', () => {
       },
     });
     later;
-    wrapper.findAll('.byted-tree__check').at(1).trigger('click');
+    wrapper.findAll('.o-tree__check').at(1).trigger('click');
     // console.log(wrapper.emitted('change')[0][0]);
     expect(wrapper.emitted('change')[0][0][0].value).toEqual('breakfast');
     expect(wrapper.emitted('change')[0][0][0].status).toEqual('partial');

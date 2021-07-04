@@ -1,71 +1,70 @@
 <template>
   <div class="demo popup">
     <div class="popup-box">
-      <byted-header fixed @click-left="$router.back()">
-        <div >{{t('name')}}</div>
-      </byted-header>
+      <o-header fixed @click-left="$router.back()">
+        <div>{{ t('name') }}</div>
+      </o-header>
 
       <demo-cell :title="t('basic')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('click')" is-link @click="showBasic = true" />
+          <o-cell :title="t('click')" is-link @click="showBasic = true" />
         </div>
-        <byted-popup v-model="showBasic" class="demo-popup-basic">
+        <o-popup v-model="showBasic" class="demo-popup-basic">
           <img class="popup-img" src="../image/pic.svg" />
-        </byted-popup>
+        </o-popup>
       </demo-cell>
 
       <demo-cell :title="t('position')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('top')" is-link @click="showTop = true" />
-          <byted-cell :title="t('bottom')" is-link @click="showBottom = true" />
-          <byted-cell :title="t('left')" is-link @click="showLeft = true" />
-          <byted-cell :title="t('right')" is-link @click="showRight = true" />
+          <o-cell :title="t('top')" is-link @click="showTop = true" />
+          <o-cell :title="t('bottom')" is-link @click="showBottom = true" />
+          <o-cell :title="t('left')" is-link @click="showLeft = true" />
+          <o-cell :title="t('right')" is-link @click="showRight = true" />
         </div>
 
-        <byted-popup v-model="showTop" position="top" append-to-body>
+        <o-popup v-model="showTop" position="top" append-to-body>
           <div class="demo-popup-top">
             <img class="popup-img" src="../image/pic.svg" />
           </div>
-        </byted-popup>
-        <byted-popup v-model="showBottom" position="bottom" append-to-body>
+        </o-popup>
+        <o-popup v-model="showBottom" position="bottom" append-to-body>
           <div class="demo-popup-bottom">
             <img class="popup-img" src="../image/pic.svg" />
           </div>
-        </byted-popup>
-        <byted-popup v-model="showLeft" class="demo-popup-vh" position="left" append-to-body>
+        </o-popup>
+        <o-popup v-model="showLeft" class="demo-popup-vh" position="left" append-to-body>
           <div class="demo-popup-left">
             <img class="popup-img" src="../image/pic.svg" />
           </div>
-        </byted-popup>
-        <byted-popup v-model="showRight" class="demo-popup-vh" position="right" append-to-body>
+        </o-popup>
+        <o-popup v-model="showRight" class="demo-popup-vh" position="right" append-to-body>
           <div class="demo-popup-right">
             <img class="popup-img" src="../image/pic.svg" />
           </div>
-        </byted-popup>
+        </o-popup>
       </demo-cell>
 
       <demo-cell :title="t('appendToBody')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('click')" is-link @click="showAppendBody = true" />
+          <o-cell :title="t('click')" is-link @click="showAppendBody = true" />
         </div>
-        <byted-popup v-model="showAppendBody" class="demo-popup-basic" append-to-body>
+        <o-popup v-model="showAppendBody" class="demo-popup-basic" append-to-body>
           <img class="popup-img" src="../image/pic.svg" />
-        </byted-popup>
+        </o-popup>
       </demo-cell>
 
       <demo-cell :title="t('getContainer')">
         <div class="bui-doc-demo-block__card">
-          <byted-cell :title="t('click')" is-link @click="showAppend = true" />
+          <o-cell :title="t('click')" is-link @click="showAppend = true" />
         </div>
-        <byted-popup v-model="showAppend" class="demo-popup-basic" get-container="body">
+        <o-popup v-model="showAppend" class="demo-popup-basic" get-container="body">
           <img class="popup-img" src="../image/pic.svg" />
-        </byted-popup>
+        </o-popup>
       </demo-cell>
     </div>
   </div>
 </template>
 <script>
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell';
 export default {
   i18n: {
@@ -98,7 +97,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
   },
   data() {
     return {
@@ -133,7 +131,7 @@ export default {
   padding: 0 16px;
   margin: 0;
   .popup-box {
-    .byted-button {
+    .o-button {
       margin-right: 10px;
     }
   }

@@ -28,7 +28,7 @@ describe('Switch', () => {
         },
       },
     });
-    const dom = wrapper.find('.byted-switch');
+    const dom = wrapper.find('.o-switch');
     dom.trigger('click');
     expect(onChange).toHaveBeenCalled();
   });
@@ -37,7 +37,7 @@ describe('Switch', () => {
     const onChange = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-switch :value="value"  @input="onChange" />
+        <o-switch :value="value"  @input="onChange" />
       `,
       data() {
         return {
@@ -48,7 +48,7 @@ describe('Switch', () => {
         onChange,
       },
     }) as any;
-    const dom = wrapper.find('.byted-switch');
+    const dom = wrapper.find('.o-switch');
     dom.trigger('click');
     expect(onChange).toHaveBeenCalled();
     expect(wrapper.vm.value).toBe(false);

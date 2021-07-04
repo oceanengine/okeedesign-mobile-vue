@@ -1,12 +1,12 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basic')">
-      <byted-cell :title="t('basic')" is-link @click="show = true" />
-      <byted-dialog
+      <o-cell :title="t('basic')" is-link @click="show = true" />
+      <o-dialog
         v-model="show"
         :callback="callback"
         title="OKee Design"
@@ -16,8 +16,8 @@
     </demo-cell>
 
     <demo-cell :title="t('async')">
-      <byted-cell :title="t('async')" is-link @click="showAsync = true" />
-      <byted-dialog
+      <o-cell :title="t('async')" is-link @click="showAsync = true" />
+      <o-dialog
         v-model="showAsync"
         message="tel: ************"
         :before-close="beforeClose"
@@ -26,14 +26,14 @@
     </demo-cell>
 
     <demo-cell :title="t('slot')">
-      <byted-cell :title="t('slot')" is-link @click="showSlot = true" />
-      <byted-dialog v-model="showSlot">
+      <o-cell :title="t('slot')" is-link @click="showSlot = true" />
+      <o-dialog v-model="showSlot">
         <img
           class="demo-dialog-img"
-          src="https://s1.pstatp.com/cdn/expire-1-M/byted-creative-app/static/app_iconstore_1024pt@2x.png"
+          src="https://s1.pstatp.com/cdn/expire-1-M/o-creative-app/static/app_iconstore_1024pt@2x.png"
         />
         <template slot="title"> oceanengine </template>
-      </byted-dialog>
+      </o-dialog>
     </demo-cell>
   </div>
 </template>
@@ -64,8 +64,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleModal,
   },
   data() {
     return {

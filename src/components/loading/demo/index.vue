@@ -1,39 +1,39 @@
 <template>
   <div class="demo loading">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basic')">
-      <byted-row>
-        <byted-col span="12">
-          <byted-loading />
-        </byted-col>
-      </byted-row>
+      <o-row>
+        <o-col span="12">
+          <o-loading />
+        </o-col>
+      </o-row>
     </demo-cell>
 
     <demo-cell :title="t('text')">
-      <byted-row type="flex" align="center">
-        <byted-col span="12">
-          <byted-loading :text="onloading" />
-        </byted-col>
-      </byted-row>
+      <o-row type="flex" align="center">
+        <o-col span="12">
+          <o-loading :text="onloading" />
+        </o-col>
+      </o-row>
     </demo-cell>
 
     <demo-cell :title="t('styleVertical')">
-      <byted-loading vertical> 加载中... </byted-loading>
+      <o-loading vertical> 加载中... </o-loading>
     </demo-cell>
     <demo-cell :title="t('size')">
-      <byted-row>
-        <byted-col span="12">
-          <byted-loading size="1.2rem" />
-        </byted-col>
-      </byted-row>
+      <o-row>
+        <o-col span="12">
+          <o-loading size="1.2rem" />
+        </o-col>
+      </o-row>
     </demo-cell>
 
     <demo-cell :title="t('style')">
-      <byted-loading />
-      <byted-loading type="circle" style="margin-left: 16px" />
+      <o-loading />
+      <o-loading type="circle" style="margin-left: 16px" />
     </demo-cell>
   </div>
 </template>
@@ -61,9 +61,7 @@ export default {
     },
   },
   components: {
-    // demoTitle,
     demoCell,
-    // BytedIconModuleLoading,
   },
   computed: {
     onloading() {

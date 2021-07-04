@@ -1,34 +1,34 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" :title-style="titleStyle">
-      <byted-datetime-picker v-model="value" @change="onChange" />
+      <o-datetime-picker v-model="value" @change="onChange" />
     </demo-cell>
 
     <demo-cell :title="t('datetimeUsage')" :title-style="titleStyle">
-      <byted-datetime-picker v-model="value1" type="datetime" @change="onChange" />
+      <o-datetime-picker v-model="value1" type="datetime" @change="onChange" />
     </demo-cell>
 
     <demo-cell :title="t('timeUsage')" :title-style="titleStyle">
-      <byted-datetime-picker v-model="value2" type="time" @change="onChange" />
+      <o-datetime-picker v-model="value2" type="time" @change="onChange" />
     </demo-cell>
 
     <demo-cell :title="t('boundaryUsage')" :title-style="titleStyle">
-      <byted-datetime-picker v-model="value3" :min-date="value4" @change="onChange" />
+      <o-datetime-picker v-model="value3" :min-date="value4" @change="onChange" />
     </demo-cell>
     <demo-cell :title="t('popupUsage')" :title-style="titleStyle">
-      <byted-cell :title="t('openPop')" :border="false" is-link @click="show = !show" />
-      <byted-popup v-model="show" position="bottom">
-        <byted-datetime-picker
+      <o-cell :title="t('openPop')" :border="false" is-link @click="show = !show" />
+      <o-popup v-model="show" position="bottom">
+        <o-datetime-picker
           v-model="value"
           @change="onChange"
           @cancel="show = !show"
           @confirm="show = !show"
         />
-      </byted-popup>
+      </o-popup>
     </demo-cell>
   </div>
 </template>
@@ -59,8 +59,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleTimePicker,
   },
   data() {
     return {

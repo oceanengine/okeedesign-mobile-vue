@@ -27,7 +27,7 @@ describe('Popup', () => {
       },
     });
 
-    expect(document.body.classList.contains('byted-overflow-hidden')).toBeTruthy();
+    expect(document.body.classList.contains('o-overflow-hidden')).toBeTruthy();
 
     triggerDrag(document.body, 0, 100);
     triggerDrag(document.body, 0, -150);
@@ -37,10 +37,10 @@ describe('Popup', () => {
       },
     });
     wrapper1.vm.$destroy();
-    expect(document.body.classList.contains('byted-overflow-hidden')).toBeTruthy();
+    expect(document.body.classList.contains('o-overflow-hidden')).toBeTruthy();
     wrapper2.vm.$destroy();
 
-    expect(document.body.classList.contains('byted-overflow-hidden')).toBeFalsy();
+    expect(document.body.classList.contains('o-overflow-hidden')).toBeFalsy();
   });
 
   test('get container with selector', () => {
@@ -82,15 +82,15 @@ describe('Popup', () => {
         };
       },
     });
-    // byted-overlay
-    expect(div.querySelector('.byted-overlay')).toBeFalsy();
+    // o-overlay
+    expect(div.querySelector('.o-overlay')).toBeFalsy();
 
     wrapper.setData({ overlay: true });
 
-    expect(div.querySelector('.byted-overlay')).toBeFalsy();
+    expect(div.querySelector('.o-overlay')).toBeFalsy();
     await wrapper.setData({ show: true });
 
-    expect(div.querySelector('.byted-overlay')).toBeTruthy();
+    expect(div.querySelector('.o-overlay')).toBeTruthy();
   });
 
   test('close on click overlay', async () => {
@@ -123,7 +123,7 @@ describe('Popup', () => {
 
     await later();
 
-    const modal = div.querySelector('.byted-overlay') as HTMLElement;
+    const modal = div.querySelector('.o-overlay') as HTMLElement;
     modal.click();
 
     expect(wrapper.vm.value).toBeFalsy();
@@ -148,7 +148,7 @@ describe('Popup', () => {
         click: onClick,
       },
     });
-    await wrapper.find('.byted-popup ').trigger('click');
+    await wrapper.find('.o-popup ').trigger('click');
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 

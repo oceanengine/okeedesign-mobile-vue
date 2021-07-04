@@ -25,7 +25,7 @@ describe('Slider', () => {
         },
       },
     });
-    const button = wrapper.find('.byted-slider__button');
+    const button = wrapper.find('.o-slider__button');
     triggerDrag(button, 50, 0);
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.emitted('drag-start')).toBeFalsy();
