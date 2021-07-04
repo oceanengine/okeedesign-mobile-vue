@@ -7,32 +7,32 @@ describe('Col', () => {
   test('gutter prop', () => {
     const wrapper = mount({
       template: `
-      <byted-row gutter="24">
-        <byted-col span="24">24</byted-col>
+      <o-row gutter="24">
+        <o-col span="24">24</o-col>
 
-        <byted-col span="12">12</byted-col>
-        <byted-col span="12">12</byted-col>
+        <o-col span="12">12</o-col>
+        <o-col span="12">12</o-col>
 
-        <byted-col span="8">8</byted-col>
-        <byted-col span="8">8</byted-col>
-        <byted-col span="8">8</byted-col>
+        <o-col span="8">8</o-col>
+        <o-col span="8">8</o-col>
+        <o-col span="8">8</o-col>
 
-        <byted-col span="6">6</byted-col>
-        <byted-col span="6">6</byted-col>
-        <byted-col span="6">6</byted-col>
-        <byted-col span="6">6</byted-col>
+        <o-col span="6">6</o-col>
+        <o-col span="6">6</o-col>
+        <o-col span="6">6</o-col>
+        <o-col span="6">6</o-col>
         
-        <byted-col span="7">7</byted-col>
-        <byted-col span="6">6</byted-col>
-        <byted-col span="5">5</byted-col>
-        <byted-col span="4">4</byted-col>
-        <byted-col span="3">3</byted-col>
-        <byted-col span="2">2</byted-col>
-      </byted-row>
+        <o-col span="7">7</o-col>
+        <o-col span="6">6</o-col>
+        <o-col span="5">5</o-col>
+        <o-col span="4">4</o-col>
+        <o-col span="3">3</o-col>
+        <o-col span="2">2</o-col>
+      </o-row>
     `,
       components: {
-        'byted-col': Col,
-        'byted-row': Row,
+        'o-col': Col,
+        'o-row': Row,
       },
     });
 

@@ -34,7 +34,7 @@ describe('Search', () => {
       },
     });
 
-    const cancel = wrapper.find('.byted-search__action div');
+    const cancel = wrapper.find('.o-search__action div');
     cancel.trigger('click');
 
     expect(onInput).toHaveBeenCalledWith('');

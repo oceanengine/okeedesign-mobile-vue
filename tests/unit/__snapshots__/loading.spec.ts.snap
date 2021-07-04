@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loading default slot 1`] = `
-<div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i>
-  <div class="byted-loading__text">Text</div>
+<div class="o-loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i>
+  <div class="o-loading__text">Text</div>
 </div>
 `;
 
-exports[`Loading size prop 1`] = `<div class="byted-loading"><i class="byted-loading__icon byted-loading-circle" style="width: 20px; height: 20px;">test-file-stub</i></div>`;
+exports[`Loading size prop 1`] = `<div class="o-loading"><i class="o-loading__icon o-loading-circle" style="width: 20px; height: 20px;">test-file-stub</i></div>`;
 
 exports[`Loading text prop 1`] = `
-<div class="byted-loading"><i class="byted-loading__icon byted-loading-circle">test-file-stub</i>
-  <div class="byted-loading__text">Text</div>
+<div class="o-loading"><i class="o-loading__icon o-loading-circle">test-file-stub</i>
+  <div class="o-loading__text">Text</div>
 </div>
 `;

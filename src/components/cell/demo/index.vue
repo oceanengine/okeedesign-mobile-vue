@@ -1,13 +1,13 @@
 <template>
   <div class="demo cell">
-    <byted-header fixed @click-left="$router.back()">
-      <div >{{t('name')}}</div>
-    </byted-header>
+    <o-header fixed @click-left="$router.back()">
+      <div>{{ t('name') }}</div>
+    </o-header>
 
     <demo-cell1 :title="t('basicUsage')" :title-style="titleStyle">
-      <byted-cell-group>
-        <byted-cell :title="t('title')" :value="t('showValue')" :size="currentSize" clickable />
-        <byted-cell
+      <o-cell-group>
+        <o-cell :title="t('title')" :value="t('showValue')" :size="currentSize" clickable />
+        <o-cell
           :title="t('title')"
           :label="t('showLabel')"
           :value="t('showValue')"
@@ -15,18 +15,24 @@
           clickable
           middle
         />
-      </byted-cell-group>
+      </o-cell-group>
     </demo-cell1>
 
     <demo-cell1 :title="t('icon')" :title-style="titleStyle">
-      <byted-cell-group>
-        <byted-cell :title="t('title')" :value="t('showValue')" :size="currentSize" clickable>  
+      <o-cell-group>
+        <o-cell :title="t('title')" :value="t('showValue')" :size="currentSize" clickable>  
           <template #title>
-            <img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;">
-            <span style="vertical-align: middle;">{{t('title')}}</span>
+            <img
+              src="../../../../svg/cell.svg"
+              alt=""
+              width="17px"
+              height="17px"
+              style="margin-right: 6px; vertical-align: middle"
+            />
+            <span style="vertical-align: middle">{{ t('title') }}</span>
           </template>
-        </byted-cell>
-        <byted-cell
+        </o-cell>
+        <o-cell
           :title="t('title')"
           :label="t('showLabel')"
           :value="t('showValue')"
@@ -35,84 +41,97 @@
           middle
         >
           <template #title>
-            <img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;">
-            <span style="vertical-align: middle;">{{t('title')}}</span>
+            <img
+              src="../../../../svg/cell.svg"
+              alt=""
+              width="17px"
+              height="17px"
+              style="margin-right: 6px; vertical-align: middle"
+            />
+            <span style="vertical-align: middle">{{ t('title') }}</span>
           </template>
-        </byted-cell>
-      </byted-cell-group>
+        </o-cell>
+      </o-cell-group>
     </demo-cell1>
 
     <demo-cell1 :title="t('contentOnly')" :title-style="titleStyle">
-      <byted-cell-group>
-        <byted-cell :value="t('showValue')" :size="currentSize" clickable />
-      </byted-cell-group>
+      <o-cell-group>
+        <o-cell :value="t('showValue')" :size="currentSize" clickable />
+      </o-cell-group>
     </demo-cell1>
 
     <demo-cell1 :title="t('showArrow')" :title-style="titleStyle">
-      <byted-cell-group>
-        <byted-cell :title="t('title')"  :size="currentSize" is-link />
-        <byted-cell :title="t('title')" :value="t('showValue')" :size="currentSize" is-link />
-        <byted-cell
+      <o-cell-group>
+        <o-cell :title="t('title')"  :size="currentSize" is-link />
+        <o-cell :title="t('title')" :value="t('showValue')" :size="currentSize" is-link />
+        <o-cell
           :title="t('title')"
           :value="t('showValue')"
           is-link1
           arrow-direction="down"
           :size="currentSize"
         />
-      </byted-cell-group>
+      </o-cell-group>
     </demo-cell1>
-
-    <!-- <demo-cell1 :title="t('valueOnly')" :titleStyle="titleStyle">
-      <byted-cell-group>
-        <byted-cell 
-          :value="t('showValue')" 
-          :size="currentSize"
-        />
-      </byted-cell-group>
-    </demo-cell1> -->
 
     <demo-cell1 :title="t('groupTitle')" :title-style="titleStyle">
       <demo-cell1 :title="t('group') + '一'" :title-style="titleStyle">
-        <byted-cell :title="t('title')" :value="t('showValue')" :size="currentSize" />
+        <o-cell :title="t('title')" :value="t('showValue')" :size="currentSize" />
       </demo-cell1>
       <demo-cell1 :title="t('group') + '二'" :title-style="titleStyle">
-        <byted-cell :title="t('title')" :value="t('showValue')" :size="currentSize" />
+        <o-cell :title="t('title')" :value="t('showValue')" :size="currentSize" />
       </demo-cell1>
     </demo-cell1>
 
     <demo-cell1 :title="t('advancedUsage')" :title-style="titleStyle">
-      <byted-cell :value="t('showValue')" :size="currentSize" is-link>
+      <o-cell :value="t('showValue')" :size="currentSize" is-link>
         <template #title>
-          <img src="../icon/tag.svg" alt="" width="25px" height="25px" style="margin-right: 6px; vertical-align: middle;">
+          <img
+            src="../icon/tag.svg"
+            alt=""
+            width="25px"
+            height="25px"
+            style="margin-right: 6px; vertical-align: middle"
+          />
           <span>{{ t('title') }}</span>
         </template>
-      </byted-cell>
-      <byted-cell :value="t('showValue')" :size="currentSize">
-          <template #title>
-            <img src="../icon/correct.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;">
-            <span style="vertical-align: middle;">{{t('title')}}</span>
-          </template>
-      </byted-cell>
+      </o-cell>
+      <o-cell :value="t('showValue')" :size="currentSize">
+        <template #title>
+          <img
+            src="../icon/correct.svg"
+            alt=""
+            width="17px"
+            height="17px"
+            style="margin-right: 6px; vertical-align: middle"
+          />
+          <span style="vertical-align: middle">{{ t('title') }}</span>
+        </template>
+      </o-cell>
       <!-- 开关 -->
-      <byted-cell :title="t('title')" :size="currentSize">
+      <o-cell :title="t('title')" :size="currentSize">
         <template #right-icon>
-          <byted-switch v-model="valueBase" />
+          <o-switch v-model="valueBase" />
         </template>
-      </byted-cell>
+      </o-cell>
 
-      <byted-cell :title="t('title')" :size="currentSize">
+      <o-cell :title="t('title')" :size="currentSize">
         <template #right-icon>
-          <img src="../icon/button.svg" alt="" width="24px" height="24px" style="margin-right: 6px; vertical-align: middle;">
-          <!-- <span style="vertical-align: middle;">单元格</span> -->
+          <img
+            src="../icon/button.svg"
+            alt=""
+            width="24px"
+            height="24px"
+            style="margin-right: 6px; vertical-align: middle"
+          />
         </template>
-      </byted-cell>
+      </o-cell>
     </demo-cell1>
 
     <dom-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
   </div>
 </template>
 <script>
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell';
 import DomSize from '../../../../docs/site/components/DomSize.vue';
 export default {
@@ -161,7 +180,6 @@ export default {
   },
   components: {
     'demo-cell1': demoCell,
-    // demoTitle,
     DomSize,
   },
   data() {

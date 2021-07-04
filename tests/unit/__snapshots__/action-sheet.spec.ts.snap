@@ -1,59 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActionSheet callback events 1`] = `
-<transition-stub name="byted-popup-slide-bottom" actions="[object Object],[object Object],[object Object],[object Object]" canceltext="Cancel" class="byted-action-sheet" style="z-index: 2001;">
-  <div class="byted-popup byted-popup--bottom" style="display: none;">
-    <div class="byted-action-sheet__item">
-      <div class="byted-action-sheet__option-content"><span class="byted-action-sheet__name">Option</span></div>
+<transition-stub name="o-popup-slide-bottom" actions="[object Object],[object Object],[object Object],[object Object]" canceltext="Cancel" class="o-action-sheet" style="z-index: 2001;">
+  <div class="o-popup o-popup--bottom" style="display: none;">
+    <div class="o-action-sheet__item">
+      <div class="o-action-sheet__option-content"><span class="o-action-sheet__name">Option</span></div>
     </div>
-    <div class="byted-action-sheet__item byted-action-sheet__item--disabled">
-      <div class="byted-action-sheet__option-content"><span class="byted-action-sheet__name">Option</span></div>
+    <div class="o-action-sheet__item o-action-sheet__item--disabled">
+      <div class="o-action-sheet__option-content"><span class="o-action-sheet__name">Option</span></div>
     </div>
-    <div class="byted-action-sheet__item byted-action-sheet__item--disabled">
-      <div class="byted-loading"><i class="byted-loading__icon byted-loading-circle" style="width: 1rem; height: 1rem;">test-file-stub</i></div>
+    <div class="o-action-sheet__item o-action-sheet__item--disabled">
+      <div class="o-loading"><i class="o-loading__icon o-loading-circle" style="width: 1rem; height: 1rem;">test-file-stub</i></div>
     </div>
-    <div class="byted-action-sheet__item">
-      <div class="byted-action-sheet__option-content  byted-action-sheet__option-content--subname"><span class="byted-action-sheet__name">Option</span><span class="byted-action-sheet__subname">Subname</span></div>
+    <div class="o-action-sheet__item">
+      <div class="o-action-sheet__option-content  o-action-sheet__option-content--subname"><span class="o-action-sheet__name">Option</span><span class="o-action-sheet__subname">Subname</span></div>
     </div>
-    <div class="byted-action-sheet__cancel">
-      <div class="byted-action-sheet__cancel__text">Cancel</div>
+    <div class="o-action-sheet__cancel">
+      <div class="o-action-sheet__cancel__text">Cancel</div>
     </div>
   </div>
 </transition-stub>
 `;
 
 exports[`ActionSheet disable lazy-render 1`] = `
-<transition-stub name="byted-popup-slide-bottom" actions="[object Object],[object Object]" canceltext="Cancel" class="byted-action-sheet">
-  <div class="byted-popup byted-popup--bottom" style="display: none;">
-    <div class="byted-action-sheet__item">
-      <div class="byted-action-sheet__option-content"><span class="byted-action-sheet__name">Option</span></div>
+<transition-stub name="o-popup-slide-bottom" actions="[object Object],[object Object]" canceltext="Cancel" class="o-action-sheet">
+  <div class="o-popup o-popup--bottom" style="display: none;">
+    <div class="o-action-sheet__item">
+      <div class="o-action-sheet__option-content"><span class="o-action-sheet__name">Option</span></div>
     </div>
-    <div class="byted-action-sheet__item">
-      <div class="byted-action-sheet__option-content"><span class="byted-action-sheet__name">Option</span></div>
+    <div class="o-action-sheet__item">
+      <div class="o-action-sheet__option-content"><span class="o-action-sheet__name">Option</span></div>
     </div>
-    <div class="byted-action-sheet__cancel">
-      <div class="byted-action-sheet__cancel__text">Cancel</div>
+    <div class="o-action-sheet__cancel">
+      <div class="o-action-sheet__cancel__text">Cancel</div>
     </div>
   </div>
 </transition-stub>
 `;
 
 exports[`ActionSheet extra slot 1`] = `
-<transition-stub name="byted-popup-slide-bottom" actions="[object Object]" class="byted-action-sheet">
-  <div class="byted-popup byted-popup--bottom">
-    <div class="byted-action-sheet__item">
-      <div class="byted-action-sheet__option-content"><span class="byted-action-sheet__name">Option</span></div>
-      <div class="byted-action-sheet__option-extra">Custom extra</div>
+<transition-stub name="o-popup-slide-bottom" actions="[object Object]" class="o-action-sheet">
+  <div class="o-popup o-popup--bottom">
+    <div class="o-action-sheet__item">
+      <div class="o-action-sheet__option-content"><span class="o-action-sheet__name">Option</span></div>
+      <div class="o-action-sheet__option-extra">Custom extra</div>
     </div>
   </div>
 </transition-stub>
 `;
 
 exports[`ActionSheet render title and default slot 1`] = `
-<transition-stub name="byted-popup-slide-bottom" title="Title" class="byted-action-sheet">
-  <div class="byted-popup byted-popup--bottom">
-    <div class="byted-action-sheet__header">Title</div>
-    <div class="byted-action-sheet__content">Default</div>
+<transition-stub name="o-popup-slide-bottom" title="Title" class="o-action-sheet">
+  <div class="o-popup o-popup--bottom">
+    <div class="o-action-sheet__header">Title</div>
+    <div class="o-action-sheet__content">Default</div>
   </div>
 </transition-stub>
 `;

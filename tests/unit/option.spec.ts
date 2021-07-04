@@ -7,23 +7,23 @@ describe('Checker', () => {
   test('render base', () => {
     const wrapper = mount({
       template: `
-        <byted-checker v-model="checker">
-          <byted-row gutter="10">
-            <byted-col span="8">
-              <byted-checker-item label="0" :value="0" />
-            </byted-col>
-            <byted-col span="8">
-              <byted-checker-item label="1" value="1" />
-            </byted-col>
-            <byted-col span="8">
-              <byted-checker-item value="2">2</byted-checker-item>
-            </byted-col>
-          </byted-row>
-        </byted-checker>
+        <o-checker v-model="checker">
+          <o-row gutter="10">
+            <o-col span="8">
+              <o-checker-item label="0" :value="0" />
+            </o-col>
+            <o-col span="8">
+              <o-checker-item label="1" value="1" />
+            </o-col>
+            <o-col span="8">
+              <o-checker-item value="2">2</o-checker-item>
+            </o-col>
+          </o-row>
+        </o-checker>
       `,
       components: {
-        'byted-checker': Checker,
-        'byted-checker-item': CheckerItem,
+        'o-checker': Checker,
+        'o-checker-item': CheckerItem,
       },
       data() {
         return {
@@ -36,16 +36,16 @@ describe('Checker', () => {
   test('inputType radio', () => {
     const wrapper = mount({
       template: `
-        <byted-checker v-model="checker">
-          <byted-checker-item label="0" :value="0" />
-          <byted-checker-item label="1" value="1" />
-          <byted-checker-item value="2">2</byted-checker-item>
-        </byted-checker>
+        <o-checker v-model="checker">
+          <o-checker-item label="0" :value="0" />
+          <o-checker-item label="1" value="1" />
+          <o-checker-item value="2">2</o-checker-item>
+        </o-checker>
       `,
 
       components: {
-        'byted-checker': Checker,
-        'byted-checker-item': CheckerItem,
+        'o-checker': Checker,
+        'o-checker-item': CheckerItem,
       },
     });
     expect(wrapper).toMatchSnapshot();
@@ -56,14 +56,14 @@ describe('Checker', () => {
     const onChange = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-checker 
+        <o-checker 
           v-model="checker"
           @click="onClick"
           @change="onChange">
-          <byted-checker-item label="0" :value="0" />
-          <byted-checker-item label="1" value="1" />
-          <byted-checker-item value="2">2</byted-checker-item>
-        </byted-checker>
+          <o-checker-item label="0" :value="0" />
+          <o-checker-item label="1" value="1" />
+          <o-checker-item value="2">2</o-checker-item>
+        </o-checker>
       `,
       data() {
         return {
@@ -75,11 +75,11 @@ describe('Checker', () => {
         onChange,
       },
       components: {
-        'byted-checker': Checker,
-        'byted-checker-item': CheckerItem,
+        'o-checker': Checker,
+        'o-checker-item': CheckerItem,
       },
     });
-    const items = wrapper.findAll('.byted-checker-item');
+    const items = wrapper.findAll('.o-checker-item');
     await items.at(0).trigger('click');
 
     expect(onClick).toBeCalledTimes(1);

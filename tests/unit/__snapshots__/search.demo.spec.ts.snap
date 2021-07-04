@@ -2,52 +2,52 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-search">
-      <div class="byted-search__content"><i class="byted-search__icon">test-file-stub</i>
-        <div class="byted-field byted-field--normal byted-field--input">
-          <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-search">
+      <div class="o-search__content"><i class="o-search__icon">test-file-stub</i>
+        <div class="o-field o-field--normal o-field--input">
+          <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-search">
-      <div class="byted-search__content"><i class="byted-search__icon">test-file-stub</i>
-        <div class="byted-field byted-field--normal byted-field--input">
-          <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-search">
+      <div class="o-search__content"><i class="o-search__icon">test-file-stub</i>
+        <div class="o-field o-field--normal o-field--input">
+          <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
         </div>
       </div>
-      <div class="byted-search__action">
+      <div class="o-search__action">
         <div>Cancel</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-search">
-      <div class="byted-search__left"><span class="fz-16"></span></div>
-      <div class="byted-search__content"><i class="byted-search__icon">test-file-stub</i>
-        <div class="byted-field byted-field--normal byted-field--input">
-          <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-search">
+      <div class="o-search__left"><span class="fz-16"></span></div>
+      <div class="o-search__content"><i class="o-search__icon">test-file-stub</i>
+        <div class="o-field o-field--normal o-field--input">
+          <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
         </div>
       </div>
-      <div class="byted-search__right"><span class="fz-16"></span></div>
+      <div class="o-search__right"><span class="fz-16"></span></div>
     </div>
   </div>
   <div>
-    <div class="byted-search">
-      <div class="byted-search__content" style="border-radius: 22px;"><i class="byted-search__icon">test-file-stub</i>
-        <div class="byted-field byted-field--normal byted-field--input">
-          <div class="byted-field__body"><input type="text" placeholder="请输入内容" class="byted-field__input byted-field__item"></div>
+    <div class="o-search">
+      <div class="o-search__content" style="border-radius: 22px;"><i class="o-search__icon">test-file-stub</i>
+        <div class="o-field o-field--normal o-field--input">
+          <div class="o-field__body"><input type="text" placeholder="请输入内容" class="o-field__input o-field__item"></div>
         </div>
       </div>
     </div>

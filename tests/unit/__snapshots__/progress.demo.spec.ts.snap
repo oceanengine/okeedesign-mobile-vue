@@ -2,48 +2,48 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo progress">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-progress">
-      <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
-        <div class="byted-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(2, 120, 255);"></div>
-      </div><span class="byted-progress__pivot">60%</span>
+    <div class="o-progress">
+      <div class="o-progress__portion" style="height: 4px; border-radius: 2px;">
+        <div class="o-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(2, 120, 255);"></div>
+      </div><span class="o-progress__pivot">60%</span>
     </div>
   </div>
   <div>
-    <div class="byted-progress">
-      <div class="byted-progress__portion byted-progress__portion--semectite" style="height: 4px; border-radius: 2px;">
-        <div class="byted-progress__portioncon byted-progress__portioncon--semectite" style="width: 60%; border-radius: 2px;"></div>
-      </div><span class="byted-progress__pivot byted-progress__pivot--semectite">60%</span>
+    <div class="o-progress">
+      <div class="o-progress__portion o-progress__portion--semectite" style="height: 4px; border-radius: 2px;">
+        <div class="o-progress__portioncon o-progress__portioncon--semectite" style="width: 60%; border-radius: 2px;"></div>
+      </div><span class="o-progress__pivot o-progress__pivot--semectite">60%</span>
     </div>
   </div>
   <div>
-    <div class="byted-progress byted-progress--text-in-middle">
-      <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
-        <div class="byted-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(2, 120, 255);">
-          <div class="byted-progress__pivot-middle" style="background-color: rgb(2, 120, 255);">60%</div>
+    <div class="o-progress o-progress--text-in-middle">
+      <div class="o-progress__portion" style="height: 4px; border-radius: 2px;">
+        <div class="o-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(2, 120, 255);">
+          <div class="o-progress__pivot-middle" style="background-color: rgb(2, 120, 255);">60%</div>
         </div>
       </div>
     </div>
-    <div class="byted-progress byted-progress--text-in-middle">
-      <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
-        <div class="byted-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(246, 86, 86);">
-          <div class="byted-progress__pivot-middle" style="background-color: rgb(246, 86, 86);">60%</div>
+    <div class="o-progress o-progress--text-in-middle">
+      <div class="o-progress__portion" style="height: 4px; border-radius: 2px;">
+        <div class="o-progress__portioncon" style="width: 60%; border-radius: 2px; background-color: rgb(246, 86, 86);">
+          <div class="o-progress__pivot-middle" style="background-color: rgb(246, 86, 86);">60%</div>
         </div>
       </div>
     </div>
-    <div class="byted-progress byted-progress--text-in-middle">
-      <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
-        <div class="byted-progress__portioncon" style="width: 100%; border-radius: 2px; background-color: rgb(106, 191, 64);">
-          <div class="byted-progress__pivot-middle" style="background-color: rgb(106, 191, 64);">100%</div>
+    <div class="o-progress o-progress--text-in-middle">
+      <div class="o-progress__portion" style="height: 4px; border-radius: 2px;">
+        <div class="o-progress__portioncon" style="width: 100%; border-radius: 2px; background-color: rgb(106, 191, 64);">
+          <div class="o-progress__pivot-middle" style="background-color: rgb(106, 191, 64);">100%</div>
         </div>
       </div>
     </div>

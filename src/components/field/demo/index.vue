@@ -1,30 +1,30 @@
 <template>
   <div class="demo field">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-field v-model="value1" :size="currentSize" :border="false" :label="t('title')" />
+      <o-field v-model="value1" :size="currentSize" :border="false" :label="t('title')" />
     </demo-cell>
     <demo-cell :title="t('customize')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-field v-model="value2" :size="currentSize" :border="false" :label="t('text')" />
-      <byted-field v-model="value3" :size="currentSize" :border="false" :label="t('phone')" />
-      <byted-field v-model="value4" :size="currentSize" :border="false" :label="t('int')" />
-      <byted-field v-model="value5" :size="currentSize" :border="false" :label="t('number')" />
-      <byted-field v-model="value6" :size="currentSize" :border="false" :label="t('password')" />
+      <o-field v-model="value2" :size="currentSize" :border="false" :label="t('text')" />
+      <o-field v-model="value3" :size="currentSize" :border="false" :label="t('phone')" />
+      <o-field v-model="value4" :size="currentSize" :border="false" :label="t('int')" />
+      <o-field v-model="value5" :size="currentSize" :border="false" :label="t('number')" />
+      <o-field v-model="value6" :size="currentSize" :border="false" :label="t('password')" />
     </demo-cell>
 
     <!-- 禁用用法 -->
     <demo-cell :title="t('disabledUsage')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-field
+      <o-field
         :value="'disabled'"
         :size="currentSize"
         disabled
         :label="t('title')"
         :border="false"
       />
-      <byted-field
+      <o-field
         :value="'disabled'"
         :size="currentSize"
         disabled
@@ -35,7 +35,7 @@
 
     <!-- 错误用法 -->
     <demo-cell :title="t('errorUsage')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-field
+      <o-field
         v-model="value7"
         :error-text="t('errorPhone')"
         :border="false"
@@ -43,7 +43,7 @@
         :label="t('phone')"
         clearable
       />
-      <byted-field
+      <o-field
         v-model="value8"
         :error-text="t('errorUsername')"
         :border="false"
@@ -54,12 +54,12 @@
 
     <!-- 插入按钮 -->
     <demo-cell :title="t('button')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-field v-model="value9" :border="false" :size="currentSize" :label="t('textCode')" />
+      <o-field v-model="value9" :border="false" :size="currentSize" :label="t('textCode')" />
     </demo-cell>
 
     <!-- 字数计算 -->
     <demo-cell :title="t('getLengthUsage')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-field
+      <o-field
         v-model="value10"
         type="textarea"
         :label="t('text')"
@@ -72,7 +72,7 @@
 
     <!-- 内容下对齐 -->
     <demo-cell :title="t('textAlignBottom')" style="margin: 0 -0.8rem" :title-style="titleStyle">
-      <byted-field
+      <o-field
         v-model="value11"
         :border="false"
         :size="currentSize"
@@ -82,7 +82,7 @@
     </demo-cell>
     <!-- 线框类型 -->
     <demo-cell :title="t('borderUsage')">
-      <byted-field v-model="value13" :size="currentSize" :label="t('text')" type="textarea" />
+      <o-field v-model="value13" :size="currentSize" :label="t('text')" type="textarea" />
     </demo-cell>
     <dom-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
   </div>
@@ -158,8 +158,6 @@ export default {
   components: {
     demoCell,
     DomSize,
-    // demoTitle,
-    // BytedIconModuleTextArea,
   },
   data() {
     return {
@@ -204,15 +202,15 @@ export default {
     }
   }
   .demo-cell.size {
-    .byted-field {
+    .o-field {
       margin-bottom: 10px;
     }
   }
   .demo-field-content {
-    .byted-field {
+    .o-field {
       margin-bottom: 16px;
     }
-    .byted-field:last-child {
+    .o-field:last-child {
       margin-bottom: 0;
     }
   }

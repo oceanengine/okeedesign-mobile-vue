@@ -1,38 +1,38 @@
 <template>
   <div class="demo steps">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basic')" :title-style="titleStyle">
-      <byted-cell>
-        <byted-steps :current="current" @change="handleClick">
-          <byted-step v-for="item in steps" :key="item.title" v-bind="item"></byted-step>
-        </byted-steps>
-      </byted-cell>
+      <o-cell>
+        <o-steps :current="current" @change="handleClick">
+          <o-step v-for="item in steps" :key="item.title" v-bind="item"></o-step>
+        </o-steps>
+      </o-cell>
     </demo-cell>
 
     <demo-cell :title="t('title')" :title-style="titleStyle">
-      <byted-cell>
-        <byted-steps :current="current" @change="handleClick" labelDirection="vertical">
-          <byted-step v-for="item in steps" :key="item.title" v-bind="item"></byted-step>
-        </byted-steps>
-      </byted-cell>
+      <o-cell>
+        <o-steps :current="current" @change="handleClick" labelDirection="vertical">
+          <o-step v-for="item in steps" :key="item.title" v-bind="item"></o-step>
+        </o-steps>
+      </o-cell>
     </demo-cell>
 
     <demo-cell :title="t('vertical1')" :title-style="titleStyle">
-      <byted-cell>
+      <o-cell>
         <div class="steps-vertical-layout">
-          <byted-steps
+          <o-steps
             style="height: 300px; margin-right: 100px"
             direction="vertical"
             :current="current"
             @change="handleClick"
           >
-            <byted-step v-for="item in steps" :key="item.title" v-bind="item"></byted-step>
-          </byted-steps>
+            <o-step v-for="item in steps" :key="item.title" v-bind="item"></o-step>
+          </o-steps>
         </div>
-      </byted-cell>
+      </o-cell>
     </demo-cell>
   </div>
 </template>
@@ -96,9 +96,7 @@ export default {
     },
   },
   components: {
-    // demoTitle,
     demoCell,
-    // BytedIconModuleSearch,
   },
   methods: {
     handleClick(index) {

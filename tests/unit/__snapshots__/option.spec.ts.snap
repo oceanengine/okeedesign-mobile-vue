@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checker inputType radio 1`] = `
-<div class="byted-checker"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="checkbox" name="" value="0">
-    <div class="byted-checker-item__label">0</div>
-  </label> <label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="checkbox" name="" value="1">
-    <div class="byted-checker-item__label">1</div>
-  </label> <label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="checkbox" name="" value="2">2</label></div>
+<div class="o-checker"><label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="checkbox" name="" value="0">
+    <div class="o-checker-item__label">0</div>
+  </label> <label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="checkbox" name="" value="1">
+    <div class="o-checker-item__label">1</div>
+  </label> <label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="checkbox" name="" value="2">2</label></div>
 `;
 
 exports[`Checker render base 1`] = `
-<div class="byted-checker">
-  <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
-    <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="checkbox" name="" value="0">
-        <div class="byted-checker-item__label">0</div><i class="byted-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i>
+<div class="o-checker">
+  <div class="o-row" style="margin-left: -5px; margin-right: -5px;">
+    <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--active"><input type="checkbox" name="" value="0">
+        <div class="o-checker-item__label">0</div><i class="o-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i>
       </label></div>
-    <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="checkbox" name="" value="1">
-        <div class="byted-checker-item__label">1</div>
+    <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="checkbox" name="" value="1">
+        <div class="o-checker-item__label">1</div>
       </label></div>
-    <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="checkbox" name="" value="2">2<i class="byted-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i></label></div>
+    <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--active"><input type="checkbox" name="" value="2">2<i class="o-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i></label></div>
   </div>
 </div>
 `;

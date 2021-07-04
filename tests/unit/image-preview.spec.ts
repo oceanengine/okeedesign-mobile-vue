@@ -35,7 +35,7 @@ describe('ImagePreview', () => {
         open: onOpen,
       },
     }) as any;
-    const swipe = wrapper.find('.byted-image-preview__swipe');
+    const swipe = wrapper.find('.o-image-preview__swipe');
     trigger(swipe, 'touchstart', 0, 0);
     trigger(swipe, 'touchmove', -100, 0);
     trigger(swipe, 'touchmove', -500, 0);
@@ -46,7 +46,7 @@ describe('ImagePreview', () => {
   test('components', async () => {
     const wrapper = mount({
       template: `
-        <byted-image-preview
+        <o-image-preview
           v-model="show"
           :swipeDuration="100"
           :images="images"
@@ -56,7 +56,7 @@ describe('ImagePreview', () => {
           @open="onOpen" />
       `,
       components: {
-        'byted-image-preview': ImagePreview,
+        'o-image-preview': ImagePreview,
       },
       data() {
         return {

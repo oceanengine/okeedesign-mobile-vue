@@ -18,7 +18,7 @@ describe('Calendar', () => {
         change: onChange,
       },
     });
-    wrapper.findAll('.byted-calendar__date').at(15).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(15).trigger('click');
     await later();
     expect(onChange).toBeCalledTimes(1);
     expect(wrapper.emitted('change')[0][0].length).toEqual(1);
@@ -35,8 +35,8 @@ describe('Calendar', () => {
         change: onChange,
       },
     });
-    wrapper.findAll('.byted-calendar__date').at(15).trigger('click');
-    wrapper.findAll('.byted-calendar__date').at(16).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(15).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(16).trigger('click');
     await later();
 
     expect(onChange).toBeCalledTimes(1);
@@ -55,8 +55,8 @@ describe('Calendar', () => {
         change: onChange,
       },
     });
-    wrapper.findAll('.byted-calendar__date').at(15).trigger('click');
-    wrapper.findAll('.byted-calendar__date').at(16).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(15).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(16).trigger('click');
     await later();
 
     expect(onChange).toBeCalledTimes(0);
@@ -78,13 +78,13 @@ describe('Calendar', () => {
         cancel: onCance,
       },
     });
-    wrapper.findAll('.byted-calendar__date').at(15).trigger('click');
-    wrapper.findAll('.byted-calendar__date').at(16).trigger('click');
-    wrapper.findAll('.byted-calendar__button').at(0).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(15).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(16).trigger('click');
+    wrapper.findAll('.o-calendar__button').at(0).trigger('click');
 
-    wrapper.findAll('.byted-calendar__date').at(16).trigger('click');
+    wrapper.findAll('.o-calendar__date').at(16).trigger('click');
 
-    wrapper.findAll('.byted-calendar__button').at(1).trigger('click');
+    wrapper.findAll('.o-calendar__button').at(1).trigger('click');
     await later();
 
     expect(onConfirm).toBeCalledTimes(1);

@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stepper disabled stepper 1`] = `
-<div class="byted-stepper">
-  <div class="byted-stepper__decrease byted-stepper__crease byted-stepper__crease--normal byted-stepper__crease--disabled"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="byted-stepper__desvg byted-stepper__desvg--normal byted-stepper__disable">
+<div class="o-stepper">
+  <div class="o-stepper__decrease o-stepper__crease o-stepper__crease--normal o-stepper__crease--disabled"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="o-stepper__desvg o-stepper__desvg--normal o-stepper__disable">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 24c0-1.1.9-2 2-2h28a2 2 0 110 4h-28a2 2 0 01-2-2z"></path>
     </svg></div>
-  <div class="byted-stepper__number byted-stepper__number--normal byted-stepper__number--disabled"><input type="number" class="byted-stepper__input">1</div>
-  <div class="byted-stepper__increase byted-stepper__crease byted-stepper__crease--normal byted-stepper__crease--disabled"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="byted-stepper__insvg byted-stepper__insvg--normal byted-stepper__disable">
+  <div class="o-stepper__number o-stepper__number--normal o-stepper__number--disabled"><input type="number" class="o-stepper__input">1</div>
+  <div class="o-stepper__increase o-stepper__crease o-stepper__crease--normal o-stepper__crease--disabled"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="o-stepper__insvg o-stepper__insvg--normal o-stepper__disable">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M26.06 10a2 2 0 00-4 0l-.01 12H10a2 2 0 100 4h12.04l-.02 12a2 2 0 004 0l.02-12H38a2 2 0 100-4H26.05l.01-12z"></path>
     </svg></div>
 </div>

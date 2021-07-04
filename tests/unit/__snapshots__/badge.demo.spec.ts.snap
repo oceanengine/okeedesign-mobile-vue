@@ -2,60 +2,60 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo badge">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-badge" style="padding-left: 1rem;">
-      <div class="square"></div><sup class="byted-badge__info byted-badge__info--is-dot"></sup>
+    <div class="o-badge" style="padding-left: 1rem;">
+      <div class="square"></div><sup class="o-badge__info o-badge__info--is-dot"></sup>
     </div>
-    <div class="byted-badge" style="padding-left: 1rem;">
-      <div class="square"></div><sup class="byted-badge__info">2</sup>
+    <div class="o-badge" style="padding-left: 1rem;">
+      <div class="square"></div><sup class="o-badge__info">2</sup>
     </div>
-    <div class="byted-badge" style="padding-left: 1rem;">
-      <div class="square"></div><sup class="byted-badge__info">999+</sup>
+    <div class="o-badge" style="padding-left: 1rem;">
+      <div class="square"></div><sup class="o-badge__info">999+</sup>
     </div>
-    <div class="byted-badge" style="padding-left: 1rem;">
-      <div class="square"></div><sup class="byted-badge__info">Hot</sup>
-    </div>
-  </div>
-  <div>
-    <div class="byted-badge" style="padding-left: 1rem;">
-      <div class="square"></div><sup class="byted-badge__info">9+</sup>
-    </div>
-    <div class="byted-badge" style="padding-left: 1rem;">
-      <div class="square"></div><sup class="byted-badge__info">60+</sup>
-    </div>
-    <div class="byted-badge" style="padding-left: 1rem;">
-      <div class="square"></div><sup class="byted-badge__info">99+</sup>
+    <div class="o-badge" style="padding-left: 1rem;">
+      <div class="square"></div><sup class="o-badge__info">Hot</sup>
     </div>
   </div>
   <div>
-    <div class="byted-collapse">
-      <div class="byted-collapse-item">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title">
+    <div class="o-badge" style="padding-left: 1rem;">
+      <div class="square"></div><sup class="o-badge__info">9+</sup>
+    </div>
+    <div class="o-badge" style="padding-left: 1rem;">
+      <div class="square"></div><sup class="o-badge__info">60+</sup>
+    </div>
+    <div class="o-badge" style="padding-left: 1rem;">
+      <div class="square"></div><sup class="o-badge__info">99+</sup>
+    </div>
+  </div>
+  <div>
+    <div class="o-collapse">
+      <div class="o-collapse-item">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title">
             <div>
-              <div class="byted-badge"><span></span><sup class="byted-badge__info">8</sup></div>
+              <div class="o-badge"><span></span><sup class="o-badge__info">8</sup></div>
             </div>
           </div>
-          <div class="right-slot"><i class="byted-icon byted-icon--right" style="fill: #999; width: 18px; height: 18px;">test-file-stub</i></div>
+          <div class="right-slot"><i class="o-icon o-icon--right" style="fill: #999; width: 18px; height: 18px;">test-file-stub</i></div>
         </div>
       </div>
-      <div class="byted-collapse-item byted-hairline--top">
-        <div class="byted-cell byted-cell--clickable byted-collapse-item__title">
-          <div class="byted-cell__title">
+      <div class="o-collapse-item o-hairline--top">
+        <div class="o-cell o-cell--clickable o-collapse-item__title">
+          <div class="o-cell__title">
             <div>
-              <div class="byted-badge"><span></span><sup class="byted-badge__info">99+</sup></div>
+              <div class="o-badge"><span></span><sup class="o-badge__info">99+</sup></div>
             </div>
           </div>
-          <div class="right-slot"><i class="byted-icon byted-icon--right" style="fill: #999; width: 18px; height: 18px;">test-file-stub</i></div>
+          <div class="right-slot"><i class="o-icon o-icon--right" style="fill: #999; width: 18px; height: 18px;">test-file-stub</i></div>
         </div>
       </div>
     </div>

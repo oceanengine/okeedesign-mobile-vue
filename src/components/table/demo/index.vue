@@ -1,19 +1,19 @@
 <template>
   <div class="demo table">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('fixedHeight')">
-      <byted-table :columns="fixedHeightColumns" :data="data" :height="350" />
+      <o-table :columns="fixedHeightColumns" :data="data" :height="350" />
     </demo-cell>
 
     <demo-cell :title="t('fixedColumn')">
-      <byted-table :columns="fixedColumns" :data="data" :height="350" />
+      <o-table :columns="fixedColumns" :data="data" :height="350" />
     </demo-cell>
 
     <demo-cell :title="t('expand')">
-      <byted-table
+      <o-table
         :columns="fixedHeightColumns"
         :data="data"
         :height="350"
@@ -24,7 +24,7 @@
     </demo-cell>
 
     <demo-cell :title="t('sorting')">
-      <byted-table
+      <o-table
         :columns="columns"
         :data="data"
         :height="350"
@@ -36,15 +36,15 @@
     </demo-cell>
 
     <demo-cell :title="t('emptyContent')">
-      <byted-table :columns="fixedHeightColumns" :data="[]" :height="350" />
+      <o-table :columns="fixedHeightColumns" :data="[]" :height="350" />
     </demo-cell>
 
     <demo-cell :title="t('slidingTable')">
-      <byted-table swipeable :columns="columns" :data="data" :height="350" />
+      <o-table swipeable :columns="columns" :data="data" :height="350" />
     </demo-cell>
 
     <demo-cell :title="t('stickyTable')">
-      <byted-table :columns="ceilingColumns" :data="data" :ceilingOptions="ceilingOptions" />
+      <o-table :columns="ceilingColumns" :data="data" :ceilingOptions="ceilingOptions" />
     </demo-cell>
   </div>
 </template>
@@ -55,8 +55,6 @@ import demoCell from '../../../../docs/site/components/DomeCell';
 export default {
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleTable,
   },
   i18n: {
     'zh-CN': {

@@ -1,41 +1,41 @@
 <template>
   <div class="demo tree">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('basicUsage')" is-link @click="showTree = true" />
+        <o-cell :title="t('basicUsage')" is-link @click="showTree = true" />
       </div>
-      <byted-popup v-model="showTree" position="bottom">
+      <o-popup v-model="showTree" position="bottom">
         <div class="demo-tree">
-          <byted-tree ref="tree" v-model="selectedValues" :options="options" />
+          <o-tree ref="tree" v-model="selectedValues" :options="options" />
         </div>
-      </byted-popup>
+      </o-popup>
     </demo-cell>
 
     <demo-cell :title="t('incompletedValues')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('incompletedValues')" is-link @click="showTreeIncomplete = true" />
+        <o-cell :title="t('incompletedValues')" is-link @click="showTreeIncomplete = true" />
       </div>
-      <byted-popup v-model="showTreeIncomplete" position="bottom">
+      <o-popup v-model="showTreeIncomplete" position="bottom">
         <div class="demo-tree">
-          <byted-tree ref="tree" v-model="selectedValuesIncomplete" :options="options" />
+          <o-tree ref="tree" v-model="selectedValuesIncomplete" :options="options" />
         </div>
-      </byted-popup>
+      </o-popup>
     </demo-cell>
 
     <demo-cell :title="t('flatMode')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('flatMode')" is-link @click="showTreeFlat = true" />
+        <o-cell :title="t('flatMode')" is-link @click="showTreeFlat = true" />
       </div>
 
-      <byted-popup v-model="showTreeFlat" position="bottom">
+      <o-popup v-model="showTreeFlat" position="bottom">
         <div class="demo-tree">
-          <byted-tree ref="tree" v-model="selectedValuesFlat" :options="options" flat />
+          <o-tree ref="tree" v-model="selectedValuesFlat" :options="options" flat />
         </div>
-      </byted-popup>
+      </o-popup>
     </demo-cell>
   </div>
 </template>
@@ -58,8 +58,6 @@ export default {
     },
   },
   components: {
-    // demoTitle,
-    // BytedIconModuleTreeSelect,
     demoCell,
   },
   data() {

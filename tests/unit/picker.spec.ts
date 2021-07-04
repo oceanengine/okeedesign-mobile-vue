@@ -50,8 +50,8 @@ describe('Picker', () => {
       },
     }) as any;
 
-    await wrapper.find('.byted-picker__button--right').trigger('click');
-    await wrapper.find('.byted-picker__button--cancel').trigger('click');
+    await wrapper.find('.o-picker__button--right').trigger('click');
+    await wrapper.find('.o-picker__button--cancel').trigger('click');
     expect(wrapper.emitted('confirm')).toBeTruthy();
     expect(wrapper.emitted('cancel')).toBeTruthy();
     wrapper.destroy();
@@ -61,7 +61,7 @@ describe('Picker', () => {
   //   const onChange = jest.fn();
   //   const wrapper = mount({
   //     template: `
-  //       <byted-picker v-model="value" :options="options" @change="onChange" />
+  //       <o-picker v-model="value" :options="options" @change="onChange" />
   //     `,
   //     data() {
   //       return {
@@ -70,14 +70,14 @@ describe('Picker', () => {
   //       };
   //     },
   //     components: {
-  //       'byted-picker': Picker,
+  //       'o-picker': Picker,
   //     },
   //     methods: {
   //       onChange,
   //     },
   //   });
   //   await later();
-  //   const column = wrapper.find('.byted-picker-column') as any;
+  //   const column = wrapper.find('.o-picker-column') as any;
   //   const pickerColumn = wrapper.findComponent(PickerColumn) as any;
   //   // @ts-ignore
   //   Object.defineProperty(pickerColumn.vm.$refs[pickerColumn.vm.wrapperName], 'scrollHeight', {
@@ -86,7 +86,7 @@ describe('Picker', () => {
   //   pickerColumn.vm.initWrapperHeight();
   //   await later();
   //   await triggerDrag(column, 0, -200);
-  //   wrapper.find('.byted-picker-column .byted-picker-column__wrapper').trigger('transitionend');
+  //   wrapper.find('.o-picker-column .o-picker-column__wrapper').trigger('transitionend');
 
   //   await later();
 

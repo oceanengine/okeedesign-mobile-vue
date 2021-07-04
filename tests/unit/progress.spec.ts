@@ -19,6 +19,6 @@ describe('Progress', () => {
       },
     });
     await later();
-    expect(wrapper.find('.byted-progress__portion').element.style.background).toEqual('green');
+    expect(wrapper.find('.o-progress__portion').element.style.background).toEqual('green');
   });
 });

@@ -2,485 +2,485 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-picker byted-datetime-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title">选择时间</div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+    <div class="o-picker o-datetime-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title">选择时间</div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
       </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">2001年</div>
-            <div class="byted-picker-column__option">2002年</div>
-            <div class="byted-picker-column__option">2003年</div>
-            <div class="byted-picker-column__option">2004年</div>
-            <div class="byted-picker-column__option">2005年</div>
-            <div class="byted-picker-column__option">2006年</div>
-            <div class="byted-picker-column__option">2007年</div>
-            <div class="byted-picker-column__option">2008年</div>
-            <div class="byted-picker-column__option">2009年</div>
-            <div class="byted-picker-column__option">2010年</div>
-            <div class="byted-picker-column__option">2011年</div>
-            <div class="byted-picker-column__option">2012年</div>
-            <div class="byted-picker-column__option">2013年</div>
-            <div class="byted-picker-column__option">2014年</div>
-            <div class="byted-picker-column__option">2015年</div>
-            <div class="byted-picker-column__option">2016年</div>
-            <div class="byted-picker-column__option">2017年</div>
-            <div class="byted-picker-column__option">2018年</div>
-            <div class="byted-picker-column__option">2019年</div>
-            <div class="byted-picker-column__option">2020年</div>
-            <div class="byted-picker-column__option">2021年</div>
-            <div class="byted-picker-column__option">2022年</div>
-            <div class="byted-picker-column__option">2023年</div>
-            <div class="byted-picker-column__option">2024年</div>
-            <div class="byted-picker-column__option">2025年</div>
-            <div class="byted-picker-column__option">2026年</div>
-            <div class="byted-picker-column__option">2027年</div>
-            <div class="byted-picker-column__option">2028年</div>
-            <div class="byted-picker-column__option">2029年</div>
-            <div class="byted-picker-column__option">2030年</div>
-            <div class="byted-picker-column__option">2031年</div>
-            <div class="byted-picker-column__option">2032年</div>
-            <div class="byted-picker-column__option">2033年</div>
-            <div class="byted-picker-column__option">2034年</div>
-            <div class="byted-picker-column__option">2035年</div>
-            <div class="byted-picker-column__option">2036年</div>
-            <div class="byted-picker-column__option">2037年</div>
-            <div class="byted-picker-column__option">2038年</div>
-            <div class="byted-picker-column__option">2039年</div>
-            <div class="byted-picker-column__option">2040年</div>
-            <div class="byted-picker-column__option">2041年</div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">2001年</div>
+            <div class="o-picker-column__option">2002年</div>
+            <div class="o-picker-column__option">2003年</div>
+            <div class="o-picker-column__option">2004年</div>
+            <div class="o-picker-column__option">2005年</div>
+            <div class="o-picker-column__option">2006年</div>
+            <div class="o-picker-column__option">2007年</div>
+            <div class="o-picker-column__option">2008年</div>
+            <div class="o-picker-column__option">2009年</div>
+            <div class="o-picker-column__option">2010年</div>
+            <div class="o-picker-column__option">2011年</div>
+            <div class="o-picker-column__option">2012年</div>
+            <div class="o-picker-column__option">2013年</div>
+            <div class="o-picker-column__option">2014年</div>
+            <div class="o-picker-column__option">2015年</div>
+            <div class="o-picker-column__option">2016年</div>
+            <div class="o-picker-column__option">2017年</div>
+            <div class="o-picker-column__option">2018年</div>
+            <div class="o-picker-column__option">2019年</div>
+            <div class="o-picker-column__option">2020年</div>
+            <div class="o-picker-column__option">2021年</div>
+            <div class="o-picker-column__option">2022年</div>
+            <div class="o-picker-column__option">2023年</div>
+            <div class="o-picker-column__option">2024年</div>
+            <div class="o-picker-column__option">2025年</div>
+            <div class="o-picker-column__option">2026年</div>
+            <div class="o-picker-column__option">2027年</div>
+            <div class="o-picker-column__option">2028年</div>
+            <div class="o-picker-column__option">2029年</div>
+            <div class="o-picker-column__option">2030年</div>
+            <div class="o-picker-column__option">2031年</div>
+            <div class="o-picker-column__option">2032年</div>
+            <div class="o-picker-column__option">2033年</div>
+            <div class="o-picker-column__option">2034年</div>
+            <div class="o-picker-column__option">2035年</div>
+            <div class="o-picker-column__option">2036年</div>
+            <div class="o-picker-column__option">2037年</div>
+            <div class="o-picker-column__option">2038年</div>
+            <div class="o-picker-column__option">2039年</div>
+            <div class="o-picker-column__option">2040年</div>
+            <div class="o-picker-column__option">2041年</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">1月</div>
-            <div class="byted-picker-column__option">2月</div>
-            <div class="byted-picker-column__option">3月</div>
-            <div class="byted-picker-column__option">4月</div>
-            <div class="byted-picker-column__option">5月</div>
-            <div class="byted-picker-column__option">6月</div>
-            <div class="byted-picker-column__option">7月</div>
-            <div class="byted-picker-column__option">8月</div>
-            <div class="byted-picker-column__option">9月</div>
-            <div class="byted-picker-column__option">10月</div>
-            <div class="byted-picker-column__option">11月</div>
-            <div class="byted-picker-column__option">12月</div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">1月</div>
+            <div class="o-picker-column__option">2月</div>
+            <div class="o-picker-column__option">3月</div>
+            <div class="o-picker-column__option">4月</div>
+            <div class="o-picker-column__option">5月</div>
+            <div class="o-picker-column__option">6月</div>
+            <div class="o-picker-column__option">7月</div>
+            <div class="o-picker-column__option">8月</div>
+            <div class="o-picker-column__option">9月</div>
+            <div class="o-picker-column__option">10月</div>
+            <div class="o-picker-column__option">11月</div>
+            <div class="o-picker-column__option">12月</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">1日</div>
-            <div class="byted-picker-column__option">2日</div>
-            <div class="byted-picker-column__option">3日</div>
-            <div class="byted-picker-column__option">4日</div>
-            <div class="byted-picker-column__option">5日</div>
-            <div class="byted-picker-column__option">6日</div>
-            <div class="byted-picker-column__option">7日</div>
-            <div class="byted-picker-column__option">8日</div>
-            <div class="byted-picker-column__option">9日</div>
-            <div class="byted-picker-column__option">10日</div>
-            <div class="byted-picker-column__option">11日</div>
-            <div class="byted-picker-column__option">12日</div>
-            <div class="byted-picker-column__option">13日</div>
-            <div class="byted-picker-column__option">14日</div>
-            <div class="byted-picker-column__option">15日</div>
-            <div class="byted-picker-column__option">16日</div>
-            <div class="byted-picker-column__option">17日</div>
-            <div class="byted-picker-column__option">18日</div>
-            <div class="byted-picker-column__option">19日</div>
-            <div class="byted-picker-column__option">20日</div>
-            <div class="byted-picker-column__option">21日</div>
-            <div class="byted-picker-column__option">22日</div>
-            <div class="byted-picker-column__option">23日</div>
-            <div class="byted-picker-column__option">24日</div>
-            <div class="byted-picker-column__option">25日</div>
-            <div class="byted-picker-column__option">26日</div>
-            <div class="byted-picker-column__option">27日</div>
-            <div class="byted-picker-column__option">28日</div>
-            <div class="byted-picker-column__option">29日</div>
-            <div class="byted-picker-column__option">30日</div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">1日</div>
+            <div class="o-picker-column__option">2日</div>
+            <div class="o-picker-column__option">3日</div>
+            <div class="o-picker-column__option">4日</div>
+            <div class="o-picker-column__option">5日</div>
+            <div class="o-picker-column__option">6日</div>
+            <div class="o-picker-column__option">7日</div>
+            <div class="o-picker-column__option">8日</div>
+            <div class="o-picker-column__option">9日</div>
+            <div class="o-picker-column__option">10日</div>
+            <div class="o-picker-column__option">11日</div>
+            <div class="o-picker-column__option">12日</div>
+            <div class="o-picker-column__option">13日</div>
+            <div class="o-picker-column__option">14日</div>
+            <div class="o-picker-column__option">15日</div>
+            <div class="o-picker-column__option">16日</div>
+            <div class="o-picker-column__option">17日</div>
+            <div class="o-picker-column__option">18日</div>
+            <div class="o-picker-column__option">19日</div>
+            <div class="o-picker-column__option">20日</div>
+            <div class="o-picker-column__option">21日</div>
+            <div class="o-picker-column__option">22日</div>
+            <div class="o-picker-column__option">23日</div>
+            <div class="o-picker-column__option">24日</div>
+            <div class="o-picker-column__option">25日</div>
+            <div class="o-picker-column__option">26日</div>
+            <div class="o-picker-column__option">27日</div>
+            <div class="o-picker-column__option">28日</div>
+            <div class="o-picker-column__option">29日</div>
+            <div class="o-picker-column__option">30日</div>
           </div>
         </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-picker byted-datetime-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title">选择时间</div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
-      </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">2001年</div>
-            <div class="byted-picker-column__option">2002年</div>
-            <div class="byted-picker-column__option">2003年</div>
-            <div class="byted-picker-column__option">2004年</div>
-            <div class="byted-picker-column__option">2005年</div>
-            <div class="byted-picker-column__option">2006年</div>
-            <div class="byted-picker-column__option">2007年</div>
-            <div class="byted-picker-column__option">2008年</div>
-            <div class="byted-picker-column__option">2009年</div>
-            <div class="byted-picker-column__option">2010年</div>
-            <div class="byted-picker-column__option">2011年</div>
-            <div class="byted-picker-column__option">2012年</div>
-            <div class="byted-picker-column__option">2013年</div>
-            <div class="byted-picker-column__option">2014年</div>
-            <div class="byted-picker-column__option">2015年</div>
-            <div class="byted-picker-column__option">2016年</div>
-            <div class="byted-picker-column__option">2017年</div>
-            <div class="byted-picker-column__option">2018年</div>
-            <div class="byted-picker-column__option">2019年</div>
-            <div class="byted-picker-column__option">2020年</div>
-            <div class="byted-picker-column__option">2021年</div>
-            <div class="byted-picker-column__option">2022年</div>
-            <div class="byted-picker-column__option">2023年</div>
-            <div class="byted-picker-column__option">2024年</div>
-            <div class="byted-picker-column__option">2025年</div>
-            <div class="byted-picker-column__option">2026年</div>
-            <div class="byted-picker-column__option">2027年</div>
-            <div class="byted-picker-column__option">2028年</div>
-            <div class="byted-picker-column__option">2029年</div>
-            <div class="byted-picker-column__option">2030年</div>
-            <div class="byted-picker-column__option">2031年</div>
-            <div class="byted-picker-column__option">2032年</div>
-            <div class="byted-picker-column__option">2033年</div>
-            <div class="byted-picker-column__option">2034年</div>
-            <div class="byted-picker-column__option">2035年</div>
-            <div class="byted-picker-column__option">2036年</div>
-            <div class="byted-picker-column__option">2037年</div>
-            <div class="byted-picker-column__option">2038年</div>
-            <div class="byted-picker-column__option">2039年</div>
-            <div class="byted-picker-column__option">2040年</div>
-            <div class="byted-picker-column__option">2041年</div>
-          </div>
-        </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">1月</div>
-            <div class="byted-picker-column__option">2月</div>
-            <div class="byted-picker-column__option">3月</div>
-            <div class="byted-picker-column__option">4月</div>
-            <div class="byted-picker-column__option">5月</div>
-            <div class="byted-picker-column__option">6月</div>
-            <div class="byted-picker-column__option">7月</div>
-            <div class="byted-picker-column__option">8月</div>
-            <div class="byted-picker-column__option">9月</div>
-            <div class="byted-picker-column__option">10月</div>
-            <div class="byted-picker-column__option">11月</div>
-            <div class="byted-picker-column__option">12月</div>
-          </div>
-        </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">1日</div>
-            <div class="byted-picker-column__option">2日</div>
-            <div class="byted-picker-column__option">3日</div>
-            <div class="byted-picker-column__option">4日</div>
-            <div class="byted-picker-column__option">5日</div>
-            <div class="byted-picker-column__option">6日</div>
-            <div class="byted-picker-column__option">7日</div>
-            <div class="byted-picker-column__option">8日</div>
-            <div class="byted-picker-column__option">9日</div>
-            <div class="byted-picker-column__option">10日</div>
-            <div class="byted-picker-column__option">11日</div>
-            <div class="byted-picker-column__option">12日</div>
-            <div class="byted-picker-column__option">13日</div>
-            <div class="byted-picker-column__option">14日</div>
-            <div class="byted-picker-column__option">15日</div>
-            <div class="byted-picker-column__option">16日</div>
-            <div class="byted-picker-column__option">17日</div>
-            <div class="byted-picker-column__option">18日</div>
-            <div class="byted-picker-column__option">19日</div>
-            <div class="byted-picker-column__option">20日</div>
-            <div class="byted-picker-column__option">21日</div>
-            <div class="byted-picker-column__option">22日</div>
-            <div class="byted-picker-column__option">23日</div>
-            <div class="byted-picker-column__option">24日</div>
-            <div class="byted-picker-column__option">25日</div>
-            <div class="byted-picker-column__option">26日</div>
-            <div class="byted-picker-column__option">27日</div>
-            <div class="byted-picker-column__option">28日</div>
-            <div class="byted-picker-column__option">29日</div>
-            <div class="byted-picker-column__option">30日</div>
-          </div>
-        </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">00时</div>
-            <div class="byted-picker-column__option">01时</div>
-            <div class="byted-picker-column__option">02时</div>
-            <div class="byted-picker-column__option">03时</div>
-            <div class="byted-picker-column__option">04时</div>
-            <div class="byted-picker-column__option">05时</div>
-            <div class="byted-picker-column__option">06时</div>
-            <div class="byted-picker-column__option">07时</div>
-            <div class="byted-picker-column__option">08时</div>
-            <div class="byted-picker-column__option">09时</div>
-            <div class="byted-picker-column__option">10时</div>
-            <div class="byted-picker-column__option">11时</div>
-            <div class="byted-picker-column__option">12时</div>
-            <div class="byted-picker-column__option">13时</div>
-            <div class="byted-picker-column__option">14时</div>
-            <div class="byted-picker-column__option">15时</div>
-            <div class="byted-picker-column__option">16时</div>
-            <div class="byted-picker-column__option">17时</div>
-            <div class="byted-picker-column__option">18时</div>
-            <div class="byted-picker-column__option">19时</div>
-            <div class="byted-picker-column__option">20时</div>
-            <div class="byted-picker-column__option">21时</div>
-            <div class="byted-picker-column__option">22时</div>
-            <div class="byted-picker-column__option">23时</div>
-          </div>
-        </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">00分</div>
-            <div class="byted-picker-column__option">01分</div>
-            <div class="byted-picker-column__option">02分</div>
-            <div class="byted-picker-column__option">03分</div>
-            <div class="byted-picker-column__option">04分</div>
-            <div class="byted-picker-column__option">05分</div>
-            <div class="byted-picker-column__option">06分</div>
-            <div class="byted-picker-column__option">07分</div>
-            <div class="byted-picker-column__option">08分</div>
-            <div class="byted-picker-column__option">09分</div>
-            <div class="byted-picker-column__option">10分</div>
-            <div class="byted-picker-column__option">11分</div>
-            <div class="byted-picker-column__option">12分</div>
-            <div class="byted-picker-column__option">13分</div>
-            <div class="byted-picker-column__option">14分</div>
-            <div class="byted-picker-column__option">15分</div>
-            <div class="byted-picker-column__option">16分</div>
-            <div class="byted-picker-column__option">17分</div>
-            <div class="byted-picker-column__option">18分</div>
-            <div class="byted-picker-column__option">19分</div>
-            <div class="byted-picker-column__option">20分</div>
-            <div class="byted-picker-column__option">21分</div>
-            <div class="byted-picker-column__option">22分</div>
-            <div class="byted-picker-column__option">23分</div>
-            <div class="byted-picker-column__option">24分</div>
-            <div class="byted-picker-column__option">25分</div>
-            <div class="byted-picker-column__option">26分</div>
-            <div class="byted-picker-column__option">27分</div>
-            <div class="byted-picker-column__option">28分</div>
-            <div class="byted-picker-column__option">29分</div>
-            <div class="byted-picker-column__option">30分</div>
-            <div class="byted-picker-column__option">31分</div>
-            <div class="byted-picker-column__option">32分</div>
-            <div class="byted-picker-column__option">33分</div>
-            <div class="byted-picker-column__option">34分</div>
-            <div class="byted-picker-column__option">35分</div>
-            <div class="byted-picker-column__option">36分</div>
-            <div class="byted-picker-column__option">37分</div>
-            <div class="byted-picker-column__option">38分</div>
-            <div class="byted-picker-column__option">39分</div>
-            <div class="byted-picker-column__option">40分</div>
-            <div class="byted-picker-column__option">41分</div>
-            <div class="byted-picker-column__option">42分</div>
-            <div class="byted-picker-column__option">43分</div>
-            <div class="byted-picker-column__option">44分</div>
-            <div class="byted-picker-column__option">45分</div>
-            <div class="byted-picker-column__option">46分</div>
-            <div class="byted-picker-column__option">47分</div>
-            <div class="byted-picker-column__option">48分</div>
-            <div class="byted-picker-column__option">49分</div>
-            <div class="byted-picker-column__option">50分</div>
-            <div class="byted-picker-column__option">51分</div>
-            <div class="byted-picker-column__option">52分</div>
-            <div class="byted-picker-column__option">53分</div>
-            <div class="byted-picker-column__option">54分</div>
-            <div class="byted-picker-column__option">55分</div>
-            <div class="byted-picker-column__option">56分</div>
-            <div class="byted-picker-column__option">57分</div>
-            <div class="byted-picker-column__option">58分</div>
-            <div class="byted-picker-column__option">59分</div>
-          </div>
-        </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-picker byted-datetime-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title">选择时间</div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+    <div class="o-picker o-datetime-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title">选择时间</div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
       </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">00</div>
-            <div class="byted-picker-column__option">01</div>
-            <div class="byted-picker-column__option">02</div>
-            <div class="byted-picker-column__option">03</div>
-            <div class="byted-picker-column__option">04</div>
-            <div class="byted-picker-column__option">05</div>
-            <div class="byted-picker-column__option">06</div>
-            <div class="byted-picker-column__option">07</div>
-            <div class="byted-picker-column__option">08</div>
-            <div class="byted-picker-column__option">09</div>
-            <div class="byted-picker-column__option">10</div>
-            <div class="byted-picker-column__option">11</div>
-            <div class="byted-picker-column__option">12</div>
-            <div class="byted-picker-column__option">13</div>
-            <div class="byted-picker-column__option">14</div>
-            <div class="byted-picker-column__option">15</div>
-            <div class="byted-picker-column__option">16</div>
-            <div class="byted-picker-column__option">17</div>
-            <div class="byted-picker-column__option">18</div>
-            <div class="byted-picker-column__option">19</div>
-            <div class="byted-picker-column__option">20</div>
-            <div class="byted-picker-column__option">21</div>
-            <div class="byted-picker-column__option">22</div>
-            <div class="byted-picker-column__option">23</div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">2001年</div>
+            <div class="o-picker-column__option">2002年</div>
+            <div class="o-picker-column__option">2003年</div>
+            <div class="o-picker-column__option">2004年</div>
+            <div class="o-picker-column__option">2005年</div>
+            <div class="o-picker-column__option">2006年</div>
+            <div class="o-picker-column__option">2007年</div>
+            <div class="o-picker-column__option">2008年</div>
+            <div class="o-picker-column__option">2009年</div>
+            <div class="o-picker-column__option">2010年</div>
+            <div class="o-picker-column__option">2011年</div>
+            <div class="o-picker-column__option">2012年</div>
+            <div class="o-picker-column__option">2013年</div>
+            <div class="o-picker-column__option">2014年</div>
+            <div class="o-picker-column__option">2015年</div>
+            <div class="o-picker-column__option">2016年</div>
+            <div class="o-picker-column__option">2017年</div>
+            <div class="o-picker-column__option">2018年</div>
+            <div class="o-picker-column__option">2019年</div>
+            <div class="o-picker-column__option">2020年</div>
+            <div class="o-picker-column__option">2021年</div>
+            <div class="o-picker-column__option">2022年</div>
+            <div class="o-picker-column__option">2023年</div>
+            <div class="o-picker-column__option">2024年</div>
+            <div class="o-picker-column__option">2025年</div>
+            <div class="o-picker-column__option">2026年</div>
+            <div class="o-picker-column__option">2027年</div>
+            <div class="o-picker-column__option">2028年</div>
+            <div class="o-picker-column__option">2029年</div>
+            <div class="o-picker-column__option">2030年</div>
+            <div class="o-picker-column__option">2031年</div>
+            <div class="o-picker-column__option">2032年</div>
+            <div class="o-picker-column__option">2033年</div>
+            <div class="o-picker-column__option">2034年</div>
+            <div class="o-picker-column__option">2035年</div>
+            <div class="o-picker-column__option">2036年</div>
+            <div class="o-picker-column__option">2037年</div>
+            <div class="o-picker-column__option">2038年</div>
+            <div class="o-picker-column__option">2039年</div>
+            <div class="o-picker-column__option">2040年</div>
+            <div class="o-picker-column__option">2041年</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">00</div>
-            <div class="byted-picker-column__option">01</div>
-            <div class="byted-picker-column__option">02</div>
-            <div class="byted-picker-column__option">03</div>
-            <div class="byted-picker-column__option">04</div>
-            <div class="byted-picker-column__option">05</div>
-            <div class="byted-picker-column__option">06</div>
-            <div class="byted-picker-column__option">07</div>
-            <div class="byted-picker-column__option">08</div>
-            <div class="byted-picker-column__option">09</div>
-            <div class="byted-picker-column__option">10</div>
-            <div class="byted-picker-column__option">11</div>
-            <div class="byted-picker-column__option">12</div>
-            <div class="byted-picker-column__option">13</div>
-            <div class="byted-picker-column__option">14</div>
-            <div class="byted-picker-column__option">15</div>
-            <div class="byted-picker-column__option">16</div>
-            <div class="byted-picker-column__option">17</div>
-            <div class="byted-picker-column__option">18</div>
-            <div class="byted-picker-column__option">19</div>
-            <div class="byted-picker-column__option">20</div>
-            <div class="byted-picker-column__option">21</div>
-            <div class="byted-picker-column__option">22</div>
-            <div class="byted-picker-column__option">23</div>
-            <div class="byted-picker-column__option">24</div>
-            <div class="byted-picker-column__option">25</div>
-            <div class="byted-picker-column__option">26</div>
-            <div class="byted-picker-column__option">27</div>
-            <div class="byted-picker-column__option">28</div>
-            <div class="byted-picker-column__option">29</div>
-            <div class="byted-picker-column__option">30</div>
-            <div class="byted-picker-column__option">31</div>
-            <div class="byted-picker-column__option">32</div>
-            <div class="byted-picker-column__option">33</div>
-            <div class="byted-picker-column__option">34</div>
-            <div class="byted-picker-column__option">35</div>
-            <div class="byted-picker-column__option">36</div>
-            <div class="byted-picker-column__option">37</div>
-            <div class="byted-picker-column__option">38</div>
-            <div class="byted-picker-column__option">39</div>
-            <div class="byted-picker-column__option">40</div>
-            <div class="byted-picker-column__option">41</div>
-            <div class="byted-picker-column__option">42</div>
-            <div class="byted-picker-column__option">43</div>
-            <div class="byted-picker-column__option">44</div>
-            <div class="byted-picker-column__option">45</div>
-            <div class="byted-picker-column__option">46</div>
-            <div class="byted-picker-column__option">47</div>
-            <div class="byted-picker-column__option">48</div>
-            <div class="byted-picker-column__option">49</div>
-            <div class="byted-picker-column__option">50</div>
-            <div class="byted-picker-column__option">51</div>
-            <div class="byted-picker-column__option">52</div>
-            <div class="byted-picker-column__option">53</div>
-            <div class="byted-picker-column__option">54</div>
-            <div class="byted-picker-column__option">55</div>
-            <div class="byted-picker-column__option">56</div>
-            <div class="byted-picker-column__option">57</div>
-            <div class="byted-picker-column__option">58</div>
-            <div class="byted-picker-column__option">59</div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">1月</div>
+            <div class="o-picker-column__option">2月</div>
+            <div class="o-picker-column__option">3月</div>
+            <div class="o-picker-column__option">4月</div>
+            <div class="o-picker-column__option">5月</div>
+            <div class="o-picker-column__option">6月</div>
+            <div class="o-picker-column__option">7月</div>
+            <div class="o-picker-column__option">8月</div>
+            <div class="o-picker-column__option">9月</div>
+            <div class="o-picker-column__option">10月</div>
+            <div class="o-picker-column__option">11月</div>
+            <div class="o-picker-column__option">12月</div>
           </div>
         </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">1日</div>
+            <div class="o-picker-column__option">2日</div>
+            <div class="o-picker-column__option">3日</div>
+            <div class="o-picker-column__option">4日</div>
+            <div class="o-picker-column__option">5日</div>
+            <div class="o-picker-column__option">6日</div>
+            <div class="o-picker-column__option">7日</div>
+            <div class="o-picker-column__option">8日</div>
+            <div class="o-picker-column__option">9日</div>
+            <div class="o-picker-column__option">10日</div>
+            <div class="o-picker-column__option">11日</div>
+            <div class="o-picker-column__option">12日</div>
+            <div class="o-picker-column__option">13日</div>
+            <div class="o-picker-column__option">14日</div>
+            <div class="o-picker-column__option">15日</div>
+            <div class="o-picker-column__option">16日</div>
+            <div class="o-picker-column__option">17日</div>
+            <div class="o-picker-column__option">18日</div>
+            <div class="o-picker-column__option">19日</div>
+            <div class="o-picker-column__option">20日</div>
+            <div class="o-picker-column__option">21日</div>
+            <div class="o-picker-column__option">22日</div>
+            <div class="o-picker-column__option">23日</div>
+            <div class="o-picker-column__option">24日</div>
+            <div class="o-picker-column__option">25日</div>
+            <div class="o-picker-column__option">26日</div>
+            <div class="o-picker-column__option">27日</div>
+            <div class="o-picker-column__option">28日</div>
+            <div class="o-picker-column__option">29日</div>
+            <div class="o-picker-column__option">30日</div>
+          </div>
+        </div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">00时</div>
+            <div class="o-picker-column__option">01时</div>
+            <div class="o-picker-column__option">02时</div>
+            <div class="o-picker-column__option">03时</div>
+            <div class="o-picker-column__option">04时</div>
+            <div class="o-picker-column__option">05时</div>
+            <div class="o-picker-column__option">06时</div>
+            <div class="o-picker-column__option">07时</div>
+            <div class="o-picker-column__option">08时</div>
+            <div class="o-picker-column__option">09时</div>
+            <div class="o-picker-column__option">10时</div>
+            <div class="o-picker-column__option">11时</div>
+            <div class="o-picker-column__option">12时</div>
+            <div class="o-picker-column__option">13时</div>
+            <div class="o-picker-column__option">14时</div>
+            <div class="o-picker-column__option">15时</div>
+            <div class="o-picker-column__option">16时</div>
+            <div class="o-picker-column__option">17时</div>
+            <div class="o-picker-column__option">18时</div>
+            <div class="o-picker-column__option">19时</div>
+            <div class="o-picker-column__option">20时</div>
+            <div class="o-picker-column__option">21时</div>
+            <div class="o-picker-column__option">22时</div>
+            <div class="o-picker-column__option">23时</div>
+          </div>
+        </div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">00分</div>
+            <div class="o-picker-column__option">01分</div>
+            <div class="o-picker-column__option">02分</div>
+            <div class="o-picker-column__option">03分</div>
+            <div class="o-picker-column__option">04分</div>
+            <div class="o-picker-column__option">05分</div>
+            <div class="o-picker-column__option">06分</div>
+            <div class="o-picker-column__option">07分</div>
+            <div class="o-picker-column__option">08分</div>
+            <div class="o-picker-column__option">09分</div>
+            <div class="o-picker-column__option">10分</div>
+            <div class="o-picker-column__option">11分</div>
+            <div class="o-picker-column__option">12分</div>
+            <div class="o-picker-column__option">13分</div>
+            <div class="o-picker-column__option">14分</div>
+            <div class="o-picker-column__option">15分</div>
+            <div class="o-picker-column__option">16分</div>
+            <div class="o-picker-column__option">17分</div>
+            <div class="o-picker-column__option">18分</div>
+            <div class="o-picker-column__option">19分</div>
+            <div class="o-picker-column__option">20分</div>
+            <div class="o-picker-column__option">21分</div>
+            <div class="o-picker-column__option">22分</div>
+            <div class="o-picker-column__option">23分</div>
+            <div class="o-picker-column__option">24分</div>
+            <div class="o-picker-column__option">25分</div>
+            <div class="o-picker-column__option">26分</div>
+            <div class="o-picker-column__option">27分</div>
+            <div class="o-picker-column__option">28分</div>
+            <div class="o-picker-column__option">29分</div>
+            <div class="o-picker-column__option">30分</div>
+            <div class="o-picker-column__option">31分</div>
+            <div class="o-picker-column__option">32分</div>
+            <div class="o-picker-column__option">33分</div>
+            <div class="o-picker-column__option">34分</div>
+            <div class="o-picker-column__option">35分</div>
+            <div class="o-picker-column__option">36分</div>
+            <div class="o-picker-column__option">37分</div>
+            <div class="o-picker-column__option">38分</div>
+            <div class="o-picker-column__option">39分</div>
+            <div class="o-picker-column__option">40分</div>
+            <div class="o-picker-column__option">41分</div>
+            <div class="o-picker-column__option">42分</div>
+            <div class="o-picker-column__option">43分</div>
+            <div class="o-picker-column__option">44分</div>
+            <div class="o-picker-column__option">45分</div>
+            <div class="o-picker-column__option">46分</div>
+            <div class="o-picker-column__option">47分</div>
+            <div class="o-picker-column__option">48分</div>
+            <div class="o-picker-column__option">49分</div>
+            <div class="o-picker-column__option">50分</div>
+            <div class="o-picker-column__option">51分</div>
+            <div class="o-picker-column__option">52分</div>
+            <div class="o-picker-column__option">53分</div>
+            <div class="o-picker-column__option">54分</div>
+            <div class="o-picker-column__option">55分</div>
+            <div class="o-picker-column__option">56分</div>
+            <div class="o-picker-column__option">57分</div>
+            <div class="o-picker-column__option">58分</div>
+            <div class="o-picker-column__option">59分</div>
+          </div>
+        </div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-picker byted-datetime-picker">
-      <div class="byted-picker__toolbar byted-hairline--bottom">
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--cancel">取消</div>
-        <div class="byted-picker__title">选择时间</div>
-        <div class="byted-button byted-button--text byted-button--large byted-picker__button byted-picker__button--right">确定</div>
+    <div class="o-picker o-datetime-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title">选择时间</div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
       </div>
-      <div class="byted-picker__columns">
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">2021年</div>
-            <div class="byted-picker-column__option">2022年</div>
-            <div class="byted-picker-column__option">2023年</div>
-            <div class="byted-picker-column__option">2024年</div>
-            <div class="byted-picker-column__option">2025年</div>
-            <div class="byted-picker-column__option">2026年</div>
-            <div class="byted-picker-column__option">2027年</div>
-            <div class="byted-picker-column__option">2028年</div>
-            <div class="byted-picker-column__option">2029年</div>
-            <div class="byted-picker-column__option">2030年</div>
-            <div class="byted-picker-column__option">2031年</div>
-            <div class="byted-picker-column__option">2032年</div>
-            <div class="byted-picker-column__option">2033年</div>
-            <div class="byted-picker-column__option">2034年</div>
-            <div class="byted-picker-column__option">2035年</div>
-            <div class="byted-picker-column__option">2036年</div>
-            <div class="byted-picker-column__option">2037年</div>
-            <div class="byted-picker-column__option">2038年</div>
-            <div class="byted-picker-column__option">2039年</div>
-            <div class="byted-picker-column__option">2040年</div>
-            <div class="byted-picker-column__option">2041年</div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">00</div>
+            <div class="o-picker-column__option">01</div>
+            <div class="o-picker-column__option">02</div>
+            <div class="o-picker-column__option">03</div>
+            <div class="o-picker-column__option">04</div>
+            <div class="o-picker-column__option">05</div>
+            <div class="o-picker-column__option">06</div>
+            <div class="o-picker-column__option">07</div>
+            <div class="o-picker-column__option">08</div>
+            <div class="o-picker-column__option">09</div>
+            <div class="o-picker-column__option">10</div>
+            <div class="o-picker-column__option">11</div>
+            <div class="o-picker-column__option">12</div>
+            <div class="o-picker-column__option">13</div>
+            <div class="o-picker-column__option">14</div>
+            <div class="o-picker-column__option">15</div>
+            <div class="o-picker-column__option">16</div>
+            <div class="o-picker-column__option">17</div>
+            <div class="o-picker-column__option">18</div>
+            <div class="o-picker-column__option">19</div>
+            <div class="o-picker-column__option">20</div>
+            <div class="o-picker-column__option">21</div>
+            <div class="o-picker-column__option">22</div>
+            <div class="o-picker-column__option">23</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">6月</div>
-            <div class="byted-picker-column__option">7月</div>
-            <div class="byted-picker-column__option">8月</div>
-            <div class="byted-picker-column__option">9月</div>
-            <div class="byted-picker-column__option">10月</div>
-            <div class="byted-picker-column__option">11月</div>
-            <div class="byted-picker-column__option">12月</div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">00</div>
+            <div class="o-picker-column__option">01</div>
+            <div class="o-picker-column__option">02</div>
+            <div class="o-picker-column__option">03</div>
+            <div class="o-picker-column__option">04</div>
+            <div class="o-picker-column__option">05</div>
+            <div class="o-picker-column__option">06</div>
+            <div class="o-picker-column__option">07</div>
+            <div class="o-picker-column__option">08</div>
+            <div class="o-picker-column__option">09</div>
+            <div class="o-picker-column__option">10</div>
+            <div class="o-picker-column__option">11</div>
+            <div class="o-picker-column__option">12</div>
+            <div class="o-picker-column__option">13</div>
+            <div class="o-picker-column__option">14</div>
+            <div class="o-picker-column__option">15</div>
+            <div class="o-picker-column__option">16</div>
+            <div class="o-picker-column__option">17</div>
+            <div class="o-picker-column__option">18</div>
+            <div class="o-picker-column__option">19</div>
+            <div class="o-picker-column__option">20</div>
+            <div class="o-picker-column__option">21</div>
+            <div class="o-picker-column__option">22</div>
+            <div class="o-picker-column__option">23</div>
+            <div class="o-picker-column__option">24</div>
+            <div class="o-picker-column__option">25</div>
+            <div class="o-picker-column__option">26</div>
+            <div class="o-picker-column__option">27</div>
+            <div class="o-picker-column__option">28</div>
+            <div class="o-picker-column__option">29</div>
+            <div class="o-picker-column__option">30</div>
+            <div class="o-picker-column__option">31</div>
+            <div class="o-picker-column__option">32</div>
+            <div class="o-picker-column__option">33</div>
+            <div class="o-picker-column__option">34</div>
+            <div class="o-picker-column__option">35</div>
+            <div class="o-picker-column__option">36</div>
+            <div class="o-picker-column__option">37</div>
+            <div class="o-picker-column__option">38</div>
+            <div class="o-picker-column__option">39</div>
+            <div class="o-picker-column__option">40</div>
+            <div class="o-picker-column__option">41</div>
+            <div class="o-picker-column__option">42</div>
+            <div class="o-picker-column__option">43</div>
+            <div class="o-picker-column__option">44</div>
+            <div class="o-picker-column__option">45</div>
+            <div class="o-picker-column__option">46</div>
+            <div class="o-picker-column__option">47</div>
+            <div class="o-picker-column__option">48</div>
+            <div class="o-picker-column__option">49</div>
+            <div class="o-picker-column__option">50</div>
+            <div class="o-picker-column__option">51</div>
+            <div class="o-picker-column__option">52</div>
+            <div class="o-picker-column__option">53</div>
+            <div class="o-picker-column__option">54</div>
+            <div class="o-picker-column__option">55</div>
+            <div class="o-picker-column__option">56</div>
+            <div class="o-picker-column__option">57</div>
+            <div class="o-picker-column__option">58</div>
+            <div class="o-picker-column__option">59</div>
           </div>
         </div>
-        <div class="byted-picker-column">
-          <div class="byted-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="byted-picker-column__option">30日</div>
-          </div>
-        </div>
-        <div class="byted-picker__mask"></div>
-        <div class="byted-picker__indicator byted-hairline--top-bottom"></div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-cell byted-cell--borderless byted-cell--clickable">
-      <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+    <div class="o-picker o-datetime-picker">
+      <div class="o-picker__toolbar o-hairline--bottom">
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--cancel">取消</div>
+        <div class="o-picker__title">选择时间</div>
+        <div class="o-button o-button--text o-button--large o-picker__button o-picker__button--right">确定</div>
+      </div>
+      <div class="o-picker__columns">
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">2021年</div>
+            <div class="o-picker-column__option">2022年</div>
+            <div class="o-picker-column__option">2023年</div>
+            <div class="o-picker-column__option">2024年</div>
+            <div class="o-picker-column__option">2025年</div>
+            <div class="o-picker-column__option">2026年</div>
+            <div class="o-picker-column__option">2027年</div>
+            <div class="o-picker-column__option">2028年</div>
+            <div class="o-picker-column__option">2029年</div>
+            <div class="o-picker-column__option">2030年</div>
+            <div class="o-picker-column__option">2031年</div>
+            <div class="o-picker-column__option">2032年</div>
+            <div class="o-picker-column__option">2033年</div>
+            <div class="o-picker-column__option">2034年</div>
+            <div class="o-picker-column__option">2035年</div>
+            <div class="o-picker-column__option">2036年</div>
+            <div class="o-picker-column__option">2037年</div>
+            <div class="o-picker-column__option">2038年</div>
+            <div class="o-picker-column__option">2039年</div>
+            <div class="o-picker-column__option">2040年</div>
+            <div class="o-picker-column__option">2041年</div>
+          </div>
+        </div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">6月</div>
+            <div class="o-picker-column__option">7月</div>
+            <div class="o-picker-column__option">8月</div>
+            <div class="o-picker-column__option">9月</div>
+            <div class="o-picker-column__option">10月</div>
+            <div class="o-picker-column__option">11月</div>
+            <div class="o-picker-column__option">12月</div>
+          </div>
+        </div>
+        <div class="o-picker-column">
+          <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">30日</div>
+          </div>
+        </div>
+        <div class="o-picker__mask"></div>
+        <div class="o-picker__indicator o-hairline--top-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-cell o-cell--borderless o-cell--clickable">
+      <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
     </div>
     <!---->
   </div>

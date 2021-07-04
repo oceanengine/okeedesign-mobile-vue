@@ -2,56 +2,56 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-slider">
-      <div class="byted-slider__bar" style="width: 50%;">
-        <div class="byted-slider__bar__wrapper">
-          <div class="byted-slider__button"></div>
+    <div class="o-slider">
+      <div class="o-slider__bar" style="width: 50%;">
+        <div class="o-slider__bar__wrapper">
+          <div class="o-slider__button"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-slider">
-      <div class="byted-slider__bar" style="width: 50%;">
-        <div class="byted-slider__bar__wrapper">
-          <div class="byted-slider__button"></div>
+    <div class="o-slider">
+      <div class="o-slider__bar" style="width: 50%;">
+        <div class="o-slider__bar__wrapper">
+          <div class="o-slider__button"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-slider">
-      <div class="byted-slider__bar" style="width: 50%;">
-        <div class="byted-slider__bar__wrapper">
-          <div class="byted-slider__button"></div>
+    <div class="o-slider">
+      <div class="o-slider__bar" style="width: 50%;">
+        <div class="o-slider__bar__wrapper">
+          <div class="o-slider__button"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-slider">
-      <div class="byted-slider__bar" style="width: 40%;">
-        <div class="byted-slider__bar__wrapper">
-          <div class="byted-slider__button"></div>
+    <div class="o-slider">
+      <div class="o-slider__bar" style="width: 40%;">
+        <div class="o-slider__bar__wrapper">
+          <div class="o-slider__button"></div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-slider byted-slider--disabled">
-      <div class="byted-slider__bar" style="width: 50%;">
-        <div class="byted-slider__bar__wrapper">
-          <div class="byted-slider__button"></div>
+    <div class="o-slider o-slider--disabled">
+      <div class="o-slider__bar" style="width: 50%;">
+        <div class="o-slider__bar__wrapper">
+          <div class="o-slider__button"></div>
         </div>
       </div>
     </div>

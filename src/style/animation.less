@@ -1,6 +1,6 @@
 @import './var';
 
-@keyframes byted-fade-in {
+@keyframes ovui-fade-in {
   from {
     opacity: 0;
   }
@@ -10,7 +10,7 @@
   }
 }
 
-@keyframes byted-fade-out {
+@keyframes ovui-fade-out {
   from {
     opacity: 1;
   }
@@ -22,15 +22,15 @@
 
 .@{prefix}fade {
   &-enter-active {
-    animation: @animation-duration-base byted-fade-in;
+    animation: @animation-duration-base ovui-fade-in;
   }
 
   &-leave-active {
-    animation: @animation-duration-base byted-fade-out;
+    animation: @animation-duration-base ovui-fade-out;
   }
 }
 
-// @keyframes byted-loading {
+// @keyframes ovui-loading {
 //   0% {
 //     transform: rotate(0);
 //     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -46,7 +46,7 @@
 //   }
 // }
 
-@keyframes byted-loading-circle {
+@keyframes ovui-loading-circle {
   from {
     transform: rotate(0);
   }
@@ -59,5 +59,5 @@
 .@{prefix}loading-circle {
   display: inline-block;
   transform-origin: center;
-  animation: byted-loading-circle 1s linear infinite;
+  animation: ovui-loading-circle 1s linear infinite;
 }

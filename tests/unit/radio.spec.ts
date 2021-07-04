@@ -6,11 +6,11 @@ const RadioGroup = RadioGroupNative as any;
 function renderWrapper(options = {} as any) {
   return mount({
     template: `
-      <byted-radio-group v-model="radio" :disabled="disabled" :stopPropagation="stopPropagation" :size="size">
-        <byted-radio value="1">单选框 1</byted-radio>
-        <byted-radio value="2">单选框 2</byted-radio>
-        <byted-radio value="3">单选框 3</byted-radio>
-      </byted-radio-group>
+      <o-radio-group v-model="radio" :disabled="disabled" :stopPropagation="stopPropagation" :size="size">
+        <o-radio value="1">单选框 1</o-radio>
+        <o-radio value="2">单选框 2</o-radio>
+        <o-radio value="3">单选框 3</o-radio>
+      </o-radio-group>
     `,
     data() {
       return {
@@ -37,15 +37,15 @@ describe('radio', () => {
     const onChange = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-radio-group v-model="radio" @click="onClick" @change="onChange">
-          <byted-radio value="1" :disabled="disabled">单选框 1</byted-radio>
-          <byted-radio value="2">单选框 2</byted-radio>
-          <byted-radio value="3">单选框 3</byted-radio>
-        </byted-radio-group>
+        <o-radio-group v-model="radio" @click="onClick" @change="onChange">
+          <o-radio value="1" :disabled="disabled">单选框 1</o-radio>
+          <o-radio value="2">单选框 2</o-radio>
+          <o-radio value="3">单选框 3</o-radio>
+        </o-radio-group>
       `,
       components: {
-        'byted-radio-group': RadioGroup,
-        'byted-radio': Radio,
+        'o-radio-group': RadioGroup,
+        'o-radio': Radio,
       },
       data() {
         return {
@@ -59,7 +59,7 @@ describe('radio', () => {
       },
     }) as any;
     await later();
-    const radios = wrapper.findAll('.byted-radio');
+    const radios = wrapper.findAll('.o-radio');
     await radios.at(0).trigger('click');
     expect(onClick).toBeCalledTimes(0);
     await radios.at(2).trigger('click');

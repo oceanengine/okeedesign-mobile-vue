@@ -1,19 +1,19 @@
 <template>
   <div class="demo toast">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('loading')">
-      <byted-button @click="updata('')">
+      <o-button @click="updata('')">
         {{ t('updata') }}
-      </byted-button>
+      </o-button>
     </demo-cell>
 
     <demo-cell :title="t('text')">
-      <byted-button @click="updata('some message')">
+      <o-button @click="updata('some message')">
         {{ t('updata') }}
-      </byted-button>
+      </o-button>
     </demo-cell>
   </div>
 </template>
@@ -37,8 +37,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleLoading,
   },
   data() {
     return {};
@@ -56,7 +54,7 @@ export default {
 </script>
 <style lang="less">
 .demo.toast {
-  .byted-button {
+  .o-button {
     margin-right: 10px;
   }
 }

@@ -2,184 +2,184 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--large">
-      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab"><span class="byted-ellipsis">1</span></div>
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">2</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">4</span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--large">
+      <div class="o-tabs__wrap o-tabs o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab"><span class="o-ellipsis">1</span></div>
+          <div class="o-tab o-tab--active"><span class="o-ellipsis">2</span></div>
+          <div class="o-tab"><span class="o-ellipsis">3</span></div>
+          <div class="o-tab"><span class="o-ellipsis">4</span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="display: none;"></div>
-        <div class="byted-tab__pane" style="">
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="">
           <div class="content"> 2</div>
         </div>
-        <div class="byted-tab__pane" style="display: none;"></div>
-        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--large">
-      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab"><span class="byted-ellipsis">1</span></div>
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">2</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--large">
+      <div class="o-tabs__wrap o-tabs o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab"><span class="o-ellipsis">1</span></div>
+          <div class="o-tab o-tab--active"><span class="o-ellipsis">2</span></div>
+          <div class="o-tab"><span class="o-ellipsis">3</span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="display: none;"></div>
-        <div class="byted-tab__pane" style="">
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="">
           <div class="content"> 2</div>
         </div>
-        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--normal">
-      <div class="byted-tabs__wrap byted-tabs byted-tabs--static byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">2</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">4</span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--normal">
+      <div class="o-tabs__wrap o-tabs o-tabs--static o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab o-tab--active"><span class="o-ellipsis">1</span></div>
+          <div class="o-tab"><span class="o-ellipsis">2</span></div>
+          <div class="o-tab"><span class="o-ellipsis">3</span></div>
+          <div class="o-tab"><span class="o-ellipsis">4</span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="" size="large">
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="" size="large">
           <div class="content"> 1</div>
         </div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--card byted-tabs--large">
-      <div class="byted-tabs__wrap byted-tabs">
-        <div class="byted-tabs__nav byted-tabs__nav--card">
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">2</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
-          <div class="byted-tab byted-tab--disabled"><span class="byted-ellipsis">4</span></div>
+    <div class="o-tabs o-tabs--card o-tabs--large">
+      <div class="o-tabs__wrap o-tabs">
+        <div class="o-tabs__nav o-tabs__nav--card">
+          <div class="o-tab o-tab--active"><span class="o-ellipsis">1</span></div>
+          <div class="o-tab"><span class="o-ellipsis">2</span></div>
+          <div class="o-tab"><span class="o-ellipsis">3</span></div>
+          <div class="o-tab o-tab--disabled"><span class="o-ellipsis">4</span></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="">
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="">
           <div class="content"> 1</div>
         </div>
-        <div class="byted-tab__pane" style="display: none;"></div>
-        <div class="byted-tab__pane" style="display: none;"></div>
-        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--normal">
-      <div class="byted-tabs__wrap byted-tabs__wrap--scrollable byted-tabs byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab byted-tab--active" style="flex-basis: 22%;"><span class="byted-ellipsis">1</span></div>
-          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">2</span></div>
-          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">3</span></div>
-          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">4</span></div>
-          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">5</span></div>
-          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">6</span></div>
-          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">7</span></div>
-          <div class="byted-tab" style="flex-basis: 22%;"><span class="byted-ellipsis">8</span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--normal">
+      <div class="o-tabs__wrap o-tabs__wrap--scrollable o-tabs o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab o-tab--active" style="flex-basis: 22%;"><span class="o-ellipsis">1</span></div>
+          <div class="o-tab" style="flex-basis: 22%;"><span class="o-ellipsis">2</span></div>
+          <div class="o-tab" style="flex-basis: 22%;"><span class="o-ellipsis">3</span></div>
+          <div class="o-tab" style="flex-basis: 22%;"><span class="o-ellipsis">4</span></div>
+          <div class="o-tab" style="flex-basis: 22%;"><span class="o-ellipsis">5</span></div>
+          <div class="o-tab" style="flex-basis: 22%;"><span class="o-ellipsis">6</span></div>
+          <div class="o-tab" style="flex-basis: 22%;"><span class="o-ellipsis">7</span></div>
+          <div class="o-tab" style="flex-basis: 22%;"><span class="o-ellipsis">8</span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="" size="large">
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="" size="large">
           <div class="content"> 1</div>
         </div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--normal">
-      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
-          <div class="byted-tab byted-tab--disabled"><span class="byted-ellipsis">2</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--normal">
+      <div class="o-tabs__wrap o-tabs o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab o-tab--active"><span class="o-ellipsis">1</span></div>
+          <div class="o-tab o-tab--disabled"><span class="o-ellipsis">2</span></div>
+          <div class="o-tab"><span class="o-ellipsis">3</span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="" size="large">
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="" size="large">
           <div class="content"> 1</div>
         </div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
-        <div class="byted-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
+        <div class="o-tab__pane" style="display: none;" size="large"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--large">
-      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis"><div> T.T </div></span></div>
-          <div class="byted-tab"><span class="byted-ellipsis"><div> T.T </div></span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--large">
+      <div class="o-tabs__wrap o-tabs o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab o-tab--active"><span class="o-ellipsis"><div> T.T </div></span></div>
+          <div class="o-tab"><span class="o-ellipsis"><div> T.T </div></span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content">
-        <div class="byted-tab__pane" style="">
+      <div class="o-tabs__content">
+        <div class="o-tab__pane" style="">
           <div class="content"> 1</div>
         </div>
-        <div class="byted-tab__pane" style="display: none;"></div>
+        <div class="o-tab__pane" style="display: none;"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-tabs byted-tabs--line byted-tabs--large">
-      <div class="byted-tabs__wrap byted-tabs byted-hairline--top-bottom">
-        <div class="byted-tabs__nav byted-tabs__nav--line">
-          <div class="byted-tab byted-tab--active"><span class="byted-ellipsis">1</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">2</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">3</span></div>
-          <div class="byted-tab"><span class="byted-ellipsis">4</span></div>
-          <div class="byted-tabs__line"></div>
+    <div class="o-tabs o-tabs--line o-tabs--large">
+      <div class="o-tabs__wrap o-tabs o-hairline--top-bottom">
+        <div class="o-tabs__nav o-tabs__nav--line">
+          <div class="o-tab o-tab--active"><span class="o-ellipsis">1</span></div>
+          <div class="o-tab"><span class="o-ellipsis">2</span></div>
+          <div class="o-tab"><span class="o-ellipsis">3</span></div>
+          <div class="o-tab"><span class="o-ellipsis">4</span></div>
+          <div class="o-tabs__line"></div>
         </div>
       </div>
-      <div class="byted-tabs__content byted-tabs__content--touchable">
-        <div class="byted-tabs__track" style="transform: translate3d(0px, 0, 0); transition-duration: 0.3s;">
-          <div class="byted-tab__pane">
+      <div class="o-tabs__content o-tabs__content--touchable">
+        <div class="o-tabs__track" style="transform: translate3d(0px, 0, 0); transition-duration: 0.3s;">
+          <div class="o-tab__pane">
             <div class="content"> 1</div>
           </div>
-          <div class="byted-tab__pane">
+          <div class="o-tab__pane">
             <div class="content"> 2</div>
           </div>
-          <div class="byted-tab__pane">
+          <div class="o-tab__pane">
             <div class="content"> 3</div>
           </div>
-          <div class="byted-tab__pane">
+          <div class="o-tab__pane">
             <div class="content"> 4</div>
           </div>
         </div>

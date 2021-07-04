@@ -9,7 +9,7 @@ describe('Badge', () => {
         click: onClick,
       },
     });
-    const badge = wrapper.find('.byted-badge');
+    const badge = wrapper.find('.o-badge');
     badge.trigger('click');
     expect(onClick).toBeCalledTimes(1);
   });

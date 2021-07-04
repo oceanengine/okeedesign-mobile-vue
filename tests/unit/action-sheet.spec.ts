@@ -31,11 +31,11 @@ describe('ActionSheet', () => {
         },
       },
     });
-    const options = wrapper.findAll('.byted-action-sheet__item');
+    const options = wrapper.findAll('.o-action-sheet__item');
 
     options.at(0).trigger('click');
     options.at(1).trigger('click');
-    wrapper.find('.byted-action-sheet__cancel').trigger('click');
+    wrapper.find('.o-action-sheet__cancel').trigger('click');
 
     await wrapper.setProps({ value: false });
 
@@ -77,7 +77,7 @@ describe('ActionSheet', () => {
     }) as any;
     await wrapper.setData({ show: true });
     await later();
-    (div.querySelector('.byted-overlay') as HTMLElement).click();
+    (div.querySelector('.o-overlay') as HTMLElement).click();
 
     expect(onOpen).toHaveBeenCalledTimes(1);
     expect(onClickOverlay).toHaveBeenCalledTimes(1);

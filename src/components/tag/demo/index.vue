@@ -1,116 +1,116 @@
 <template>
   <div class="demo tag">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('type')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('default')">
-          <byted-tag :size="currentSize" @click="onClick">
+        <o-cell :title="t('default')">
+          <o-tag :size="currentSize" @click="onClick">
             {{ t('name') }}
-          </byted-tag>
-        </byted-cell>
+          </o-tag>
+        </o-cell>
 
-        <byted-cell :title="t('success')">
-          <byted-tag :text="t('name')" :size="currentSize" type="success" />
-        </byted-cell>
+        <o-cell :title="t('success')">
+          <o-tag :text="t('name')" :size="currentSize" type="success" />
+        </o-cell>
 
-        <byted-cell :title="t('warning')">
-          <byted-tag :text="t('name')" :size="currentSize" type="warning" />
-        </byted-cell>
+        <o-cell :title="t('warning')">
+          <o-tag :text="t('name')" :size="currentSize" type="warning" />
+        </o-cell>
 
-        <byted-cell :title="t('danger')">
-          <byted-tag :text="t('name')" :size="currentSize" type="danger" />
-        </byted-cell>
+        <o-cell :title="t('danger')">
+          <o-tag :text="t('name')" :size="currentSize" type="danger" />
+        </o-cell>
       </div>
     </demo-cell>
 
     <demo-cell :title="t('plain')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('default')" :size="currentSize">
+        <o-cell :title="t('default')" :size="currentSize">
           <div class="box">
-            <byted-tag :size="currentSize" plain @click="onClick">
+            <o-tag :size="currentSize" plain @click="onClick">
               {{ t('name') }}
-            </byted-tag>
+            </o-tag>
           </div>
-        </byted-cell>
+        </o-cell>
 
-        <byted-cell :title="t('success')">
+        <o-cell :title="t('success')">
           <div class="box">
-            <byted-tag :text="t('name')" :size="currentSize" type="success" plain />
+            <o-tag :text="t('name')" :size="currentSize" type="success" plain />
           </div>
-        </byted-cell>
+        </o-cell>
 
-        <byted-cell :title="t('warning')">
+        <o-cell :title="t('warning')">
           <div class="box">
-            <byted-tag :text="t('name')" :size="currentSize" type="warning" plain />
+            <o-tag :text="t('name')" :size="currentSize" type="warning" plain />
           </div>
-        </byted-cell>
+        </o-cell>
 
-        <byted-cell :title="t('danger')">
+        <o-cell :title="t('danger')">
           <div class="box">
-            <byted-tag :text="t('name')" :size="currentSize" type="danger" plain />
+            <o-tag :text="t('name')" :size="currentSize" type="danger" plain />
           </div>
-        </byted-cell>
+        </o-cell>
       </div>
     </demo-cell>
 
     <demo-cell :title="t('round')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('default')">
+        <o-cell :title="t('default')">
           <div class="box">
-            <byted-tag :size="currentSize" plain round @click="onClick">
+            <o-tag :size="currentSize" plain round @click="onClick">
               {{ t('name') }}
-            </byted-tag>
+            </o-tag>
           </div>
-        </byted-cell>
-        <byted-cell :title="t('success')">
+        </o-cell>
+        <o-cell :title="t('success')">
           <div class="box">
-            <byted-tag :text="t('name')" :size="currentSize" type="success" plain round />
+            <o-tag :text="t('name')" :size="currentSize" type="success" plain round />
           </div>
-        </byted-cell>
+        </o-cell>
 
-        <byted-cell :title="t('warning')">
+        <o-cell :title="t('warning')">
           <div class="box">
-            <byted-tag :text="t('name')" :size="currentSize" type="warning" plain round />
+            <o-tag :text="t('name')" :size="currentSize" type="warning" plain round />
           </div>
-        </byted-cell>
+        </o-cell>
 
-        <byted-cell :title="t('danger')">
+        <o-cell :title="t('danger')">
           <div class="box">
-            <byted-tag :text="t('name')" :size="currentSize" type="danger" plain round />
+            <o-tag :text="t('name')" :size="currentSize" type="danger" plain round />
           </div>
-        </byted-cell>
+        </o-cell>
       </div>
     </demo-cell>
 
     <demo-cell :title="t('customColor')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('default')">
+        <o-cell :title="t('default')">
           <div>
-            <byted-tag :text="t('name')" color="red" :size="currentSize" />
+            <o-tag :text="t('name')" color="red" :size="currentSize" />
           </div>
-        </byted-cell>
+        </o-cell>
 
-        <byted-cell :title="t('plain')">
+        <o-cell :title="t('plain')">
           <div class="box">
-            <byted-tag :text="t('name')" color="red" plain :size="currentSize" />
+            <o-tag :text="t('name')" color="red" plain :size="currentSize" />
           </div>
-        </byted-cell>
+        </o-cell>
 
-        <byted-cell :title="t('round')">
-          <byted-tag :text="t('name')" color="red" round :size="currentSize" />
-        </byted-cell>
+        <o-cell :title="t('round')">
+          <o-tag :text="t('name')" color="red" round :size="currentSize" />
+        </o-cell>
 
-        <byted-cell :title="t('customColor')">
-          <byted-tag
+        <o-cell :title="t('customColor')">
+          <o-tag
             :text="t('name')"
             text-color="red"
             color="rgba(102, 102, 102, 0.15);"
             :size="currentSize"
           />
-        </byted-cell>
+        </o-cell>
       </div>
     </demo-cell>
 
@@ -152,8 +152,6 @@ export default {
   components: {
     demoCell,
     DomSize,
-    // demoTitle,
-    // BytedIconModuleTabs,
   },
   data() {
     return {

@@ -10,15 +10,15 @@ describe('Tab', () => {
     const onChange = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-tabs v-model="active" @change="onChange">
-          <byted-tab title="标签 1">内容 1</byted-tab>
-          <byted-tab title="标签 2">内容 2</byted-tab>
-          <byted-tab title="标签 3">内容 3</byted-tab>
-        </byted-tabs>
+        <o-tabs v-model="active" @change="onChange">
+          <o-tab title="标签 1">内容 1</o-tab>
+          <o-tab title="标签 2">内容 2</o-tab>
+          <o-tab title="标签 3">内容 3</o-tab>
+        </o-tabs>
       `,
       components: {
-        'byted-tabs': Tabs,
-        'byted-tab': Tab,
+        'o-tabs': Tabs,
+        'o-tab': Tab,
       },
       methods: {
         onChange,
@@ -33,7 +33,7 @@ describe('Tab', () => {
     await later();
     expect(wrapper).toMatchSnapshot();
 
-    const tabs = wrapper.findAll('.byted-tab');
+    const tabs = wrapper.findAll('.o-tab');
     tabs.at(1).trigger('click');
     tabs.at(2).trigger('click');
     await later();
@@ -45,15 +45,15 @@ describe('Tab', () => {
     const onDisabled = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-tabs v-model="active" @click="onClick" @disabled="onDisabled">
-          <byted-tab title="标签 1">内容 1</byted-tab>
-          <byted-tab title="标签 2" disabled>内容 2</byted-tab>
-          <byted-tab title="标签 3">内容 3</byted-tab>
-        </byted-tabs>
+        <o-tabs v-model="active" @click="onClick" @disabled="onDisabled">
+          <o-tab title="标签 1">内容 1</o-tab>
+          <o-tab title="标签 2" disabled>内容 2</o-tab>
+          <o-tab title="标签 3">内容 3</o-tab>
+        </o-tabs>
       `,
       components: {
-        'byted-tabs': Tabs,
-        'byted-tab': Tab,
+        'o-tabs': Tabs,
+        'o-tab': Tab,
       },
       methods: {
         onDisabled,
@@ -67,7 +67,7 @@ describe('Tab', () => {
     });
 
     await later();
-    const tabs = wrapper.findAll('.byted-tab');
+    const tabs = wrapper.findAll('.o-tab');
     await tabs.at(1).trigger('click');
     expect(onDisabled).toBeCalledTimes(1);
     await tabs.at(2).trigger('click');
@@ -79,15 +79,15 @@ describe('Tab', () => {
     const onChange = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-tabs v-model="active" @change="onChange" swipeable>
-          <byted-tab title="标签 1">内容 1</byted-tab>
-          <byted-tab title="标签 2">内容 2</byted-tab>
-          <byted-tab title="标签 3" disabled>内容 3</byted-tab>
-        </byted-tabs>
+        <o-tabs v-model="active" @change="onChange" swipeable>
+          <o-tab title="标签 1">内容 1</o-tab>
+          <o-tab title="标签 2">内容 2</o-tab>
+          <o-tab title="标签 3" disabled>内容 3</o-tab>
+        </o-tabs>
       `,
       components: {
-        'byted-tabs': Tabs,
-        'byted-tab': Tab,
+        'o-tabs': Tabs,
+        'o-tab': Tab,
       },
       methods: {
         onChange,
@@ -99,7 +99,7 @@ describe('Tab', () => {
       },
     });
 
-    const content = wrapper.find('.byted-tabs__content');
+    const content = wrapper.find('.o-tabs__content');
     await later();
     expect(wrapper).toMatchSnapshot();
     triggerDrag(content, -100, 0);
@@ -120,17 +120,17 @@ describe('Tab', () => {
   test('render nav-left & nav-right slot', async () => {
     const wrapper = mount({
       template: `
-        <byted-tabs v-model="active">
+        <o-tabs v-model="active">
           <template v-slot:nav-left>Nav Left</template>
           <template v-slot:nav-right>Nav Right</template>
-          <byted-tab title="标签 1">内容 1</byted-tab>
-          <byted-tab title="标签 2">内容 2</byted-tab>
-          <byted-tab title="标签 3">内容 3</byted-tab>
-        </byted-tabs>
+          <o-tab title="标签 1">内容 1</o-tab>
+          <o-tab title="标签 2">内容 2</o-tab>
+          <o-tab title="标签 3">内容 3</o-tab>
+        </o-tabs>
       `,
       components: {
-        'byted-tabs': Tabs,
-        'byted-tab': Tab,
+        'o-tabs': Tabs,
+        'o-tab': Tab,
       },
       methods: {},
       data() {
@@ -147,15 +147,15 @@ describe('Tab', () => {
   test('border props', async () => {
     const wrapper = mount({
       template: `
-        <byted-tabs v-model="active" :border="false">
-          <byted-tab title="标签 1">内容 1</byted-tab>
-          <byted-tab title="标签 2">内容 2</byted-tab>
-          <byted-tab title="标签 3">内容 3</byted-tab>
-        </byted-tabs>
+        <o-tabs v-model="active" :border="false">
+          <o-tab title="标签 1">内容 1</o-tab>
+          <o-tab title="标签 2">内容 2</o-tab>
+          <o-tab title="标签 3">内容 3</o-tab>
+        </o-tabs>
       `,
       components: {
-        'byted-tabs': Tabs,
-        'byted-tab': Tab,
+        'o-tabs': Tabs,
+        'o-tab': Tab,
       },
       methods: {},
       data() {
@@ -174,15 +174,15 @@ describe('Tab', () => {
     const onDisabled = jest.fn();
     const wrapper = mount({
       template: `
-        <byted-tabs v-model="active"  @click="onClick" @disabled="onDisabled" @change="onChange">
-          <byted-tab title="标签 1" name="a">内容 1</byted-tab>
-          <byted-tab title="标签 2" name="b">内容 2</byted-tab>
-          <byted-tab title="标签 3" name="c" disabled>内容 3</byted-tab>
-        </byted-tabs>
+        <o-tabs v-model="active"  @click="onClick" @disabled="onDisabled" @change="onChange">
+          <o-tab title="标签 1" name="a">内容 1</o-tab>
+          <o-tab title="标签 2" name="b">内容 2</o-tab>
+          <o-tab title="标签 3" name="c" disabled>内容 3</o-tab>
+        </o-tabs>
       `,
       components: {
-        'byted-tabs': Tabs,
-        'byted-tab': Tab,
+        'o-tabs': Tabs,
+        'o-tab': Tab,
       },
       methods: {
         onDisabled,
@@ -199,7 +199,7 @@ describe('Tab', () => {
     await later();
     expect(wrapper).toMatchSnapshot();
 
-    const tabs = wrapper.findAll('.byted-tab');
+    const tabs = wrapper.findAll('.o-tab');
     await tabs.at(1).trigger('click');
 
     expect(onClick).toHaveBeenCalledWith('b', '标签 2');

@@ -2,101 +2,101 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo checker">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-checker">
-      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="radio" name="" value="0">
-            <div class="byted-checker-item__label">Option0</div>
+    <div class="o-checker">
+      <div class="o-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--active"><input type="radio" name="" value="0">
+            <div class="o-checker-item__label">Option0</div>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="1">
-            <div class="byted-checker-item__label">Option1</div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="radio" name="" value="1">
+            <div class="o-checker-item__label">Option1</div>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="Option2">Option3</label></div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="radio" name="" value="Option2">Option3</label></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-checker">
-      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="checkbox" name="" value="0">
-            <div class="byted-checker-item__label">Option0</div><i class="byted-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i>
+    <div class="o-checker">
+      <div class="o-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--active"><input type="checkbox" name="" value="0">
+            <div class="o-checker-item__label">Option0</div><i class="o-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="checkbox" name="" value="1">
-            <div class="byted-checker-item__label">Option1</div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="checkbox" name="" value="1">
+            <div class="o-checker-item__label">Option1</div>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="checkbox" name="" value="2">
-            <div class="byted-checker-item__label">Option2</div><i class="byted-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i>
-          </label></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-checker">
-      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--active"><input type="radio" name="" value="0">
-            <div class="byted-checker-item__label">Option0</div>
-          </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="1">
-            <div class="byted-checker-item__label">Option1</div>
-          </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal"><input type="radio" name="" value="2">
-            <div class="byted-checker-item__label">Option2</div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--active"><input type="checkbox" name="" value="2">
+            <div class="o-checker-item__label">Option2</div><i class="o-checker-item__icon" style="width: .8rem; height: .8rem;">test-file-stub</i>
           </label></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-checker">
-      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round byted-checker-item--active"><input type="checkbox" name="" value="0">
-            <div class="byted-checker-item__label">Option0</div>
+    <div class="o-checker">
+      <div class="o-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--active"><input type="radio" name="" value="0">
+            <div class="o-checker-item__label">Option0</div>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round"><input type="checkbox" name="" value="1">
-            <div class="byted-checker-item__label">Option1</div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="radio" name="" value="1">
+            <div class="o-checker-item__label">Option1</div>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round byted-checker-item--active"><input type="checkbox" name="" value="2">
-            <div class="byted-checker-item__label">Option2</div>
-          </label></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-checker">
-      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round byted-checker-item--active"><input type="radio" name="" value="0">
-            <div class="byted-checker-item__label">large</div>
-            <div class="byted-checker-item__badge byted-badge"><sup class="byted-badge__info">ok</sup></div>
-          </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round"><input type="radio" name="" value="1">
-            <div class="byted-checker-item__label">small</div>
-          </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--default byted-checker-item--normal byted-checker-item--round"><input type="radio" name="" value="2">
-            <div class="byted-checker-item__label">mini</div>
-            <div class="byted-checker-item__badge byted-badge"><sup class="byted-badge__info">3</sup></div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal"><input type="radio" name="" value="2">
+            <div class="o-checker-item__label">Option2</div>
           </label></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-checker">
-      <div class="byted-row" style="margin-left: -5px; margin-right: -5px;">
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--active byted-checker-item--disabled byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="0">
-            <div class="byted-checker-item__label">Option0</div>
+    <div class="o-checker">
+      <div class="o-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--round o-checker-item--active"><input type="checkbox" name="" value="0">
+            <div class="o-checker-item__label">Option0</div>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal byted-checker-item--disabled byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="1">
-            <div class="byted-checker-item__label">Option1</div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--round"><input type="checkbox" name="" value="1">
+            <div class="o-checker-item__label">Option1</div>
           </label></div>
-        <div class="byted-col byted-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="byted-checker-item byted-checker-item--primary byted-checker-item--normal  byted-checker-item--byted-hairline--surround"><input type="radio" name="" value="2">
-            <div class="byted-checker-item__label">Option2</div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--round o-checker-item--active"><input type="checkbox" name="" value="2">
+            <div class="o-checker-item__label">Option2</div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-checker">
+      <div class="o-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--round o-checker-item--active"><input type="radio" name="" value="0">
+            <div class="o-checker-item__label">large</div>
+            <div class="o-checker-item__badge o-badge"><sup class="o-badge__info">ok</sup></div>
+          </label></div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--round"><input type="radio" name="" value="1">
+            <div class="o-checker-item__label">small</div>
+          </label></div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--default o-checker-item--normal o-checker-item--round"><input type="radio" name="" value="2">
+            <div class="o-checker-item__label">mini</div>
+            <div class="o-checker-item__badge o-badge"><sup class="o-badge__info">3</sup></div>
+          </label></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-checker">
+      <div class="o-row" style="margin-left: -5px; margin-right: -5px;">
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--primary o-checker-item--normal o-checker-item--active o-checker-item--disabled o-checker-item--o-hairline--surround"><input type="radio" name="" value="0">
+            <div class="o-checker-item__label">Option0</div>
+          </label></div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--primary o-checker-item--normal o-checker-item--disabled o-checker-item--o-hairline--surround"><input type="radio" name="" value="1">
+            <div class="o-checker-item__label">Option1</div>
+          </label></div>
+        <div class="o-col o-col--8" style="padding-left: 5px; padding-right: 5px;"><label class="o-checker-item o-checker-item--primary o-checker-item--normal  o-checker-item--o-hairline--surround"><input type="radio" name="" value="2">
+            <div class="o-checker-item__label">Option2</div>
           </label></div>
       </div>
     </div>

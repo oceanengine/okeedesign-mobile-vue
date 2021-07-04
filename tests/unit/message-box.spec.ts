@@ -15,7 +15,7 @@ describe('MessageBox', () => {
 
     await later();
     const callback = jest.fn();
-    const dialog = document.querySelector('.byted-dialog') as HTMLElement;
+    const dialog = document.querySelector('.o-dialog') as HTMLElement;
 
     expect(dialog.style.display).toEqual('');
     MessageBox.close();
@@ -23,12 +23,12 @@ describe('MessageBox', () => {
 
     expect(dialog.style.display).toEqual('none');
     MessageBox.confirm().catch(callback);
-    (document.querySelector('.byted-dialog__cancel') as HTMLElement).click();
+    (document.querySelector('.o-dialog__cancel') as HTMLElement).click();
 
     await later();
     expect(callback).toHaveBeenCalledWith('cancel');
     MessageBox.confirm().then(callback);
-    (document.querySelector('.byted-dialog__confirm') as HTMLElement).click();
+    (document.querySelector('.o-dialog__confirm') as HTMLElement).click();
 
     await later();
     expect(callback).toHaveBeenNthCalledWith(2, 'confirm');
@@ -58,7 +58,7 @@ describe('MessageBox', () => {
         },
       },
     });
-    const cancel = wrapper.find('.byted-dialog__cancel');
+    const cancel = wrapper.find('.o-dialog__cancel');
 
     cancel.trigger('click');
     expect(wrapper.emitted('input')).toBeFalsy();
@@ -71,7 +71,7 @@ describe('MessageBox', () => {
       },
     });
 
-    const overlay = document.querySelector('.byted-overlay') as HTMLElement;
+    const overlay = document.querySelector('.o-overlay') as HTMLElement;
     overlay.click();
     expect(wrapper.emitted('input')).toBeFalsy();
 

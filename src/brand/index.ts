@@ -1,5 +1,5 @@
 export default {
-  _brandName: 'byted-',
+  _brandName: 'o-',
   createBrandName() {
     return this._brandName;
   },

@@ -1,26 +1,26 @@
 <template>
   <div class="demo messageBox">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('default')" class="demo-cell-custom">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('single')" is-link @click="onClickAlertNoTitle" />
-        <byted-cell :title="t('title')" is-link @click="onClickAlert" />
-        <byted-cell :title="t('double')" is-link @click="onClickConfirmNoTitleTwo" />
+        <o-cell :title="t('single')" is-link @click="onClickAlertNoTitle" />
+        <o-cell :title="t('title')" is-link @click="onClickAlert" />
+        <o-cell :title="t('double')" is-link @click="onClickConfirmNoTitleTwo" />
       </div>
     </demo-cell>
 
     <demo-cell :title="t('many')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('many')" is-link @click="onClickDialogNoTitle" />
+        <o-cell :title="t('many')" is-link @click="onClickDialogNoTitle" />
       </div>
     </demo-cell>
 
     <demo-cell :title="t('async')">
-      <byted-cell :title="t('async')" is-link @click="showAsync = true" />
-      <byted-dialog
+      <o-cell :title="t('async')" is-link @click="showAsync = true" />
+      <o-dialog
         v-model="showAsync"
         message="tel: ************"
         :before-close="beforeClose"
@@ -30,38 +30,38 @@
 
     <demo-cell :title="t('slot')">
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('slot')" is-link @click="onClickCustomNoTitle" />
+        <o-cell :title="t('slot')" is-link @click="onClickCustomNoTitle" />
       </div>
       `
     </demo-cell>
 
-    <byted-dialog v-model="show" title="Title" show-confirm-button>
+    <o-dialog v-model="show" title="Title" show-confirm-button>
       <div class="custom-body">
-        <byted-field v-model="value" />
+        <o-field v-model="value" />
       </div>
-    </byted-dialog>
+    </o-dialog>
 
-    <byted-dialog v-model="showTwo" title="Title" show-cancel-button show-confirm-button>
+    <o-dialog v-model="showTwo" title="Title" show-cancel-button show-confirm-button>
       <div class="custom-body">
-        <byted-field v-model="value" />
+        <o-field v-model="value" />
       </div>
-    </byted-dialog>
-    <byted-dialog v-model="showThree" title="Title" :show-confirm-button="false">
+    </o-dialog>
+    <o-dialog v-model="showThree" title="Title" :show-confirm-button="false">
       <div class="custom-body">
-        <byted-field v-model="value" placeholder="请输入内容" />
+        <o-field v-model="value" placeholder="请输入内容" />
       </div>
       <div class="custom-footer">
-        <byted-button size="large" hairline @click="showThree = false">
+        <o-button size="large" hairline @click="showThree = false">
           {{ t('yes') }}
-        </byted-button>
-        <byted-button size="large" hairline @click="showThree = false">
+        </o-button>
+        <o-button size="large" hairline @click="showThree = false">
           {{ t('not') }}
-        </byted-button>
-        <byted-button size="large" hairline @click="showThree = false">
+        </o-button>
+        <o-button size="large" hairline @click="showThree = false">
           {{ t('confirm') }}
-        </byted-button>
+        </o-button>
       </div>
-    </byted-dialog>
+    </o-dialog>
   </div>
 </template>
 <script>
@@ -125,9 +125,6 @@ export default {
   },
   components: {
     demoCell,
-    // DomSize,
-    // demoTitle,
-    // BytedIconModulePopover,
   },
   data() {
     return {
@@ -226,7 +223,7 @@ export default {
               class: ['custom-body'],
             },
             [
-              h('byted-field', {
+              h('o-field', {
                 props: {
                   value: '',
                 },
@@ -305,15 +302,15 @@ export default {
   padding: 16px 32px 32px 32px;
 }
 .custom-footer {
-  .byted-button {
+  .o-button {
     // color: @primary-color;
   }
-  .byted-button--plain.byted-button--default::after {
+  .o-button--plain.o-button--default::after {
     // border-color: #ebedf0;
   }
 }
 .demo.messageBox {
-  .byted-button {
+  .o-button {
     margin-right: 10px;
   }
 }

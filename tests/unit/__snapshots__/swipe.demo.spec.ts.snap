@@ -2,97 +2,97 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo swipe">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-swipe">
-      <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
+    <div class="o-swipe">
+      <div class="o-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
-      <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
+      <div class="o-swipe__indicators o-swipe__indicators--default"><i class="o-swipe__indicator o-swipe__indicator--active"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i></div>
     </div>
   </div>
   <div>
-    <div class="byted-swipe">
-      <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
+    <div class="o-swipe">
+      <div class="o-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
-      <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
+      <div class="o-swipe__indicators o-swipe__indicators--default"><i class="o-swipe__indicator o-swipe__indicator--active"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i></div>
     </div>
   </div>
   <div>
-    <div class="byted-swipe">
-      <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
+    <div class="o-swipe">
+      <div class="o-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
-      <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
+      <div class="o-swipe__indicators o-swipe__indicators--default"><i class="o-swipe__indicator o-swipe__indicator--active"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i></div>
     </div>
   </div>
   <div>
-    <div class="byted-swipe">
-      <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+    <div class="o-swipe">
+      <div class="o-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
       </div>
-      <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
+      <div class="o-swipe__indicators o-swipe__indicators--default"><i class="o-swipe__indicator o-swipe__indicator--active"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i></div>
     </div>
   </div>
   <div>
-    <div class="byted-swipe">
-      <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
+    <div class="o-swipe">
+      <div class="o-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
-      <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active" style="background-color: rgb(2, 120, 255);"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
+      <div class="o-swipe__indicators o-swipe__indicators--default"><i class="o-swipe__indicator o-swipe__indicator--active" style="background-color: rgb(2, 120, 255);"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i></div>
     </div>
   </div>
   <div>
-    <div class="byted-swipe">
-      <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">4</span></div>
+    <div class="o-swipe">
+      <div class="o-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">4</span></div>
       </div>
       <div class="custom-indicator">1/4</div>
     </div>
   </div>
   <div>
-    <div class="byted-swipe">
-      <div class="byted-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
-        <div class="byted-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
+    <div class="o-swipe">
+      <div class="o-swipe__track" style="width: 0px; transition-duration: 0ms; transform: translate3d(0px, 0, 0);">
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic2.svg" width="100%" height="100%" alt="pic"> <span class="text">0</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic.svg" width="100%" height="100%" alt="pic"> <span class="text">1</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic3.svg" width="100%" height="100%" alt="pic"> <span class="text">2</span></div>
+        <div class="o-swipe-item" style="width: 0px; transform: translate3d(0px, 0, 0);"><img src="../pics/pic4.svg" width="100%" height="100%" alt="pic"> <span class="text">3</span></div>
       </div>
-      <div class="byted-swipe__indicators byted-swipe__indicators--default"><i class="byted-swipe__indicator byted-swipe__indicator--active"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i><i class="byted-swipe__indicator"></i></div>
+      <div class="o-swipe__indicators o-swipe__indicators--default"><i class="o-swipe__indicator o-swipe__indicator--active"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i><i class="o-swipe__indicator"></i></div>
     </div>
     <div class="button-wrap">
-      <div class="byted-button byted-button--primary byted-button--mini byted-button--plain byted-button--square byted-hairline--surround">&lt;</div>
-      <div class="byted-button byted-button--primary byted-button--mini byted-button--plain byted-button--fade byted-button--square byted-hairline--surround">0</div>
-      <div class="byted-button byted-button--primary byted-button--mini byted-button--plain byted-button--square byted-hairline--surround">1</div>
-      <div class="byted-button byted-button--primary byted-button--mini byted-button--plain byted-button--square byted-hairline--surround">2</div>
-      <div class="byted-button byted-button--primary byted-button--mini byted-button--plain byted-button--square byted-hairline--surround">3</div>
-      <div class="byted-button byted-button--primary byted-button--mini byted-button--plain byted-button--square byted-hairline--surround">&gt;</div>
+      <div class="o-button o-button--primary o-button--mini o-button--plain o-button--square o-hairline--surround">&lt;</div>
+      <div class="o-button o-button--primary o-button--mini o-button--plain o-button--fade o-button--square o-hairline--surround">0</div>
+      <div class="o-button o-button--primary o-button--mini o-button--plain o-button--square o-hairline--surround">1</div>
+      <div class="o-button o-button--primary o-button--mini o-button--plain o-button--square o-hairline--surround">2</div>
+      <div class="o-button o-button--primary o-button--mini o-button--plain o-button--square o-hairline--surround">3</div>
+      <div class="o-button o-button--primary o-button--mini o-button--plain o-button--square o-hairline--surround">&gt;</div>
     </div>
   </div>
 </div>

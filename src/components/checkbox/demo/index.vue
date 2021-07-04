@@ -1,48 +1,48 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')">
-      <byted-checkbox-group v-model="checkbox2" :size="currentSize">
-        <byted-checkbox :key="1" :value="1"> {{ t('name') }} 1 </byted-checkbox>
-        <byted-checkbox :key="2" :value="2" type="square"> {{ t('name') }} 2 </byted-checkbox>
-      </byted-checkbox-group>
+      <o-checkbox-group v-model="checkbox2" :size="currentSize">
+        <o-checkbox :key="1" :value="1"> {{ t('name') }} 1 </o-checkbox>
+        <o-checkbox :key="2" :value="2" type="square"> {{ t('name') }} 2 </o-checkbox>
+      </o-checkbox-group>
     </demo-cell>
 
     <demo-cell :title="t('disabled')">
-      <byted-checkbox-group v-model="checkbox3" :size="currentSize">
-        <byted-checkbox :key="1" :value="1" disabled> {{ t('name') }} 1 </byted-checkbox>
-        <byted-checkbox :key="2" :value="2" type="square"> {{ t('name') }} 2 </byted-checkbox>
-      </byted-checkbox-group>
+      <o-checkbox-group v-model="checkbox3" :size="currentSize">
+        <o-checkbox :key="1" :value="1" disabled> {{ t('name') }} 1 </o-checkbox>
+        <o-checkbox :key="2" :value="2" type="square"> {{ t('name') }} 2 </o-checkbox>
+      </o-checkbox-group>
     </demo-cell>
 
     <demo-cell :title="t('customSize')">
-      <byted-checkbox-group v-model="checkbox3" :size="currentSize">
-        <byted-checkbox size="small">{{ t('name') }}</byted-checkbox>
-        <byted-checkbox>{{ t('name') }}</byted-checkbox>
-        <byted-checkbox size="large">{{ t('name') }}</byted-checkbox>
-      </byted-checkbox-group>
+      <o-checkbox-group v-model="checkbox3" :size="currentSize">
+        <o-checkbox size="small">{{ t('name') }}</o-checkbox>
+        <o-checkbox>{{ t('name') }}</o-checkbox>
+        <o-checkbox size="large">{{ t('name') }}</o-checkbox>
+      </o-checkbox-group>
     </demo-cell>
 
     <demo-cell :title="t('max')">
-      <byted-checkbox-group v-model="checkbox5" :size="currentSize" :max="max">
-        <byted-checkbox v-for="index in 6" :key="index" :value="index">
+      <o-checkbox-group v-model="checkbox5" :size="currentSize" :max="max">
+        <o-checkbox v-for="index in 6" :key="index" :value="index">
           {{ t('name') }} {{ index }}
-        </byted-checkbox>
-      </byted-checkbox-group>
+        </o-checkbox>
+      </o-checkbox-group>
     </demo-cell>
 
     <demo-cell :title="t('withCell')">
-      <byted-checkbox-group v-model="checkbox6" :size="currentSize">
-        <byted-cell :size="currentSize" clickable style="padding: 2px 9px">
-          <byted-checkbox key="1" value="1"> {{ t('name') }} 1 </byted-checkbox>
-        </byted-cell>
-        <byted-cell :size="currentSize" clickable style="padding: 2px 9px">
-          <byted-checkbox key="2" value="2"> {{ t('name') }} 2 </byted-checkbox>
-        </byted-cell>
-      </byted-checkbox-group>
+      <o-checkbox-group v-model="checkbox6" :size="currentSize">
+        <o-cell :size="currentSize" clickable style="padding: 2px 9px">
+          <o-checkbox key="1" value="1"> {{ t('name') }} 1 </o-checkbox>
+        </o-cell>
+        <o-cell :size="currentSize" clickable style="padding: 2px 9px">
+          <o-checkbox key="2" value="2"> {{ t('name') }} 2 </o-checkbox>
+        </o-cell>
+      </o-checkbox-group>
     </demo-cell>
 
     <dom-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
@@ -80,9 +80,6 @@ export default {
   },
   components: {
     demoCell,
-    DomSize,
-    // demoTitle,
-    // BytedIconModuleCheckbox,
   },
   data() {
     return {
@@ -119,7 +116,7 @@ export default {
   padding-bottom: 20px;
   // padding: 0 0 80px 20px;
 }
-.byted-checkbox {
+.o-checkbox {
   margin: 10px 0;
 }
 </style>

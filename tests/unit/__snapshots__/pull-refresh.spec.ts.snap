@@ -1,140 +1,140 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PullRefresh change head content when pulling down 1`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms;">
-    <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms;">
+    <div class="o-pull-refresh__head" style="top: -34px;"></div>
     下拉刷新
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling down 2`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,20px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;">
-      <div class="byted-pull-refresh__wrp byted-pull-refresh__wrp--default byted-pull-refresh__wrp--normal byted-pull-refresh__wrp--pulling"><span class="byted-pull-refresh__wrp__text">下拉刷新</span></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,20px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;">
+      <div class="o-pull-refresh__wrp o-pull-refresh__wrp--default o-pull-refresh__wrp--normal o-pull-refresh__wrp--pulling"><span class="o-pull-refresh__wrp__text">下拉刷新</span></div>
     </div>
     下拉刷新
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling down 3`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,75px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;">
-      <div class="byted-pull-refresh__wrp byted-pull-refresh__wrp--default byted-pull-refresh__wrp--normal byted-pull-refresh__wrp--loosing"><span class="byted-pull-refresh__wrp__text">释放刷新</span></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,75px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;">
+      <div class="o-pull-refresh__wrp o-pull-refresh__wrp--default o-pull-refresh__wrp--normal o-pull-refresh__wrp--loosing"><span class="o-pull-refresh__wrp__text">释放刷新</span></div>
     </div>
     下拉刷新
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling down 4`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 300ms; transform: translate3d(0,50px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;">
-      <div class="byted-pull-refresh__wrp byted-pull-refresh__wrp--default byted-pull-refresh__wrp--normal byted-pull-refresh__wrp--success"><span class="byted-pull-refresh__wrp__text">刷新成功</span></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 300ms; transform: translate3d(0,50px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;">
+      <div class="o-pull-refresh__wrp o-pull-refresh__wrp--default o-pull-refresh__wrp--normal o-pull-refresh__wrp--success"><span class="o-pull-refresh__wrp__text">刷新成功</span></div>
     </div>
     下拉刷新
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling down 5`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 300ms;">
-    <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 300ms;">
+    <div class="o-pull-refresh__head" style="top: -34px;"></div>
     下拉刷新
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling up 1`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms;">
-    <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms;">
+    <div class="o-pull-refresh__head" style="top: -34px;"></div>
     上拉加载
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling up 2`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,-20px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,-20px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;"></div>
     上拉加载
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;">
-      <div class="byted-pull-refresh__wrp byted-pull-refresh__wrp--default byted-pull-refresh__wrp--normal byted-pull-refresh__wrp--pulling"><span class="byted-pull-refresh__wrp__text">下拉刷新</span></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;">
+      <div class="o-pull-refresh__wrp o-pull-refresh__wrp--default o-pull-refresh__wrp--normal o-pull-refresh__wrp--pulling"><span class="o-pull-refresh__wrp__text">下拉刷新</span></div>
     </div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling up 3`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,-75px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,-75px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;"></div>
     上拉加载
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;">
-      <div class="byted-pull-refresh__wrp byted-pull-refresh__wrp--default byted-pull-refresh__wrp--normal byted-pull-refresh__wrp--loosing"><span class="byted-pull-refresh__wrp__text">释放刷新</span></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;">
+      <div class="o-pull-refresh__wrp o-pull-refresh__wrp--default o-pull-refresh__wrp--normal o-pull-refresh__wrp--loosing"><span class="o-pull-refresh__wrp__text">释放刷新</span></div>
     </div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling up 4`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 300ms; transform: translate3d(0,-50px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 300ms; transform: translate3d(0,-50px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;"></div>
     上拉加载
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;">
-      <div class="byted-pull-refresh__wrp byted-pull-refresh__wrp--default byted-pull-refresh__wrp--normal byted-pull-refresh__wrp--success"><span class="byted-pull-refresh__wrp__text">刷新成功</span></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;">
+      <div class="o-pull-refresh__wrp o-pull-refresh__wrp--default o-pull-refresh__wrp--normal o-pull-refresh__wrp--success"><span class="o-pull-refresh__wrp__text">刷新成功</span></div>
     </div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh change head content when pulling up 5`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 300ms;">
-    <div class="byted-pull-refresh__head" style="top: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 300ms;">
+    <div class="o-pull-refresh__head" style="top: -34px;"></div>
     上拉加载
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh custom content by slots 1`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,20px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;">pulling 20</div>
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,20px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;">pulling 20</div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh custom content by slots 2`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,75px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;">loosing 75</div>
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 0ms; transform: translate3d(0,75px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;">loosing 75</div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;
 
 exports[`PullRefresh custom content by slots 3`] = `
-<div class="byted-pull-refresh">
-  <div class="byted-pull-refresh__track" style="transition: 300ms; transform: translate3d(0,50px, 0);">
-    <div class="byted-pull-refresh__head" style="top: -34px;">loading 50</div>
-    <div class="byted-pull-refresh__foot" style="bottom: -34px;"></div>
+<div class="o-pull-refresh">
+  <div class="o-pull-refresh__track" style="transition: 300ms; transform: translate3d(0,50px, 0);">
+    <div class="o-pull-refresh__head" style="top: -34px;">loading 50</div>
+    <div class="o-pull-refresh__foot" style="bottom: -34px;"></div>
   </div>
 </div>
 `;

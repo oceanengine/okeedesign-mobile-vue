@@ -1,74 +1,64 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('title1')" :title-style="titleStyle">
-      <byted-tabs v-model="active" :size="currentSize" @change="onChange">
-        <byted-tab v-for="index in tabs" :key="index" :name="index" :title="t('title') + index">
+      <o-tabs v-model="active" :size="currentSize" @change="onChange">
+        <o-tab v-for="index in tabs" :key="index" :name="index" :title="t('title') + index">
           <div class="content">{{ t('value') }} {{ index }}</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-cell :title="t('title2')" :title-style="titleStyle">
-      <byted-tabs
+      <o-tabs
         :active="activeName"
         swipeable
         :size="currentSize"
         @click="onControlledClick"
         @change="onControlledChange"
       >
-        <byted-tab name="a" :title="t('title') + 1">
+        <o-tab name="a" :title="t('title') + 1">
           <div class="content">{{ t('value') }} 1</div>
-        </byted-tab>
-        <byted-tab name="b" :title="t('title') + 2">
+        </o-tab>
+        <o-tab name="b" :title="t('title') + 2">
           <div class="content">{{ t('value') }} 2</div>
-        </byted-tab>
-        <byted-tab name="c" :title="t('title') + 3">
+        </o-tab>
+        <o-tab name="c" :title="t('title') + 3">
           <div class="content">{{ t('value') }} 3</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-cell :title="t('title12')" :title-style="titleStyle">
-      <byted-tabs :flex="false">
-        <byted-tab
-          v-for="index in tabs"
-          :key="index"
-          :title="t('title') + index"
-          :size="currentSize"
-        >
+      <o-tabs :flex="false">
+        <o-tab v-for="index in tabs" :key="index" :title="t('title') + index" :size="currentSize">
           <div class="content">{{ t('value') }} {{ index }}</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-cell :title="t('title9')" :title-style="titleStyle">
-      <byted-tabs type="card" :size="currentSize">
-        <byted-tab
-          v-for="index in 4"
-          :key="index"
-          :disabled="index === 4"
-          :title="t('title') + index"
-        >
+      <o-tabs type="card" :size="currentSize">
+        <o-tab v-for="index in 4" :key="index" :disabled="index === 4" :title="t('title') + index">
           <div class="content">{{ t('value') }} {{ index }}</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-cell :title="t('title3')" :title-style="titleStyle">
-      <byted-tabs>
-        <byted-tab v-for="index in 8" :key="index" :title="t('title') + index" :size="currentSize">
+      <o-tabs>
+        <o-tab v-for="index in 8" :key="index" :title="t('title') + index" :size="currentSize">
           <div class="content">{{ t('value') }} {{ index }}</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-cell :title="t('title4')" :title-style="titleStyle">
-      <byted-tabs @disabled="onClickDisabled">
-        <byted-tab
+      <o-tabs @disabled="onClickDisabled">
+        <o-tab
           v-for="index in 3"
           :key="index"
           :title="t('title') + index"
@@ -76,32 +66,31 @@
           :size="currentSize"
         >
           <div class="content">{{ t('value') }} {{ index }}</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-cell :title="t('title6')" :title-style="titleStyle">
-      <byted-tabs :size="currentSize">
-        <byted-tab v-for="index in 2" :key="index">
+      <o-tabs :size="currentSize">
+        <o-tab v-for="index in 2" :key="index">
           <template slot="title"> T.T{{ t('title') }} </template>
           <div class="content">{{ t('value') }} {{ index }}</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-cell :title="t('title14')" :title-style="titleStyle">
-      <byted-tabs touchable :size="currentSize">
-        <byted-tab v-for="index in tabs" :key="index" :title="t('title') + index">
+      <o-tabs touchable :size="currentSize">
+        <o-tab v-for="index in tabs" :key="index" :title="t('title') + index">
           <div class="content">{{ t('value') }} {{ index }}</div>
-        </byted-tab>
-      </byted-tabs>
+        </o-tab>
+      </o-tabs>
     </demo-cell>
 
     <demo-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
   </div>
 </template>
 <script>
-// import demoTitle from '../../../../docs/site/components/DomeTitle';
 import demoCell from '../../../../docs/site/components/DomeCell.vue';
 import DemoSize from '../../../../docs/site/components/DomSize.vue';
 export default {
@@ -152,7 +141,6 @@ export default {
 
   components: {
     demoCell,
-    // demoTitle,
     DemoSize,
   },
   data() {
@@ -185,10 +173,6 @@ export default {
     },
 
     onControlledClick(name, title) {
-      console.log(name, title);
-      // setTimeout(() => {
-      //   this.activeName = name
-      // }, 1500)
       this.$confirm('OKee Design', 'Do you love', {
         cancelButtonText: 'Not',
         confirmButtonText: 'Yes',
@@ -218,7 +202,7 @@ export default {
     padding: 16px;
     font-size: 16px;
   }
-  .byted-tabs--card {
+  .o-tabs--card {
     margin: 0 10px;
     .content {
       background: transparent;

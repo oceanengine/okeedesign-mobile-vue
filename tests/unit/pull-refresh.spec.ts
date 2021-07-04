@@ -7,16 +7,16 @@ describe('PullRefresh', () => {
   test('change head content when pulling down', async () => {
     const wrapper = mount({
       template: `
-        <byted-pull-refresh
+        <o-pull-refresh
           v-model="isLoading"
           foot-disabled
           :load-end-status="loadEndStatus"
           @pull-down="pullDown">
           下拉刷新
-        </byted-pull-refresh>
+        </o-pull-refresh>
       `,
       components: {
-        'byted-pull-refresh': PullRefresh,
+        'o-pull-refresh': PullRefresh,
       },
       data() {
         return {
@@ -31,7 +31,7 @@ describe('PullRefresh', () => {
       },
     });
     expect(wrapper).toMatchSnapshot();
-    const track = wrapper.find('.byted-pull-refresh__track');
+    const track = wrapper.find('.o-pull-refresh__track');
     // pulling
     trigger(track, 'touchstart', 0, 0);
     trigger(track, 'touchmove', 0, 20);
@@ -59,16 +59,16 @@ describe('PullRefresh', () => {
   test('change head content when pulling up', async () => {
     const wrapper = mount({
       template: `
-        <byted-pull-refresh
+        <o-pull-refresh
           v-model="isLoading"
           headDisabled
           :load-end-status="loadEndStatus"
           @pull-up="pullUp">
           上拉加载
-        </byted-pull-refresh>
+        </o-pull-refresh>
       `,
       components: {
-        'byted-pull-refresh': PullRefresh,
+        'o-pull-refresh': PullRefresh,
       },
       data() {
         return {
@@ -83,7 +83,7 @@ describe('PullRefresh', () => {
       },
     });
     expect(wrapper).toMatchSnapshot();
-    const track = wrapper.find('.byted-pull-refresh__track');
+    const track = wrapper.find('.o-pull-refresh__track');
     // pulling
     trigger(track, 'touchstart', 0, 0);
     trigger(track, 'touchmove', 0, -20);
@@ -127,7 +127,7 @@ describe('PullRefresh', () => {
       },
     });
 
-    const track = wrapper.find('.byted-pull-refresh__track');
+    const track = wrapper.find('.o-pull-refresh__track');
 
     // pulling
     trigger(track, 'touchstart', 0, 0);
@@ -161,7 +161,7 @@ describe('PullRefresh', () => {
       },
     });
 
-    const track = wrapper.find('.byted-pull-refresh__track');
+    const track = wrapper.find('.o-pull-refresh__track');
     triggerDrag(track, 0, 10);
     expect(wrapper.emitted('input')).toBeFalsy();
   });

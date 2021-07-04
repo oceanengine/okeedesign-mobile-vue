@@ -1,26 +1,26 @@
 <template>
   <div class="demo switch">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
     <demo-cell :title="t('basicUsage')">
-      <byted-switch v-model="valueBase" :size="currentSize" @change="change" />
+      <o-switch v-model="valueBase" :size="currentSize" @change="change" />
     </demo-cell>
     <demo-cell :title="t('disabledUsage')">
-      <byted-switch v-model="valueDiasbledTrue" disabled :size="currentSize" />
+      <o-switch v-model="valueDiasbledTrue" disabled :size="currentSize" />
     </demo-cell>
 
     <demo-cell :title="t('loading')">
-      <byted-switch v-model="valueLoading" :loading="true" :size="currentSize" />
+      <o-switch v-model="valueLoading" :loading="true" :size="currentSize" />
     </demo-cell>
 
     <demo-cell :title="t('customizeScale')">
-      <byted-switch v-model="valueScale" size="large" />
-      <byted-switch v-model="valueScale" size="small" />
+      <o-switch v-model="valueScale" size="large" />
+      <o-switch v-model="valueScale" size="small" />
     </demo-cell>
 
     <demo-cell :title="t('controlledUsage')">
-      <byted-switch
+      <o-switch
         :value="valueControlled"
         :loading="isLoading"
         :size="currentSize"
@@ -29,9 +29,9 @@
     </demo-cell>
 
     <demo-cell :title="t('combineCell')">
-      <byted-cell :title="t('title')" :size="currentSize">
-        <byted-switch v-model="valueCell" />
-      </byted-cell>
+      <o-cell :title="t('title')" :size="currentSize">
+        <o-switch v-model="valueCell" />
+      </o-cell>
     </demo-cell>
 
     <dom-size :current-size="currentSize" :sizes="sizes" @changeSize="changeSize" />
@@ -68,8 +68,6 @@ export default {
   components: {
     demoCell,
     DomSize,
-    // demoTitle,
-    // BytedIconModuleSwitch,
   },
   data() {
     return {
@@ -110,7 +108,7 @@ export default {
 <style lang="less">
 .demo.switch {
   height: 100vh;
-  .byted-switch {
+  .o-switch {
     margin-right: 10px;
   }
 }

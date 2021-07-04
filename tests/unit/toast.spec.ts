@@ -13,11 +13,11 @@ describe('Toast', () => {
     expect(toast.$el.outerHTML).toMatchSnapshot();
 
     await later();
-    expect(document.body.classList.contains('byted-toast--unclickable')).toBeTruthy();
+    expect(document.body.classList.contains('o-toast--unclickable')).toBeTruthy();
     toast.forbidClick = false;
 
     await later();
-    expect(document.body.classList.contains('byted-toast--unclickable')).toBeFalsy();
+    expect(document.body.classList.contains('o-toast--unclickable')).toBeFalsy();
   });
   test('toast disappeared after duration', async () => {
     const toast = Toast({

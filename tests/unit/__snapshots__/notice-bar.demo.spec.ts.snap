@@ -2,50 +2,50 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-notice-bar byted-notice-bar--primary"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"></div>
+    <div class="o-notice-bar o-notice-bar--primary"><i class="o-notice-bar__left o-notice-bar__left--icon">test-file-stub</i>
+      <div class="o-notice-bar__content"></div>
     </div>
-    <div class="byted-notice-bar byted-notice-bar--success"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"></div>
+    <div class="o-notice-bar o-notice-bar--success"><i class="o-notice-bar__left o-notice-bar__left--icon">test-file-stub</i>
+      <div class="o-notice-bar__content"></div>
     </div>
-    <div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"></div>
+    <div class="o-notice-bar o-notice-bar--warning"><i class="o-notice-bar__left o-notice-bar__left--icon">test-file-stub</i>
+      <div class="o-notice-bar__content"></div>
     </div>
-    <div class="byted-notice-bar byted-notice-bar--danger"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"></div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-notice-bar byted-notice-bar--warning"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content"></div>
+    <div class="o-notice-bar o-notice-bar--danger"><i class="o-notice-bar__left o-notice-bar__left--icon">test-file-stub</i>
+      <div class="o-notice-bar__content"></div>
     </div>
   </div>
   <div>
-    <div class="byted-notice-bar byted-notice-bar--warning">
-      <div class="byted-notice-bar__left"><img src="../icon/horn.svg" width="16px" height="16px" alt=""></div>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
+    <div class="o-notice-bar o-notice-bar--warning"><i class="o-notice-bar__left o-notice-bar__left--icon">test-file-stub</i>
+      <div class="o-notice-bar__content"></div>
     </div>
-    <div class="byted-notice-bar byted-notice-bar--warning">
-      <div class="byted-notice-bar__left"><img src="../icon/horn.svg" width="16px" height="16px" alt=""></div>
-      <div class="byted-notice-bar__content"></div>
-      <div class="byted-notice-bar__right">
-        <div class="byted-button byted-button--text byted-button--normal">button</div>
+  </div>
+  <div>
+    <div class="o-notice-bar o-notice-bar--warning">
+      <div class="o-notice-bar__left"><img src="../icon/horn.svg" width="16px" height="16px" alt=""></div>
+      <div class="o-notice-bar__content o-notice-bar__content--right"></div><i class="o-notice-bar__right o-notice-bar__right--icon">test-file-stub</i>
+    </div>
+    <div class="o-notice-bar o-notice-bar--warning">
+      <div class="o-notice-bar__left"><img src="../icon/horn.svg" width="16px" height="16px" alt=""></div>
+      <div class="o-notice-bar__content"></div>
+      <div class="o-notice-bar__right">
+        <div class="o-button o-button--text o-button--normal">button</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-notice-bar byted-notice-bar--primary"><i class="byted-notice-bar__left byted-notice-bar__left--icon">test-file-stub</i>
-      <div class="byted-notice-bar__content byted-notice-bar__content--right"></div><i class="byted-notice-bar__right byted-notice-bar__right--icon">test-file-stub</i>
+    <div class="o-notice-bar o-notice-bar--primary"><i class="o-notice-bar__left o-notice-bar__left--icon">test-file-stub</i>
+      <div class="o-notice-bar__content o-notice-bar__content--right"></div><i class="o-notice-bar__right o-notice-bar__right--icon">test-file-stub</i>
     </div>
   </div>
 </div>

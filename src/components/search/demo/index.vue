@@ -1,30 +1,30 @@
 <template>
   <div class="demo">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
 
     <demo-cell :title="t('basicUsage')" :title-style="titleStyle">
-      <byted-search v-model="value1" />
+      <o-search v-model="value1" />
     </demo-cell>
 
     <demo-cell :title="t('onListen')" :title-style="titleStyle">
-      <byted-search v-model="value2" cancelable @cancel="cancel" />
+      <o-search v-model="value2" cancelable @cancel="cancel" />
     </demo-cell>
 
     <demo-cell :title="t('slotsUsage')" :title-style="titleStyle">
-      <byted-search v-model="value4">
+      <o-search v-model="value4">
         <template #left>
           <span class="fz-16">{{ t('left') }}</span>
         </template>
         <template #right>
           <span class="fz-16">{{ t('right') }}</span>
         </template>
-      </byted-search>
+      </o-search>
     </demo-cell>
 
     <demo-cell :title="t('radiusUsage')" :title-style="titleStyle">
-      <byted-search v-model="value3" border-radius="22px" />
+      <o-search v-model="value3" border-radius="22px" />
     </demo-cell>
   </div>
 </template>
@@ -55,8 +55,6 @@ export default {
   },
   components: {
     demoCell,
-    // demoTitle,
-    // BytedIconModuleSearch,
   },
   data() {
     return {

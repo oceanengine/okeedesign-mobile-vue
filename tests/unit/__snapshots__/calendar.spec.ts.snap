@@ -1,100 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Calendar calendar slot 1`] = `
-<div class="byted-calendar">
-  <header class="byted-calendar__header">
-    <div class="byted-calendar__title-bar">
-      <div class="byted-calendar__title">选择时间</div>
-      <div class="byted-calendar__header-left">header left</div>
-      <div class="byted-calendar__header-right">header Right</div>
+<div class="o-calendar">
+  <header class="o-calendar__header">
+    <div class="o-calendar__title-bar">
+      <div class="o-calendar__title">选择时间</div>
+      <div class="o-calendar__header-left">header left</div>
+      <div class="o-calendar__header-right">header Right</div>
     </div>
-    <div class="byted-calendar__week">
-      <div class="byted-calendar__day byted-calendar__day--rest">日</div>
-      <div class="byted-calendar__day">一</div>
-      <div class="byted-calendar__day">二</div>
-      <div class="byted-calendar__day">三</div>
-      <div class="byted-calendar__day">四</div>
-      <div class="byted-calendar__day">五</div>
-      <div class="byted-calendar__day byted-calendar__day--rest">六</div>
+    <div class="o-calendar__week">
+      <div class="o-calendar__day o-calendar__day--rest">日</div>
+      <div class="o-calendar__day">一</div>
+      <div class="o-calendar__day">二</div>
+      <div class="o-calendar__day">三</div>
+      <div class="o-calendar__day">四</div>
+      <div class="o-calendar__day">五</div>
+      <div class="o-calendar__day o-calendar__day--rest">六</div>
     </div>
   </header>
-  <div class="byted-calendar__body">
-    <div class="byted-calendar__month-wrap">
-      <div class="byted-calendar__month byted-calendar__month--0">
-        <div class="byted-calendar__month-bar">2021年6月</div>
-        <div class="byted-calendar__date-wrap">
-          <div class="byted-calendar__date-placeholder byted-calendar__date-placeholder--2"></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">1</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">2</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">3</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">4</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">5</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">6</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">7</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">8</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">9</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">10</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">11</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">12</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">13</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">14</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">15</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">16</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">17</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">18</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">19</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">20</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">21</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">22</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">23</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">24</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">25</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">26</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">27</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">28</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">29</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--today">30</button></div>
+  <div class="o-calendar__body">
+    <div class="o-calendar__month-wrap">
+      <div class="o-calendar__month o-calendar__month--0">
+        <div class="o-calendar__month-bar">2021年6月</div>
+        <div class="o-calendar__date-wrap">
+          <div class="o-calendar__date-placeholder o-calendar__date-placeholder--2"></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">1</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">2</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">3</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">4</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">5</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">6</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">7</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">8</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">9</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">10</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">11</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">12</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">13</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">14</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">15</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">16</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">17</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">18</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">19</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">20</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">21</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">22</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">23</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">24</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">25</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">26</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">27</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">28</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">29</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--today">30</button></div>
         </div>
       </div>
-      <div class="byted-calendar__month byted-calendar__month--1">
-        <div class="byted-calendar__month-bar">2021年7月</div>
-        <div class="byted-calendar__date-wrap">
-          <div class="byted-calendar__date-placeholder byted-calendar__date-placeholder--4"></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">1</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">2</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">3</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">4</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">5</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">6</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">7</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">8</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">9</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">10</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">11</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">12</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">13</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">14</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">15</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">16</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">17</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">18</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">19</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">20</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">21</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">22</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">23</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">24</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">25</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">26</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">27</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">28</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">29</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date">30</button></div>
-          <div class="byted-calendar__cell"><button class="byted-calendar__date byted-calendar__date--rest">31</button></div>
+      <div class="o-calendar__month o-calendar__month--1">
+        <div class="o-calendar__month-bar">2021年7月</div>
+        <div class="o-calendar__date-wrap">
+          <div class="o-calendar__date-placeholder o-calendar__date-placeholder--4"></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">1</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">2</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">3</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">4</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">5</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">6</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">7</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">8</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">9</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">10</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">11</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">12</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">13</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">14</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">15</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">16</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">17</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">18</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">19</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">20</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">21</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">22</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">23</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">24</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">25</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">26</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">27</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">28</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">29</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date">30</button></div>
+          <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">31</button></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="byted-calendar__bottom-float">bottom Float</div>
+  <div class="o-calendar__bottom-float">bottom Float</div>
 </div>
 `;

@@ -2,67 +2,67 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div>
-    <div class="byted-dropdown byted-hairline--top-bottom">
-      <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <div class="o-dropdown o-hairline--top-bottom">
+      <div class="o-dropdown__item"><span class="o-dropdown__title" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown__item"><span class="o-dropdown__title" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown-item o-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
         <!---->
       </div>
-      <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
-        <!---->
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-dropdown byted-hairline--top-bottom">
-      <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown__item"><span class="byted-dropdown__title byted-dropdown__title--down" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown-item byted-dropdown-item--up" style="z-index: 10; height: calc(100vh - 0px); transform: translate3d(0, -100%, 0); display: none;">
-        <!---->
-      </div>
-      <div class="byted-dropdown-item byted-dropdown-item--up" style="z-index: 10; height: calc(100vh - 0px); transform: translate3d(0, -100%, 0); display: none;">
+      <div class="o-dropdown-item o-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
         <!---->
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-dropdown byted-hairline--top-bottom">
-      <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown__item"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <div class="o-dropdown o-hairline--top-bottom">
+      <div class="o-dropdown__item"><span class="o-dropdown__title o-dropdown__title--down" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown__item"><span class="o-dropdown__title o-dropdown__title--down" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown-item o-dropdown-item--up" style="z-index: 10; height: calc(100vh - 0px); transform: translate3d(0, -100%, 0); display: none;">
         <!---->
       </div>
-      <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
-        <!---->
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="byted-dropdown byted-hairline--top-bottom">
-      <div class="byted-dropdown__item"><span class="title-slot"></span></div>
-      <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+      <div class="o-dropdown-item o-dropdown-item--up" style="z-index: 10; height: calc(100vh - 0px); transform: translate3d(0, -100%, 0); display: none;">
         <!---->
       </div>
     </div>
   </div>
   <div>
-    <div class="byted-dropdown byted-hairline--top-bottom">
-      <div class="byted-dropdown__item byted-dropdown__item--disabled"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown__item byted-dropdown__item--disabled"><span class="byted-dropdown__title" style="color: rgb(51, 51, 51);"><div class="byted-ellipsis"></div></span></div>
-      <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+    <div class="o-dropdown o-hairline--top-bottom">
+      <div class="o-dropdown__item"><span class="o-dropdown__title" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown__item"><span class="o-dropdown__title" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown-item o-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
         <!---->
       </div>
-      <div class="byted-dropdown-item byted-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+      <div class="o-dropdown-item o-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+        <!---->
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-dropdown o-hairline--top-bottom">
+      <div class="o-dropdown__item"><span class="title-slot"></span></div>
+      <div class="o-dropdown-item o-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+        <!---->
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="o-dropdown o-hairline--top-bottom">
+      <div class="o-dropdown__item o-dropdown__item--disabled"><span class="o-dropdown__title" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown__item o-dropdown__item--disabled"><span class="o-dropdown__title" style="color: rgb(51, 51, 51);"><div class="o-ellipsis"></div></span></div>
+      <div class="o-dropdown-item o-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
+        <!---->
+      </div>
+      <div class="o-dropdown-item o-dropdown-item--down" style="z-index: 10; height: calc(100vh - 0px); display: none;">
         <!---->
       </div>
     </div>

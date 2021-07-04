@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Progress textInMiddle props 1`] = `
-<div class="byted-progress byted-progress--text-in-middle">
-  <div class="byted-progress__portion" style="height: 4px; border-radius: 2px;">
-    <div class="byted-progress__portioncon" style="width: 100%; border-radius: 2px;">
-      <div class="byted-progress__pivot-middle">100%</div>
+<div class="o-progress o-progress--text-in-middle">
+  <div class="o-progress__portion" style="height: 4px; border-radius: 2px;">
+    <div class="o-progress__portioncon" style="width: 100%; border-radius: 2px;">
+      <div class="o-progress__pivot-middle">100%</div>
     </div>
   </div>
 </div>

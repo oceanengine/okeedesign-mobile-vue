@@ -2,13 +2,13 @@
 
 exports[`renders demo correctly 1`] = `
 <div class="demo cell">
-  <div class="byted-header--wrapper">
-    <div class="byted-header byted-header--default byted-header--fixed byted-hairline--bottom">
-      <div class="byted-header__left"><i class="byted-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
-      <div class="byted-header__title">
+  <div class="o-header--wrapper">
+    <div class="o-header o-header--default o-header--fixed o-hairline--bottom">
+      <div class="o-header__left"><i class="o-header__icon" style="width: 1.2rem; height: 1.2rem;">test-file-stub</i></div>
+      <div class="o-header__title">
         <div></div>
       </div>
-      <div class="byted-header__right"></div>
+      <div class="o-header__right"></div>
     </div>
   </div>
   <div class="demo-cell">
@@ -16,16 +16,16 @@ exports[`renders demo correctly 1`] = `
       <div class="demo-cell-header-title"><span class="demo-cell-header-title__left" style="padding-left: 0.8rem;"></span></div>
     </div>
     <div class="demo-cell-content-slot">
-      <div class="byted-cell-group byted-hairline--top-bottom">
-        <div class="byted-cell byted-cell--clickable byted-cell--normal">
-          <div class="byted-cell__title"><span></span></div>
-          <div class="byted-cell__value byted-cell__value--alone"><span></span></div>
+      <div class="o-cell-group o-hairline--top-bottom">
+        <div class="o-cell o-cell--clickable o-cell--normal">
+          <div class="o-cell__title"><span></span></div>
+          <div class="o-cell__value o-cell__value--alone"><span></span></div>
         </div>
-        <div class="byted-cell byted-cell--middle byted-cell--clickable byted-cell--normal">
-          <div class="byted-cell__title"><span></span>
-            <div class="byted-cell__label"></div>
+        <div class="o-cell o-cell--middle o-cell--clickable o-cell--normal">
+          <div class="o-cell__title"><span></span>
+            <div class="o-cell__label"></div>
           </div>
-          <div class="byted-cell__value byted-cell__value--alone"><span></span></div>
+          <div class="o-cell__value o-cell__value--alone"><span></span></div>
         </div>
       </div>
     </div>
@@ -35,16 +35,16 @@ exports[`renders demo correctly 1`] = `
       <div class="demo-cell-header-title"><span class="demo-cell-header-title__left" style="padding-left: 0.8rem;"></span></div>
     </div>
     <div class="demo-cell-content-slot">
-      <div class="byted-cell-group byted-hairline--top-bottom">
-        <div class="byted-cell byted-cell--clickable byted-cell--normal">
-          <div class="byted-cell__title"><img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span></div>
-          <div class="byted-cell__value"><span></span></div>
+      <div class="o-cell-group o-hairline--top-bottom">
+        <div class="o-cell o-cell--clickable o-cell--normal">
+          <div class="o-cell__title"><img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span></div>
+          <div class="o-cell__value"><span></span></div>
         </div>
-        <div class="byted-cell byted-cell--middle byted-cell--clickable byted-cell--normal">
-          <div class="byted-cell__title"><img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span>
-            <div class="byted-cell__label"></div>
+        <div class="o-cell o-cell--middle o-cell--clickable o-cell--normal">
+          <div class="o-cell__title"><img src="../../../../svg/cell.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span>
+            <div class="o-cell__label"></div>
           </div>
-          <div class="byted-cell__value"><span></span></div>
+          <div class="o-cell__value"><span></span></div>
         </div>
       </div>
     </div>
@@ -54,9 +54,9 @@ exports[`renders demo correctly 1`] = `
       <div class="demo-cell-header-title"><span class="demo-cell-header-title__left" style="padding-left: 0.8rem;"></span></div>
     </div>
     <div class="demo-cell-content-slot">
-      <div class="byted-cell-group byted-hairline--top-bottom">
-        <div class="byted-cell byted-cell--clickable byted-cell--normal">
-          <div class="byted-cell__value byted-cell__value--alone"><span></span></div>
+      <div class="o-cell-group o-hairline--top-bottom">
+        <div class="o-cell o-cell--clickable o-cell--normal">
+          <div class="o-cell__value o-cell__value--alone"><span></span></div>
         </div>
       </div>
     </div>
@@ -66,17 +66,17 @@ exports[`renders demo correctly 1`] = `
       <div class="demo-cell-header-title"><span class="demo-cell-header-title__left" style="padding-left: 0.8rem;"></span></div>
     </div>
     <div class="demo-cell-content-slot">
-      <div class="byted-cell-group byted-hairline--top-bottom">
-        <div class="byted-cell byted-cell--clickable byted-cell--normal">
-          <div class="byted-cell__title"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      <div class="o-cell-group o-hairline--top-bottom">
+        <div class="o-cell o-cell--clickable o-cell--normal">
+          <div class="o-cell__title"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
-        <div class="byted-cell byted-cell--clickable byted-cell--normal">
-          <div class="byted-cell__title"><span></span></div>
-          <div class="byted-cell__value byted-cell__value--alone"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+        <div class="o-cell o-cell--clickable o-cell--normal">
+          <div class="o-cell__title"><span></span></div>
+          <div class="o-cell__value o-cell__value--alone"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
         </div>
-        <div is-link1="" class="byted-cell byted-cell--normal">
-          <div class="byted-cell__title"><span></span></div>
-          <div class="byted-cell__value byted-cell__value--alone"><span></span></div>
+        <div is-link1="" class="o-cell o-cell--normal">
+          <div class="o-cell__title"><span></span></div>
+          <div class="o-cell__value o-cell__value--alone"><span></span></div>
         </div>
       </div>
     </div>
@@ -91,9 +91,9 @@ exports[`renders demo correctly 1`] = `
           <div class="demo-cell-header-title"><span class="demo-cell-header-title__left" style="padding-left: 0.8rem;">一</span></div>
         </div>
         <div class="demo-cell-content-slot">
-          <div class="byted-cell byted-cell--normal">
-            <div class="byted-cell__title"><span></span></div>
-            <div class="byted-cell__value byted-cell__value--alone"><span></span></div>
+          <div class="o-cell o-cell--normal">
+            <div class="o-cell__title"><span></span></div>
+            <div class="o-cell__value o-cell__value--alone"><span></span></div>
           </div>
         </div>
       </div>
@@ -102,9 +102,9 @@ exports[`renders demo correctly 1`] = `
           <div class="demo-cell-header-title"><span class="demo-cell-header-title__left" style="padding-left: 0.8rem;">二</span></div>
         </div>
         <div class="demo-cell-content-slot">
-          <div class="byted-cell byted-cell--normal">
-            <div class="byted-cell__title"><span></span></div>
-            <div class="byted-cell__value byted-cell__value--alone"><span></span></div>
+          <div class="o-cell o-cell--normal">
+            <div class="o-cell__title"><span></span></div>
+            <div class="o-cell__value o-cell__value--alone"><span></span></div>
           </div>
         </div>
       </div>
@@ -115,22 +115,22 @@ exports[`renders demo correctly 1`] = `
       <div class="demo-cell-header-title"><span class="demo-cell-header-title__left" style="padding-left: 0.8rem;"></span></div>
     </div>
     <div class="demo-cell-content-slot">
-      <div class="byted-cell byted-cell--clickable byted-cell--normal">
-        <div class="byted-cell__title"><img src="../icon/tag.svg" alt="" width="25px" height="25px" style="margin-right: 6px; vertical-align: middle;"> <span></span></div>
-        <div class="byted-cell__value"><span></span></div><i class="byted-cell__right-icon">test-file-stub</i>
+      <div class="o-cell o-cell--clickable o-cell--normal">
+        <div class="o-cell__title"><img src="../icon/tag.svg" alt="" width="25px" height="25px" style="margin-right: 6px; vertical-align: middle;"> <span></span></div>
+        <div class="o-cell__value"><span></span></div><i class="o-cell__right-icon">test-file-stub</i>
       </div>
-      <div class="byted-cell byted-cell--normal">
-        <div class="byted-cell__title"><img src="../icon/correct.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span></div>
-        <div class="byted-cell__value"><span></span></div>
+      <div class="o-cell o-cell--normal">
+        <div class="o-cell__title"><img src="../icon/correct.svg" alt="" width="17px" height="17px" style="margin-right: 6px; vertical-align: middle;"> <span style="vertical-align: middle;"></span></div>
+        <div class="o-cell__value"><span></span></div>
       </div>
-      <div class="byted-cell byted-cell--normal">
-        <div class="byted-cell__title"><span></span></div>
-        <div class="byted-switch normal">
-          <div class="byted-switch__show"></div>
+      <div class="o-cell o-cell--normal">
+        <div class="o-cell__title"><span></span></div>
+        <div class="o-switch normal">
+          <div class="o-switch__show"></div>
         </div>
       </div>
-      <div class="byted-cell byted-cell--normal">
-        <div class="byted-cell__title"><span></span></div><img src="../icon/button.svg" alt="" width="24px" height="24px" style="margin-right: 6px; vertical-align: middle;">
+      <div class="o-cell o-cell--normal">
+        <div class="o-cell__title"><span></span></div><img src="../icon/button.svg" alt="" width="24px" height="24px" style="margin-right: 6px; vertical-align: middle;">
       </div>
     </div>
   </div>

@@ -1,47 +1,47 @@
 <template>
   <div class="demo step">
-    <byted-header fixed @click-left="$router.back()">
+    <o-header fixed @click-left="$router.back()">
       <div>{{ t('name') }}</div>
-    </byted-header>
+    </o-header>
     <demo-cell>
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('basicUsage')" :size="currentSize">
+        <o-cell :title="t('basicUsage')" :size="currentSize">
           <template #right-icon>
-            <byted-stepper v-model="value1" :size="currentSize" />
+            <o-stepper v-model="value1" :size="currentSize" />
           </template>
-        </byted-cell>
+        </o-cell>
       </div>
 
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('step')" :size="currentSize">
+        <o-cell :title="t('step')" :size="currentSize">
           <template #right-icon>
-            <byted-stepper v-model="value5" :size="currentSize" :step="2" />
+            <o-stepper v-model="value5" :size="currentSize" :step="2" />
           </template>
-        </byted-cell>
+        </o-cell>
       </div>
 
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('range')" :size="currentSize">
+        <o-cell :title="t('range')" :size="currentSize">
           <template #right-icon>
-            <byted-stepper v-model="value2" :min="2" :size="currentSize" :max="5" />
+            <o-stepper v-model="value2" :min="2" :size="currentSize" :max="5" />
           </template>
-        </byted-cell>
+        </o-cell>
       </div>
 
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('size')" :size="currentSize">
+        <o-cell :title="t('size')" :size="currentSize">
           <template #right-icon>
-            <byted-stepper v-model="value4" size="large" />
+            <o-stepper v-model="value4" size="large" />
           </template>
-        </byted-cell>
+        </o-cell>
       </div>
 
       <div class="bui-doc-demo-block__card">
-        <byted-cell :title="t('disabled')" :size="currentSize">
+        <o-cell :title="t('disabled')" :size="currentSize">
           <template #right-icon>
-            <byted-stepper v-model="value3" disabled :size="currentSize" />
+            <o-stepper v-model="value3" disabled :size="currentSize" />
           </template>
-        </byted-cell>
+        </o-cell>
       </div>
     </demo-cell>
 
@@ -82,8 +82,6 @@ export default {
   components: {
     demoCell,
     DomSize,
-    // demoTitle,
-    // BytedIconArrowCircleRight,
   },
   data() {
     return {
@@ -110,7 +108,7 @@ export default {
 
 <style lang="less">
 .demo.step {
-  .byted-cell__title {
+  .o-cell__title {
     display: flex;
     align-items: center;
   }
