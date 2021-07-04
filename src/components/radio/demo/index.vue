@@ -81,6 +81,7 @@ export default {
 
   components: {
     demoCell,
+    DomSize,
   },
   data() {
     return {

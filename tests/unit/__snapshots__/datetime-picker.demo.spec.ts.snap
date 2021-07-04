@@ -112,6 +112,7 @@ exports[`renders demo correctly 1`] = `
             <div class="o-picker-column__option">28日</div>
             <div class="o-picker-column__option">29日</div>
             <div class="o-picker-column__option">30日</div>
+            <div class="o-picker-column__option">31日</div>
           </div>
         </div>
         <div class="o-picker__mask"></div>
@@ -220,6 +221,7 @@ exports[`renders demo correctly 1`] = `
             <div class="o-picker-column__option">28日</div>
             <div class="o-picker-column__option">29日</div>
             <div class="o-picker-column__option">30日</div>
+            <div class="o-picker-column__option">31日</div>
           </div>
         </div>
         <div class="o-picker-column">
@@ -459,7 +461,6 @@ exports[`renders demo correctly 1`] = `
         </div>
         <div class="o-picker-column">
           <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-            <div class="o-picker-column__option">6月</div>
             <div class="o-picker-column__option">7月</div>
             <div class="o-picker-column__option">8月</div>
             <div class="o-picker-column__option">9月</div>
@@ -470,7 +471,34 @@ exports[`renders demo correctly 1`] = `
         </div>
         <div class="o-picker-column">
           <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
+            <div class="o-picker-column__option">4日</div>
+            <div class="o-picker-column__option">5日</div>
+            <div class="o-picker-column__option">6日</div>
+            <div class="o-picker-column__option">7日</div>
+            <div class="o-picker-column__option">8日</div>
+            <div class="o-picker-column__option">9日</div>
+            <div class="o-picker-column__option">10日</div>
+            <div class="o-picker-column__option">11日</div>
+            <div class="o-picker-column__option">12日</div>
+            <div class="o-picker-column__option">13日</div>
+            <div class="o-picker-column__option">14日</div>
+            <div class="o-picker-column__option">15日</div>
+            <div class="o-picker-column__option">16日</div>
+            <div class="o-picker-column__option">17日</div>
+            <div class="o-picker-column__option">18日</div>
+            <div class="o-picker-column__option">19日</div>
+            <div class="o-picker-column__option">20日</div>
+            <div class="o-picker-column__option">21日</div>
+            <div class="o-picker-column__option">22日</div>
+            <div class="o-picker-column__option">23日</div>
+            <div class="o-picker-column__option">24日</div>
+            <div class="o-picker-column__option">25日</div>
+            <div class="o-picker-column__option">26日</div>
+            <div class="o-picker-column__option">27日</div>
+            <div class="o-picker-column__option">28日</div>
+            <div class="o-picker-column__option">29日</div>
             <div class="o-picker-column__option">30日</div>
+            <div class="o-picker-column__option">31日</div>
           </div>
         </div>
         <div class="o-picker__mask"></div>
