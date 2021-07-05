@@ -221,10 +221,7 @@ exports[`renders demo correctly 1`] = `
             <div class="o-picker-column__option">28日</div>
             <div class="o-picker-column__option">29日</div>
             <div class="o-picker-column__option">30日</div>
-<<<<<<< HEAD
-=======
             <div class="o-picker-column__option">31日</div>
->>>>>>> 48d4f9de72e9c6960c636dfd3b94a3b3fa691805
           </div>
         </div>
         <div class="o-picker-column">
@@ -464,10 +461,12 @@ exports[`renders demo correctly 1`] = `
         </div>
         <div class="o-picker-column">
           <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-<<<<<<< HEAD
+            <div class="o-picker-column__option">1月</div>
+            <div class="o-picker-column__option">2月</div>
+            <div class="o-picker-column__option">3月</div>
+            <div class="o-picker-column__option">4月</div>
+            <div class="o-picker-column__option">5月</div>
             <div class="o-picker-column__option">6月</div>
-=======
->>>>>>> 48d4f9de72e9c6960c636dfd3b94a3b3fa691805
             <div class="o-picker-column__option">7月</div>
             <div class="o-picker-column__option">8月</div>
             <div class="o-picker-column__option">9月</div>
@@ -478,9 +477,9 @@ exports[`renders demo correctly 1`] = `
         </div>
         <div class="o-picker-column">
           <div class="o-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none;">
-<<<<<<< HEAD
-            <div class="o-picker-column__option">30日</div>
-=======
+            <div class="o-picker-column__option">1日</div>
+            <div class="o-picker-column__option">2日</div>
+            <div class="o-picker-column__option">3日</div>
             <div class="o-picker-column__option">4日</div>
             <div class="o-picker-column__option">5日</div>
             <div class="o-picker-column__option">6日</div>
@@ -509,7 +508,6 @@ exports[`renders demo correctly 1`] = `
             <div class="o-picker-column__option">29日</div>
             <div class="o-picker-column__option">30日</div>
             <div class="o-picker-column__option">31日</div>
->>>>>>> 48d4f9de72e9c6960c636dfd3b94a3b3fa691805
           </div>
         </div>
         <div class="o-picker__mask"></div>
