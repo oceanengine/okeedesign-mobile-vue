@@ -65,11 +65,11 @@ export default {
       titleStyle: {
         'padding-left': '16px',
       },
-      value: new Date(),
-      value1: new Date(),
+      value: new Date(2021, 0),
+      value1: new Date(2021, 0),
       value2: '',
-      value3: new Date(),
-      value4: new Date(),
+      value3: new Date(2021, 0),
+      value4: new Date(2021, 0),
       show: false,
     };
   },

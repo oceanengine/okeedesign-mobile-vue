@@ -1,5 +1,5 @@
 import { mount, trigger, later } from '../index';
-import { Calendar as NativeCalendar } from '@src'
+import { Calendar as NativeCalendar } from '@src';
 const Calendar = NativeCalendar as any;
 trigger;
 // const min = new Date().getTime() - 30 * 24 * 60 * 60 * 1000;

@@ -159,7 +159,7 @@ export default {
     demoCell,
   },
   data() {
-    const today = new Date();
+    const today = new Date(2021, 0);
     return {
       showBasic: false,
 
@@ -193,24 +193,24 @@ export default {
       this.showBasic = false;
     },
     fastToday() {
-      this.valueScopedSlots = [new Date()];
+      this.valueScopedSlots = [new Date(2021, 0)];
       console.log(this.valueScopedSlots);
       this.showScopedSlots = false;
     },
     fastWeek() {
-      let milliseconds = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
+      let milliseconds = new Date(2021, 0).getTime() + 7 * 24 * 60 * 60 * 1000;
       this.showScopedSlots = false;
-      this.valueScopedSlots = [new Date(), new Date(milliseconds)];
+      this.valueScopedSlots = [new Date(2021, 0), new Date(milliseconds)];
     },
     fastMouth() {
-      let milliseconds = new Date().getTime() + 30 * 24 * 60 * 60 * 1000;
+      let milliseconds = new Date(2021, 0).getTime() + 30 * 24 * 60 * 60 * 1000;
       this.showScopedSlots = false;
-      this.valueScopedSlots = [new Date(), new Date(milliseconds)];
+      this.valueScopedSlots = [new Date(2021, 0), new Date(milliseconds)];
     },
     fastSingle() {
-      let milliseconds = new Date().getTime() + 30 * 24 * 60 * 60 * 1000;
+      let milliseconds = new Date(2021, 0).getTime() + 30 * 24 * 60 * 60 * 1000;
       this.showSingleSlot = false;
-      this.valueScopedSlots = [new Date(), new Date(milliseconds)];
+      this.valueScopedSlots = [new Date(2021, 0), new Date(milliseconds)];
     },
   },
 };
