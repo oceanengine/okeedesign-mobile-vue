@@ -168,6 +168,7 @@ exports[`DatetimePicker date type change event 1`] = `
         <div class="o-picker-column__option">28日</div>
         <div class="o-picker-column__option">29日</div>
         <div class="o-picker-column__option">30日</div>
+        <div class="o-picker-column__option">31日</div>
       </div>
     </div>
     <div class="o-picker__mask"></div>
