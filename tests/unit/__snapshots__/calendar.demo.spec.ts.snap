@@ -71,8 +71,8 @@ exports[`renders demo correctly 1`] = `
             <div class="o-calendar__cell"><button class="o-calendar__date">2</button></div>
             <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">3</button></div>
             <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--rest">4</button></div>
-            <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--today">5</button></div>
-            <div class="o-calendar__cell"><button class="o-calendar__date">6</button></div>
+            <div class="o-calendar__cell"><button class="o-calendar__date">5</button></div>
+            <div class="o-calendar__cell"><button class="o-calendar__date o-calendar__date--today">6</button></div>
             <div class="o-calendar__cell"><button class="o-calendar__date">7</button></div>
             <div class="o-calendar__cell"><button class="o-calendar__date">8</button></div>
             <div class="o-calendar__cell"><button class="o-calendar__date">9</button></div>
