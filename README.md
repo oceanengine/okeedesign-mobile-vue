@@ -10,7 +10,7 @@
 <p align="center">
     <img src="https://img.shields.io/npm/v/@okee-uikit/m-vue" alt="npm version" />
     <img src="https://img.shields.io/github/workflow/status/oceanengine/okeedesign-mobile-vue/Node.js%20CI/main" alt="CI Status" />
-    <img src="https://img.shields.io/codecov/c/oceanengine/okeedesign-mobile-vue/main" alt="code coverage" />
+    <img src="https://img.shields.io/codecov/c/github/oceanengine/okeedesign-mobile-vue/main" alt="code coverage" />
     <img src="https://img.shields.io/bundlephobia/min/@okee-uikit/m-vue" alt="min size" />
 </p>
 
