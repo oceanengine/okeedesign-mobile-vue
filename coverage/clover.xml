@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625560623632" clover="3.2.0">
-  <project timestamp="1625560623632" name="All files">
-    <metrics statements="4241" coveredstatements="2814" conditionals="2597" coveredconditionals="1493" methods="823" coveredmethods="500" elements="7661" coveredelements="4807" complexity="0" loc="4241" ncloc="4241" packages="101" files="136" classes="136"/>
+<coverage generated="1625644855415" clover="3.2.0">
+  <project timestamp="1625644855415" name="All files">
+    <metrics statements="4241" coveredstatements="2814" conditionals="2597" coveredconditionals="1494" methods="823" coveredmethods="500" elements="7661" coveredelements="4808" complexity="0" loc="4241" ncloc="4241" packages="101" files="136" classes="136"/>
     <package name="docs.site.components">
       <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
       <file name="DomSize.vue" path="/Users/bytedance/mobile-vue-github/okeedesign-mobile-vue/docs/site/components/DomSize.vue">
@@ -1022,9 +1022,9 @@
       </file>
     </package>
     <package name="src.components.datetime-picker">
-      <metrics statements="106" coveredstatements="93" conditionals="38" coveredconditionals="30" methods="6" coveredmethods="6"/>
+      <metrics statements="106" coveredstatements="93" conditionals="38" coveredconditionals="31" methods="6" coveredmethods="6"/>
       <file name="index.tsx" path="/Users/bytedance/mobile-vue-github/okeedesign-mobile-vue/src/components/datetime-picker/index.tsx">
-        <metrics statements="106" coveredstatements="93" conditionals="38" coveredconditionals="30" methods="6" coveredmethods="6"/>
+        <metrics statements="106" coveredstatements="93" conditionals="38" coveredconditionals="31" methods="6" coveredmethods="6"/>
         <line num="1" count="70" type="stmt"/>
         <line num="2" count="70" type="stmt"/>
         <line num="3" count="70" type="stmt"/>
@@ -1093,7 +1093,7 @@
         <line num="193" count="2" type="stmt"/>
         <line num="194" count="2" type="stmt"/>
         <line num="198" count="0" type="stmt"/>
-        <line num="202" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="202" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="205" count="21" type="cond" truecount="1" falsecount="1"/>
         <line num="206" count="21" type="stmt"/>
         <line num="207" count="21" type="stmt"/>
@@ -2142,7 +2142,7 @@
         <line num="104" count="39" type="stmt"/>
         <line num="105" count="39" type="stmt"/>
         <line num="107" count="39" type="stmt"/>
-        <line num="108" count="234" type="cond" truecount="2" falsecount="0"/>
+        <line num="108" count="200" type="cond" truecount="2" falsecount="0"/>
         <line num="109" count="34" type="stmt"/>
         <line num="110" count="34" type="stmt"/>
         <line num="114" count="39" type="stmt"/>

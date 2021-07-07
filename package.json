@@ -40,7 +40,7 @@
     "lint:script": "eslint . --ext .js,.ts,.tsx,.vue,.js --quiet",
     "lint:style": "stylelint \"src/**/*.less\"",
     "fix:style": "stylelint \"src/**/*.less\" --fix",
-    "build": "npm run build:compile && npm run build:dist",
+    "build": "npm run build:compile && npm run build:dist && babel src -d lib",
     "build:compile": "cross-env NODE_ENV=production ./build/run.js compile",
     "build:dist": "./build/run.js dist",
     "build:entry": "./build/run.js build-entry",
@@ -49,8 +49,8 @@
     "ct": "git-cz",
     "prettier-format": "prettier --write .",
     "deploy": "cd ./docs && sh docs_build.sh",
-    "test": "jest",
-    "test:cov": "jest --coverage"
+    "test": "jest && npm run coverall",
+    "coverall": "cat coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
@@ -92,6 +92,7 @@
     "colorful": "^2.1.0",
     "commander": "^6.2.0",
     "commitizen": "^3.0.7",
+    "coveralls": "^3.1.1",
     "cross-env": "^5.2.0",
     "css-loader": "^3.0.0",
     "cz-lerna-changelog": "^2.0.2",
