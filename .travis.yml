@@ -6,7 +6,7 @@ install:
 before_script:
   - yarn build
 script:
-  - yarn test
+  - yarn test:cov
 after_success: 
   - npm run coverall
 

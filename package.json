@@ -49,7 +49,8 @@
     "ct": "git-cz",
     "prettier-format": "prettier --write .",
     "deploy": "cd ./docs && sh docs_build.sh",
-    "test": "jest && npm run coverall",
+    "test": "jest",
+    "test:cov": "jest && npm run coverall",
     "coverall": "cat coverage/lcov.info | coveralls"
   },
   "dependencies": {
