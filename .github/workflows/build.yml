@@ -29,4 +29,3 @@ jobs:
     - run: npm i -g yarn && yarn
     - run: yarn build
     - run: yarn test
-    - run: yarn test:cov
