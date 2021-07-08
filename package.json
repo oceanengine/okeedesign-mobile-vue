@@ -40,7 +40,7 @@
     "lint:script": "eslint . --ext .js,.ts,.tsx,.vue,.js --quiet",
     "lint:style": "stylelint \"src/**/*.less\"",
     "fix:style": "stylelint \"src/**/*.less\" --fix",
-    "build": "npm run build:compile && npm run build:dist && babel src -d lib",
+    "build": "npm run build:compile && npm run build:dist",
     "build:compile": "cross-env NODE_ENV=production ./build/run.js compile",
     "build:dist": "./build/run.js dist",
     "build:entry": "./build/run.js build-entry",
