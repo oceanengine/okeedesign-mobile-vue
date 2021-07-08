@@ -10,14 +10,14 @@
 <p align="center">
     <img src="https://img.shields.io/npm/v/@okee-uikit/m-vue" alt="npm version" />
     <img src="https://img.shields.io/github/workflow/status/oceanengine/okeedesign-mobile-vue/Node.js%20CI/main" alt="CI Status" />
-    <img src='https://coveralls.io/repos/github/Tao-Mao/okeedesign-mobile-vue/badge.svg?branch=main' alt='Coverage Status' />
+    <img src='https://coveralls.io/repos/github/oceanengine/okeedesign-mobile-vue/badge.svg?branch=main' alt='Coverage Status' />
     <img src="https://img.shields.io/bundlephobia/min/@okee-uikit/m-vue" alt="min size" />
 </p>
 
 ## Features
 
 * Provide 36 highly qualified components, covering different situations on mobile side
-* Components unit tests coverage is 90% to guarantee stability
+* Components unit tests coverage is 70% to guarantee stability
 * Support internationalization, compatible with Vue-i18n and support 16 different languages
 * Support customizing brand name
 * Support TypeScript

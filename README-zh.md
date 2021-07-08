@@ -10,14 +10,14 @@
 <p align="center">
     <img src="https://img.shields.io/npm/v/@okee-uikit/m-vue" alt="npm version" />
     <img src="https://img.shields.io/github/workflow/status/oceanengine/okeedesign-mobile-vue/Node.js%20CI/main" alt="CI Status" />
-    <img src='https://coveralls.io/repos/github/Tao-Mao/okeedesign-mobile-vue/badge.svg?branch=main' alt='Coverage Status' />
+    <img src='https://coveralls.io/repos/github/oceanengine/okeedesign-mobile-vue/badge.svg?branch=main' alt='Coverage Status' />
     <img src="https://img.shields.io/bundlephobia/min/@okee-uikit/m-vue" alt="min size" />
 </p>
 
 ## 特性
 
 * 提供 36 个高质量组件，覆盖移动端各类场景
-* 组件单元测试覆盖率达 90%，为稳定性提供保障
+* 组件单元测试覆盖率达 70%，为稳定性提供保障
 * 支持国际化，兼容 Vue-i18n，支持 16 种语言
 * 支持自定义品牌名称
 * 支持TypeScript
