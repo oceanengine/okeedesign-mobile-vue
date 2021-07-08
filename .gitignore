@@ -15,3 +15,6 @@ es
 /dist
 /docs/docs_build.sh
 /build/webpack.site.prd_dev.js
+
+# coverage
+coverage

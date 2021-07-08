@@ -8,4 +8,6 @@ module.exports = {
     '^@src(.*)$': '<rootDir>/src$1',
   },
   setupFilesAfterEnv: ['./jest.setup.js'],
+  collectCoverage: true,
+  collectCoverageFrom: ['src/components/**/*.ts', 'src/components/**/*.tsx'],
 };
