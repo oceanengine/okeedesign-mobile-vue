@@ -1,4 +1,4 @@
-import Demo from '@src/components/cascader/demo/index.vue';
-import { snapshotDemo } from '../demo';
+// import Demo from '@src/components/cascader/demo/index.vue';
+// import { snapshotDemo } from '../demo';
 
-snapshotDemo(Demo);
+// snapshotDemo(Demo);
