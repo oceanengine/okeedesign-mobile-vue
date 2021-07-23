@@ -78,8 +78,8 @@ function getStylePath(component, ext = '') {
   return path.join(__dirname, `../es/components/${component}/index${ext}`);
 }
 
-// replace seq for windows
-function replaceSeq(path) {
+// replace sep for windows
+function replaceSep(path) {
   if (path === 'index') {
     return './index';
   }
@@ -87,7 +87,7 @@ function replaceSeq(path) {
 }
 
 function getStyleRelativePath(component, style) {
-  return replaceSeq(
+  return replaceSep(
     path.relative(path.join(__dirname, `../es/components/${component}/style`), getStylePath(style)),
   );
 }
