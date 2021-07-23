@@ -64,7 +64,7 @@ declare global {
   }
 }
 
-const version = '0.1.3';
+const version = '0.1.5';
 const components = [
   Locale,
   ActionSheet,
