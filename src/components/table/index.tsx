@@ -178,9 +178,9 @@ export default createComponent<TableProps, TableEvents, TableScopedSlots>({
 
             const fakeTrWidth = this.$refs.tableFakeTr.offsetWidth;
 
-            const syntheticColumns = ((expandOptions
-              ? [expandOptions]
-              : []) as BaseTableColumnProps[]).concat(columns);
+            const syntheticColumns = (
+              (expandOptions ? [expandOptions] : []) as BaseTableColumnProps[]
+            ).concat(columns);
 
             syntheticColumns.forEach((column, index) => {
               if (fakeTdList[index]) {
@@ -298,12 +298,8 @@ export default createComponent<TableProps, TableEvents, TableScopedSlots>({
 
     this.$watch(
       () => {
-        const {
-          columns,
-          columnStickyOffset,
-          columnTransformOffset,
-          leftFixedBoundaryColumnIndex,
-        } = this;
+        const { columns, columnStickyOffset, columnTransformOffset, leftFixedBoundaryColumnIndex } =
+          this;
         return [columns, columnStickyOffset, columnTransformOffset, leftFixedBoundaryColumnIndex];
       },
       () => {
@@ -313,12 +309,8 @@ export default createComponent<TableProps, TableEvents, TableScopedSlots>({
           return;
         }
 
-        const {
-          leftFixedBoundaryColumnIndex,
-          columnStickyOffset,
-          columns,
-          columnTransformOffset,
-        } = this;
+        const { leftFixedBoundaryColumnIndex, columnStickyOffset, columns, columnTransformOffset } =
+          this;
 
         const wrapperWidth = this.$refs.wrapper.offsetWidth;
 
@@ -1120,7 +1112,7 @@ export default createComponent<TableProps, TableEvents, TableScopedSlots>({
 
           return (
             <td key={column.dataProp} class={className} style={tdStyle}>
-              {row[column.dataProp]}
+              {column.renderCell ? column.renderCell(this.$createElement, { rowData: row }) : row[column.dataProp]}
             </td>
           );
         });
