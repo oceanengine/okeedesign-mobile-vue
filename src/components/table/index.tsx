@@ -950,7 +950,9 @@ export default createComponent<TableProps, TableEvents, TableScopedSlots>({
 
         return (
           <th key={column.dataProp} class={className} style={thStyle}>
-            {column.title}
+            {column.renderThCell
+              ? column.renderThCell(this.$createElement, { column })
+              : column.title}
             {sortable && renderSortIcon()}
             {filterable && renderFilterIcon()}
           </th>
@@ -1112,7 +1114,7 @@ export default createComponent<TableProps, TableEvents, TableScopedSlots>({
 
           return (
             <td key={column.dataProp} class={className} style={tdStyle}>
-              {column.renderCell ? column.renderCell(this.$createElement, { rowData: row }) : row[column.dataProp]}
+              {column.renderCell ? column.renderCell(this.$createElement, { rowData: row, column }) : row[column.dataProp]}
             </td>
           );
         });

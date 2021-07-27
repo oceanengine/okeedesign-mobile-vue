@@ -161,6 +161,7 @@ export default {
         width: '250px',
         sortable: true,
         filterable: true,
+        renderThCell: h => h('span', 'Title2333'),
         renderCell: h => h('span', 'Hello World!'),
       },
       {
