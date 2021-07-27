@@ -164,13 +164,19 @@ export default {
       showBasic: false,
 
       showSingle: false,
-      valueSingle: [],
+      valueSingle: [new Date('2020-02-02 00:00:00')],
 
       showMulti: false,
-      valueMulti: [],
+      valueMulti: [
+        new Date('2020-02-02 00:00:00'),
+        new Date('2020-02-03 00:00:00'),
+        new Date('2020-02-04 00:00:00'),
+        new Date('2020-02-05 00:00:00'),
+        new Date('2020-02-06 00:00:00'),
+      ],
 
       showRange: false,
-      valueRange: [],
+      valueRange: [new Date('2020-02-02 00:00:00'), new Date('2020-02-28 00:00:00')],
 
       showScopedSlots: false,
       showSingleSlot: false,

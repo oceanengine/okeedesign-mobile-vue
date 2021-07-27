@@ -345,10 +345,10 @@ const Calendar = {
   },
 
   created(this: CalendarInstance) {
-    const { today } = this;
-    const year = today.getFullYear();
-    const month = today.getMonth();
-    const date = today.getDate();
+    const displayDate = this.value[0] || this.today;
+    const year = displayDate.getFullYear();
+    const month = displayDate.getMonth();
+    const date = displayDate.getDate();
     this.queueMonths = [
       createMonthBlock(new Date(year, month, date)),
       createMonthBlock(new Date(year, month + 1, date)),
