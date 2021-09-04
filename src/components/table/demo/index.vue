@@ -155,6 +155,16 @@ export default {
         filterable: true,
       },
       {
+        dataProp: 'key33',
+        title: 'Title33',
+        minWidth: '150px',
+        width: '250px',
+        sortable: true,
+        filterable: true,
+        renderThCell: h => h('span', 'Title2333'),
+        renderCell: h => h('span', 'Hello World!'),
+      },
+      {
         dataProp: 'key4',
         title: 'Title4',
         width: '100px',

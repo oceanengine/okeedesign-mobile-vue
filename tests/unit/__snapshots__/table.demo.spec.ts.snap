@@ -21,6 +21,7 @@ exports[`renders demo correctly 1`] = `
             <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
+            <col style="width: 250px;">
             <col style="width: 100px;">
           </colgroup>
           <thead class="o-thead">
@@ -30,6 +31,7 @@ exports[`renders demo correctly 1`] = `
               <th class="o-th o-th--sticky" style="top: 0px;">Title3</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title31</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title32</th>
+              <th class="o-th o-th--sticky" style="top: 0px;"><span>Title2333</span></th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title4</th>
             </tr>
           </thead>
@@ -40,6 +42,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -48,6 +51,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -56,6 +60,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -64,6 +69,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -72,6 +78,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -80,6 +87,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -88,6 +96,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -96,6 +105,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -104,6 +114,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -112,6 +123,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -120,6 +132,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -128,6 +141,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -136,6 +150,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -144,6 +159,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -152,6 +168,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -160,6 +177,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -168,6 +186,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -176,6 +195,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -184,6 +204,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -192,9 +213,11 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
+              <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
@@ -218,6 +241,7 @@ exports[`renders demo correctly 1`] = `
             <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
+            <col style="width: 250px;">
             <col style="width: 100px;">
           </colgroup>
           <thead class="o-thead">
@@ -227,6 +251,7 @@ exports[`renders demo correctly 1`] = `
               <th class="o-th o-th--sticky" style="top: 0px;">Title3</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title31</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title32</th>
+              <th class="o-th o-th--sticky" style="top: 0px;"><span>Title2333</span></th>
               <th class="o-th o-th--sticky o-th--sticky-right" style="top: 0px; right: 0px;">Title4</th>
             </tr>
           </thead>
@@ -237,6 +262,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -245,6 +271,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -253,6 +280,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -261,6 +289,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -269,6 +298,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -277,6 +307,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -285,6 +316,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -293,6 +325,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -301,6 +334,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -309,6 +343,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -317,6 +352,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -325,6 +361,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -333,6 +370,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -341,6 +379,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -349,6 +388,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -357,6 +397,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -365,6 +406,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -373,6 +415,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -381,6 +424,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -389,9 +433,11 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
+              <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
@@ -416,6 +462,7 @@ exports[`renders demo correctly 1`] = `
             <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
+            <col style="width: 250px;">
             <col style="width: 100px;">
           </colgroup>
           <thead class="o-thead">
@@ -426,6 +473,7 @@ exports[`renders demo correctly 1`] = `
               <th class="o-th o-th--sticky" style="top: 0px;">Title3</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title31</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title32</th>
+              <th class="o-th o-th--sticky" style="top: 0px;"><span>Title2333</span></th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title4</th>
             </tr>
           </thead>
@@ -439,6 +487,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -450,6 +499,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -461,6 +511,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -472,6 +523,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -483,6 +535,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -494,6 +547,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -505,6 +559,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -516,6 +571,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -527,6 +583,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -538,6 +595,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -549,6 +607,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -560,6 +619,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -571,6 +631,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -582,6 +643,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -593,6 +655,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -604,6 +667,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -615,6 +679,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -626,6 +691,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -637,6 +703,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -648,9 +715,11 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td">Column4</td>
             </tr>
             <tr class="o-tr">
+              <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
@@ -672,6 +741,7 @@ exports[`renders demo correctly 1`] = `
           <colgroup>
             <col style="width: 100px;">
             <col style="width: 160px;">
+            <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
@@ -700,6 +770,12 @@ exports[`renders demo correctly 1`] = `
                     <path d="M3.96569 4C3.60932 4 3.43086 3.56914 3.68284 3.31716L5.71716 1.28284C5.87337 1.12663 6.12663 1.12663 6.28284 1.28284L8.31716 3.31716C8.56914 3.56914 8.39068 4 8.03431 4L3.96569 4Z" strokeLinejoin="round" class="o-sort-icon"></path>
                     <path d="M8.03431 8C8.39068 8 8.56914 8.43086 8.31716 8.68284L6.28284 10.7172C6.12663 10.8734 5.87337 10.8734 5.71716 10.7172L3.68284 8.68284C3.43086 8.43086 3.60932 8 3.96569 8H8.03431Z" strokeLinejoin="round" class="o-sort-icon"></path>
                   </svg></div><i class="o-icon o-icon--filter o-th__filter-icon">test-file-stub</i></th>
+              <th class="o-th o-th--sticky" style="top: 0px;"><span>Title2333</span>
+                <div class="o-th__sort-icon"><svg width="100%" height="100%" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="o-sort-icon">
+                    <path d="M3.96569 4C3.60932 4 3.43086 3.56914 3.68284 3.31716L5.71716 1.28284C5.87337 1.12663 6.12663 1.12663 6.28284 1.28284L8.31716 3.31716C8.56914 3.56914 8.39068 4 8.03431 4L3.96569 4Z" strokeLinejoin="round" class="o-sort-icon"></path>
+                    <path d="M8.03431 8C8.39068 8 8.56914 8.43086 8.31716 8.68284L6.28284 10.7172C6.12663 10.8734 5.87337 10.8734 5.71716 10.7172L3.68284 8.68284C3.43086 8.43086 3.60932 8 3.96569 8H8.03431Z" strokeLinejoin="round" class="o-sort-icon"></path>
+                  </svg></div><i class="o-icon o-icon--filter o-th__filter-icon">test-file-stub</i>
+              </th>
               <th class="o-th o-th--sticky o-th--sticky-right" style="top: 0px; right: 0px;">Title4<div class="o-th__sort-icon"><svg width="100%" height="100%" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="o-sort-icon">
                     <path d="M3.96569 4C3.60932 4 3.43086 3.56914 3.68284 3.31716L5.71716 1.28284C5.87337 1.12663 6.12663 1.12663 6.28284 1.28284L8.31716 3.31716C8.56914 3.56914 8.39068 4 8.03431 4L3.96569 4Z" strokeLinejoin="round" class="o-sort-icon"></path>
                     <path d="M8.03431 8C8.39068 8 8.56914 8.43086 8.31716 8.68284L6.28284 10.7172C6.12663 10.8734 5.87337 10.8734 5.71716 10.7172L3.68284 8.68284C3.43086 8.43086 3.60932 8 3.96569 8H8.03431Z" strokeLinejoin="round" class="o-sort-icon"></path>
@@ -714,6 +790,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -722,6 +799,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -730,6 +808,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -738,6 +817,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -746,6 +826,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -754,6 +835,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -762,6 +844,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -770,6 +853,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -778,6 +862,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -786,6 +871,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -794,6 +880,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -802,6 +889,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -810,6 +898,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -818,6 +907,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -826,6 +916,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -834,6 +925,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -842,6 +934,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -850,6 +943,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -858,6 +952,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -866,9 +961,11 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="right: 0px;">Column4</td>
             </tr>
             <tr class="o-tr">
+              <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
@@ -892,6 +989,7 @@ exports[`renders demo correctly 1`] = `
             <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
+            <col style="width: 250px;">
             <col style="width: 100px;">
           </colgroup>
           <thead class="o-thead">
@@ -901,11 +999,13 @@ exports[`renders demo correctly 1`] = `
               <th class="o-th o-th--sticky" style="top: 0px;">Title3</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title31</th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title32</th>
+              <th class="o-th o-th--sticky" style="top: 0px;"><span>Title2333</span></th>
               <th class="o-th o-th--sticky" style="top: 0px;">Title4</th>
             </tr>
           </thead>
           <tbody class="o-tbody">
             <tr class="o-tr">
+              <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
@@ -1039,6 +1139,7 @@ exports[`renders demo correctly 1`] = `
           <div class="o-table-indicator__item"></div>
           <div class="o-table-indicator__item"></div>
           <div class="o-table-indicator__item"></div>
+          <div class="o-table-indicator__item"></div>
           <div class="o-table-indicator__item o-table-indicator__item--active"></div>
         </div>
       </div>
@@ -1047,6 +1148,7 @@ exports[`renders demo correctly 1`] = `
           <colgroup>
             <col style="width: 100px;">
             <col style="width: 160px;">
+            <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
             <col style="width: 250px;">
@@ -1075,6 +1177,12 @@ exports[`renders demo correctly 1`] = `
                     <path d="M3.96569 4C3.60932 4 3.43086 3.56914 3.68284 3.31716L5.71716 1.28284C5.87337 1.12663 6.12663 1.12663 6.28284 1.28284L8.31716 3.31716C8.56914 3.56914 8.39068 4 8.03431 4L3.96569 4Z" strokeLinejoin="round" class="o-sort-icon"></path>
                     <path d="M8.03431 8C8.39068 8 8.56914 8.43086 8.31716 8.68284L6.28284 10.7172C6.12663 10.8734 5.87337 10.8734 5.71716 10.7172L3.68284 8.68284C3.43086 8.43086 3.60932 8 3.96569 8H8.03431Z" strokeLinejoin="round" class="o-sort-icon"></path>
                   </svg></div><i class="o-icon o-icon--filter o-th__filter-icon">test-file-stub</i></th>
+              <th class="o-th o-th--sticky" style="top: 0px;"><span>Title2333</span>
+                <div class="o-th__sort-icon"><svg width="100%" height="100%" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="o-sort-icon">
+                    <path d="M3.96569 4C3.60932 4 3.43086 3.56914 3.68284 3.31716L5.71716 1.28284C5.87337 1.12663 6.12663 1.12663 6.28284 1.28284L8.31716 3.31716C8.56914 3.56914 8.39068 4 8.03431 4L3.96569 4Z" strokeLinejoin="round" class="o-sort-icon"></path>
+                    <path d="M8.03431 8C8.39068 8 8.56914 8.43086 8.31716 8.68284L6.28284 10.7172C6.12663 10.8734 5.87337 10.8734 5.71716 10.7172L3.68284 8.68284C3.43086 8.43086 3.60932 8 3.96569 8H8.03431Z" strokeLinejoin="round" class="o-sort-icon"></path>
+                  </svg></div><i class="o-icon o-icon--filter o-th__filter-icon">test-file-stub</i>
+              </th>
               <th class="o-th o-th--sticky o-th--sticky-right" style="top: 0px; transform: translate3d(0px, 0, 0);">Title4<div class="o-th__sort-icon"><svg width="100%" height="100%" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="o-sort-icon">
                     <path d="M3.96569 4C3.60932 4 3.43086 3.56914 3.68284 3.31716L5.71716 1.28284C5.87337 1.12663 6.12663 1.12663 6.28284 1.28284L8.31716 3.31716C8.56914 3.56914 8.39068 4 8.03431 4L3.96569 4Z" strokeLinejoin="round" class="o-sort-icon"></path>
                     <path d="M8.03431 8C8.39068 8 8.56914 8.43086 8.31716 8.68284L6.28284 10.7172C6.12663 10.8734 5.87337 10.8734 5.71716 10.7172L3.68284 8.68284C3.43086 8.43086 3.60932 8 3.96569 8H8.03431Z" strokeLinejoin="round" class="o-sort-icon"></path>
@@ -1089,6 +1197,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1097,6 +1206,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1105,6 +1215,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1113,6 +1224,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1121,6 +1233,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1129,6 +1242,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1137,6 +1251,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1145,6 +1260,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1153,6 +1269,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1161,6 +1278,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1169,6 +1287,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1177,6 +1296,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1185,6 +1305,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1193,6 +1314,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1201,6 +1323,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1209,6 +1332,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1217,6 +1341,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1225,6 +1350,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1233,6 +1359,7 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
@@ -1241,9 +1368,11 @@ exports[`renders demo correctly 1`] = `
               <td class="o-td">Column3</td>
               <td class="o-td">Column31</td>
               <td class="o-td">Column32</td>
+              <td class="o-td"><span>Hello World!</span></td>
               <td class="o-td o-td--sticky-right" style="transform: translate3d(0px, 0, 0);">Column4</td>
             </tr>
             <tr class="o-tr">
+              <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
               <td class="o-td o-td--fake"></td>
